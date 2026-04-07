@@ -10,7 +10,7 @@
   body { font-family: 'Inter', sans-serif; font-weight: 300; color: #111; background: #fff; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
   nav { position: sticky; top: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid #f0f0f0; }
-  nav .logo { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 20px; letter-spacing: -0.02em; }
+  nav .logo { font-family: 'Instrument Serif', serif; font-weight: 900; font-style: italic; font-size: 24px; letter-spacing: -1px; }
   nav .cta-pill { background: #111; color: #fff; border-radius: 100px; padding: 10px 24px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 14px; transition: opacity 0.2s; }
   nav .cta-pill:hover { opacity: 0.85; }
   .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin-bottom: 16px; font-weight: 500; }
@@ -43,7 +43,7 @@
 </style>
 </head>
 <body>
-<nav><a href="/" class="logo">100 creatives</a><a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a call</a></nav>
+<nav><a href="/" class="logo">100</a><a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a call</a></nav>
 <section class="hero"><p class="section-label">Spec Creative</p><h1>We reimagined <em>Manhattan Project Beer Company's</em> ad creative.</h1><p>Six concepts for Half-Life Hazy IPA that match the brand's science-meets-craft identity — built from real product research, not templates.</p></section>
 <section class="insight"><p class="section-label">Our Take</p><p>Manhattan Project has built a brilliant brand identity — the atomic naming convention, monochrome technical illustrations, and science-meets-craft aesthetic create a world that's distinctly theirs. But the current creative leans heavily on the intellectual story without enough lifestyle imagery to drive emotional connection and trial. These concepts place Half-Life in cinematic, aspirational Dallas settings while letting the iconic label art do the talking.</p></section>
 <section class="grid-section"><p class="section-label">The Work</p><div class="masonry">
@@ -62,5 +62,6 @@ function openLightbox(el){const lb=document.getElementById('lightbox');document.
 function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow='';}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
 </script>
+<script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

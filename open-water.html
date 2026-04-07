@@ -12,7 +12,7 @@
 
   /* NAV */
   nav { position: sticky; top: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid #f0f0f0; }
-  nav .logo { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 20px; letter-spacing: -0.02em; }
+  nav .logo { font-family: 'Instrument Serif', serif; font-weight: 900; font-style: italic; font-size: 24px; letter-spacing: -1px; }
   nav .cta-pill { background: #111; color: #fff; border-radius: 100px; padding: 10px 24px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 14px; transition: opacity 0.2s; }
   nav .cta-pill:hover { opacity: 0.85; }
 
@@ -72,7 +72,7 @@
 <body>
 
 <nav>
-  <a href="/" class="logo">100 creatives</a>
+  <a href="/" class="logo">100</a>
   <a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a call</a>
 </nav>
 
@@ -145,5 +145,6 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
 
+<script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

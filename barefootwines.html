@@ -50,7 +50,7 @@
     ::selection { background: var(--black); color: var(--white); }
 
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 28px 48px; background: rgba(255,255,255,0.92); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
-    .logo { font-family: var(--sans); font-weight: 500; font-size: 18px; letter-spacing: -0.3px; color: var(--black); text-decoration: none; }
+    .logo { font-family: var(--serif); font-weight: 900; font-style: italic; font-size: 24px; letter-spacing: -1px; color: var(--black); text-decoration: none; }
     .back-link { font-size: 13px; font-weight: 400; color: var(--muted); text-decoration: none; letter-spacing: 0.5px; transition: color 0.3s; display: flex; align-items: center; gap: 6px; }
     .back-link:hover { color: var(--black); }
     .back-link svg { width: 14px; height: 14px; transition: transform 0.3s; }
@@ -117,7 +117,7 @@
 <body>
 
   <nav>
-    <a href="/" class="logo">100 creatives</a>
+    <a href="/" class="logo">100</a>
     <a href="/#work" class="back-link">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
       Back to work
@@ -183,7 +183,7 @@
   </section>
 
   <footer>
-    <div class="footer-left">100 creatives</div>
+    <div class="footer-left">100</div>
     <div class="footer-right">
       <a href="https://linkedin.com/in/abhixchawla" target="_blank">Connect on LinkedIn</a>
     </div>
@@ -195,5 +195,6 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
+<script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>
