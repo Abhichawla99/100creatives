@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Open Water — 100 Creatives</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: #111; background: #fff; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid #f0f0f0; }
+  nav .logo { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 20px; letter-spacing: -0.02em; }
+  nav .cta-pill { background: #111; color: #fff; border-radius: 100px; padding: 10px 24px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 14px; transition: opacity 0.2s; }
+  nav .cta-pill:hover { opacity: 0.85; }
+
+  /* SECTION LABEL */
+  .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin-bottom: 16px; font-weight: 500; }
+
+  /* HERO */
+  .hero { padding: 100px 40px 60px; max-width: 800px; margin: 0 auto; text-align: center; }
+  .hero h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 52px; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 12px; }
+  .hero h1 em { font-style: italic; }
+  .hero p { font-size: 17px; color: #666; line-height: 1.6; max-width: 540px; margin: 0 auto; }
+
+  /* INSIGHT */
+  .insight { padding: 40px 40px 60px; max-width: 720px; margin: 0 auto; border-top: 1px solid #f0f0f0; }
+  .insight p { font-size: 16px; line-height: 1.7; color: #444; }
+
+  /* MASONRY GRID */
+  .grid-section { padding: 20px 40px 60px; max-width: 1200px; margin: 0 auto; }
+  .masonry { columns: 3; column-gap: 20px; }
+  .masonry .card { break-inside: avoid; margin-bottom: 20px; }
+  .masonry .card img { width: 100%; display: block; border-radius: 12px; cursor: pointer; transition: transform 0.2s; }
+  .masonry .card img:hover { transform: scale(1.01); }
+  .masonry .card .label { font-size: 13px; color: #666; margin-top: 8px; padding-bottom: 4px; font-weight: 400; }
+
+  /* WIDE CINEMATIC */
+  .cinematic { padding: 0 40px 60px; max-width: 1200px; margin: 0 auto; }
+  .cinematic img { width: 100%; border-radius: 12px; cursor: pointer; transition: transform 0.2s; }
+  .cinematic img:hover { transform: scale(1.005); }
+  .cinematic .label { font-size: 13px; color: #666; margin-top: 8px; font-weight: 400; }
+
+  /* CTA */
+  .cta-section { padding: 80px 40px; text-align: center; border-top: 1px solid #f0f0f0; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 36px; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .cta-section .cta-pill { display: inline-block; background: #111; color: #fff; border-radius: 100px; padding: 16px 40px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px; transition: opacity 0.2s; }
+  .cta-section .cta-pill:hover { opacity: 0.85; }
+
+  /* FOOTER */
+  footer { padding: 40px; text-align: center; font-size: 12px; color: #aaa; border-top: 1px solid #f0f0f0; }
+
+  /* LIGHTBOX */
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 999; align-items: center; justify-content: center; cursor: zoom-out; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; object-fit: contain; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 34px; }
+    .masonry { columns: 1; }
+    nav { padding: 14px 20px; }
+    .hero, .insight, .grid-section, .cinematic, .cta-section { padding-left: 20px; padding-right: 20px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .masonry { columns: 2; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">100 creatives</div>
+  <a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a call</a>
+</nav>
+
+<section class="hero">
+  <p class="section-label">Spec Creative</p>
+  <h1>We reimagined <em>Open Water's</em> ad creative.</h1>
+  <p>Six concepts for their canned water line that amplify the brand's sustainability-first, ocean-positive mission — built from real product research, not templates.</p>
+</section>
+
+<section class="insight">
+  <p class="section-label">Our Take</p>
+  <p>Open Water has built a powerful brand around a simple, urgent truth — "More Ocean. Less Plastic." The aluminum packaging, ocean conservation funding, and locally-sourced production create a story that goes far beyond hydration. But the current creative could push harder into aspirational lifestyle territory. These concepts place the product in cinematic ocean, beach, and urban settings that make sustainability feel like the coolest choice in the room — not just the responsible one.</p>
+</section>
+
+<section class="grid-section">
+  <p class="section-label">The Work</p>
+  <div class="masonry">
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/09a9404d-7bdc-4e2d-8c92-8fa2b62ee3d4.jpg" alt="Open Water can on beach driftwood" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Beach Hero — Driftwood Golden Hour</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/a99430a8-0a41-43f8-a449-7e2f12a026bf.jpg" alt="Open Water flatlay on ice with seashells" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Editorial Flatlay — Ocean Harvest</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/1cb6a069-df2c-4d4f-8b97-a7e00e954f71.jpg" alt="Surfer with Open Water bottle at sunset" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Lifestyle Action — Sunset Shoreline</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/020499be-9f1c-4165-888c-c984908926eb.jpg" alt="Open Water can macro condensation detail" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Product Detail — Ocean Condensation</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/86997dc1-974f-4d6c-ad9c-fc4309ae3575.jpg" alt="Friends toasting Open Water cans at rooftop" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Social Moment — Rooftop Toast</div>
+    </div>
+  </div>
+</section>
+
+<section class="cinematic">
+  <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/a357ce0f-b6ad-4644-9666-e6a7e4c393b6.jpg" alt="Open Water bottle on volcanic coastline" onclick="openLightbox(this)" loading="lazy" />
+  <div class="label">Cinematic Landscape — Volcanic Coast</div>
+</section>
+
+<section class="cta-section">
+  <h2>Want concepts like these for your brand?</h2>
+  <a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a strategy call &rarr;</a>
+</section>
+
+<footer>
+  <p>This is spec creative made by 100 Creatives &mdash; a Paper Kites project. These concepts are not affiliated with or endorsed by Open Water. Built to show what's possible.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged view" />
+</div>
+
+<script>
+  function openLightbox(el) {
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = el.src;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+</body>
+</html>
