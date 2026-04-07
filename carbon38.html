@@ -1,109 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carbon38 — Spec Creative | 100 Creatives</title>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: #ffffff; color: #111; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-    .nav { display: flex; justify-content: space-between; align-items: center; padding: 24px 48px; position: sticky; top: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 100; border-bottom: 1px solid #f0f0f0; }
-    .nav-logo { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 500; color: #111; text-decoration: none; }
-    .nav-cta { display: inline-block; padding: 10px 24px; background: #111; color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; border-radius: 100px; transition: opacity 0.2s ease; }
-    .nav-cta:hover { opacity: 0.85; }
-    .hero { padding: 120px 48px 80px; max-width: 900px; }
-    .hero-badge { font-size: 13px; letter-spacing: 0.5px; color: #999; margin-bottom: 24px; font-weight: 400; }
-    .hero h1 { font-family: 'Instrument Serif', serif; font-size: clamp(40px, 6vw, 72px); font-weight: 400; line-height: 1.1; margin-bottom: 24px; color: #111; }
-    .hero h1 em { font-style: italic; }
-    .hero p.subtitle { font-size: 18px; color: #666; max-width: 520px; font-weight: 300; line-height: 1.7; }
-    .insight { padding: 60px 48px 80px; max-width: 720px; }
-    .section-label { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #999; margin-bottom: 20px; font-weight: 500; }
-    .insight p { font-size: 17px; line-height: 1.8; color: #444; font-weight: 300; }
-    .insight p strong { color: #111; font-weight: 500; }
-    .creatives { padding: 40px 48px 80px; max-width: 1200px; }
-    .grid { columns: 3; column-gap: 24px; }
-    @media (max-width: 900px) { .grid { columns: 2; } }
-    @media (max-width: 560px) { .grid { columns: 1; } .hero, .insight, .creatives, .wide-creative, .cta { padding-left: 24px; padding-right: 24px; } .nav { padding: 20px 24px; } }
-    .grid-item { break-inside: avoid; margin-bottom: 24px; }
-    .grid-item img { width: 100%; height: auto; display: block; border-radius: 12px; transition: transform 0.3s ease; cursor: pointer; }
-    .grid-item img:hover { transform: scale(1.01); }
-    .grid-item .label { margin-top: 12px; font-size: 13px; color: #999; font-weight: 400; letter-spacing: 0.3px; }
-    .wide-creative { padding: 0 48px 80px; max-width: 1200px; }
-    .wide-creative img { width: 100%; border-radius: 12px; display: block; cursor: pointer; transition: transform 0.3s ease; }
-    .wide-creative img:hover { transform: scale(1.005); }
-    .wide-creative .label { margin-top: 12px; font-size: 13px; color: #999; font-weight: 400; letter-spacing: 0.3px; }
-    .cta { padding: 100px 48px; max-width: 600px; }
-    .cta h2 { font-family: 'Instrument Serif', serif; font-size: clamp(32px, 4vw, 52px); font-weight: 400; line-height: 1.15; margin-bottom: 16px; }
-    .cta p { color: #666; font-size: 16px; font-weight: 300; margin-bottom: 32px; line-height: 1.7; }
-    .cta-button { display: inline-block; padding: 14px 36px; background: #111; color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; border-radius: 100px; transition: opacity 0.2s ease; }
-    .cta-button:hover { opacity: 0.85; }
-    .footer { padding: 40px 48px; border-top: 1px solid #f0f0f0; }
-    .footer p { font-size: 13px; color: #999; line-height: 1.7; }
-    .footer a { color: #666; text-decoration: none; }
-    .lightbox { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center; cursor: pointer; }
-    .lightbox.active { display: flex; }
-    .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 12px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carbon38 — Creative Concepts by Paper Kites</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#e8e8e8;font-family:'Inter',sans-serif;font-weight:300;line-height:1.7}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 24px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4.2rem);font-weight:400;letter-spacing:-0.02em;margin-bottom:24px;max-width:700px}
+.hero h1 span{color:#c4a97d}
+.hero p{font-size:1.05rem;color:#999;max-width:520px;margin-bottom:8px}
+.divider{width:60px;height:1px;background:#c4a97d;margin:48px auto}
+.insight{max-width:640px;margin:0 auto;padding:0 24px 60px;text-align:center}
+.insight h2{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:400;margin-bottom:20px;color:#c4a97d}
+.insight p{color:#aaa;font-size:0.98rem;line-height:1.8}
+.grid-section{padding:0 24px 40px;max-width:1200px;margin:0 auto}
+.grid-section h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:400;text-align:center;margin-bottom:32px;color:#c4a97d;letter-spacing:0.05em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid-item{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:1/1}
+.grid-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease}
+.grid-item:hover img{transform:scale(1.04)}
+.grid-item .overlay{position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,0.7));opacity:0;transition:opacity 0.4s ease;display:flex;align-items:flex-end;padding:16px}
+.grid-item:hover .overlay{opacity:1}
+.overlay span{font-size:0.8rem;color:#e8e8e8;letter-spacing:0.04em}
+.wide-section{padding:20px 24px 60px;max-width:1200px;margin:0 auto}
+.wide-section h3{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:400;text-align:center;margin-bottom:32px;color:#c4a97d;letter-spacing:0.05em;text-transform:uppercase}
+.wide-img{width:100%;border-radius:4px;aspect-ratio:16/9;object-fit:cover}
+.cta-section{text-align:center;padding:80px 24px}
+.cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;margin-bottom:16px}
+.cta-section p{color:#999;margin-bottom:36px;font-size:1rem}
+.cta-btn{display:inline-block;padding:16px 48px;border:1px solid #c4a97d;color:#c4a97d;text-decoration:none;font-size:0.85rem;letter-spacing:0.12em;text-transform:uppercase;transition:all 0.3s ease;font-family:'Inter',sans-serif}
+.cta-btn:hover{background:#c4a97d;color:#0a0a0a}
+footer{text-align:center;padding:40px 24px;border-top:1px solid #1a1a1a;color:#555;font-size:0.75rem;line-height:1.8}
+@media(max-width:768px){.grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:2rem}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <nav class="nav">
-    <a href="https://100creatives.com" class="nav-logo">100 creatives</a>
-    <a href="https://tidycal.com/abhixchawla/strategycall" class="nav-cta" target="_blank">Book a call</a>
-  </nav>
-  <section class="hero">
-    <div class="hero-badge">Spec creative for Carbon38</div>
-    <h1>We reimagined <em>Carbon38's</em> ad creative.</h1>
-    <p class="subtitle">Your Melt Legging photographs like a luxury piece. We built 6 ad concepts that match.</p>
-  </section>
-  <section class="insight">
-    <div class="section-label">The Insight</div>
-    <p>Carbon38's product photography is <strong>beautifully shot in studio</strong> — clean backgrounds, precise lighting, premium feel. But your paid social creatives aren't leveraging lifestyle context. You're sitting on a <strong>$118 legging with 509 five-star reviews</strong> that photographs like a $200+ piece — your ads should place it in the aspirational, LA-lifestyle world your customer actually lives in. <strong>Studio sells the product. Lifestyle sells the feeling.</strong></p>
-  </section>
-  <section class="creatives">
-    <div class="section-label">The Creatives — Melt Legging in Leopard Print</div>
-    <div class="grid">
-      <div class="grid-item">
-        <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/0ad27e95-66bc-4acf-a0ac-cf9f43e2669d.jpg" alt="Hero Lifestyle" loading="lazy" onclick="openLightbox(this)">
-        <div class="label">Feed — Hero Lifestyle</div>
-      </div>
-      <div class="grid-item">
-        <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/b92395dc-2c9c-4a19-900c-600ed7cc1ed8.jpg" alt="Editorial Flatlay" loading="lazy" onclick="openLightbox(this)">
-        <div class="label">Stories — Editorial Flatlay</div>
-      </div>
-      <div class="grid-item">
-        <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/c3eadabd-dabd-46b4-aa73-1358688137ca.jpg" alt="Performance Action" loading="lazy" onclick="openLightbox(this)">
-        <div class="label">Feed — Performance Action</div>
-      </div>
-      <div class="grid-item">
-        <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/3f00af32-e154-44ba-a0a0-6b8c8943f536.jpg" alt="Texture Detail" loading="lazy" onclick="openLightbox(this)">
-        <div class="label">Feed — Texture Detail</div>
-      </div>
-      <div class="grid-item">
-        <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/4ffb28ae-b579-40a2-8af1-2bcfcccc0f16.jpg" alt="Weekend Lifestyle" loading="lazy" onclick="openLightbox(this)">
-        <div class="label">Reels — Weekend Lifestyle</div>
-      </div>
-    </div>
-  </section>
-  <section class="wide-creative">
-    <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/20d6c928-61ad-45fa-80e9-965472f39f13.jpg" alt="Aspirational Moment" loading="lazy" onclick="openLightbox(this)">
-    <div class="label">Cinematic — LA Rooftop at Golden Hour</div>
-  </section>
-  <section class="cta">
-    <h2>Want a full month of creative?</h2>
-    <p>We produce scroll-stopping ad creatives for DTC brands. 15 minutes — no pitch, just ideas.</p>
-    <a href="https://tidycal.com/abhixchawla/strategycall" class="cta-button" target="_blank">Book a strategy call</a>
-  </section>
-  <section class="footer">
-    <p>This is spec work created by <a href="https://100creatives.com" target="_blank">100 Creatives</a> to demonstrate creative capabilities.<br>Not affiliated with Carbon38. All product references belong to their respective owners.</p>
-  </section>
-  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="Full size creative">
-  </div>
-  <script>
-    function openLightbox(img) { document.getElementById('lightbox-img').src = img.src; document.getElementById('lightbox').classList.add('active'); }
-    function closeLightbox() { document.getElementById('lightbox').classList.remove('active'); }
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
-  </script>
+<div class="hero">
+<p style="color:#c4a97d;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:32px">Paper Kites &times; Creative Concepts</p>
+<h1>We reimagined <span>Carbon38's</span> ad creative.</h1>
+<p>6 spec concepts for the High Rise Legging in Melt — Leopard Print. Built from your brand DNA.</p>
+</div>
+<div class="divider"></div>
+<div class="insight">
+<h2>What We Noticed</h2>
+<p>Carbon38 leads with performance-meets-fashion — but the current creative leans heavily on studio shots against clean backdrops. There's an untapped opportunity to place the product in aspirational real-world contexts that match the customer's actual lifestyle: the Malibu trail run, the Beverly Hills errand, the gallery opening. The Melt fabric's buttery texture and the leopard print's boldness deserve environments that amplify both the technical quality and the style statement.</p>
+</div>
+<div class="divider"></div>
+<div class="grid-section">
+<h3>The Concepts</h3>
+<div class="grid">
+<div class="grid-item">
+<img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/c9ac4e31-8656-4759-a3af-d66ff25238a8.jpg" alt="Hero Lifestyle" loading="lazy">
+<div class="overlay"><span>Hero Lifestyle — Beverly Hills Golden Hour</span></div>
+</div>
+<div class="grid-item">
+<img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/69d105ce-653f-4f7c-bbb2-79f9eae1a18b.jpg" alt="Editorial Flatlay" loading="lazy">
+<div class="overlay"><span>Editorial Flatlay — Earth Tone Arrangement</span></div>
+</div>
+<div class="grid-item">
+<img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/36f57643-85bd-4b71-a349-16eb516c00fa.jpg" alt="Performance Action" loading="lazy">
+<div class="overlay"><span>Performance Action — Malibu Canyon Trail</span></div>
+</div>
+<div class="grid-item">
+<img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/eafb1205-3723-48d1-86f8-3b52478c8364.jpg" alt="Material Close-up" loading="lazy">
+<div class="overlay"><span>Material Close-Up — Melt Fabric Detail</span></div>
+</div>
+<div class="grid-item">
+<img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/255052d3-8be8-4d45-a2fb-2c76930ea451.jpg" alt="Alternative Context" loading="lazy">
+<div class="overlay"><span>Alternative Context — Gallery Opening</span></div>
+</div>
+</div>
+</div>
+<div class="wide-section">
+<h3>The Feeling</h3>
+<img class="wide-img" src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/b1167050-6bc2-4efd-8db8-eed1c642eccc.jpg" alt="Aspirational Moment" loading="lazy">
+</div>
+<div class="cta-section">
+<h2>Want a full month of creative?</h2>
+<p>Let's talk about what consistent, on-brand content could do for Carbon38.</p>
+<a href="https://tidycal.com/abhixchawla/strategycall" class="cta-btn">Book a Strategy Call</a>
+</div>
+<footer>
+<p>This is spec work created by Paper Kites to demonstrate creative capability.<br>
+It is not affiliated with, endorsed by, or produced for Carbon38.<br>
+All product references are used for demonstrative purposes only.</p>
+</footer>
 </body>
 </html>
