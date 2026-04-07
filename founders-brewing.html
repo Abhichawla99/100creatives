@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Founders Brewing — 100 Creatives</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: #111; background: #fff; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid #f0f0f0; }
+  nav .logo { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 20px; letter-spacing: -0.02em; }
+  nav .cta-pill { background: #111; color: #fff; border-radius: 100px; padding: 10px 24px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 14px; transition: opacity 0.2s; }
+  nav .cta-pill:hover { opacity: 0.85; }
+  .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin-bottom: 16px; font-weight: 500; }
+  .hero { padding: 100px 40px 60px; max-width: 800px; margin: 0 auto; text-align: center; }
+  .hero h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 52px; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 12px; }
+  .hero h1 em { font-style: italic; }
+  .hero p { font-size: 17px; color: #666; line-height: 1.6; max-width: 540px; margin: 0 auto; }
+  .insight { padding: 40px 40px 60px; max-width: 720px; margin: 0 auto; border-top: 1px solid #f0f0f0; }
+  .insight p { font-size: 16px; line-height: 1.7; color: #444; }
+  .grid-section { padding: 20px 40px 60px; max-width: 1200px; margin: 0 auto; }
+  .masonry { columns: 3; column-gap: 20px; }
+  .masonry .card { break-inside: avoid; margin-bottom: 20px; }
+  .masonry .card img { width: 100%; display: block; border-radius: 12px; cursor: pointer; transition: transform 0.2s; }
+  .masonry .card img:hover { transform: scale(1.01); }
+  .masonry .card .label { font-size: 13px; color: #666; margin-top: 8px; padding-bottom: 4px; font-weight: 400; }
+  .cinematic { padding: 0 40px 60px; max-width: 1200px; margin: 0 auto; }
+  .cinematic img { width: 100%; border-radius: 12px; cursor: pointer; transition: transform 0.2s; }
+  .cinematic img:hover { transform: scale(1.005); }
+  .cinematic .label { font-size: 13px; color: #666; margin-top: 8px; font-weight: 400; }
+  .cta-section { padding: 80px 40px; text-align: center; border-top: 1px solid #f0f0f0; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 36px; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .cta-section .cta-pill { display: inline-block; background: #111; color: #fff; border-radius: 100px; padding: 16px 40px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px; transition: opacity 0.2s; }
+  .cta-section .cta-pill:hover { opacity: 0.85; }
+  footer { padding: 40px; text-align: center; font-size: 12px; color: #aaa; border-top: 1px solid #f0f0f0; }
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 999; align-items: center; justify-content: center; cursor: zoom-out; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; object-fit: contain; }
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 34px; }
+    .masonry { columns: 1; }
+    nav { padding: 14px 20px; }
+    .hero, .insight, .grid-section, .cinematic, .cta-section { padding-left: 20px; padding-right: 20px; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .masonry { columns: 2; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">100 creatives</div>
+  <a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a call</a>
+</nav>
+<section class="hero">
+  <p class="section-label">Spec Creative</p>
+  <h1>We reimagined <em>Founders Brewing's</em> ad creative.</h1>
+  <p>Six concepts for the Grand Rapids craft beer icon that amplify the brand's laid-back, hop-forward, all-day-sessionable identity &mdash; built from real product research, not templates.</p>
+</section>
+<section class="insight">
+  <p class="section-label">Our Take</p>
+  <p>Founders Brewing has earned its place as one of America's most respected craft breweries &mdash; and All Day IPA is the beer that proved session IPAs could be serious. The "Hop Into Easy" positioning is perfect: it's an invitation to slow down, grab a cold one, and enjoy the moment without overthinking it. But the current creative could lean harder into the warm, aspirational lifestyle territory that makes people reach for the green can instinctively. These concepts place All Day IPA in golden-hour Michigan moments, backyard barbecues, and taproom scenes that make craft beer feel like the most natural choice in the world.</p>
+</section>
+<section class="grid-section">
+  <p class="section-label">The Work</p>
+  <div class="masonry">
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/db3d48d1-4dc3-4da5-8ee7-9e7503fbcb7b.jpg" alt="All Day IPA on lakeside dock" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Lakeside Hero &mdash; Golden Hour Dock</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/178af11d-b708-46a5-b467-b285d203e88d.jpg" alt="Founders Brewing beer flight flatlay" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Editorial Flatlay &mdash; Grand Rapids Flight Board</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/495cfc1d-6932-4db0-a8a6-4a477d82fc0c.jpg" alt="All Day IPA can condensation detail" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Product Detail &mdash; Hop &amp; Condensation</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/75c8b969-4c8c-4520-bb1c-721f6d199164.jpg" alt="Friends toasting All Day IPA at barbecue" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Social Moment &mdash; Backyard BBQ Cheers</div>
+    </div>
+    <div class="card">
+      <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/62903b5a-b6c5-4647-bdcc-17aab3083e1b.jpg" alt="All Day IPA with smash burger" onclick="openLightbox(this)" loading="lazy" />
+      <div class="label">Food Pairing &mdash; Taproom Smash Burger</div>
+    </div>
+  </div>
+</section>
+<section class="cinematic">
+  <img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/61abd4a7-285f-4431-8127-0b9c9339f198.jpg" alt="Founders Brewing taproom at dusk" onclick="openLightbox(this)" loading="lazy" />
+  <div class="label">Cinematic Exterior &mdash; Grand Rapids Taproom at Blue Hour</div>
+</section>
+<section class="cta-section">
+  <h2>Want concepts like these for your brand?</h2>
+  <a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a strategy call &rarr;</a>
+</section>
+<footer>
+  <p>This is spec creative made by 100 Creatives &mdash; a Paper Kites project. These concepts are not affiliated with or endorsed by Founders Brewing Company or Mahou San Miguel. Built to show what's possible.</p>
+</footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged view" />
+</div>
+<script>
+  function openLightbox(el) {
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = el.src;
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
