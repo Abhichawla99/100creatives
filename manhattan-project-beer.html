@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Manhattan Project Beer Company — 100 Creatives</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: #111; background: #fff; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid #f0f0f0; }
+  nav .logo { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 20px; letter-spacing: -0.02em; }
+  nav .cta-pill { background: #111; color: #fff; border-radius: 100px; padding: 10px 24px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 14px; transition: opacity 0.2s; }
+  nav .cta-pill:hover { opacity: 0.85; }
+  .section-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: #999; margin-bottom: 16px; font-weight: 500; }
+  .hero { padding: 100px 40px 60px; max-width: 800px; margin: 0 auto; text-align: center; }
+  .hero h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 52px; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 12px; }
+  .hero h1 em { font-style: italic; }
+  .hero p { font-size: 17px; color: #666; line-height: 1.6; max-width: 540px; margin: 0 auto; }
+  .insight { padding: 40px 40px 60px; max-width: 720px; margin: 0 auto; border-top: 1px solid #f0f0f0; }
+  .insight p { font-size: 16px; line-height: 1.7; color: #444; }
+  .grid-section { padding: 20px 40px 60px; max-width: 1200px; margin: 0 auto; }
+  .masonry { columns: 3; column-gap: 20px; }
+  .masonry .card { break-inside: avoid; margin-bottom: 20px; }
+  .masonry .card img { width: 100%; display: block; border-radius: 12px; cursor: pointer; transition: transform 0.2s; }
+  .masonry .card img:hover { transform: scale(1.01); }
+  .masonry .card .label { font-size: 13px; color: #666; margin-top: 8px; padding-bottom: 4px; font-weight: 400; }
+  .cinematic { padding: 0 40px 60px; max-width: 1200px; margin: 0 auto; }
+  .cinematic img { width: 100%; border-radius: 12px; cursor: pointer; transition: transform 0.2s; }
+  .cinematic img:hover { transform: scale(1.005); }
+  .cinematic .label { font-size: 13px; color: #666; margin-top: 8px; font-weight: 400; }
+  .cta-section { padding: 80px 40px; text-align: center; border-top: 1px solid #f0f0f0; }
+  .cta-section h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 36px; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .cta-section .cta-pill { display: inline-block; background: #111; color: #fff; border-radius: 100px; padding: 16px 40px; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 16px; transition: opacity 0.2s; }
+  .cta-section .cta-pill:hover { opacity: 0.85; }
+  footer { padding: 40px; text-align: center; font-size: 12px; color: #aaa; border-top: 1px solid #f0f0f0; }
+  .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 999; align-items: center; justify-content: center; cursor: zoom-out; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; object-fit: contain; }
+  @media (max-width: 768px) { .hero h1 { font-size: 34px; } .masonry { columns: 1; } nav { padding: 14px 20px; } .hero, .insight, .grid-section, .cinematic, .cta-section { padding-left: 20px; padding-right: 20px; } }
+  @media (min-width: 769px) and (max-width: 1024px) { .masonry { columns: 2; } }
+</style>
+</head>
+<body>
+<nav><div class="logo">100 creatives</div><a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a call</a></nav>
+<section class="hero"><p class="section-label">Spec Creative</p><h1>We reimagined <em>Manhattan Project Beer Company's</em> ad creative.</h1><p>Six concepts for Half-Life Hazy IPA that match the brand's science-meets-craft identity — built from real product research, not templates.</p></section>
+<section class="insight"><p class="section-label">Our Take</p><p>Manhattan Project has built a brilliant brand identity — the atomic naming convention, monochrome technical illustrations, and science-meets-craft aesthetic create a world that's distinctly theirs. But the current creative leans heavily on the intellectual story without enough lifestyle imagery to drive emotional connection and trial. These concepts place Half-Life in cinematic, aspirational Dallas settings while letting the iconic label art do the talking.</p></section>
+<section class="grid-section"><p class="section-label">The Work</p><div class="masonry">
+<div class="card"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/ce205d1d-c1e8-484c-84b1-5c97bbce6936.jpg" alt="Half-Life hero lifestyle" onclick="openLightbox(this)" loading="lazy" /><div class="label">Hero Lifestyle — Taproom Golden Hour</div></div>
+<div class="card"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/139add92-8175-4613-8606-4239abbfd6f7.jpg" alt="Half-Life editorial flatlay" onclick="openLightbox(this)" loading="lazy" /><div class="label">Editorial Flatlay — Nuclear Arsenal</div></div>
+<div class="card"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/e80db76e-4052-49bb-9201-bc524f592d34.jpg" alt="Half-Life action shot" onclick="openLightbox(this)" loading="lazy" /><div class="label">Performance — Dallas Patio Nights</div></div>
+<div class="card"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/416c4354-93e4-418c-b7e1-e0415d0e262d.jpg" alt="Half-Life macro detail" onclick="openLightbox(this)" loading="lazy" /><div class="label">Material Close-Up — Label Detail</div></div>
+<div class="card"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/67d29a9e-465f-4827-ad7b-6c97e2dc1e6b.jpg" alt="Half-Life alt context" onclick="openLightbox(this)" loading="lazy" /><div class="label">Alt Context — The Physicist's Study</div></div>
+</div></section>
+<section class="cinematic"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/8750cc8a-d2b3-46ae-a7f0-d58df4ac0fe7.jpg" alt="Half-Life cinematic" onclick="openLightbox(this)" loading="lazy" /><div class="label">Aspirational Cinematic — Dallas Skyline at Dusk</div></section>
+<section class="cta-section"><h2>Want concepts like these for your brand?</h2><a href="https://tidycal.com/abhixchawla/strategycall" class="cta-pill">Book a strategy call →</a></section>
+<footer><p>This is spec creative made by 100 Creatives — a Paper Kites project. These concepts are not affiliated with or endorsed by Manhattan Project Beer Company. Built to show what's possible.</p></footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()"><img id="lightbox-img" src="" alt="Enlarged view" /></div>
+<script>
+function openLightbox(el){const lb=document.getElementById('lightbox');document.getElementById('lightbox-img').src=el.src;lb.classList.add('active');document.body.style.overflow='hidden';}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
+</script>
+</body>
+</html>
