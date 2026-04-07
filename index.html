@@ -673,11 +673,47 @@
 
     .work-items {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 32px;
     }
 
     .work-item {}
+
+    .work-underline-wrap {
+      margin-top: 32px;
+    }
+
+    .work-underline {
+      border-radius: 16px;
+      overflow: hidden;
+      height: 180px;
+    }
+
+    .work-underline a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    .work-underline img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .work-underline:hover img {
+      transform: scale(1.02);
+    }
+
+    .work-underline-wrap .work-brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     .work-card {
       display: block;
@@ -736,7 +772,9 @@
 
     @media (max-width: 768px) {
       .work { padding: 0 24px 100px; }
-      .work-items { grid-template-columns: 1fr; gap: 48px; }
+      .work-items { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .work-underline-wrap { margin-top: 24px; }
+      .work-underline { height: 140px; }
     }
 
     /* ===== FINAL CTA ===== */
@@ -970,62 +1008,53 @@
     <div class="work-items">
       <div class="work-item fade-in">
         <a href="chobani.html" class="work-card">
-          <img src="images/chobani/chobani-9.png" alt="Chobani Greek Yogurt static ad creative - The Greek Yogurt America Loves - by 100 Creatives" loading="lazy">
+          <img src="images/chobani/chobani-9.png" alt="Chobani Greek Yogurt static ad creative" loading="lazy">
         </a>
         <div class="work-brand">
           Chobani &mdash; Greek Yogurt
-          <a href="chobani.html" class="view-project">View project
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </a>
+          <a href="chobani.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
         </div>
       </div>
 
       <div class="work-item fade-in">
         <a href="armra.html" class="work-card">
-          <img src="images/armra/armra-5.png" alt="ARMRA Colostrum static ad creative - The Colostrum Revolution - by 100 Creatives" loading="lazy">
+          <img src="images/armra/armra-5.png" alt="ARMRA Colostrum static ad creative" loading="lazy">
         </a>
         <div class="work-brand">
           ARMRA &mdash; Colostrum
-          <a href="armra.html" class="view-project">View project
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </a>
+          <a href="armra.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
         </div>
       </div>
 
       <div class="work-item fade-in">
         <a href="barefootwines.html" class="work-card">
-          <img src="images/barefootwines/barefoot-1.png" alt="Barefoot Wines static ad creative - Pulse of the Party - by 100 Creatives" loading="lazy">
+          <img src="images/barefootwines/barefoot-1.png" alt="Barefoot Wines static ad creative" loading="lazy">
         </a>
         <div class="work-brand">
           Barefoot &mdash; Wines
-          <a href="barefootwines.html" class="view-project">View project
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </a>
+          <a href="barefootwines.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
         </div>
       </div>
 
       <div class="work-item fade-in">
         <a href="smackin.html" class="work-card">
-          <img src="images/smackin/smackin-10.png" alt="SMACKIN' Sunflower Seeds static ad creative - Boom Pizza Just Dropped - by 100 Creatives" loading="lazy">
+          <img src="images/smackin/smackin-10.png" alt="SMACKIN' Sunflower Seeds static ad creative" loading="lazy">
         </a>
         <div class="work-brand">
           SMACKIN' &mdash; Seeds
-          <a href="smackin.html" class="view-project">View project
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </a>
+          <a href="smackin.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
         </div>
       </div>
-
-      <div class="work-item fade-in">
-        <a href="davidharber.html" class="work-card">
-          <img src="images/davidharber/harber-3.png" alt="David Harber Torus sculpture product shot - under starlit sky - by 100 Creatives" loading="lazy">
+    </div>
+    <div class="work-underline-wrap fade-in">
+      <div class="work-underline">
+        <a href="davidharber.html">
+          <img src="images/davidharber/harber-3.png" alt="David Harber Torus sculpture under starlit sky" loading="lazy">
         </a>
-        <div class="work-brand">
-          David Harber &mdash; Sculpture
-          <a href="davidharber.html" class="view-project">View project
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-          </a>
-        </div>
+      </div>
+      <div class="work-brand">
+        David Harber &mdash; Sculpture
+        <a href="davidharber.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       </div>
     </div>
   </section>
