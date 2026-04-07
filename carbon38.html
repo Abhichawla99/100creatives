@@ -22,10 +22,10 @@
     .insight p { font-size: 17px; line-height: 1.8; color: #444; font-weight: 300; }
     .insight p strong { color: #111; font-weight: 500; }
     .creatives { padding: 40px 48px 80px; max-width: 1200px; }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } .hero, .insight, .creatives, .wide-creative, .cta { padding-left: 24px; padding-right: 24px; } .nav { padding: 20px 24px; } }
-    .grid-item { display: flex; flex-direction: column; }
+    .grid { columns: 3; column-gap: 24px; }
+    @media (max-width: 900px) { .grid { columns: 2; } }
+    @media (max-width: 560px) { .grid { columns: 1; } .hero, .insight, .creatives, .wide-creative, .cta { padding-left: 24px; padding-right: 24px; } .nav { padding: 20px 24px; } }
+    .grid-item { break-inside: avoid; margin-bottom: 24px; }
     .grid-item img { width: 100%; height: auto; display: block; border-radius: 12px; transition: transform 0.3s ease; cursor: pointer; }
     .grid-item img:hover { transform: scale(1.01); }
     .grid-item .label { margin-top: 12px; font-size: 13px; color: #999; font-weight: 400; letter-spacing: 0.3px; }
