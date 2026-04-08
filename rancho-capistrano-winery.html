@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rancho Capistrano Winery — Creative Concepts by Paper Kites</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff;color:#111;font-family:'Inter',sans-serif;font-size:16px;line-height:1.6}
+a{color:#111;text-decoration:none}
+.nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #eee;padding:16px 40px;display:flex;justify-content:space-between;align-items:center}
+.nav-logo{font-family:'Instrument Serif',serif;font-size:20px;letter-spacing:-0.02em}
+.nav-cta{background:#111;color:#fff;padding:10px 24px;border-radius:50px;font-size:14px;font-weight:500;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.hero{padding:80px 40px 60px;max-width:800px;margin:0 auto;text-align:center}
+.hero h1{font-family:'Instrument Serif',serif;font-size:clamp(36px,5vw,56px);line-height:1.1;letter-spacing:-0.03em;margin-bottom:20px}
+.hero p{font-size:18px;color:#555;max-width:600px;margin:0 auto}
+.insight{padding:40px;max-width:800px;margin:0 auto 40px}
+.insight-box{background:#faf8f5;border-radius:12px;padding:32px 40px}
+.insight-label{font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#999;margin-bottom:12px;font-weight:600}
+.insight-text{font-family:'Instrument Serif',serif;font-size:22px;line-height:1.5;color:#222}
+.grid-section{padding:0 40px 40px;max-width:1200px;margin:0 auto}
+.masonry{columns:2;column-gap:20px}
+@media(max-width:640px){.masonry{columns:1}}
+.masonry-item{break-inside:avoid;margin-bottom:20px;cursor:pointer}
+.masonry-item img{width:100%;display:block;border-radius:12px}
+.masonry-label{font-size:13px;color:#777;margin-top:8px;padding-left:4px}
+.cinematic{padding:0 40px 60px;max-width:1200px;margin:0 auto}
+.cinematic img{width:100%;border-radius:12px;display:block}
+.cinematic .masonry-label{margin-top:10px}
+.cta-section{padding:60px 40px 80px;text-align:center}
+.cta-section h2{font-family:'Instrument Serif',serif;font-size:clamp(28px,4vw,42px);margin-bottom:12px;letter-spacing:-0.02em}
+.cta-section p{color:#555;margin-bottom:28px;font-size:16px}
+.cta-btn{display:inline-block;background:#111;color:#fff;padding:14px 36px;border-radius:50px;font-size:16px;font-weight:500;transition:opacity .2s}
+.cta-btn:hover{opacity:.85}
+.footer{padding:40px;text-align:center;border-top:1px solid #eee;font-size:13px;color:#999}
+.footer p{margin-bottom:4px}
+.lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.92);align-items:center;justify-content:center;cursor:zoom-out}
+.lightbox.active{display:flex}
+.lightbox img{max-width:92vw;max-height:92vh;border-radius:8px;object-fit:contain}
+.lightbox-close{position:fixed;top:20px;right:24px;color:#fff;font-size:32px;cursor:pointer;z-index:1001;font-family:'Inter',sans-serif}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-logo">Paper Kites</div><a href="https://tidycal.com/abhixchawla/strategycall" target="_blank" class="nav-cta">Book a Strategy Call</a></nav>
+<section class="hero"><h1>Creative concepts for Rancho Capistrano Winery</h1><p>Six spec ad creatives exploring premium lifestyle photography for Southern California's award-winning winery experience.</p></section>
+<section class="insight"><div class="insight-box"><div class="insight-label">Creative Insight</div><div class="insight-text">Your venue photography is stunning, but there's an opportunity to elevate product-forward creative — wine-in-glass lifestyle shots, tasting flat-lays, and golden-hour moments that make your wines the hero of the story, not just the setting.</div></div></section>
+<section class="grid-section"><div class="masonry">
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/6f427768-fee8-4811-94c5-8aaa0851351b.jpg" alt="Rose wine glass on sunlit terracotta patio" loading="lazy"><div class="masonry-label">Golden-hour rose moment — 1:1 editorial</div></div>
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/85ef0c4f-10e0-4a33-91a6-83f935e833c7.jpg" alt="Romantic dinner setting at winery patio" loading="lazy"><div class="masonry-label">Intimate patio dinner — 9:16 story format</div></div>
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/a7d731a6-f482-4cc4-99c8-984d6f1c33f2.jpg" alt="Wine tasting flat-lay with figs and chocolate" loading="lazy"><div class="masonry-label">Tasting flat-lay with artisan pairings — 1:1 editorial</div></div>
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/74ab0b4b-11dd-4fc9-8617-1d5f6fd35c2a.jpg" alt="Hands clinking wine glasses at outdoor gathering" loading="lazy"><div class="masonry-label">Celebratory cheers — 9:16 social content</div></div>
+</div></section>
+<section class="cinematic"><div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/c39d176b-2efe-44fd-b74f-38b6b5999793.jpg" alt="Wine flight on barrel at sunset" loading="lazy"><div class="masonry-label">Wine flight on barrel — 16:9 cinematic hero</div></div></section>
+<section class="cinematic" style="padding-top:0"><div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/4fa119e2-1a2b-4655-8ca1-08a520ab8ca1.jpg" alt="Winery courtyard at dusk with string lights" loading="lazy"><div class="masonry-label">Courtyard at dusk — 16:9 architectural lifestyle</div></div></section>
+<section class="cta-section"><h2>Want creative like this for your brand?</h2><p>Let's talk about what we can build together.</p><a href="https://tidycal.com/abhixchawla/strategycall" target="_blank" class="cta-btn">Book a Strategy Call</a></section>
+<footer class="footer"><p>Paper Kites — Creative for brands that move culture.</p><p>These are spec concepts created for demonstration purposes only.</p></footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()"><span class="lightbox-close">×</span><img id="lightbox-img" src="" alt=""></div>
+<script>
+function openLightbox(el){const img=el.querySelector('img');document.getElementById('lightbox-img').src=img.src;document.getElementById('lightbox').classList.add('active');document.body.style.overflow='hidden';}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+</script>
+</body>
+</html>
