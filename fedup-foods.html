@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FedUp Foods — Creative Concepts by Paper Kites</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff;color:#111;font-family:'Inter',sans-serif;font-size:16px;line-height:1.6}
+a{color:#111;text-decoration:none}
+.nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #eee;padding:16px 40px;display:flex;justify-content:space-between;align-items:center}
+.nav-logo{font-family:'Instrument Serif',serif;font-size:20px;letter-spacing:-0.02em}
+.nav-cta{background:#111;color:#fff;padding:10px 24px;border-radius:50px;font-size:14px;font-weight:500;transition:opacity .2s}
+.nav-cta:hover{opacity:.85}
+.hero{padding:80px 40px 60px;max-width:800px;margin:0 auto;text-align:center}
+.hero h1{font-family:'Instrument Serif',serif;font-size:clamp(36px,5vw,56px);line-height:1.1;letter-spacing:-0.03em;margin-bottom:20px}
+.hero p{font-size:18px;color:#555;max-width:600px;margin:0 auto}
+.insight{padding:40px;max-width:800px;margin:0 auto 40px}
+.insight-box{background:#faf8f5;border-radius:12px;padding:32px 40px}
+.insight-label{font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#999;margin-bottom:12px;font-weight:600}
+.insight-text{font-family:'Instrument Serif',serif;font-size:22px;line-height:1.5;color:#222}
+.grid-section{padding:0 40px 40px;max-width:1200px;margin:0 auto}
+.masonry{columns:2;column-gap:20px}
+@media(max-width:640px){.masonry{columns:1}}
+.masonry-item{break-inside:avoid;margin-bottom:20px;cursor:pointer}
+.masonry-item img{width:100%;display:block;border-radius:12px}
+.masonry-label{font-size:13px;color:#777;margin-top:8px;padding-left:4px}
+.cinematic{padding:0 40px 60px;max-width:1200px;margin:0 auto}
+.cinematic img{width:100%;border-radius:12px;display:block}
+.cinematic .masonry-label{margin-top:10px}
+.cta-section{padding:60px 40px 80px;text-align:center}
+.cta-section h2{font-family:'Instrument Serif',serif;font-size:clamp(28px,4vw,42px);margin-bottom:12px;letter-spacing:-0.02em}
+.cta-section p{color:#555;margin-bottom:28px;font-size:16px}
+.cta-btn{display:inline-block;background:#111;color:#fff;padding:14px 36px;border-radius:50px;font-size:16px;font-weight:500;transition:opacity .2s}
+.cta-btn:hover{opacity:.85}
+.footer{padding:40px;text-align:center;border-top:1px solid #eee;font-size:13px;color:#999}
+.footer p{margin-bottom:4px}
+.lightbox{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.92);align-items:center;justify-content:center;cursor:zoom-out}
+.lightbox.active{display:flex}
+.lightbox img{max-width:92vw;max-height:92vh;border-radius:8px;object-fit:contain}
+.lightbox-close{position:fixed;top:20px;right:24px;color:#fff;font-size:32px;cursor:pointer;z-index:1001;font-family:'Inter',sans-serif}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-logo">Paper Kites</div><a href="https://tidycal.com/abhixchawla/strategycall" target="_blank" class="nav-cta">Book a Strategy Call</a></nav>
+<section class="hero"><h1>Creative concepts for FedUp Foods</h1><p>Six spec ad creatives celebrating the craft, sustainability, and regenerative spirit behind North America's leading fermented beverage manufacturer.</p></section>
+<section class="insight"><div class="insight-box"><div class="insight-label">Creative Insight</div><div class="insight-text">Your brand story around regenerative sourcing and Benefit Corporation values is powerful, but the current website leans corporate. There's a huge opportunity for warmer, more tactile creative — showing the raw ingredients, the craft process, and the people behind the product — to make your B2B brand feel as alive as the beverages you brew.</div></div></section>
+<section class="grid-section"><div class="masonry">
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/2517fb3c-dd01-4a46-9fdd-9b34e75f960d.jpg" alt="Organic ingredient flat-lay with kombucha can" loading="lazy"><div class="masonry-label">Organic ingredient flat-lay — 1:1 editorial</div></div>
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/100374f3-f6be-4a2f-a599-3066986b6a0f.jpg" alt="Fermentation facility at golden hour" loading="lazy"><div class="masonry-label">Brewery golden hour — 9:16 story format</div></div>
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/58b65cbe-31b1-4cf1-bc5c-c28313dcb60d.jpg" alt="Kombucha pour close-up with natural effervescence" loading="lazy"><div class="masonry-label">Craft kombucha pour — 1:1 editorial</div></div>
+<div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/03d7e4c2-b417-4f77-b7fa-1a78edf51550.jpg" alt="Professionals toasting kombucha at farm table" loading="lazy"><div class="masonry-label">Farm-table toast — 9:16 social content</div></div>
+</div></section>
+<section class="cinematic"><div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/ff4e81ab-c3f8-4473-92bd-6e9a534c3093.jpg" alt="Regenerative farm at sunrise with kombucha cans" loading="lazy"><div class="masonry-label">Regenerative origins — 16:9 cinematic hero</div></div></section>
+<section class="cinematic" style="padding-top:0"><div class="masonry-item" onclick="openLightbox(this)"><img src="https://aqouukuuoahqtwxxfdab.supabase.co/storage/v1/object/public/generated-images/49005e1e-eabd-4620-a29e-c9c48c5871a6.jpg" alt="Modern canning line in action" loading="lazy"><div class="masonry-label">Canning line in motion — 16:9 manufacturing editorial</div></div></section>
+<section class="cta-section"><h2>Want creative like this for your brand?</h2><p>Let's talk about what we can build together.</p><a href="https://tidycal.com/abhixchawla/strategycall" target="_blank" class="cta-btn">Book a Strategy Call</a></section>
+<footer class="footer"><p>Paper Kites — Creative for brands that move culture.</p><p>These are spec concepts created for demonstration purposes only.</p></footer>
+<div class="lightbox" id="lightbox" onclick="closeLightbox()"><span class="lightbox-close">&times;</span><img id="lightbox-img" src="" alt=""></div>
+<script>
+function openLightbox(el){const img=el.querySelector('img');document.getElementById('lightbox-img').src=img.src;document.getElementById('lightbox').classList.add('active');document.body.style.overflow='hidden';}
+function closeLightbox(){document.getElementById('lightbox').classList.remove('active');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+</script>
+</body>
+</html>
