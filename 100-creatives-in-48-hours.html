@@ -51,14 +51,55 @@
       background: var(--black);
       color: var(--white);
       text-align: center;
-      padding: 12px 24px;
+      padding: 10px 20px;
       font-family: var(--sans);
       font-size: 13px;
       font-weight: 500;
       letter-spacing: 0.3px;
       position: relative;
       z-index: 101;
+      white-space: nowrap;
     }
+
+    /* ===== STICKY MOBILE CTA ===== */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid var(--border);
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .sticky-cta.visible { transform: translateY(0); }
+
+    .sticky-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 20px;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 100px;
+      transition: opacity 0.2s;
+    }
+
+    .sticky-cta a:active { opacity: 0.8; transform: scale(0.98); }
+
+    .sticky-cta a svg { width: 15px; height: 15px; flex-shrink: 0; }
 
     .urgency-bar strong {
       font-weight: 600;
@@ -112,14 +153,21 @@
       font-weight: 600;
       color: var(--white);
       background: var(--black);
-      padding: 11px 24px;
+      padding: 13px 22px;
       border: 1px solid var(--black);
       border-radius: 100px;
       text-decoration: none;
       transition: all 0.3s;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
     }
 
     .nav-cta:hover { background: transparent; color: var(--black); }
+    .nav-cta:active { transform: scale(0.97); opacity: 0.9; }
+
+    .btn-primary:active,
+    .freebie-btn:active { transform: scale(0.98); opacity: 0.92; }
 
     /* ===== HERO ===== */
     .hero {
@@ -147,7 +195,7 @@
 
     .hero h1 {
       font-family: var(--serif);
-      font-size: clamp(56px, 9vw, 128px);
+      font-size: clamp(48px, 11vw, 128px);
       font-weight: 400;
       line-height: 0.95;
       letter-spacing: -2.5px;
@@ -963,15 +1011,17 @@
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
-      .urgency-bar { font-size: 12px; padding: 10px 16px; line-height: 1.4; }
+      .sticky-cta { display: block; }
+      body { padding-bottom: 84px; }
+      .urgency-bar { font-size: 12px; padding: 9px 16px; white-space: normal; line-height: 1.35; }
       nav { padding: 14px 20px; }
       .nav-cta { font-size: 12px; padding: 9px 18px; }
       .logo { font-size: 22px; }
 
-      .hero { padding: 40px 20px 56px; }
-      .hero-badge { font-size: 11px; padding: 8px 16px; letter-spacing: 1px; margin-bottom: 24px; }
-      .hero h1 { letter-spacing: -1.5px; }
-      .hero-sub { font-size: 16px; margin-top: 28px; }
+      .hero { padding: 28px 20px 48px; }
+      .hero-badge { font-size: 11px; padding: 7px 14px; letter-spacing: 1px; margin-bottom: 20px; }
+      .hero h1 { letter-spacing: -1.5px; line-height: 1; }
+      .hero-sub { font-size: 15px; line-height: 1.55; margin-top: 22px; }
       .hero-ctas { flex-direction: column; margin-top: 36px; }
       .btn-primary, .btn-ghost { width: 100%; justify-content: center; padding: 16px 24px; font-size: 14px; }
       .hero-trust { margin-top: 24px; font-size: 12px; }
@@ -1049,7 +1099,7 @@
   <!-- Urgency bar -->
   <div class="urgency-bar">
     <span class="urgency-dot"></span>
-    <strong>LIMITED:</strong> First 10 brands get 10 creatives <strong>free</strong> &mdash; book + show up to claim.
+    <strong>First 10 brands:</strong> 10 creatives <strong>FREE</strong>
   </div>
 
   <!-- Nav -->
@@ -1088,10 +1138,10 @@
   <section class="strip">
     <div class="strip-label">Spec work &mdash; production quality, not client work</div>
     <div class="strip-track">
-      <div class="strip-item"><img src="images/chobani/chobani-9.png" alt="Static ad creative spec work — yogurt category" loading="lazy"></div>
-      <div class="strip-item"><img src="images/armra/armra-5.png" alt="Static ad creative spec work — supplement category" loading="lazy"></div>
-      <div class="strip-item"><img src="images/smackin/smackin-10.png" alt="Static ad creative spec work — snack category" loading="lazy"></div>
-      <div class="strip-item"><img src="images/barefootwines/barefoot-1.png" alt="Static ad creative spec work — beverage category" loading="lazy"></div>
+      <div class="strip-item"><img src="images/chobani/chobani-9.png" alt="Static ad creative spec work — yogurt category" fetchpriority="high" decoding="async"></div>
+      <div class="strip-item"><img src="images/armra/armra-5.png" alt="Static ad creative spec work — supplement category" fetchpriority="high" decoding="async"></div>
+      <div class="strip-item"><img src="images/smackin/smackin-10.png" alt="Static ad creative spec work — snack category" decoding="async"></div>
+      <div class="strip-item"><img src="images/barefootwines/barefoot-1.png" alt="Static ad creative spec work — beverage category" loading="lazy" decoding="async"></div>
       <div class="strip-item"><img src="images/goldenrule/goldenrule-5.png" alt="Product photography spec work — spirits category" loading="lazy"></div>
       <div class="strip-item"><img src="images/davidharber/harber-3.png" alt="Product photography spec work — lifestyle category" loading="lazy"></div>
       <div class="strip-item"><img src="images/chobani/chobani-9.png" alt="" loading="lazy"></div>
@@ -1395,6 +1445,14 @@
     </p>
   </footer>
 
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank">
+      Book my call &mdash; claim 10 free
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </div>
+
   <script>
     // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
@@ -1407,6 +1465,22 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Sticky CTA: show after the hero CTA is scrolled out of view on mobile
+    const stickyBar = document.getElementById('stickyCta');
+    const heroBtn = document.querySelector('.hero-ctas .btn-primary');
+    if (stickyBar && heroBtn) {
+      const stickyObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+            stickyBar.classList.add('visible');
+          } else {
+            stickyBar.classList.remove('visible');
+          }
+        });
+      }, { threshold: 0 });
+      stickyObserver.observe(heroBtn);
+    }
   </script>
 
 </body>
