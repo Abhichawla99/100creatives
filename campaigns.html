@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaigns — Spec Video Work | 100 Creatives</title>
+  <meta name="description" content="A reel of spec video campaigns: Porsche, Ford Bronco, Maker's Mark, Arc'teryx × Shady Rays and more. Production-grade motion shipped at DTC speed.">
+  <meta name="keywords" content="video ad campaigns, spec creative work, DTC video production, Porsche campaign, Ford Bronco ad, Makers Mark video, performance video reel">
+  <meta name="author" content="100 Creatives">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://100creatives.com/campaigns.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Campaigns — Spec Video Work | 100 Creatives">
+  <meta property="og:description" content="Spec video campaigns at DTC speed. A reel of what 100 videos a month looks like.">
+  <meta property="og:url" content="https://100creatives.com/campaigns.html">
+  <meta property="og:site_name" content="100 Creatives">
+  <meta property="og:image" content="https://100creatives.com/campaigns/ford-bronco/bronco-still.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Campaigns — Spec Video Work | 100 Creatives">
+  <meta name="twitter:description" content="Spec video campaigns at DTC speed.">
+  <meta name="twitter:image" content="https://100creatives.com/campaigns/ford-bronco/bronco-still.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Spec Video Campaigns",
+    "description": "A collection of spec video ad campaigns built by 100 Creatives, showcasing our video production capability across automotive, spirits, apparel, and lifestyle verticals.",
+    "publisher": { "@type": "Organization", "name": "100 Creatives", "url": "https://100creatives.com" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --white: #fff;
+      --black: #111;
+      --ink: #0a0a0a;
+      --text: #444;
+      --muted: #999;
+      --border: #e8e8e8;
+      --accent: #ff4500;
+      --serif: 'Instrument Serif', Georgia, serif;
+      --sans: 'Inter', -apple-system, system-ui, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--white); color: var(--black); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    ::selection { background: var(--black); color: var(--white); }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 24px 48px; background: rgba(255,255,255,0.92); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(0,0,0,0.04); }
+    .logo { font-family: var(--serif); font-weight: 900; font-style: italic; font-size: 24px; letter-spacing: -1px; color: var(--black); text-decoration: none; }
+    .nav-right { display: flex; gap: 28px; align-items: center; }
+    .nav-right a { font-size: 13px; font-weight: 400; color: var(--muted); text-decoration: none; letter-spacing: 0.3px; transition: color 0.3s; }
+    .nav-right a:hover, .nav-right a.active { color: var(--black); }
+    .nav-cta { padding: 10px 22px; border: 1px solid var(--black); border-radius: 100px; font-size: 12.5px; color: var(--black) !important; letter-spacing: 0.5px; transition: all 0.3s; }
+    .nav-cta:hover { background: var(--black); color: var(--white) !important; }
+
+    /* HERO */
+    .hero { padding: 160px 48px 80px; max-width: 1280px; margin: 0 auto; }
+    .hero-label { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 100px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); font-weight: 400; margin-bottom: 40px; }
+    .hero-label::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 rgba(255,69,0,0.6); animation: pulse 1.8s infinite; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255,69,0,0.7); } 70% { box-shadow: 0 0 0 10px rgba(255,69,0,0); } 100% { box-shadow: 0 0 0 0 rgba(255,69,0,0); } }
+
+    .hero h1 { font-family: var(--serif); font-size: clamp(52px, 9vw, 116px); font-weight: 400; line-height: 0.95; letter-spacing: -2.5px; color: var(--black); max-width: 980px; }
+    .hero h1 em { font-style: italic; }
+    .hero p { margin-top: 36px; font-size: clamp(16px, 2vw, 19px); line-height: 1.7; color: var(--text); font-weight: 300; max-width: 680px; }
+
+    /* HERO MARQUEE REEL (small video ticker right under hero) */
+    .reel-strip { max-width: 1280px; margin: 40px auto 0; padding: 0 48px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    .reel-strip .tile { border-radius: 10px; overflow: hidden; aspect-ratio: 9/16; background: #111; box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+    .reel-strip video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* CAMPAIGN SECTION */
+    .campaign { max-width: 1280px; margin: 0 auto; padding: 120px 48px 0; }
+    .campaign-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; padding-bottom: 40px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+    .campaign-kicker { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 20px; }
+    .campaign-header h2 { font-family: var(--serif); font-size: clamp(40px, 5.5vw, 72px); font-weight: 400; line-height: 0.95; letter-spacing: -1.5px; color: var(--black); }
+    .campaign-header h2 em { font-style: italic; }
+    .campaign-desc { font-size: 15px; line-height: 1.8; color: var(--text); font-weight: 300; max-width: 460px; justify-self: end; }
+    .campaign-meta { display: flex; gap: 32px; margin-top: 20px; }
+    .campaign-meta .m { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+    .campaign-meta .m strong { display: block; font-family: var(--serif); font-size: 28px; font-weight: 400; color: var(--black); letter-spacing: -0.5px; margin-top: 4px; text-transform: none; }
+
+    .video-grid { display: grid; gap: 20px; }
+    .video-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .video-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+    .v-card { position: relative; border-radius: 14px; overflow: hidden; background: #000; aspect-ratio: 16/9; box-shadow: 0 20px 60px rgba(0,0,0,0.1); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+    .v-card.portrait { aspect-ratio: 9/16; }
+    .v-card.square { aspect-ratio: 1/1; }
+    .v-card.tall { aspect-ratio: 4/5; }
+    .v-card:hover { transform: translateY(-3px); }
+    .v-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .v-card .tag { position: absolute; top: 14px; left: 14px; padding: 6px 12px; background: rgba(0,0,0,0.55); backdrop-filter: blur(6px); border-radius: 100px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #fff; font-weight: 500; pointer-events: none; }
+
+    /* COMBO LAYOUT — feature hero + small grid */
+    .combo { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
+    .combo .feature { aspect-ratio: 16/10; }
+    .combo .side-grid { display: grid; grid-template-rows: 1fr 1fr; gap: 20px; }
+
+    /* STATS BAND */
+    .stats { background: var(--ink); color: var(--white); padding: 100px 48px; margin: 140px 0 0; }
+    .stats-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; align-items: end; }
+    .stats-copy { padding-right: 40px; }
+    .stats-copy .kicker { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 14px; }
+    .stats-copy h3 { font-family: var(--serif); font-size: clamp(32px, 4vw, 48px); font-weight: 400; letter-spacing: -0.8px; line-height: 1.05; color: var(--white); }
+    .stats-copy h3 em { font-style: italic; }
+    .stat-num { font-family: var(--serif); font-size: clamp(56px, 8vw, 104px); font-weight: 400; letter-spacing: -3px; color: var(--white); line-height: 0.9; }
+    .stat-label { font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase; color: #888; margin-top: 10px; font-weight: 400; }
+
+    /* CTA */
+    .cta-banner { background: var(--white); padding: 140px 48px; text-align: center; }
+    .cta-banner h2 { font-family: var(--serif); font-size: clamp(40px, 6vw, 80px); font-weight: 400; letter-spacing: -1.5px; line-height: 1.02; color: var(--black); max-width: 900px; margin: 0 auto; }
+    .cta-banner h2 em { font-style: italic; }
+    .cta-banner p { margin-top: 24px; font-size: 16px; color: var(--muted); font-weight: 300; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 10px; margin-top: 44px; padding: 18px 36px; background: var(--black); color: var(--white); font-size: 14px; font-weight: 500; letter-spacing: 0.5px; text-decoration: none; border-radius: 100px; transition: all 0.3s; }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,0.18); }
+
+    footer { padding: 40px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-left { font-size: 13px; color: var(--muted); font-weight: 300; }
+    .footer-right { display: flex; gap: 24px; }
+    .footer-right a { font-size: 13px; color: var(--muted); text-decoration: none; font-weight: 300; transition: color 0.3s; }
+    .footer-right a:hover { color: var(--black); }
+
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 900px) {
+      nav { padding: 18px 20px; }
+      .nav-right { gap: 18px; }
+      .nav-right a:not(.nav-cta) { display: none; }
+      .hero { padding: 120px 20px 40px; }
+      .reel-strip { padding: 0 20px; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .campaign { padding: 80px 20px 0; }
+      .campaign-header { grid-template-columns: 1fr; gap: 24px; padding-bottom: 28px; margin-bottom: 28px; }
+      .campaign-desc { justify-self: start; }
+      .campaign-meta { gap: 20px; flex-wrap: wrap; }
+      .campaign-meta .m strong { font-size: 22px; }
+      .video-grid.cols-3, .video-grid.cols-2 { grid-template-columns: 1fr; gap: 14px; }
+      .combo { grid-template-columns: 1fr; gap: 14px; }
+      .combo .side-grid { grid-template-rows: auto auto; gap: 14px; }
+      .stats { padding: 72px 20px; margin-top: 100px; }
+      .stats-inner { grid-template-columns: 1fr 1fr; gap: 36px 20px; }
+      .stats-copy { grid-column: 1 / -1; padding-right: 0; }
+      .cta-banner { padding: 90px 20px; }
+      footer { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="logo">100</a>
+    <div class="nav-right">
+      <a href="/#work">Work</a>
+      <a href="/campaigns.html" class="active">Campaigns</a>
+      <a href="/#services">Services</a>
+      <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="nav-cta">Book a call</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-label fade-in">Spec Campaigns &middot; In motion</div>
+    <h1 class="fade-in">Campaigns in <em>motion.</em></h1>
+    <p class="fade-in">Spec work across automotive, spirits, apparel, and lifestyle &mdash; built to show what happens when production doesn't sit in a queue for six weeks. This is the shape of 100 videos a month.</p>
+  </section>
+
+  <!-- REEL STRIP (little preview ticker) -->
+  <div class="reel-strip fade-in">
+    <div class="tile"><video src="campaigns/web/porsche/porsche-hero.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="tile"><video src="campaigns/web/ford-bronco/bronco-3.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="tile"><video src="campaigns/web/makers-mark/makers-1.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+    <div class="tile"><video src="campaigns/web/outdoors/shady-rays-arcteryx.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+  </div>
+
+  <!-- PORSCHE -->
+  <section class="campaign" id="porsche">
+    <div class="campaign-header fade-in">
+      <div>
+        <div class="campaign-kicker">Campaign 01 &middot; Spec Work</div>
+        <h2>Porsche &mdash; <em>heritage in motion.</em></h2>
+        <div class="campaign-meta">
+          <div class="m">Videos <strong>6</strong></div>
+          <div class="m">Format <strong>Performance Cinema</strong></div>
+          <div class="m">Build time <strong>Days, not months</strong></div>
+        </div>
+      </div>
+      <p class="campaign-desc">A spec spot series pitched for a modern Porsche campaign. Cinematic camera moves, sculptural light, and the kind of pacing that belongs in a 30-second broadcast cut &mdash; shipped at the speed a performance brand actually needs for weekly iteration.</p>
+    </div>
+
+    <div class="combo fade-in">
+      <div class="v-card feature">
+        <video src="campaigns/web/porsche/porsche-hero.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Hero spot</span>
+      </div>
+      <div class="side-grid">
+        <div class="v-card">
+          <video src="campaigns/web/porsche/porsche-hero-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <span class="tag">Alt hero</span>
+        </div>
+        <div class="v-card">
+          <video src="campaigns/web/porsche/porsche-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <span class="tag">Cutdown</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-grid cols-3 fade-in" style="margin-top: 20px;">
+      <div class="v-card">
+        <video src="campaigns/web/porsche/porsche-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Cutdown</span>
+      </div>
+      <div class="v-card">
+        <video src="campaigns/web/porsche/porsche-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Cutdown</span>
+      </div>
+      <div class="v-card">
+        <video src="campaigns/web/porsche/porsche-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Cutdown</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORD BRONCO -->
+  <section class="campaign" id="ford-bronco">
+    <div class="campaign-header fade-in">
+      <div>
+        <div class="campaign-kicker">Campaign 02 &middot; Spec Work</div>
+        <h2>Ford Bronco &mdash; <em>made for the turn.</em></h2>
+        <div class="campaign-meta">
+          <div class="m">Videos <strong>3</strong></div>
+          <div class="m">Format <strong>Cinematic / Social</strong></div>
+          <div class="m">Build time <strong>48 hours</strong></div>
+        </div>
+      </div>
+      <p class="campaign-desc">Three angles on the same machine: open road, tight curve, and the still frame that holds it all together. Built for paid social placement &mdash; 9:16 native, but cut to scale across Meta, YouTube, and OOH.</p>
+    </div>
+
+    <div class="video-grid cols-3 fade-in">
+      <div class="v-card portrait">
+        <video src="campaigns/web/ford-bronco/bronco-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Hero 9:16</span>
+      </div>
+      <div class="v-card portrait">
+        <video src="campaigns/web/ford-bronco/bronco-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Cut A</span>
+      </div>
+      <div class="v-card portrait">
+        <video src="campaigns/web/ford-bronco/bronco-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Cut B</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAKER'S MARK -->
+  <section class="campaign" id="makers-mark">
+    <div class="campaign-header fade-in">
+      <div>
+        <div class="campaign-kicker">Campaign 03 &middot; Spec Work</div>
+        <h2>Maker's Mark &mdash; <em>craft, bottled.</em></h2>
+        <div class="campaign-meta">
+          <div class="m">Videos <strong>4</strong></div>
+          <div class="m">Format <strong>Product Cinema</strong></div>
+          <div class="m">Build time <strong>Days</strong></div>
+        </div>
+      </div>
+      <p class="campaign-desc">A four-cut product film exploring the ritual &mdash; wax, glass, amber, ice. Each shot holds long enough to feel the tactility, short enough to earn the scroll. Built for the moments between sip and sell.</p>
+    </div>
+
+    <div class="video-grid cols-2 fade-in">
+      <div class="v-card tall">
+        <video src="campaigns/web/makers-mark/makers-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Pour 01</span>
+      </div>
+      <div class="v-card tall">
+        <video src="campaigns/web/makers-mark/makers-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Pour 02</span>
+      </div>
+      <div class="v-card tall">
+        <video src="campaigns/web/makers-mark/makers-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Pour 03</span>
+      </div>
+      <div class="v-card tall">
+        <video src="campaigns/web/makers-mark/makers-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Pour 04</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTDOORS -->
+  <section class="campaign" id="outdoors">
+    <div class="campaign-header fade-in">
+      <div>
+        <div class="campaign-kicker">Campaign 04 &middot; Spec Work</div>
+        <h2>Outdoors &mdash; <em>built for conditions.</em></h2>
+        <div class="campaign-meta">
+          <div class="m">Videos <strong>3</strong></div>
+          <div class="m">Format <strong>Lifestyle / Performance</strong></div>
+          <div class="m">Build time <strong>Days</strong></div>
+        </div>
+      </div>
+      <p class="campaign-desc">A trio of outdoor performance pieces &mdash; including a spec crossover concept for Shady Rays &times; Arc'teryx. Motion that earns its place on athlete-grade feeds: mud, terrain, weather, and product working together.</p>
+    </div>
+
+    <div class="combo fade-in">
+      <div class="v-card feature">
+        <video src="campaigns/web/outdoors/shady-rays-arcteryx.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Shady Rays &times; Arc'teryx</span>
+      </div>
+      <div class="side-grid">
+        <div class="v-card">
+          <video src="campaigns/web/outdoors/hero-run.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <span class="tag">Hero Run</span>
+        </div>
+        <div class="v-card">
+          <video src="campaigns/web/outdoors/mud-running.mp4" autoplay muted loop playsinline preload="metadata"></video>
+          <span class="tag">Mud Run</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIZZ SODA -->
+  <section class="campaign" id="fizz-soda">
+    <div class="campaign-header fade-in">
+      <div>
+        <div class="campaign-kicker">Campaign 05 &middot; Spec Work</div>
+        <h2>Fizz &mdash; <em>the city moves, he sips.</em></h2>
+        <div class="campaign-meta">
+          <div class="m">Videos <strong>1</strong></div>
+          <div class="m">Format <strong>Lifestyle / Product</strong></div>
+          <div class="m">Build time <strong>Hours</strong></div>
+        </div>
+      </div>
+      <p class="campaign-desc">A spec beverage concept: the world blurs, the product stays still. One of the simplest ways to make a drink feel like a moment. One video, one idea, shot and shipped fast.</p>
+    </div>
+
+    <div class="video-grid cols-2 fade-in">
+      <div class="v-card" style="aspect-ratio: 16/9; grid-column: span 2; max-width: 900px; margin: 0 auto; width: 100%;">
+        <video src="campaigns/web/fizz-soda.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Hero spot</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANITA DONGRE (connect to brand page) -->
+  <section class="campaign" id="anita-dongre">
+    <div class="campaign-header fade-in">
+      <div>
+        <div class="campaign-kicker">Campaign 06 &middot; Spec Work</div>
+        <h2>Anita Dongre &mdash; <em>bridal couture.</em></h2>
+        <div class="campaign-meta">
+          <div class="m">Videos <strong>1</strong></div>
+          <div class="m">Stills <strong>6</strong></div>
+          <div class="m">Format <strong>Fashion Editorial</strong></div>
+        </div>
+      </div>
+      <p class="campaign-desc">A cinematic bridal lehenga film paired with six editorial stills. Heritage couture sized, cut, and paced for the feed &mdash; built to stop the thumb on Meta and hold it on Instagram. <a href="anitadongre.html" style="color: var(--black); text-decoration: underline; text-decoration-color: var(--accent);">See the full campaign &rarr;</a></p>
+    </div>
+
+    <div class="video-grid cols-2 fade-in">
+      <div class="v-card square">
+        <video src="images/anitadongre/anita-web.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Hero spot</span>
+      </div>
+      <div class="v-card square" style="aspect-ratio: 1/1;">
+        <a href="anitadongre.html" style="display: block; width: 100%; height: 100%;">
+          <img src="images/anitadongre/lehnga-2.jpg" alt="Anita Dongre bridal lehenga editorial still" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+        </a>
+        <span class="tag">Editorial Still</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stats-copy fade-in">
+        <div class="kicker">The real flex</div>
+        <h3>Every video on this page was shipped at <em>DTC speed.</em></h3>
+      </div>
+      <div class="stat fade-in">
+        <div class="stat-num">18</div>
+        <div class="stat-label">Videos shown</div>
+      </div>
+      <div class="stat fade-in">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Spec campaigns</div>
+      </div>
+      <div class="stat fade-in">
+        <div class="stat-num">100</div>
+        <div class="stat-label">Per month, if you want it</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <h2 class="fade-in">Want your brand on <em>this reel?</em></h2>
+    <p class="fade-in">20-minute strategy call. No card. First 10 brands get their first 10 creatives free.</p>
+    <div class="fade-in">
+      <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="cta-btn">
+        Book a call
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-left">100 creatives &middot; 2587689 Alberta LTD.</div>
+    <div class="footer-right">
+      <a href="/">Home</a>
+      <a href="/#work">Work</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="https://linkedin.com/in/abhixchawla" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Lazy-play: pause videos that aren't on screen (saves battery + bandwidth)
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const v = entry.target;
+        if (entry.isIntersecting) { v.play().catch(() => {}); }
+        else { v.pause(); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('video').forEach(v => videoObserver.observe(v));
+  </script>
+<script src="/_vercel/insights/script.js" defer></script>
+</body>
+</html>

@@ -627,6 +627,120 @@
       .bigdeal-row { flex-direction: column; gap: 4px; align-items: flex-start; }
     }
 
+    /* ===== CAMPAIGNS REEL ===== */
+    .reel {
+      max-width: 1280px;
+      margin: 120px auto 0;
+      padding: 0 48px;
+    }
+    .reel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .reel-head .reel-title {
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 400;
+      letter-spacing: -1.2px;
+      line-height: 0.98;
+      color: var(--black);
+    }
+    .reel-head .reel-title em { font-style: italic; }
+    .reel-head .reel-kicker {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+    .reel-head .reel-desc {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text);
+      font-weight: 300;
+      max-width: 440px;
+    }
+    .reel-head .reel-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 12px 22px;
+      border: 1px solid var(--black);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--black);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    .reel-head .reel-cta:hover { background: var(--black); color: var(--white); }
+    .reel-head .reel-cta svg { transition: transform 0.3s; }
+    .reel-head .reel-cta:hover svg { transform: translateX(3px); }
+
+    .reel-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .reel-tile {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+      aspect-ratio: 4/5;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: block;
+      text-decoration: none;
+    }
+    .reel-tile:hover { transform: translateY(-4px); }
+    .reel-tile video, .reel-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .reel-tile .reel-label {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      right: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      background: rgba(0,0,0,0.62);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 100px;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 500;
+    }
+    .reel-tile .reel-label .spec {
+      font-size: 9.5px;
+      letter-spacing: 1.5px;
+      color: #ffb49a;
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      .reel { padding: 0 20px; margin-top: 80px; }
+      .reel-head { padding-bottom: 24px; margin-bottom: 24px; flex-direction: column; align-items: flex-start; gap: 20px; }
+      .reel-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    }
+
     /* ===== SERVICES ===== */
     .services {
       padding: 0 48px 160px;
@@ -1182,6 +1296,7 @@
     <a href="/" class="logo">100</a>
     <div class="nav-right">
       <a href="#work">Work</a>
+      <a href="/campaigns.html">Campaigns</a>
       <a href="#services">Services</a>
       <a href="#compare">Why Us</a>
       <a href="#connect" class="nav-cta">Connect</a>
@@ -1388,6 +1503,42 @@
     </div>
   </section>
 
+  <!-- Campaigns Reel -->
+  <section class="reel" id="campaigns-reel">
+    <div class="reel-head fade-in">
+      <div>
+        <div class="reel-kicker">The reel &middot; spec work</div>
+        <h2 class="reel-title">Campaigns in <em>motion.</em></h2>
+      </div>
+      <div>
+        <p class="reel-desc">Spec video work across Porsche, Ford Bronco, Maker's Mark, Arc'teryx&thinsp;&times;&thinsp;Shady Rays, and more. This is the shape of 100 videos a month.</p>
+        <a href="/campaigns.html" class="reel-cta">
+          See all campaigns
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="reel-grid fade-in">
+      <a href="/campaigns.html#porsche" class="reel-tile">
+        <video src="campaigns/web/porsche/porsche-hero.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="reel-label"><span>Porsche</span><span class="spec">Spec</span></div>
+      </a>
+      <a href="/campaigns.html#ford-bronco" class="reel-tile">
+        <video src="campaigns/web/ford-bronco/bronco-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="reel-label"><span>Ford Bronco</span><span class="spec">Spec</span></div>
+      </a>
+      <a href="/campaigns.html#makers-mark" class="reel-tile">
+        <video src="campaigns/web/makers-mark/makers-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="reel-label"><span>Maker's Mark</span><span class="spec">Spec</span></div>
+      </a>
+      <a href="/campaigns.html#outdoors" class="reel-tile">
+        <video src="campaigns/web/outdoors/shady-rays-arcteryx.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <div class="reel-label"><span>Shady Rays &times; Arc'teryx</span><span class="spec">Spec</span></div>
+      </a>
+    </div>
+  </section>
+
   <!-- Services -->
   <section class="services" id="services">
     <div class="services-label fade-in">What we ship</div>
@@ -1510,6 +1661,11 @@
       </div>
       <div class="footer-col">
         <h4>Work</h4>
+        <a href="/campaigns.html"><strong>Video Campaigns</strong></a>
+        <a href="/campaigns.html#porsche">Porsche (Spec)</a>
+        <a href="/campaigns.html#ford-bronco">Ford Bronco (Spec)</a>
+        <a href="/campaigns.html#makers-mark">Maker's Mark (Spec)</a>
+        <a href="/campaigns.html#outdoors">Outdoors (Spec)</a>
         <a href="anitadongre.html">Anita Dongre</a>
         <a href="chobani.html">Chobani</a>
         <a href="armra.html">ARMRA</a>
@@ -1541,6 +1697,16 @@
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // ===== LAZY VIDEO PLAY (pause off-screen videos) =====
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const v = entry.target;
+        if (entry.isIntersecting) { v.play().catch(() => {}); }
+        else { v.pause(); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('video').forEach(v => videoObserver.observe(v));
 
     // ===== HERO CARD ROTATE =====
     (() => {

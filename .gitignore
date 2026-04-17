@@ -5,3 +5,12 @@ seo-reports/
 videos/
 images/anitadongre/anita.mp4
 images/anitadongre/lehnga-*.png
+
+# Campaign sources — only the /campaigns/web/ compressed versions ship
+campaigns/fizz-soda-source.mp4
+campaigns/ford-bronco/*.mp4
+campaigns/ford-bronco/bronco-still.jpg
+campaigns/ford-bronco/*.JPG
+campaigns/makers-mark/*.mp4
+campaigns/outdoors/*.mp4
+campaigns/porsche/*.mp4
