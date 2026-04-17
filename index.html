@@ -582,120 +582,6 @@
       .bigdeal-row { flex-direction: column; gap: 4px; align-items: flex-start; }
     }
 
-    /* ===== CAMPAIGNS REEL ===== */
-    .reel {
-      max-width: 1280px;
-      margin: 120px auto 0;
-      padding: 0 48px;
-    }
-    .reel-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      padding-bottom: 32px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 32px;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .reel-head .reel-title {
-      font-family: var(--serif);
-      font-size: clamp(36px, 5vw, 64px);
-      font-weight: 400;
-      letter-spacing: -1.2px;
-      line-height: 0.98;
-      color: var(--black);
-    }
-    .reel-head .reel-title em { font-style: italic; }
-    .reel-head .reel-kicker {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--muted);
-      font-weight: 500;
-      margin-bottom: 14px;
-    }
-    .reel-head .reel-desc {
-      font-size: 15px;
-      line-height: 1.75;
-      color: var(--text);
-      font-weight: 300;
-      max-width: 440px;
-    }
-    .reel-head .reel-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-      padding: 12px 22px;
-      border: 1px solid var(--black);
-      border-radius: 100px;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--black);
-      text-decoration: none;
-      transition: all 0.3s;
-    }
-    .reel-head .reel-cta:hover { background: var(--black); color: var(--white); }
-    .reel-head .reel-cta svg { transition: transform 0.3s; }
-    .reel-head .reel-cta:hover svg { transform: translateX(3px); }
-
-    .reel-grid {
-      columns: 4;
-      column-gap: 16px;
-    }
-    .reel-tile {
-      position: relative;
-      border-radius: 12px;
-      overflow: hidden;
-      background: #f3f3f3;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      display: block;
-      text-decoration: none;
-      break-inside: avoid;
-      margin-bottom: 16px;
-    }
-    .reel-tile:hover { transform: translateY(-4px); }
-    .reel-tile video, .reel-tile img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .reel-tile .reel-label {
-      position: absolute;
-      bottom: 12px;
-      left: 12px;
-      right: 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      background: rgba(0,0,0,0.62);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border-radius: 100px;
-      font-size: 11px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 500;
-    }
-    .reel-tile .reel-label .spec {
-      font-size: 9.5px;
-      letter-spacing: 1.5px;
-      color: #ffb49a;
-      font-weight: 500;
-    }
-
-    @media (max-width: 900px) {
-      .reel { padding: 0 20px; margin-top: 80px; }
-      .reel-head { padding-bottom: 24px; margin-bottom: 24px; flex-direction: column; align-items: flex-start; gap: 20px; }
-      .reel-grid { columns: 2; column-gap: 12px; }
-      .reel-tile { margin-bottom: 12px; }
-    }
-
     /* ===== SERVICES ===== */
     .services {
       padding: 0 48px 160px;
@@ -886,10 +772,10 @@
       100% { transform: translateX(-50%); }
     }
 
-    /* ===== WORK GALLERY ===== */
+    /* ===== UNIFIED WORK + CAMPAIGNS ===== */
     .work {
       padding: 0 48px 160px;
-      max-width: 1200px;
+      max-width: 1280px;
       margin: 0 auto;
     }
 
@@ -897,7 +783,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      margin-bottom: 64px;
+      margin-bottom: 56px;
       flex-wrap: wrap;
       gap: 24px;
     }
@@ -909,123 +795,142 @@
       letter-spacing: -1px;
       line-height: 1.05;
     }
-
     .work-header h2 em { font-style: italic; }
 
     .work-header p {
       font-size: 15px;
       color: var(--muted);
       font-weight: 300;
-      max-width: 300px;
-      line-height: 1.6;
+      max-width: 340px;
+      line-height: 1.7;
     }
 
-    .work-items {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 32px;
-    }
-
-    .work-item {}
-
-    .work-underline-wrap {
-      margin-top: 32px;
-    }
-
-    .work-underline {
-      border-radius: 16px;
-      overflow: hidden;
-      height: 320px;
-    }
-
-    .work-items-row2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      margin-top: 32px;
-    }
-
-    .work-underline-tall {
-      height: 420px;
-    }
-
-    .work-underline a {
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-    }
-
-    .work-underline img,
-    .work-underline video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 40%;
-      display: block;
-      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .work-underline:hover img,
-    .work-underline:hover video {
-      transform: scale(1.02);
-    }
-
-    /* Video-featured slot — show native aspect ratio, no cropping */
-    .work-underline-video {
-      height: auto;
-      background: #f3f3f3;
+    .work-filters {
       display: flex;
-      justify-content: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 32px;
+      flex-wrap: wrap;
     }
-    .work-underline-video a {
-      display: block;
-      width: 100%;
-      max-width: 640px;
-      height: auto;
+    .work-filters .f {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      background: transparent;
     }
-    .work-underline-video video {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
+    .work-filters .f.active {
+      background: var(--black);
+      color: var(--white);
+      border-color: var(--black);
+    }
+    .work-filters .f:hover:not(.active) {
+      border-color: var(--black);
+      color: var(--black);
     }
 
-    .work-underline-video {
+    /* Grid — 12-col with explicit spans for variety, dense flow for filtering */
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-flow: dense;
+      gap: 16px;
+    }
+
+    .wt {
       position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #f3f3f3;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+      box-shadow: 0 14px 36px rgba(0,0,0,0.08);
     }
+    .wt:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 52px rgba(0,0,0,0.14);
+    }
+    .wt img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .wt:hover img { transform: scale(1.03); }
 
-    .work-underline-video::after {
-      content: "Video";
+    /* Size spans — feel free mixed */
+    .wt.sz-3 { grid-column: span 3; aspect-ratio: 4/5; }
+    .wt.sz-4 { grid-column: span 4; aspect-ratio: 4/5; }
+    .wt.sz-6 { grid-column: span 6; aspect-ratio: 16/10; }
+    .wt.sz-6-tall { grid-column: span 6; aspect-ratio: 4/5; }
+    .wt.sz-8 { grid-column: span 8; aspect-ratio: 16/10; }
+
+    /* Badge */
+    .wt .wt-badge {
       position: absolute;
-      top: 16px;
-      left: 16px;
-      padding: 6px 14px 6px 26px;
+      top: 12px;
+      left: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 12px 6px 11px;
       background: rgba(0,0,0,0.62);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border-radius: 100px;
-      font-size: 10.5px;
-      font-weight: 500;
-      letter-spacing: 1.5px;
+      font-size: 9.5px;
+      letter-spacing: 1.6px;
       text-transform: uppercase;
       color: #fff;
-      pointer-events: none;
-      z-index: 2;
-    }
-
-    .work-underline-video::before {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: 24px;
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #ff4500;
+      font-weight: 500;
       z-index: 3;
-      box-shadow: 0 0 0 0 rgba(255,69,0,0.7);
+    }
+    .wt .wt-badge::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #aaa;
+    }
+    .wt[data-type="video"] .wt-badge::before {
+      background: #ff4500;
+      box-shadow: 0 0 0 0 rgba(255,69,0,0.6);
       animation: pulse-dot 1.8s infinite;
     }
+
+    /* Caption overlay at the bottom */
+    .wt .wt-cap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 40px 16px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 10px;
+      color: #fff;
+      background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%);
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      z-index: 2;
+      transition: padding 0.3s;
+    }
+    .wt .wt-cap .brand {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+    }
+    .wt .wt-cap .arrow {
+      font-size: 14px;
+      opacity: 0.8;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .wt:hover .wt-cap .arrow { transform: translateX(3px); opacity: 1; }
 
     @keyframes pulse-dot {
       0% { box-shadow: 0 0 0 0 rgba(255,69,0,0.7); }
@@ -1033,75 +938,38 @@
       100% { box-shadow: 0 0 0 0 rgba(255,69,0,0); }
     }
 
-    .work-underline-wrap .work-brand {
+    .work-footer {
+      margin-top: 48px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
-
-    .work-card {
-      display: block;
-      text-decoration: none;
-      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .work-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .work-card img {
-      width: 100%;
-      display: block;
-      border-radius: 16px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-    }
-
-    .work-brand {
-      margin-top: 20px;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--muted);
-      font-weight: 400;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 12px;
-    }
-
-    .view-project {
+    .work-footer-link {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      padding: 10px 24px;
-      border: 1px solid var(--border);
+      gap: 10px;
+      padding: 14px 28px;
+      border: 1px solid var(--black);
       border-radius: 100px;
-      font-size: 13px;
-      font-weight: 900;
-      font-style: italic;
+      font-size: 13.5px;
+      font-weight: 500;
       color: var(--black);
       text-decoration: none;
-      text-transform: none;
-      letter-spacing: 0;
       transition: all 0.3s;
     }
-
-    .view-project:hover {
+    .work-footer-link:hover {
       background: var(--black);
       color: var(--white);
-      border-color: var(--black);
     }
+    .work-footer-link svg { transition: transform 0.3s; }
+    .work-footer-link:hover svg { transform: translateX(3px); }
 
-    .view-project svg { transition: transform 0.3s; }
-    .view-project:hover svg { transform: translateX(3px); }
-
-    @media (max-width: 768px) {
-      .work { padding: 0 24px 100px; }
-      .work-items { grid-template-columns: 1fr 1fr; gap: 24px; }
-      .work-underline-wrap { margin-top: 24px; }
-      .work-underline { height: 140px; }
-      .work-underline-tall { height: 220px; }
-      .work-items-row2 { gap: 24px; margin-top: 24px; }
+    @media (max-width: 900px) {
+      .work { padding: 0 20px 100px; }
+      .work-grid { grid-template-columns: repeat(6, 1fr); gap: 12px; }
+      .wt.sz-3 { grid-column: span 3; }
+      .wt.sz-4 { grid-column: span 3; }
+      .wt.sz-6, .wt.sz-6-tall { grid-column: span 6; }
+      .wt.sz-8 { grid-column: span 6; aspect-ratio: 16/10; }
     }
 
     /* ===== FINAL CTA ===== */
@@ -1432,118 +1300,93 @@
     </div>
   </section>
 
-  <!-- Work Gallery -->
+  <!-- Unified Work + Campaigns -->
   <section class="work" id="work">
     <div class="work-header fade-in">
-      <h2>Recent <em>work</em></h2>
-      <p>A taste of production quality. Spec pieces built in hours, not weeks. Video samples available on the call.</p>
-    </div>
-    <div class="work-items">
-      <div class="work-item fade-in">
-        <a href="chobani.html" class="work-card">
-          <img src="images/chobani/chobani-9.png" alt="Chobani Greek Yogurt static ad creative" loading="lazy">
-        </a>
-        <div class="work-brand">
-          Chobani &mdash; Greek Yogurt
-          <a href="chobani.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        </div>
-      </div>
-
-      <div class="work-item fade-in">
-        <a href="armra.html" class="work-card">
-          <img src="images/armra/armra-5.png" alt="ARMRA Colostrum static ad creative" loading="lazy">
-        </a>
-        <div class="work-brand">
-          ARMRA &mdash; Colostrum
-          <a href="armra.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        </div>
-      </div>
-
-      <div class="work-item fade-in">
-        <a href="barefootwines.html" class="work-card">
-          <img src="images/barefootwines/barefoot-1.png" alt="Barefoot Wines static ad creative" loading="lazy">
-        </a>
-        <div class="work-brand">
-          Barefoot &mdash; Wines
-          <a href="barefootwines.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        </div>
-      </div>
-
-      <div class="work-item fade-in">
-        <a href="smackin.html" class="work-card">
-          <img src="images/smackin/smackin-10.png" alt="SMACKIN' Sunflower Seeds static ad creative" loading="lazy">
-        </a>
-        <div class="work-brand">
-          SMACKIN' &mdash; Seeds
-          <a href="smackin.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="work-underline-wrap fade-in">
-      <div class="work-underline work-underline-video">
-        <a href="anitadongre.html">
-          <video src="images/anitadongre/anita-web.mp4" autoplay muted loop playsinline preload="metadata" poster="images/anitadongre/lehnga-2.jpg"></video>
-        </a>
-      </div>
-      <div class="work-brand">
-        Anita Dongre &mdash; Bridal Couture (Video)
-        <a href="anitadongre.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-      </div>
-    </div>
-    <div class="work-items work-items-row2 fade-in">
-      <div class="work-item">
-        <a href="davidharber.html" class="work-card">
-          <img src="images/davidharber/harber-3.png" alt="David Harber Torus sculpture under starlit sky" loading="lazy">
-        </a>
-        <div class="work-brand">
-          David Harber &mdash; Sculpture
-          <a href="davidharber.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        </div>
-      </div>
-      <div class="work-item">
-        <a href="goldenrule.html" class="work-card">
-          <img src="images/goldenrule/goldenrule-5.png" alt="Golden Rule Spirits Classic Negroni product shot" loading="lazy">
-        </a>
-        <div class="work-brand">
-          Golden Rule &mdash; Spirits
-          <a href="goldenrule.html" class="view-project">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Campaigns Reel -->
-  <section class="reel" id="campaigns-reel">
-    <div class="reel-head fade-in">
-      <div>
-        <div class="reel-kicker">The reel &middot; spec work</div>
-        <h2 class="reel-title">Campaigns in <em>motion.</em></h2>
-      </div>
-      <div>
-        <p class="reel-desc">Spec video work across Porsche, Ford Bronco, Maker's Mark, Arc'teryx&thinsp;&times;&thinsp;Shady Rays, and more. This is the shape of 100 videos a month.</p>
-        <a href="/campaigns.html" class="reel-cta">
-          See all campaigns
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </a>
-      </div>
+      <h2>Selected <em>work</em></h2>
+      <p>Video campaigns and static spec pieces. Every frame built in hours, not weeks &mdash; every concept sized for the feed it lives on.</p>
     </div>
 
-    <div class="reel-grid fade-in">
-      <a href="/campaigns.html#porsche" class="reel-tile">
-        <video src="campaigns/web/porsche/porsche-hero.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="reel-label"><span>Porsche</span><span class="spec">Spec</span></div>
+    <div class="work-filters fade-in" role="tablist" aria-label="Filter work">
+      <button class="f active" data-filter="all">All</button>
+      <button class="f" data-filter="video">Video campaigns</button>
+      <button class="f" data-filter="static">Static ads</button>
+    </div>
+
+    <div class="work-grid fade-in">
+      <!-- Row 1: Shady Rays × Arc'teryx featured landscape + 2 statics -->
+      <a href="/campaigns.html#outdoors" class="wt sz-6" data-type="video" data-cat="video">
+        <img src="campaigns/web/outdoors/shady-rays-arcteryx.jpg" alt="Shady Rays x Arc'teryx spec video campaign" loading="lazy">
+        <span class="wt-badge">Video &middot; Spec</span>
+        <div class="wt-cap"><span class="brand">Shady Rays &times; Arc'teryx</span><span class="arrow">&rarr;</span></div>
       </a>
-      <a href="/campaigns.html#ford-bronco" class="reel-tile">
-        <video src="campaigns/web/ford-bronco/bronco-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="reel-label"><span>Ford Bronco</span><span class="spec">Spec</span></div>
+      <a href="chobani.html" class="wt sz-3" data-type="static" data-cat="static">
+        <img src="images/chobani/chobani-9.png" alt="Chobani Greek Yogurt static ad creative" loading="lazy">
+        <span class="wt-badge">Static</span>
+        <div class="wt-cap"><span class="brand">Chobani</span><span class="arrow">&rarr;</span></div>
       </a>
-      <a href="/campaigns.html#makers-mark" class="reel-tile">
-        <video src="campaigns/web/makers-mark/makers-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="reel-label"><span>Maker's Mark</span><span class="spec">Spec</span></div>
+      <a href="armra.html" class="wt sz-3" data-type="static" data-cat="static">
+        <img src="images/armra/armra-5.png" alt="ARMRA Colostrum static ad creative" loading="lazy">
+        <span class="wt-badge">Static</span>
+        <div class="wt-cap"><span class="brand">ARMRA</span><span class="arrow">&rarr;</span></div>
       </a>
-      <a href="/campaigns.html#outdoors" class="reel-tile">
-        <video src="campaigns/web/outdoors/shady-rays-arcteryx.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <div class="reel-label"><span>Shady Rays &times; Arc'teryx</span><span class="spec">Spec</span></div>
+
+      <!-- Row 2: Porsche portrait + Ford Bronco featured landscape + SMACKIN' -->
+      <a href="/campaigns.html#porsche" class="wt sz-3" data-type="video" data-cat="video">
+        <img src="campaigns/web/porsche/porsche-hero.jpg" alt="Porsche spec video campaign" loading="lazy">
+        <span class="wt-badge">Video &middot; Spec</span>
+        <div class="wt-cap"><span class="brand">Porsche</span><span class="arrow">&rarr;</span></div>
+      </a>
+      <a href="/campaigns.html#ford-bronco" class="wt sz-6" data-type="video" data-cat="video">
+        <img src="campaigns/web/ford-bronco/bronco-3.jpg" alt="Ford Bronco spec video campaign" loading="lazy">
+        <span class="wt-badge">Video &middot; Spec</span>
+        <div class="wt-cap"><span class="brand">Ford Bronco</span><span class="arrow">&rarr;</span></div>
+      </a>
+      <a href="smackin.html" class="wt sz-3" data-type="static" data-cat="static">
+        <img src="images/smackin/smackin-10.png" alt="SMACKIN' Sunflower Seeds static ad creative" loading="lazy">
+        <span class="wt-badge">Static</span>
+        <div class="wt-cap"><span class="brand">SMACKIN'</span><span class="arrow">&rarr;</span></div>
+      </a>
+
+      <!-- Row 3: Anita (brand video) + Makers + Fizz -->
+      <a href="anitadongre.html" class="wt sz-4" data-type="video" data-cat="video">
+        <img src="images/anitadongre/lehnga-2.jpg" alt="Anita Dongre bridal lehenga campaign" loading="lazy">
+        <span class="wt-badge">Video &middot; Anita Dongre</span>
+        <div class="wt-cap"><span class="brand">Anita Dongre</span><span class="arrow">&rarr;</span></div>
+      </a>
+      <a href="/campaigns.html#makers-mark" class="wt sz-4" data-type="video" data-cat="video">
+        <img src="campaigns/web/makers-mark/makers-1.jpg" alt="Maker's Mark spec video campaign" loading="lazy">
+        <span class="wt-badge">Video &middot; Spec</span>
+        <div class="wt-cap"><span class="brand">Maker's Mark</span><span class="arrow">&rarr;</span></div>
+      </a>
+      <a href="/campaigns.html#fizz-soda" class="wt sz-4" data-type="video" data-cat="video">
+        <img src="campaigns/web/fizz-soda.jpg" alt="Fizz spec video campaign" loading="lazy">
+        <span class="wt-badge">Video &middot; Spec</span>
+        <div class="wt-cap"><span class="brand">Fizz</span><span class="arrow">&rarr;</span></div>
+      </a>
+
+      <!-- Row 4: 3 statics -->
+      <a href="barefootwines.html" class="wt sz-4" data-type="static" data-cat="static">
+        <img src="images/barefootwines/barefoot-1.png" alt="Barefoot Wines static ad creative" loading="lazy">
+        <span class="wt-badge">Static</span>
+        <div class="wt-cap"><span class="brand">Barefoot Wines</span><span class="arrow">&rarr;</span></div>
+      </a>
+      <a href="davidharber.html" class="wt sz-4" data-type="static" data-cat="static">
+        <img src="images/davidharber/harber-3.png" alt="David Harber Torus sculpture product shot" loading="lazy">
+        <span class="wt-badge">Static</span>
+        <div class="wt-cap"><span class="brand">David Harber</span><span class="arrow">&rarr;</span></div>
+      </a>
+      <a href="goldenrule.html" class="wt sz-4" data-type="static" data-cat="static">
+        <img src="images/goldenrule/goldenrule-5.png" alt="Golden Rule Spirits product shot" loading="lazy">
+        <span class="wt-badge">Static</span>
+        <div class="wt-cap"><span class="brand">Golden Rule</span><span class="arrow">&rarr;</span></div>
+      </a>
+    </div>
+
+    <div class="work-footer fade-in">
+      <a href="/campaigns.html" class="work-footer-link">
+        See all 18 videos across 6 campaigns
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
     </div>
   </section>
@@ -1794,6 +1637,25 @@
       }
 
       cols.forEach(setup);
+    })();
+
+    // ===== WORK GRID FILTER =====
+    (() => {
+      const filterBtns = document.querySelectorAll('.work-filters .f');
+      const tiles = document.querySelectorAll('.work-grid .wt');
+      if (!filterBtns.length || !tiles.length) return;
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          tiles.forEach(t => {
+            const cat = t.dataset.cat;
+            const match = filter === 'all' || cat === filter;
+            t.style.display = match ? '' : 'none';
+          });
+        });
+      });
     })();
 
     // ===== SMOOTH ANCHOR SCROLL =====
