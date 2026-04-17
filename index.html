@@ -243,107 +243,61 @@
       justify-content: center;
     }
 
-    .hero-card {
+    /* ===== HERO REEL — 3 horizontal marquee rows, auto-loop + mouse scroll ===== */
+    .hero-reel {
       position: relative;
       width: 100%;
-      max-width: 340px;
-      aspect-ratio: 3/4;
+      max-width: 640px;
       margin: 0 auto;
-      cursor: default;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+              mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
     }
+    .hero-row {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      height: 170px;
+      cursor: grab;
+    }
+    .hero-row::-webkit-scrollbar { display: none; }
+    .hero-row:active { cursor: grabbing; }
 
-    .hero-card-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
+    .hero-row__track {
+      display: flex;
+      gap: 14px;
       height: 100%;
-      border-radius: 16px;
+      width: max-content;
+      will-change: transform;
+    }
+    .hero-item {
+      height: 100%;
+      flex-shrink: 0;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 24px 64px rgba(0,0,0,0.1);
-      opacity: 0;
-      transition: opacity 1s ease, transform 1s cubic-bezier(0.22, 1, 0.36, 1), filter 0.8s ease;
-      transform-origin: center bottom;
+      background: #f3f3f3;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+      user-select: none;
+      -webkit-user-drag: none;
+      pointer-events: none; /* not clickable */
     }
-
-    .hero-card-img img {
-      width: 100%;
+    .hero-item img,
+    .hero-item video {
       height: 100%;
-      object-fit: cover;
+      width: auto;
       display: block;
-    }
-
-    /* Video play overlay on hero cards */
-    .hero-card-img::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: rgba(0,0,0,0.55);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      -webkit-user-drag: none;
+      user-select: none;
       pointer-events: none;
-      z-index: 2;
-      transition: all 0.3s ease;
     }
 
-    .hero-card-img::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(calc(-50% + 3px), -50%);
-      width: 0;
-      height: 0;
-      border-left: 16px solid #fff;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      pointer-events: none;
-      z-index: 3;
-      transition: all 0.3s ease;
-    }
-
-    .hero-card-img.active {
-      opacity: 1;
-    }
-
-    .hero-card:hover .hero-card-img:hover {
-      filter: brightness(1.04);
-      z-index: 10 !important;
-      transform: translateY(-4px) scale(1.01) !important;
-    }
-
-    /* Wallet fan on hover — each card spreads out */
-    .hero-card:hover .hero-card-img {
-      opacity: 1;
-    }
-
-    .hero-card:hover .hero-card-img:nth-child(1) {
-      transform: rotate(-16deg) translateX(-70%) scale(0.82);
-      z-index: 1;
-    }
-
-    .hero-card:hover .hero-card-img:nth-child(2) {
-      transform: rotate(-8deg) translateX(-35%) scale(0.90);
-      z-index: 2;
-    }
-
-    .hero-card:hover .hero-card-img:nth-child(3) {
-      transform: rotate(0deg) translateX(0%) scale(0.96);
-      z-index: 3;
-    }
-
-    .hero-card:hover .hero-card-img:nth-child(4) {
-      transform: rotate(8deg) translateX(35%) scale(0.90);
-      z-index: 4;
-    }
-
-    .hero-card:hover .hero-card-img:nth-child(5) {
-      transform: rotate(16deg) translateX(70%) scale(0.82);
-      z-index: 5;
+    @media (max-width: 900px) {
+      .hero-reel { max-width: 100%; gap: 10px; }
+      .hero-row { height: 130px; }
+      .hero-row__track { gap: 10px; }
     }
 
     .hero-label {
@@ -1290,7 +1244,6 @@
       nav { padding: 20px 24px; }
       .nav-right a:not(.nav-cta) { display: none; }
       .hero { padding: 120px 24px 80px; grid-template-columns: 1fr; gap: 48px; }
-      .hero-card { max-width: 280px; }
       .metrics { grid-template-columns: repeat(2, 1fr); }
       .metric { padding: 40px 0; }
       .metric:nth-child(2) { border-right: none; }
@@ -1338,13 +1291,49 @@
         <span class="hero-hint">20-minute strategy call &middot; no card</span>
       </div>
     </div>
-    <div class="hero-card fade-in">
-      <a href="anitadongre.html" class="hero-card-img active"><img src="images/anitadongre/lehnga-2.jpg" alt="Anita Dongre bridal lehenga ad creative"></a>
-      <a href="chobani.html" class="hero-card-img"><img src="images/chobani/chobani-9.png" alt="Chobani ad creative"></a>
-      <a href="armra.html" class="hero-card-img"><img src="images/armra/armra-5.png" alt="ARMRA ad creative"></a>
-      <a href="smackin.html" class="hero-card-img"><img src="images/smackin/smackin-10.png" alt="SMACKIN' ad creative"></a>
-      <a href="barefootwines.html" class="hero-card-img"><img src="images/barefootwines/barefoot-1.png" alt="Barefoot Wines ad creative"></a>
-      <a href="davidharber.html" class="hero-card-img"><img src="images/davidharber/harber-3.png" alt="David Harber product shot"></a>
+    <div class="hero-reel fade-in" aria-hidden="true">
+      <div class="hero-row" data-direction="left">
+        <div class="hero-row__track">
+          <div class="hero-item"><img src="images/chobani/chobani-9.png" alt=""></div>
+          <div class="hero-item"><img src="images/armra/armra-5.png" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/porsche/porsche-hero.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/anitadongre/lehnga-2.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/ford-bronco/bronco-3.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/smackin/smackin-10.png" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/makers-mark/makers-1.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/davidharber/harber-3.png" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/outdoors/shady-rays-arcteryx.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/anitadongre/lehnga-4.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="hero-row" data-direction="right">
+        <div class="hero-row__track">
+          <div class="hero-item"><img src="campaigns/web/porsche/porsche-hero-1.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/barefootwines/barefoot-1.png" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/makers-mark/makers-3.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/goldenrule/goldenrule-5.png" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/ford-bronco/bronco-1.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/anitadongre/lehnga-7.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/outdoors/hero-run.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/porsche/porsche-2.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/fizz-soda.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/anitadongre/lehnga-3.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="hero-row" data-direction="left">
+        <div class="hero-row__track">
+          <div class="hero-item"><img src="campaigns/web/porsche/porsche-3.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/makers-mark/makers-2.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/ford-bronco/bronco-2.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/anitadongre/lehnga-5.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/outdoors/mud-running.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/porsche/porsche-hero.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/makers-mark/makers-4.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/anitadongre/lehnga-8.jpg" alt=""></div>
+          <div class="hero-item"><img src="campaigns/web/porsche/porsche-4.jpg" alt=""></div>
+          <div class="hero-item"><img src="images/chobani/chobani-9.png" alt=""></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1727,33 +1716,95 @@
     }, { threshold: 0.1 });
     document.querySelectorAll('video').forEach(v => videoObserver.observe(v));
 
-    // ===== HERO CARD ROTATE =====
+    // ===== HERO REEL — 3 auto-looping rows, mouse-wheel scrollable =====
     (() => {
-      const card = document.querySelector('.hero-card');
-      const imgs = card.querySelectorAll('.hero-card-img');
-      if (imgs.length < 2) return;
-      let current = 0;
-      let hovering = false;
-      let interval;
+      const rows = document.querySelectorAll('.hero-reel .hero-row');
+      if (!rows.length) return;
 
-      function rotate() {
-        interval = setInterval(() => {
-          if (hovering) return;
-          imgs[current].classList.remove('active');
-          current = (current + 1) % imgs.length;
-          imgs[current].classList.add('active');
-        }, 3000);
+      // Wait for images in each track to load so scrollWidth is accurate, then duplicate content for seamless loop
+      function setup(row) {
+        const track = row.querySelector('.hero-row__track');
+        if (!track) return;
+
+        // Duplicate the track content once so we have [A][A]. We treat half-width as the loop length.
+        const original = track.innerHTML;
+        track.innerHTML = original + original;
+
+        const direction = row.dataset.direction === 'right' ? -1 : 1;
+        const SPEED = 0.35; // px per frame ~= 21px/s @60fps
+
+        // Start in the middle of the duplicated content
+        const applyStart = () => {
+          const half = track.scrollWidth / 2;
+          if (half > 0) row.scrollLeft = half / 2;
+        };
+        // Run once now, and again after any lingering image loads
+        applyStart();
+        row.querySelectorAll('img').forEach(img => {
+          if (!img.complete) img.addEventListener('load', applyStart, { once: true });
+        });
+
+        let userInteracting = false;
+        let idleTimer;
+        const markInteract = () => {
+          userInteracting = true;
+          clearTimeout(idleTimer);
+          idleTimer = setTimeout(() => { userInteracting = false; }, 1200);
+        };
+
+        // Convert vertical wheel into horizontal scroll
+        row.addEventListener('wheel', (e) => {
+          const dy = e.deltaY;
+          const dx = e.deltaX;
+          // If the user is primarily scrolling vertically, redirect to horizontal here
+          if (Math.abs(dy) > Math.abs(dx)) {
+            row.scrollLeft += dy;
+            e.preventDefault();
+          } else {
+            row.scrollLeft += dx;
+          }
+          markInteract();
+        }, { passive: false });
+
+        // Click-drag support for mouse users
+        let isDown = false, startX = 0, startScroll = 0;
+        row.addEventListener('pointerdown', (e) => {
+          isDown = true; startX = e.clientX; startScroll = row.scrollLeft;
+          row.setPointerCapture(e.pointerId);
+          markInteract();
+        });
+        row.addEventListener('pointermove', (e) => {
+          if (!isDown) return;
+          row.scrollLeft = startScroll - (e.clientX - startX);
+          markInteract();
+        });
+        const releasePointer = (e) => { isDown = false; };
+        row.addEventListener('pointerup', releasePointer);
+        row.addEventListener('pointercancel', releasePointer);
+        row.addEventListener('pointerleave', releasePointer);
+
+        // Pause animation when tab/window hidden or reel off-screen
+        let visible = true;
+        const visObs = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }, { threshold: 0 });
+        visObs.observe(row);
+
+        // Animation loop
+        function tick() {
+          const half = track.scrollWidth / 2;
+          if (half > 0) {
+            if (!userInteracting && visible && !document.hidden) {
+              row.scrollLeft += direction * SPEED;
+            }
+            // Infinite loop: when we cross a boundary, teleport by half
+            if (row.scrollLeft >= half) row.scrollLeft -= half;
+            else if (row.scrollLeft <= 0) row.scrollLeft += half;
+          }
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
       }
 
-      card.addEventListener('mouseenter', () => { hovering = true; });
-      card.addEventListener('mouseleave', () => {
-        hovering = false;
-        // Reset: show only current
-        imgs.forEach(img => img.classList.remove('active'));
-        imgs[current].classList.add('active');
-      });
-
-      rotate();
+      rows.forEach(setup);
     })();
 
     // ===== SMOOTH ANCHOR SCROLL =====
