@@ -1,2 +1,7 @@
 .DS_Store
 seo-reports/
+
+# Local-only source/master assets (web-optimized versions are what we ship)
+videos/
+images/anitadongre/anita.mp4
+images/anitadongre/lehnga-*.png
