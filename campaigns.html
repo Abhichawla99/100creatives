@@ -70,10 +70,10 @@
     .hero h1 em { font-style: italic; }
     .hero p { margin-top: 36px; font-size: clamp(16px, 2vw, 19px); line-height: 1.7; color: var(--text); font-weight: 300; max-width: 680px; }
 
-    /* HERO MARQUEE REEL (small video ticker right under hero) */
-    .reel-strip { max-width: 1280px; margin: 40px auto 0; padding: 0 48px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-    .reel-strip .tile { border-radius: 10px; overflow: hidden; aspect-ratio: 9/16; background: #111; box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
-    .reel-strip video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    /* HERO MARQUEE REEL — masonry so each video keeps native aspect */
+    .reel-strip { max-width: 1280px; margin: 40px auto 0; padding: 0 48px; columns: 4; column-gap: 14px; }
+    .reel-strip .tile { break-inside: avoid; border-radius: 10px; overflow: hidden; background: #f3f3f3; box-shadow: 0 20px 60px rgba(0,0,0,0.08); margin-bottom: 14px; display: block; }
+    .reel-strip video { width: 100%; height: auto; display: block; }
 
     /* CAMPAIGN SECTION */
     .campaign { max-width: 1280px; margin: 0 auto; padding: 120px 48px 0; }
@@ -86,22 +86,26 @@
     .campaign-meta .m { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
     .campaign-meta .m strong { display: block; font-family: var(--serif); font-size: 28px; font-weight: 400; color: var(--black); letter-spacing: -0.5px; margin-top: 4px; text-transform: none; }
 
-    .video-grid { display: grid; gap: 20px; }
-    .video-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
-    .video-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    /* MASONRY GRID — videos show at native aspect, never cropped */
+    .video-masonry { column-gap: 20px; }
+    .video-masonry.cols-3 { columns: 3; }
+    .video-masonry.cols-2 { columns: 2; }
 
-    .v-card { position: relative; border-radius: 14px; overflow: hidden; background: #000; aspect-ratio: 16/9; box-shadow: 0 20px 60px rgba(0,0,0,0.1); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-    .v-card.portrait { aspect-ratio: 9/16; }
-    .v-card.square { aspect-ratio: 1/1; }
-    .v-card.tall { aspect-ratio: 4/5; }
+    .v-card {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #f3f3f3;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      break-inside: avoid;
+      margin-bottom: 20px;
+      display: block;
+      text-decoration: none;
+    }
     .v-card:hover { transform: translateY(-3px); }
-    .v-card video { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .v-card .tag { position: absolute; top: 14px; left: 14px; padding: 6px 12px; background: rgba(0,0,0,0.55); backdrop-filter: blur(6px); border-radius: 100px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #fff; font-weight: 500; pointer-events: none; }
-
-    /* COMBO LAYOUT — feature hero + small grid */
-    .combo { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; }
-    .combo .feature { aspect-ratio: 16/10; }
-    .combo .side-grid { display: grid; grid-template-rows: 1fr 1fr; gap: 20px; }
+    .v-card video, .v-card img { width: 100%; height: auto; display: block; }
+    .v-card .tag { position: absolute; top: 14px; left: 14px; padding: 6px 12px; background: rgba(0,0,0,0.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-radius: 100px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #fff; font-weight: 500; pointer-events: none; z-index: 2; }
 
     /* STATS BAND */
     .stats { background: var(--ink); color: var(--white); padding: 100px 48px; margin: 140px 0 0; }
@@ -135,15 +139,15 @@
       .nav-right { gap: 18px; }
       .nav-right a:not(.nav-cta) { display: none; }
       .hero { padding: 120px 20px 40px; }
-      .reel-strip { padding: 0 20px; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .reel-strip { padding: 0 20px; columns: 2; column-gap: 10px; }
+      .reel-strip .tile { margin-bottom: 10px; }
       .campaign { padding: 80px 20px 0; }
       .campaign-header { grid-template-columns: 1fr; gap: 24px; padding-bottom: 28px; margin-bottom: 28px; }
       .campaign-desc { justify-self: start; }
       .campaign-meta { gap: 20px; flex-wrap: wrap; }
       .campaign-meta .m strong { font-size: 22px; }
-      .video-grid.cols-3, .video-grid.cols-2 { grid-template-columns: 1fr; gap: 14px; }
-      .combo { grid-template-columns: 1fr; gap: 14px; }
-      .combo .side-grid { grid-template-rows: auto auto; gap: 14px; }
+      .video-masonry.cols-3, .video-masonry.cols-2 { columns: 1; column-gap: 14px; }
+      .v-card { margin-bottom: 14px; }
       .stats { padding: 72px 20px; margin-top: 100px; }
       .stats-inner { grid-template-columns: 1fr 1fr; gap: 36px 20px; }
       .stats-copy { grid-column: 1 / -1; padding-right: 0; }
@@ -194,35 +198,30 @@
       <p class="campaign-desc">A spec spot series pitched for a modern Porsche campaign. Cinematic camera moves, sculptural light, and the kind of pacing that belongs in a 30-second broadcast cut &mdash; shipped at the speed a performance brand actually needs for weekly iteration.</p>
     </div>
 
-    <div class="combo fade-in">
-      <div class="v-card feature">
+    <div class="video-masonry cols-3 fade-in">
+      <div class="v-card">
         <video src="campaigns/web/porsche/porsche-hero.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Hero spot</span>
       </div>
-      <div class="side-grid">
-        <div class="v-card">
-          <video src="campaigns/web/porsche/porsche-hero-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <span class="tag">Alt hero</span>
-        </div>
-        <div class="v-card">
-          <video src="campaigns/web/porsche/porsche-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <span class="tag">Cutdown</span>
-        </div>
+      <div class="v-card">
+        <video src="campaigns/web/porsche/porsche-hero-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Alt hero</span>
       </div>
-    </div>
-
-    <div class="video-grid cols-3 fade-in" style="margin-top: 20px;">
+      <div class="v-card">
+        <video src="campaigns/web/porsche/porsche-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Cutdown 01</span>
+      </div>
       <div class="v-card">
         <video src="campaigns/web/porsche/porsche-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <span class="tag">Cutdown</span>
+        <span class="tag">Cutdown 02</span>
       </div>
       <div class="v-card">
         <video src="campaigns/web/porsche/porsche-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <span class="tag">Cutdown</span>
+        <span class="tag">Cutdown 03</span>
       </div>
       <div class="v-card">
         <video src="campaigns/web/porsche/porsche-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <span class="tag">Cutdown</span>
+        <span class="tag">Cutdown 04</span>
       </div>
     </div>
   </section>
@@ -242,16 +241,16 @@
       <p class="campaign-desc">Three angles on the same machine: open road, tight curve, and the still frame that holds it all together. Built for paid social placement &mdash; 9:16 native, but cut to scale across Meta, YouTube, and OOH.</p>
     </div>
 
-    <div class="video-grid cols-3 fade-in">
-      <div class="v-card portrait">
+    <div class="video-masonry cols-2 fade-in">
+      <div class="v-card">
         <video src="campaigns/web/ford-bronco/bronco-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
-        <span class="tag">Hero 9:16</span>
+        <span class="tag">Hero</span>
       </div>
-      <div class="v-card portrait">
+      <div class="v-card">
         <video src="campaigns/web/ford-bronco/bronco-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Cut A</span>
       </div>
-      <div class="v-card portrait">
+      <div class="v-card">
         <video src="campaigns/web/ford-bronco/bronco-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Cut B</span>
       </div>
@@ -273,20 +272,20 @@
       <p class="campaign-desc">A four-cut product film exploring the ritual &mdash; wax, glass, amber, ice. Each shot holds long enough to feel the tactility, short enough to earn the scroll. Built for the moments between sip and sell.</p>
     </div>
 
-    <div class="video-grid cols-2 fade-in">
-      <div class="v-card tall">
+    <div class="video-masonry cols-2 fade-in">
+      <div class="v-card">
         <video src="campaigns/web/makers-mark/makers-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Pour 01</span>
       </div>
-      <div class="v-card tall">
+      <div class="v-card">
         <video src="campaigns/web/makers-mark/makers-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Pour 02</span>
       </div>
-      <div class="v-card tall">
+      <div class="v-card">
         <video src="campaigns/web/makers-mark/makers-3.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Pour 03</span>
       </div>
-      <div class="v-card tall">
+      <div class="v-card">
         <video src="campaigns/web/makers-mark/makers-4.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Pour 04</span>
       </div>
@@ -308,20 +307,18 @@
       <p class="campaign-desc">A trio of outdoor performance pieces &mdash; including a spec crossover concept for Shady Rays &times; Arc'teryx. Motion that earns its place on athlete-grade feeds: mud, terrain, weather, and product working together.</p>
     </div>
 
-    <div class="combo fade-in">
-      <div class="v-card feature">
+    <div class="video-masonry cols-2 fade-in">
+      <div class="v-card">
         <video src="campaigns/web/outdoors/shady-rays-arcteryx.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Shady Rays &times; Arc'teryx</span>
       </div>
-      <div class="side-grid">
-        <div class="v-card">
-          <video src="campaigns/web/outdoors/hero-run.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <span class="tag">Hero Run</span>
-        </div>
-        <div class="v-card">
-          <video src="campaigns/web/outdoors/mud-running.mp4" autoplay muted loop playsinline preload="metadata"></video>
-          <span class="tag">Mud Run</span>
-        </div>
+      <div class="v-card">
+        <video src="campaigns/web/outdoors/hero-run.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Hero Run</span>
+      </div>
+      <div class="v-card">
+        <video src="campaigns/web/outdoors/mud-running.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <span class="tag">Mud Run</span>
       </div>
     </div>
   </section>
@@ -341,8 +338,8 @@
       <p class="campaign-desc">A spec beverage concept: the world blurs, the product stays still. One of the simplest ways to make a drink feel like a moment. One video, one idea, shot and shipped fast.</p>
     </div>
 
-    <div class="video-grid cols-2 fade-in">
-      <div class="v-card" style="aspect-ratio: 16/9; grid-column: span 2; max-width: 900px; margin: 0 auto; width: 100%;">
+    <div class="fade-in" style="max-width: 900px; margin: 0 auto;">
+      <div class="v-card">
         <video src="campaigns/web/fizz-soda.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Hero spot</span>
       </div>
@@ -364,17 +361,15 @@
       <p class="campaign-desc">A cinematic bridal lehenga film paired with six editorial stills. Heritage couture sized, cut, and paced for the feed &mdash; built to stop the thumb on Meta and hold it on Instagram. <a href="anitadongre.html" style="color: var(--black); text-decoration: underline; text-decoration-color: var(--accent);">See the full campaign &rarr;</a></p>
     </div>
 
-    <div class="video-grid cols-2 fade-in">
-      <div class="v-card square">
+    <div class="video-masonry cols-2 fade-in">
+      <div class="v-card">
         <video src="images/anitadongre/anita-web.mp4" autoplay muted loop playsinline preload="metadata"></video>
         <span class="tag">Hero spot</span>
       </div>
-      <div class="v-card square" style="aspect-ratio: 1/1;">
-        <a href="anitadongre.html" style="display: block; width: 100%; height: 100%;">
-          <img src="images/anitadongre/lehnga-2.jpg" alt="Anita Dongre bridal lehenga editorial still" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
-        </a>
+      <a href="anitadongre.html" class="v-card">
+        <img src="images/anitadongre/lehnga-2.jpg" alt="Anita Dongre bridal lehenga editorial still" loading="lazy">
         <span class="tag">Editorial Still</span>
-      </div>
+      </a>
     </div>
   </section>
 

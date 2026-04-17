@@ -686,26 +686,25 @@
     .reel-head .reel-cta:hover svg { transform: translateX(3px); }
 
     .reel-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      columns: 4;
+      column-gap: 16px;
     }
     .reel-tile {
       position: relative;
       border-radius: 12px;
       overflow: hidden;
-      background: #000;
-      aspect-ratio: 4/5;
+      background: #f3f3f3;
       box-shadow: 0 20px 60px rgba(0,0,0,0.1);
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       display: block;
       text-decoration: none;
+      break-inside: avoid;
+      margin-bottom: 16px;
     }
     .reel-tile:hover { transform: translateY(-4px); }
     .reel-tile video, .reel-tile img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
       display: block;
     }
     .reel-tile .reel-label {
@@ -738,7 +737,8 @@
     @media (max-width: 900px) {
       .reel { padding: 0 20px; margin-top: 80px; }
       .reel-head { padding-bottom: 24px; margin-bottom: 24px; flex-direction: column; align-items: flex-start; gap: 20px; }
-      .reel-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .reel-grid { columns: 2; column-gap: 12px; }
+      .reel-tile { margin-bottom: 12px; }
     }
 
     /* ===== SERVICES ===== */
@@ -1014,6 +1014,25 @@
     .work-underline:hover img,
     .work-underline:hover video {
       transform: scale(1.02);
+    }
+
+    /* Video-featured slot — show native aspect ratio, no cropping */
+    .work-underline-video {
+      height: auto;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+    }
+    .work-underline-video a {
+      display: block;
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+    }
+    .work-underline-video video {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
     }
 
     .work-underline-video {
