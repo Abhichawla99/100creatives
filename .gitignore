@@ -3,6 +3,7 @@ seo-reports/
 
 # Local-only source/master assets (web-optimized versions are what we ship)
 videos/
+!videos/100creatives-hero.mp4
 images/anitadongre/anita.mp4
 images/anitadongre/lehnga-*.png
 
