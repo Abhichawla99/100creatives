@@ -301,6 +301,74 @@
       padding-bottom: 22px;
     }
 
+    /* ===== MONEY-BACK GUARANTEE ===== */
+    .guarantee {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px 24px;
+      margin: 0 0 24px;
+      max-width: 620px;
+      background: linear-gradient(135deg, rgba(34,197,94,0.1), rgba(34,197,94,0.04));
+      border: 1px solid rgba(34,197,94,0.35);
+      border-radius: 14px;
+    }
+    .guarantee-icon {
+      flex-shrink: 0;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: #22c55e;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .guarantee-icon svg { width: 22px; height: 22px; }
+    .guarantee-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .guarantee-title {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.2px;
+    }
+    .guarantee-sub {
+      font-family: var(--sans);
+      font-size: 13px;
+      color: rgba(255,255,255,0.72);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    /* Inline guarantee line (used near CTAs on light backgrounds) */
+    .guarantee-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: var(--sans);
+      font-size: 12.5px;
+      font-weight: 500;
+      color: #0a8042;
+      letter-spacing: 0.2px;
+    }
+    .guarantee-inline::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #22c55e;
+      flex-shrink: 0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 8.5l3 3 7-7'/></svg>");
+      background-size: 10px 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
     @media (max-width: 640px) {
       .urgency-bar .cart-timer-inline { font-size: 11px; padding: 2px 8px; }
       .price-module { padding: 22px 20px; gap: 16px 20px; grid-template-columns: 1fr; }
@@ -309,6 +377,8 @@
       .cart-timer .num { font-size: 24px; padding: 7px 10px; min-width: 48px; }
       .cart-timer .sep { font-size: 20px; padding-bottom: 20px; }
       .cart-timer .timer-label { font-size: 9px; }
+      .guarantee { padding: 16px 18px; gap: 14px; }
+      .guarantee-icon { width: 40px; height: 40px; }
     }
 
     /* ===== NAV ===== */
@@ -1297,7 +1367,7 @@
   <!-- Nav -->
   <nav>
     <a href="/" class="logo">100</a>
-    <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="nav-cta">Book a call</a>
+    <a href="https://tidycal.com/abhixchawla/99dollars" target="_blank" class="nav-cta">Book a call</a>
   </nav>
 
   <main>
@@ -1326,6 +1396,9 @@
       <span style="font-family: 'SF Mono', monospace; font-weight: 700; color: #ff4500;">
         <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
       </span>
+    </p>
+    <p class="fade-in" style="margin-top: 14px;">
+      <span class="guarantee-inline">100% money-back guarantee &middot; no questions asked</span>
     </p>
   </section>
 
@@ -1410,11 +1483,24 @@
           </span>
         </div>
 
+        <div class="guarantee fade-in">
+          <div class="guarantee-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z"/>
+              <path d="M8.5 12l2.5 2.5L16 9.5"/>
+            </svg>
+          </div>
+          <div class="guarantee-text">
+            <span class="guarantee-title">100% money-back guarantee &mdash; no questions asked</span>
+            <span class="guarantee-sub">Don't love the 100 creatives? Email us and we'll refund the $99 in full. No forms, no survey, no haggle. You keep the work.</span>
+          </div>
+        </div>
+
         <p class="freebie-terms fade-in">
           Why $99? This is the handshake, not the price list. We eat the cost on 100 creatives so you can see the pipeline for yourself. Redeem once. After that, our standard rate kicks in &mdash; and if it's working, you won't mind.
         </p>
         <div class="freebie-cta fade-in">
-          <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="freebie-btn">
+          <a href="https://tidycal.com/abhixchawla/99dollars" target="_blank" class="freebie-btn">
             Claim 100 creatives for $99
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
@@ -1652,8 +1738,8 @@
       <p>The $99 intro price comes off the table for this session and pricing returns to our standard rate. We run this offer in limited windows, not every day &mdash; if you miss it, you can still engage us at full price, but you'll wish you hadn't blinked.</p>
     </div>
     <div class="faq-item fade-in">
-      <h3>Can I get a refund if the creatives aren't great?</h3>
-      <p>We don't refund delivered work &mdash; $99 is already well below what it costs us to produce the batch. But we include revision rounds inside the 48-hour window to make sure the output is on-brand before final delivery.</p>
+      <h3>What if I don't love the creatives?</h3>
+      <p>Email us and we'll refund the $99 in full &mdash; <strong>no questions asked</strong>. No forms, no exit survey, no debate. You keep the work, we refund the money. We can do this because we back the pipeline: nearly everyone who sees the 100 wants the monthly plan. If you're the exception, we'd rather you have the work than a bad taste.</p>
     </div>
   </section>
 
@@ -1673,11 +1759,11 @@
         <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
       </span>
     </p>
-    <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="btn-primary fade-in">
+    <a href="https://tidycal.com/abhixchawla/99dollars" target="_blank" class="btn-primary fade-in">
       Claim 100 creatives for $99
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
-    <p class="fine-print fade-in">Introductory offer &middot; 5 spots only &middot; one per brand &middot; first-time clients only &middot; delivered in 48 hours</p>
+    <p class="fine-print fade-in">Introductory offer &middot; 5 spots only &middot; one per brand &middot; first-time clients only &middot; delivered in 48 hours &middot; <strong style="color: #22c55e;">100% money-back guarantee, no questions asked</strong></p>
   </section>
 
   </main>
@@ -1696,7 +1782,7 @@
 
   <!-- Sticky mobile CTA -->
   <div class="sticky-cta" id="stickyCta">
-    <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank">
+    <a href="https://tidycal.com/abhixchawla/99dollars" target="_blank">
       <span>Claim for $99</span>
       <span style="font-family:'SF Mono',monospace;font-weight:700;color:#ff4500;font-size:13px;">
         <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
