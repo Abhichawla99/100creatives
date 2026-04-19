@@ -15,6 +15,24 @@
   <meta property="og:description" content="Introductory offer: 100 scroll-stopping ad creatives for $99. Was $7,649. Only 5 spots. Delivered in 48 hours.">
   <meta property="og:image" content="https://100creatives.com/images/chobani/chobani-9.png">
 
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1318892893496037');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1318892893496037&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -2068,6 +2086,26 @@
       }, { threshold: 0 });
       stickyObserver.observe(heroBtn);
     }
+
+    // ===== META PIXEL: Track 'Lead' on any book-a-call click =====
+    // Fires once per click on any link pointing to the $99 booking calendar.
+    // Value = 99 USD so the pixel can report ROAS on the intro offer.
+    (() => {
+      const booked = new WeakSet(); // avoid double-firing if user rage-clicks
+      document.addEventListener('click', (e) => {
+        const a = e.target.closest('a[href*="tidycal.com/abhixchawla/99dollars"]');
+        if (!a || booked.has(a)) return;
+        booked.add(a);
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', {
+            content_name: '100 Creatives — $99 Intro Offer',
+            content_category: 'Book a call',
+            value: 99.00,
+            currency: 'USD'
+          });
+        }
+      }, true);
+    })();
   </script>
 
 </body>
