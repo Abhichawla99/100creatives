@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're in — Call booked | 100 Creatives</title>
+  <meta name="description" content="Your strategy call is booked. Check your email for the calendar invite.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://100creatives.com/booked">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1318892893496037');
+    fbq('track', 'PageView');
+    // Fire Schedule conversion — the call is actually booked.
+    // $99 value so Meta can optimize the campaign against real revenue signal.
+    fbq('track', 'Schedule', {
+      content_name: '100 Creatives — $99 Intro Offer',
+      content_category: 'Booked call',
+      value: 99.00,
+      currency: 'USD'
+    });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1318892893496037&ev=Schedule&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --white: #fff;
+      --black: #111;
+      --text: #444;
+      --muted: #888;
+      --border: #e8e8e8;
+      --accent: #22c55e;
+      --serif: 'Instrument Serif', Georgia, serif;
+      --sans: 'Inter', -apple-system, system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--black);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    ::selection { background: var(--black); color: var(--white); }
+
+    nav {
+      padding: 28px 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: var(--serif);
+      font-weight: 900;
+      font-style: italic;
+      font-size: 24px;
+      letter-spacing: -1px;
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 32px 40px;
+    }
+    .confirm {
+      max-width: 680px;
+      text-align: center;
+    }
+
+    .check-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #fff;
+      margin-bottom: 32px;
+      box-shadow: 0 16px 40px rgba(34,197,94,0.35);
+      animation: pop 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .check-badge svg { width: 38px; height: 38px; }
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      60% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .kicker {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(48px, 8vw, 96px);
+      font-weight: 400;
+      line-height: 0.98;
+      letter-spacing: -2px;
+      color: var(--black);
+      margin-bottom: 24px;
+    }
+    h1 em { font-style: italic; }
+
+    .lede {
+      font-size: clamp(16px, 2vw, 19px);
+      line-height: 1.65;
+      color: var(--text);
+      font-weight: 300;
+      max-width: 520px;
+      margin: 0 auto 40px;
+    }
+    .lede strong { color: var(--black); font-weight: 600; }
+
+    .next-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 0 auto 48px;
+      max-width: 640px;
+      text-align: left;
+    }
+    .step {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fafafa;
+    }
+    .step-num {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 20px;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .step-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 4px;
+      letter-spacing: -0.2px;
+    }
+    .step-body {
+      font-size: 12.5px;
+      color: var(--muted);
+      font-weight: 400;
+      line-height: 1.55;
+    }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      transition: color 0.3s;
+    }
+    .home-link:hover { color: var(--black); }
+    .home-link svg { width: 12px; height: 12px; transition: transform 0.3s; }
+    .home-link:hover svg { transform: translateX(-2px); }
+
+    footer {
+      padding: 32px 48px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 20px 24px; }
+      main { padding: 56px 20px 32px; }
+      .check-badge { width: 68px; height: 68px; margin-bottom: 24px; }
+      .check-badge svg { width: 30px; height: 30px; }
+      .next-steps { grid-template-columns: 1fr; gap: 10px; margin-bottom: 36px; }
+      footer { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo">100</span>
+  </nav>
+
+  <main>
+    <div class="confirm">
+      <div class="check-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 12.5l5 5 11-11"/>
+        </svg>
+      </div>
+
+      <div class="kicker">You&rsquo;re in &middot; spot held</div>
+      <h1>Your call is <em>booked.</em></h1>
+      <p class="lede">
+        Check your inbox &mdash; we&rsquo;ve sent the calendar invite and a short brief form.
+        <strong>Fill the brief before the call</strong> so we can hit the ground running and start the 48-hour clock the minute we hang up.
+      </p>
+
+      <div class="next-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-title">Confirm the invite</div>
+          <div class="step-body">Add the event to your calendar so we both show up.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-title">Fill the brief</div>
+          <div class="step-body">Product URL, top-performing ads, creative goals &mdash; 5 minutes.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-title">Show up on the call</div>
+          <div class="step-body">20 minutes. We lock the brief and start shipping inside 48 hours.</div>
+        </div>
+      </div>
+
+      <a href="/" class="home-link">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7 4l-4 4 4 4"/></svg>
+        Back to 100creatives.com
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 100 Creatives &middot; 2587689 Alberta LTD.
+  </footer>
+
+</body>
+</html>
