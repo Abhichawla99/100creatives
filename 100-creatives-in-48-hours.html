@@ -790,6 +790,131 @@
     }
 
     /* ===== WHAT YOU GET ===== */
+    /* ===== AUDIENCE (who this is for) ===== */
+    .audience {
+      padding: 120px 48px 20px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .audience-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .audience-header .label {
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .audience-header h2 {
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 60px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -1.2px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .audience-header h2 em { font-style: italic; }
+    .audience-header p {
+      margin-top: 18px;
+      font-size: 15px;
+      color: var(--muted);
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .aud-col {
+      padding: 36px 32px;
+      border-radius: 20px;
+      border: 1px solid;
+    }
+    .aud-col.yes {
+      background: linear-gradient(135deg, rgba(34,197,94,0.08), rgba(34,197,94,0.02));
+      border-color: rgba(34,197,94,0.35);
+    }
+    .aud-col.no {
+      background: linear-gradient(135deg, rgba(17,17,17,0.03), rgba(17,17,17,0.005));
+      border-color: var(--border);
+    }
+    .aud-col-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .aud-col.yes .aud-col-head { border-bottom-color: rgba(34,197,94,0.2); }
+    .aud-col-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .aud-col.yes .aud-col-icon { background: #22c55e; }
+    .aud-col.no .aud-col-icon { background: #444; }
+    .aud-col-title {
+      font-family: var(--sans);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--black);
+    }
+    .aud-col.yes .aud-col-title { color: #0a8042; }
+    .aud-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .aud-col ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 11px 0;
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--text);
+      font-weight: 400;
+      border-bottom: 1px dashed rgba(0,0,0,0.05);
+    }
+    .aud-col ul li:last-child { border-bottom: none; }
+    .aud-col ul li strong { color: var(--black); font-weight: 600; }
+    .aud-col ul li::before {
+      flex-shrink: 0;
+      margin-top: 2px;
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .aud-col.yes ul li::before { content: "✓"; color: #22c55e; }
+    .aud-col.no ul li::before { content: "✗"; color: #999; }
+
+    @media (max-width: 768px) {
+      .audience { padding: 80px 20px 10px; }
+      .audience-grid { grid-template-columns: 1fr; gap: 14px; }
+      .aud-col { padding: 28px 22px; }
+    }
+
     .what {
       padding: 140px 48px;
       max-width: 1200px;
@@ -1486,6 +1611,43 @@
       <div class="metric-label">Missed deadlines</div>
     </div>
   </div>
+
+  <!-- Suggested audience -->
+  <section class="audience">
+    <div class="audience-header fade-in">
+      <div class="label">Who this is for</div>
+      <h2>Built for DTC brands <em>serious about scale.</em></h2>
+      <p>$99 is a loss leader for us, which means we're picky about the brands we run it with. If you're in the left column, grab a spot. If you're in the right, we're happy to point you elsewhere.</p>
+    </div>
+    <div class="audience-grid fade-in">
+      <div class="aud-col yes">
+        <div class="aud-col-head">
+          <span class="aud-col-icon">✓</span>
+          <span class="aud-col-title">This is for you if</span>
+        </div>
+        <ul>
+          <li>You run a <strong>DTC ecomm brand</strong> doing $1M+ a year (or on your way there this quarter)</li>
+          <li>You're <strong>actively running paid ads</strong> on Meta, TikTok, or Google &mdash; or about to turn them on</li>
+          <li>Your media buyer or agency is <strong>starved for creative volume</strong> and your account can't learn from 3 ads a week</li>
+          <li>You're tired of <strong>$3K&ndash;$10K/month retainers</strong> that produce a handful of creatives and endless Slack threads</li>
+          <li>You have <strong>product imagery, a clear offer, and copy</strong> you can share on the kickoff call</li>
+        </ul>
+      </div>
+      <div class="aud-col no">
+        <div class="aud-col-head">
+          <span class="aud-col-icon">✗</span>
+          <span class="aud-col-title">Not a fit if</span>
+        </div>
+        <ul>
+          <li>You're <strong>pre-launch</strong> with no product imagery, no offer, and no ad account yet</li>
+          <li>You're an <strong>agency looking to white-label</strong> our output to your own clients</li>
+          <li>You need <strong>brand identity, logo design, or a full website build</strong> &mdash; we do ad creative, not branding</li>
+          <li>You're <strong>B2B SaaS or lead gen</strong> &mdash; our pipeline is tuned for DTC ecommerce, not enterprise funnels</li>
+          <li>You expect a <strong>1:1 senior designer on a 6-week timeline</strong> &mdash; that's a retainer agency, not us</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <!-- Offer / Pricing module -->
   <section class="freebie" id="claim">
