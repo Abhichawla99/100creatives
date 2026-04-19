@@ -2087,25 +2087,10 @@
       stickyObserver.observe(heroBtn);
     }
 
-    // ===== META PIXEL: Track 'Lead' on any book-a-call click =====
-    // Fires once per click on any link pointing to the $99 booking calendar.
-    // Value = 99 USD so the pixel can report ROAS on the intro offer.
-    (() => {
-      const booked = new WeakSet(); // avoid double-firing if user rage-clicks
-      document.addEventListener('click', (e) => {
-        const a = e.target.closest('a[href*="tidycal.com/abhixchawla/99dollars"]');
-        if (!a || booked.has(a)) return;
-        booked.add(a);
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead', {
-            content_name: '100 Creatives — $99 Intro Offer',
-            content_category: 'Book a call',
-            value: 99.00,
-            currency: 'USD'
-          });
-        }
-      }, true);
-    })();
+    // Meta Pixel click-intent tracking removed — real conversion is tracked
+    // on /booked (Schedule event) after a completed TidyCal booking. The base
+    // Pixel PageView in <head> is still firing here, which populates
+    // retargeting audiences without muddying the conversion signal.
   </script>
 
 </body>
