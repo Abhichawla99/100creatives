@@ -213,11 +213,57 @@
       color: #fff;
       letter-spacing: -2px;
       line-height: 0.9;
+      position: relative;
+      display: inline-block;
     }
     .price-module .price-new .cents {
       font-size: 0.45em;
       vertical-align: top;
       margin-left: 2px;
+    }
+
+    /* 99% OFF stamp — positioned as a discount sticker next to the price */
+    .off-stamp {
+      position: absolute;
+      top: -18px;
+      right: -28px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: #ff4500;
+      color: #fff;
+      font-family: var(--sans);
+      transform: rotate(12deg);
+      box-shadow: 0 10px 30px rgba(255,69,0,0.45);
+      line-height: 1;
+      animation: stamp-pop 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .off-stamp .pct {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+    .off-stamp .off {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+    @keyframes stamp-pop {
+      0% { transform: rotate(12deg) scale(0); opacity: 0; }
+      60% { transform: rotate(12deg) scale(1.1); opacity: 1; }
+      100% { transform: rotate(12deg) scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 640px) {
+      .off-stamp { width: 68px; height: 68px; top: -14px; right: -10px; }
+      .off-stamp .pct { font-size: 20px; }
+      .off-stamp .off { font-size: 9px; letter-spacing: 1.5px; }
     }
     .price-module .price-meta { display: flex; flex-direction: column; gap: 10px; }
     .price-module .price-savings {
@@ -1358,7 +1404,7 @@
   <!-- Urgency bar -->
   <div class="urgency-bar">
     <span class="urgency-dot"></span>
-    <strong>Introductory offer &middot; 5 spots only</strong> &middot; 100 creatives for $99 &middot; <span style="text-decoration: line-through; color: #888;">$7,649</span>
+    <strong>99% off &middot; 5 spots only</strong> &middot; 100 creatives for $99 <span style="text-decoration: line-through; color: #888;">$7,649</span>
     <span class="cart-timer-inline" aria-label="Offer expires in">
       <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
     </span>
@@ -1392,7 +1438,7 @@
       </a>
     </div>
     <p class="hero-trust fade-in">
-      <strong>$7,550 off</strong> &middot; delivered in 48 hours &middot; offer expires in
+      <strong>99% off</strong> &middot; save $7,550 &middot; delivered in 48 hours &middot; expires in
       <span style="font-family: 'SF Mono', monospace; font-weight: 700; color: #ff4500;">
         <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
       </span>
@@ -1462,10 +1508,16 @@
           </div>
           <div class="price-stack">
             <span class="price-anchor">Our standard rate: $7,649</span>
-            <span class="price-new">$99<span class="cents">.00</span></span>
+            <span class="price-new">
+              $99<span class="cents">.00</span>
+              <span class="off-stamp" aria-label="99% off">
+                <span class="pct">99%</span>
+                <span class="off">Off</span>
+              </span>
+            </span>
           </div>
           <div class="price-meta">
-            <span class="price-savings">&mdash; You save $7,550</span>
+            <span class="price-savings">&mdash; 99% off &middot; save $7,550</span>
             <span class="price-detail"><strong>Introductory pricing &middot; 5 spots only &middot; one per brand.</strong> First-time clients only. Good while the timer is live. After this, standard pricing applies.</span>
           </div>
         </div>
@@ -1748,7 +1800,7 @@
     <h2 class="fade-in">
       100 creatives.<br>
       48 hours.<br>
-      <span class="accent">$99. 5 spots.</span>
+      <span class="accent">99% off. $99.</span>
     </h2>
     <p class="fade-in">
       <span style="text-decoration: line-through; color: rgba(255,255,255,0.4);">$7,649</span>
