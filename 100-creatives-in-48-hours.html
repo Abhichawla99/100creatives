@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 Ad Creatives in 48 Hours — First 10 Brands Get 10 FREE | 100 Creatives</title>
-  <meta name="description" content="100 scroll-stopping ad creatives delivered in 48 hours. First 10 brands who book and show up get their first 10 creatives free. Built for high-volume DTC brands.">
+  <title>100 Ad Creatives for $99 (Was $7,649) — Delivered in 48 Hours | 100 Creatives</title>
+  <meta name="description" content="100 scroll-stopping ad creatives for $99 flat. Was $7,649. Delivered in 48 hours. One-time fee, no subscription. Limited-window offer for DTC brands.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://100creatives.com/100-creatives-in-48-hours.html">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="100 Ad Creatives in 48 Hours — First 10 Brands Get 10 FREE">
-  <meta property="og:description" content="100 scroll-stopping ad creatives delivered in 48 hours. First 10 brands who book and show up get their first 10 creatives free.">
+  <meta property="og:title" content="100 Ad Creatives for $99 (Was $7,649) — Delivered in 48 Hours">
+  <meta property="og:description" content="100 scroll-stopping ad creatives for $99 flat. Was $7,649. Delivered in 48 hours. One-time fee, no subscription.">
   <meta property="og:image" content="https://100creatives.com/images/chobani/chobani-9.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,6 +121,156 @@
     @keyframes pulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    /* ===== INLINE CART TIMER (urgency bar) ===== */
+    .urgency-bar .cart-timer-inline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-left: 10px;
+      padding: 3px 10px;
+      background: #ff4500;
+      border-radius: 100px;
+      font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      font-size: 12px;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== PRICING MODULE ===== */
+    .price-module {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px 28px;
+      align-items: center;
+      padding: 28px 32px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 18px;
+      margin: 24px 0 28px;
+      max-width: 620px;
+    }
+    .price-module .price-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .price-module .price-anchor {
+      font-family: var(--sans);
+      font-size: 16px;
+      color: rgba(255,255,255,0.5);
+      text-decoration: line-through;
+      text-decoration-color: #ff4500;
+      text-decoration-thickness: 2px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+    .price-module .price-new {
+      font-family: var(--serif);
+      font-size: clamp(56px, 8vw, 84px);
+      font-weight: 400;
+      color: #fff;
+      letter-spacing: -2px;
+      line-height: 0.9;
+    }
+    .price-module .price-new .cents {
+      font-size: 0.45em;
+      vertical-align: top;
+      margin-left: 2px;
+    }
+    .price-module .price-meta { display: flex; flex-direction: column; gap: 10px; }
+    .price-module .price-savings {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: #ff4500;
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: 100px;
+      font-weight: 700;
+      width: fit-content;
+    }
+    .price-module .price-detail {
+      font-family: var(--sans);
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .price-module .price-detail strong { color: #fff; font-weight: 600; }
+
+    /* ===== CART TIMER (big block variant, in offer section) ===== */
+    .cart-timer {
+      display: inline-flex;
+      align-items: flex-end;
+      gap: 10px;
+      margin: 4px 0 22px;
+      padding: 14px 18px;
+      background: rgba(255,69,0,0.1);
+      border: 1px solid rgba(255,69,0,0.35);
+      border-radius: 14px;
+    }
+    .cart-timer .timer-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ff4500;
+      font-weight: 700;
+      margin-right: 4px;
+      align-self: center;
+    }
+    .cart-timer .unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .cart-timer .num {
+      font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+      font-variant-numeric: tabular-nums;
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      background: var(--black);
+      padding: 8px 12px;
+      border-radius: 8px;
+      min-width: 58px;
+      text-align: center;
+      line-height: 1;
+      box-shadow: inset 0 -2px 0 rgba(255,69,0,0.6);
+    }
+    .cart-timer .sub {
+      font-family: var(--sans);
+      font-size: 9.5px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      font-weight: 600;
+    }
+    .cart-timer .sep {
+      font-family: 'SF Mono', monospace;
+      font-size: 24px;
+      color: rgba(255,69,0,0.6);
+      font-weight: 700;
+      padding-bottom: 22px;
+    }
+
+    @media (max-width: 640px) {
+      .urgency-bar .cart-timer-inline { font-size: 11px; padding: 2px 8px; }
+      .price-module { padding: 22px 20px; gap: 16px 20px; grid-template-columns: 1fr; }
+      .price-module .price-new { font-size: 64px; }
+      .cart-timer { padding: 12px 14px; gap: 6px; }
+      .cart-timer .num { font-size: 24px; padding: 7px 10px; min-width: 48px; }
+      .cart-timer .sep { font-size: 20px; padding-bottom: 20px; }
+      .cart-timer .timer-label { font-size: 9px; }
     }
 
     /* ===== NAV ===== */
@@ -1100,7 +1250,10 @@
   <!-- Urgency bar -->
   <div class="urgency-bar">
     <span class="urgency-dot"></span>
-    <strong>First 10 brands:</strong> 10 creatives <strong>FREE</strong>
+    <strong>100 creatives for $99</strong> &middot; <span style="text-decoration: line-through; color: #888;">$7,649</span>
+    <span class="cart-timer-inline" aria-label="Offer expires in">
+      <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
+    </span>
   </div>
 
   <!-- Nav -->
@@ -1115,23 +1268,26 @@
   <section class="hero">
     <div class="hero-badge fade-in">
       <span>🔥</span>
-      <span>First 10 Brands Only</span>
+      <span>$99 one-time offer &middot; limited</span>
     </div>
     <h1 class="fade-in">
       <span class="num">100</span> ad creatives.<br>
-      In <em>48 hours.</em>
+      For <em>$99.</em>
     </h1>
     <p class="hero-sub fade-in">
-      Scroll-stopping static ads for your DTC brand — concepted, designed, and delivered in <strong>two days flat</strong>. No retainers. No kickoff decks. No 6-week Slack threads.
+      Scroll-stopping static ads for your DTC brand &mdash; concepted, designed, and delivered in <strong>48 hours flat</strong>. Normally $7,649. Today: one flat fee. No retainer, no contract, no strings.
     </p>
     <div class="hero-ctas fade-in">
-      <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="btn-primary">
-        Book my call + claim 10 free
+      <a href="#claim" class="btn-primary">
+        Claim 100 creatives for $99
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
     </div>
     <p class="hero-trust fade-in">
-      Production-grade work, <strong>delivered in 48 hours</strong> &mdash; not 6 weeks.
+      <strong>$7,550 off</strong> &middot; delivered in 48 hours &middot; offer expires in
+      <span style="font-family: 'SF Mono', monospace; font-weight: 700; color: #ff4500;">
+        <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
+      </span>
     </p>
   </section>
 
@@ -1174,50 +1330,75 @@
     </div>
   </div>
 
-  <!-- Freebie / Lead magnet -->
+  <!-- Offer / Pricing module -->
   <section class="freebie" id="claim">
     <div class="freebie-inner">
       <div>
         <div class="freebie-tag fade-in">
-          <span>🎁</span>
+          <span>💥</span>
           <span>The Offer</span>
         </div>
-        <h2 class="fade-in">Get your first<br>10 creatives <em>free.</em></h2>
+        <h2 class="fade-in">100 creatives.<br>Just <em>$99.</em></h2>
         <p class="fade-in">
-          We're opening the doors to <strong style="color:#fff">10 DTC brands</strong>. Book a 20-minute strategy call, show up on time, and we'll design and deliver your first 10 ad creatives completely free — no card, no contract, no catch.
+          One flat fee. 100 production-grade static ad creatives. Delivered inside <strong style="color:#fff">48 hours</strong> of your kickoff call. The same work agencies quote at <strong style="color:#fff">$7,649</strong> &mdash; yours for the price of dinner.
         </p>
+
+        <div class="price-module fade-in">
+          <div class="price-stack">
+            <span class="price-anchor">Agency rate: $7,649</span>
+            <span class="price-new">$99<span class="cents">.00</span></span>
+          </div>
+          <div class="price-meta">
+            <span class="price-savings">&mdash; You save $7,550</span>
+            <span class="price-detail"><strong>$0.99 per creative</strong> &middot; vs. $76.49/creative market rate. One-time fee. No subscription, no card on file.</span>
+          </div>
+        </div>
+
+        <div class="cart-timer fade-in" aria-label="Offer expires in">
+          <span class="timer-label">Offer expires in</span>
+          <span class="unit">
+            <span class="num" data-timer-mm>15</span>
+            <span class="sub">Min</span>
+          </span>
+          <span class="sep">:</span>
+          <span class="unit">
+            <span class="num" data-timer-ss>00</span>
+            <span class="sub">Sec</span>
+          </span>
+        </div>
+
         <p class="freebie-terms fade-in">
-          Why free? Because when you see the work, you'll want the other 90. If you don't, you keep the 10 and walk. That's the bet.
+          Why so cheap? This is the trial. When you see the 100, you'll want the monthly plan. If not, you keep them and walk. That's the bet.
         </p>
         <div class="freebie-cta fade-in">
           <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="freebie-btn">
-            Book my call + claim 10 free
+            Claim 100 creatives for $99
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
       </div>
       <div class="freebie-card fade-in">
-        <div class="freebie-card-label">How to claim</div>
+        <div class="freebie-card-label">How this works</div>
         <ul class="freebie-steps">
           <li>
             <span class="step-num">1</span>
             <span class="step-text">
-              <strong>Book your strategy call</strong>
-              20 minutes. We review your product, audience, and current ads.
+              <strong>Book your kickoff call &mdash; $99</strong>
+              20 minutes. We review your product, audience, and current ads, then lock your creative brief.
             </span>
           </li>
           <li>
             <span class="step-num">2</span>
             <span class="step-text">
-              <strong>Show up on time</strong>
-              No-shows don't qualify. First 10 brands who attend lock the offer.
+              <strong>We ship in 48 hours</strong>
+              100 scroll-stopping ad creatives. Static. Sized for Meta, TikTok, and Google. Ready to upload.
             </span>
           </li>
           <li>
             <span class="step-num">3</span>
             <span class="step-text">
-              <strong>Get 10 creatives, free</strong>
-              Delivered inside 48 hours of our call. Yours to run. No strings.
+              <strong>You run them. Scale or walk.</strong>
+              If you want the monthly plan, great. If not, you still keep the 100. Your call.
             </span>
           </li>
         </ul>
@@ -1328,7 +1509,7 @@
             <li>Direct Slack with your senior designer</li>
             <li>Nailed in fewer rounds</li>
             <li>Custom to your brand DNA</li>
-            <li>First 10 creatives on the house</li>
+            <li>100 creatives for $99 (was $7,649)</li>
           </ul>
         </div>
       </div>
@@ -1371,7 +1552,7 @@
       <div class="obj-card fade-in">
         <div class="obj-q">"Pricing panic"</div>
         <h3>This sounds expensive.</h3>
-        <p>Our flat package is a fraction of what agencies charge for 10 creatives a month. But don't take our word — book the call, get the 10 free, then see the quote. If the math doesn't work for you, no harm done.</p>
+        <p>$99 for 100 creatives works out to $0.99 per asset. Agencies quote $76+ per creative at this quality. If the math doesn't feel real, that's the point &mdash; it's a trial price designed to prove the pipeline. After you see the 100, we'll talk about the monthly plan.</p>
       </div>
       <div class="obj-card fade-in">
         <div class="obj-q">"One batch isn't enough"</div>
@@ -1392,28 +1573,36 @@
       <h2>Questions, <em>answered.</em></h2>
     </div>
     <div class="faq-item fade-in">
-      <h3>Is the 10-free-creatives offer real?</h3>
-      <p>Yes. First 10 DTC brands that book a call and show up get 10 production-grade static ad creatives delivered within 48 hours of the call. No credit card, no contract. We're eating the cost because we know you'll want more once you see the work.</p>
+      <h3>Is the $99 offer for real? What's the catch?</h3>
+      <p>Yes. One flat fee, $99, for 100 production-grade static ad creatives delivered inside 48 hours of your kickoff call. No catch, no subscription, no card on file after. Why so cheap? This is the trial. We're betting that once you see the 100, you'll want the monthly plan. If not, you keep the 100 and walk.</p>
+    </div>
+    <div class="faq-item fade-in">
+      <h3>Why was it $7,649 before?</h3>
+      <p>That's the going market rate for 100 production-grade creatives &mdash; roughly $76.49 per asset at standard agency/freelancer pricing. Today's $99 works out to $0.99 per creative. Same quality. Fraction of the cost. Different business model.</p>
+    </div>
+    <div class="faq-item fade-in">
+      <h3>Is this a subscription or trial that auto-renews?</h3>
+      <p>No. One-time $99. No card stored, no auto-renew, no opt-out to remember. If you want more creatives after seeing the 100, we'll talk about a monthly plan. If not, we disappear.</p>
     </div>
     <div class="faq-item fade-in">
       <h3>Is 100 creatives in 48 hours actually realistic?</h3>
-      <p>It's our entire operating model. We've built the team, pipeline, and tooling around high-volume output — senior designers, creative strategists, and production ops all moving in parallel. Most agencies can't because they weren't built for it. We were.</p>
+      <p>It's our entire operating model. We've built the team, pipeline, and tooling around high-volume output &mdash; senior designers, creative strategists, and production ops all moving in parallel. Most agencies can't because they weren't built for it. We were.</p>
     </div>
     <div class="faq-item fade-in">
       <h3>What counts as "a creative"?</h3>
-      <p>A production-ready static ad asset: concepted, designed, sized for Meta/TikTok/Google (1:1, 4:5, 9:16), brand-compliant, and ready to upload. We also produce product shots, hook variations, and landing page visuals.</p>
+      <p>A production-ready static ad asset: concepted, designed, sized for Meta/TikTok/Google (1:1, 4:5, 9:16), brand-compliant, and ready to upload. Hook variations, UGC-style posts, founder cards, product features, offers, comparisons &mdash; the full spread your media buyer runs through in a month.</p>
     </div>
     <div class="faq-item fade-in">
       <h3>What do I need to bring to the call?</h3>
       <p>Your product (URL is fine), your top-performing ads if you have them, and your creative goals for the next 30 days. We'll handle the rest.</p>
     </div>
     <div class="faq-item fade-in">
-      <h3>What if I'm not one of the first 10?</h3>
-      <p>You'll still get a strategy call and a clear quote for the full 100-in-a-week package. Our standard rate is still multiples below a retainer agency — and dramatically faster.</p>
+      <h3>What happens when the timer runs out?</h3>
+      <p>The offer resets for the next visitor &mdash; $99 is a limited-window promotion, not everyday pricing. If you miss it, we can still quote the full 100-pack, but the discount goes back to standard.</p>
     </div>
     <div class="faq-item fade-in">
-      <h3>What if I don't show up?</h3>
-      <p>The spot goes to the next brand in line. We can't hold inventory for no-shows — the whole point is that we deliver in 48 hours.</p>
+      <h3>Can I get a refund if the creatives aren't great?</h3>
+      <p>We don't refund delivered work &mdash; $99 is already well below what it costs us to produce the batch. But we include revision rounds inside the 48-hour window to make sure the output is on-brand before final delivery.</p>
     </div>
   </section>
 
@@ -1422,14 +1611,22 @@
     <h2 class="fade-in">
       100 creatives.<br>
       48 hours.<br>
-      <span class="accent">First 10 free.</span>
+      <span class="accent">$99 flat.</span>
     </h2>
-    <p class="fade-in">Stop waiting on your agency. Start shipping ads that convert — at the volume your account actually needs to learn.</p>
+    <p class="fade-in">
+      <span style="text-decoration: line-through; color: rgba(255,255,255,0.4);">$7,649</span>
+      &nbsp;&rarr;&nbsp;
+      <strong style="color:#ff4500;">$99</strong>
+      &nbsp;&middot;&nbsp; offer expires in
+      <span style="font-family: 'SF Mono', monospace; font-weight: 700; color: #ff4500;">
+        <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
+      </span>
+    </p>
     <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="btn-primary fade-in">
-      Book my call now
+      Claim 100 creatives for $99
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
-    <p class="fine-print fade-in">20-minute call · no credit card · 10 creatives delivered free on approval</p>
+    <p class="fine-print fade-in">One-time fee &middot; no subscription &middot; delivered in 48 hours</p>
   </section>
 
   </main>
@@ -1449,12 +1646,50 @@
   <!-- Sticky mobile CTA -->
   <div class="sticky-cta" id="stickyCta">
     <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank">
-      Book my call &mdash; claim 10 free
+      <span>Claim for $99</span>
+      <span style="font-family:'SF Mono',monospace;font-weight:700;color:#ff4500;font-size:13px;">
+        <span data-timer-mm>15</span>:<span data-timer-ss>00</span>
+      </span>
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
   </div>
 
   <script>
+    // ===== CART TIMER =====
+    // 15-minute evergreen offer timer. Persisted to localStorage so refresh
+    // doesn't reset it. Resets to a fresh 15 minutes on expiry so the offer
+    // stays live and always feels urgent.
+    (() => {
+      const KEY = '100cr_99_deadline';
+      const WINDOW_MS = 15 * 60 * 1000;
+
+      let deadline = parseInt(localStorage.getItem(KEY) || '0', 10);
+      if (!deadline || deadline < Date.now()) {
+        deadline = Date.now() + WINDOW_MS;
+        localStorage.setItem(KEY, String(deadline));
+      }
+
+      const pad = n => String(n).padStart(2, '0');
+      const mmEls = document.querySelectorAll('[data-timer-mm]');
+      const ssEls = document.querySelectorAll('[data-timer-ss]');
+
+      function tick() {
+        let remaining = deadline - Date.now();
+        if (remaining <= 0) {
+          deadline = Date.now() + WINDOW_MS;
+          localStorage.setItem(KEY, String(deadline));
+          remaining = WINDOW_MS;
+        }
+        const mins = Math.floor(remaining / 60000);
+        const secs = Math.floor((remaining % 60000) / 1000);
+        const mm = pad(mins), ss = pad(secs);
+        mmEls.forEach(el => { if (el.textContent !== mm) el.textContent = mm; });
+        ssEls.forEach(el => { if (el.textContent !== ss) el.textContent = ss; });
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+
     // Fade-in on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
