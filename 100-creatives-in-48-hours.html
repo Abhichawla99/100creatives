@@ -959,7 +959,7 @@
       });
     })();
 
-    // ===== URGENCY POPUP (10-second trigger, once per session) =====
+    // ===== URGENCY POPUP (fires when user scrolls past the hero, once per session) =====
     (() => {
       const popup = document.getElementById('urgencyPopup');
       const closeBtn = document.getElementById('popupClose');
@@ -967,6 +967,13 @@
 
       const DISMISS_KEY = '100c_popup_dismissed';
       if (sessionStorage.getItem(DISMISS_KEY)) return;
+
+      // Trigger element: the first section below the hero.
+      // Popup opens when this enters the viewport — so users see it
+      // only after they've started scrolling through the components,
+      // never while they're still reading the hero.
+      const trigger = document.querySelector('.proof') || document.querySelector('.deadline');
+      if (!trigger) return;
 
       function open() {
         // Don't open if offer has already expired — the state change is confusing
@@ -983,7 +990,17 @@
         sessionStorage.setItem(DISMISS_KEY, '1');
       }
 
-      setTimeout(open, 10000);
+      const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Small delay so the popup doesn't slam in the instant the section touches the viewport
+            setTimeout(open, 400);
+            scrollObserver.disconnect();
+          }
+        });
+      }, { threshold: 0.35, rootMargin: '0px 0px -80px 0px' });
+      scrollObserver.observe(trigger);
+
       closeBtn.addEventListener('click', close);
       popup.addEventListener('click', (e) => { if (e.target === popup) close(); });
       document.addEventListener('keydown', (e) => {
