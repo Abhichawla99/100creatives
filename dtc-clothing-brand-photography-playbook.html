@@ -80,6 +80,29 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">The DTC asset funnel</p>
+  <h2 class="interactive-title fade-in">Click any stage. See exactly which <em>photography assets</em> each stage of a DTC funnel actually needs.</h2>
+  <div class="funnel-wrap fade-in">
+    <div class="funnel-grid">
+      <button class="funnel-stage active" data-f="awareness"><p class="funnel-stage-label">Awareness</p><p class="funnel-stage-count">1.5M</p></button>
+      <button class="funnel-stage" data-f="consideration"><p class="funnel-stage-label">Consideration</p><p class="funnel-stage-count">180k</p></button>
+      <button class="funnel-stage" data-f="pdp"><p class="funnel-stage-label">PDP</p><p class="funnel-stage-count">42k</p></button>
+      <button class="funnel-stage" data-f="checkout"><p class="funnel-stage-label">Checkout</p><p class="funnel-stage-count">8k</p></button>
+      <button class="funnel-stage" data-f="retention"><p class="funnel-stage-label">Retention</p><p class="funnel-stage-count">3.2k</p></button>
+    </div>
+    <div class="funnel-detail" id="funnelDetail">
+      <h4>Awareness — paid social creative</h4>
+      <p>The single hardest-working asset pack in a DTC brand. Hook-first edits, UGC-style crops, lifestyle framing. 80+ variants per drop at healthy test velocity. Refreshed weekly.</p>
+      <div class="asset-list">
+        <span class="asset-tag">Hook-first 9:16</span><span class="asset-tag">UGC-style 4:5</span><span class="asset-tag">Lifestyle 1:1</span><span class="asset-tag">Motion variants</span><span class="asset-tag">Model rotation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section">
   <div class="section-label fade-in">The DTC photography math</div>
   <div class="content-split">
@@ -212,6 +235,27 @@
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+</script>
+
+<script>
+(function(){
+  const stages = document.querySelectorAll('.funnel-stage');
+  const detail = document.getElementById('funnelDetail');
+  if (!stages.length || !detail) return;
+  const data = {
+    awareness: {title: 'Awareness — paid social creative', body: 'The single hardest-working asset pack in a DTC brand. Hook-first edits, UGC-style crops, lifestyle framing. 80+ variants per drop at healthy test velocity. Refreshed weekly.', tags: ['Hook-first 9:16','UGC-style 4:5','Lifestyle 1:1','Motion variants','Model rotation']},
+    consideration: {title: 'Consideration — retargeting + collection', body: 'Retargeting creative tailored to product category interest. Collection-level lifestyle, editorial framing, brand-voice moments. Build preference before the shopper re-lands on PDP.', tags: ['Collection lifestyle','Editorial framing','Testimonial overlays','Brand-voice moments','Size/fit reassurance']},
+    pdp: {title: 'PDP — the conversion moment', body: 'Hero on-model, secondary angles, colorway grid, fabric close-ups, scale/fit shots, ghost mannequin if cut-through matters. Pixel-accurate to the physical garment — the customer\u2019s return calculus starts here.', tags: ['Hero on-model','Secondary angles','Colorway variants','Fabric close-ups','Scale/fit','Ghost alternative']},
+    checkout: {title: 'Checkout — trust + reduce hesitation', body: 'Upsell tile imagery, bundle visuals, returns-policy reassurance creative. Small library but high-leverage — cart abandonment drops noticeably with the right cart-page imagery.', tags: ['Upsell tiles','Bundle visuals','Returns reassurance','Policy icons','Badge creative']},
+    retention: {title: 'Retention — post-purchase + lifecycle', body: 'Lifecycle email creative, restock campaigns, loyalty drop announcements, new-arrival teasers. Often under-served in DTC brands — this is where AI volume lets you produce 10x what your retention lead can currently brief.', tags: ['Lifecycle email','Restock campaigns','Loyalty drops','Teaser creative','Winback imagery']}
+  };
+  stages.forEach(s => s.addEventListener('click', () => {
+    stages.forEach(x => x.classList.remove('active'));
+    s.classList.add('active');
+    const d = data[s.dataset.f];
+    detail.innerHTML = '<h4>' + d.title + '</h4><p>' + d.body + '</p><div class="asset-list">' + d.tags.map(t => '<span class="asset-tag">' + t + '</span>').join('') + '</div>';
+  }));
+})();
 </script>
 
 <script src="/_vercel/insights/script.js" defer></script>

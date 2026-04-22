@@ -80,6 +80,30 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">Vendor scorecard</p>
+  <h2 class="interactive-title fade-in">Run your current (or prospective) AI fashion photography partner through <em>the ten-question scorecard</em>.</h2>
+  <p class="interactive-sub fade-in">Check the boxes that apply. The score at the bottom tells you whether they belong on your shortlist.</p>
+  <div class="checklist fade-in" id="checklist">
+    <div class="checklist-item" data-c="1"><div class="checklist-box"></div><div class="checklist-text"><h4>Pixel-accurate fabric rendering</h4><p>Denim weave, silk specular, knit stitch — renders correctly, not a painterly approximation.</p></div></div>
+    <div class="checklist-item" data-c="2"><div class="checklist-box"></div><div class="checklist-text"><h4>Model likeness continuity</h4><p>Same model across the catalog. No face drift between drops.</p></div></div>
+    <div class="checklist-item" data-c="3"><div class="checklist-box"></div><div class="checklist-text"><h4>48-hour turnaround committed in writing</h4><p>Not a "typical" — a contractual SLA.</p></div></div>
+    <div class="checklist-item" data-c="4"><div class="checklist-box"></div><div class="checklist-text"><h4>Product accuracy guarantee</h4><p>Free redo if delivered asset does not match the physical garment.</p></div></div>
+    <div class="checklist-item" data-c="5"><div class="checklist-box"></div><div class="checklist-text"><h4>Volume capacity at 1,000+ SKUs/month</h4><p>Not aspirational. Active brands running at this volume today.</p></div></div>
+    <div class="checklist-item" data-c="6"><div class="checklist-box"></div><div class="checklist-text"><h4>Crop variants for every ad platform</h4><p>1:1, 4:5, 9:16, 16:9, 1.91:1 — Meta, TikTok, Pinterest, Google, Amazon.</p></div></div>
+    <div class="checklist-item" data-c="7"><div class="checklist-box"></div><div class="checklist-text"><h4>Color calibration against Pantone/physical</h4><p>The signature brand color renders identically across every asset.</p></div></div>
+    <div class="checklist-item" data-c="8"><div class="checklist-box"></div><div class="checklist-text"><h4>Referenceable apparel brands (not just demos)</h4><p>Named case studies or NDA-disclosed client list on request.</p></div></div>
+    <div class="checklist-item" data-c="9"><div class="checklist-box"></div><div class="checklist-text"><h4>Transparent pricing tied to volume</h4><p>Per-image or monthly retainer pricing, not ad-hoc bespoke quotes.</p></div></div>
+    <div class="checklist-item" data-c="10"><div class="checklist-box"></div><div class="checklist-text"><h4>Direct access to the production lead</h4><p>Not just an account manager. The person running the pipeline is reachable.</p></div></div>
+    <div class="checklist-score">
+      <div><p style="font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;">Your score</p><p id="scoreOut" style="font-family:'Instrument Serif',serif;font-size:40px;line-height:1;">0<span style="font-size:22px;color:var(--muted);">/10</span></p></div>
+      <p id="scoreLabel" style="font-size:15px;color:var(--muted);max-width:260px;text-align:right;">Check each box your partner passes.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section">
   <div class="section-label fade-in">What actually differentiates</div>
   <div class="content-split">
@@ -227,6 +251,36 @@
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+</script>
+
+<script>
+(function(){
+  const list = document.getElementById('checklist');
+  if (!list) return;
+  const out = document.getElementById('scoreOut');
+  const lbl = document.getElementById('scoreLabel');
+  const labels = [
+    'Check each box your partner passes.',
+    'Start with the basics — not on the shortlist yet.',
+    'Some coverage, meaningful gaps remain.',
+    'Mid-tier. Acceptable only with strict QA overlay.',
+    'Decent. Due diligence on the missing items before signing.',
+    'Credible contender. Reference checks recommended.',
+    'Strong. Comparable to top-tier production.',
+    'Excellent. Competitive with 100 Creatives.',
+    'Top-tier. One of the few capable at this volume.',
+    'Exceptional. Near the operational ceiling.',
+    'Perfect. This is the bar 100 Creatives holds itself to.'
+  ];
+  list.querySelectorAll('.checklist-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('checked');
+      const n = list.querySelectorAll('.checklist-item.checked').length;
+      out.innerHTML = n + '<span style="font-size:22px;color:var(--muted);">/10</span>';
+      lbl.textContent = labels[n];
+    });
+  });
+})();
 </script>
 
 <script src="/_vercel/insights/script.js" defer></script>

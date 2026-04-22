@@ -80,6 +80,29 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">The 48-hour clock</p>
+  <h2 class="interactive-title fade-in">Click any step. See exactly what happens between <em>sample received</em> and <em>approved assets</em>.</h2>
+  <div class="timeline-wrap fade-in">
+    <div class="timeline-track">
+      <div class="timeline-steps">
+        <button class="timeline-dot active" data-step="0">0h</button>
+        <button class="timeline-dot" data-step="12">12h</button>
+        <button class="timeline-dot" data-step="24">24h</button>
+        <button class="timeline-dot" data-step="36">36h</button>
+        <button class="timeline-dot" data-step="48">48h</button>
+      </div>
+    </div>
+    <div class="timeline-detail" id="timelineDetail">
+      <p class="timeline-time">Hour 0</p>
+      <h3>Sample received · kickoff</h3>
+      <p>Physical sample arrives or reference pack confirmed. Brand standards — model likeness, lighting, palette — loaded into production. Production brief finalized with zero back-and-forth.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section">
   <div class="section-label fade-in">Why traditional cannot match it</div>
   <div class="content-split">
@@ -211,6 +234,27 @@
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+</script>
+
+<script>
+(function(){
+  const dots = document.querySelectorAll('.timeline-dot');
+  const detail = document.getElementById('timelineDetail');
+  if (!dots.length || !detail) return;
+  const steps = {
+    '0': {time: 'Hour 0', title: 'Sample received · kickoff', body: 'Physical sample arrives or reference pack confirmed. Brand standards — model likeness, lighting, palette — loaded into production. Production brief finalized with zero back-and-forth.'},
+    '12': {time: 'Hour 12', title: 'Reference capture · specs locked', body: 'Fabric swatches scanned at close range. Hem, collar, stitching, hardware photographed. Color-calibrated against Pantone. The asset that becomes every downstream image is now locked.'},
+    '24': {time: 'Hour 24', title: 'Production run · first pass', body: 'AI production pipeline runs the full shot list — PDP hero, colorway variants, flat lay, detail captures, paid creative crops. First-pass output ready for internal QA.'},
+    '36': {time: 'Hour 36', title: 'QA + fabric-accuracy pass', body: 'Every image checked against the physical garment. Fabric texture, drape, color, stitching, proportions. Anything below the pixel-accuracy bar is redone automatically before the brand ever sees it.'},
+    '48': {time: 'Hour 48', title: 'Delivery · approved assets', body: 'Final library delivered — PDP, colorways, crops for Meta 1:1/4:5/9:16, Google, Pinterest, Amazon. Brand team ships to storefront and ad accounts the same day.'}
+  };
+  dots.forEach(d => d.addEventListener('click', () => {
+    dots.forEach(x => x.classList.remove('active'));
+    d.classList.add('active');
+    const s = steps[d.dataset.step];
+    detail.innerHTML = '<p class="timeline-time">' + s.time + '</p><h3>' + s.title + '</h3><p>' + s.body + '</p>';
+  }));
+})();
 </script>
 
 <script src="/_vercel/insights/script.js" defer></script>

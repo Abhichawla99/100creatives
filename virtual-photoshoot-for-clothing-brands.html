@@ -92,6 +92,38 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">Studio vs virtual</p>
+  <h2 class="interactive-title fade-in">Drag the handle. Left is a <em>booked studio day</em>. Right is a virtual photoshoot — same garment, no studio.</h2>
+  <div class="ba-wrap fade-in">
+    <div class="ba-slider" id="baSlider">
+      <div class="ba-before" style="background-image:url('/images/anitadongre/lehnga-2.jpg');">
+        <span class="ba-tag">Studio shoot</span>
+      </div>
+      <div class="ba-after" style="background-image:url('/images/anitadongre/lehnga-4.jpg');">
+        <span class="ba-tag">Virtual photoshoot</span>
+      </div>
+      <div class="ba-handle" id="baHandle"></div>
+    </div>
+    <p class="ba-caption">Same lehenga, same model likeness. One took a week to schedule. One was delivered in 48 hours.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="interactive-section">
+  <p class="interactive-label fade-in">Virtual photoshoot in motion</p>
+  <h2 class="interactive-title fade-in">A full collection — <em>produced virtually</em>.</h2>
+  <div class="video-block fade-in">
+    <video class="video-frame" autoplay loop muted playsinline poster="/images/anitadongre/lehnga-3.jpg">
+      <source src="/images/anitadongre/anita-web.mp4" type="video/mp4">
+    </video>
+    <p class="video-caption">Anita Dongre bridal collection — zero studio bookings, pixel-accurate to every garment.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section">
   <div class="section-label fade-in">What it is</div>
   <div class="content-split">
@@ -242,6 +274,34 @@
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+</script>
+
+<script>
+(function(){
+  const slider = document.getElementById('baSlider');
+  const handle = document.getElementById('baHandle');
+  if (!slider || !handle) return;
+  const after = slider.querySelector('.ba-after');
+  let dragging = false;
+  function setPos(pct){
+    pct = Math.max(0, Math.min(100, pct));
+    after.style.clipPath = 'inset(0 0 0 ' + pct + '%)';
+    handle.style.left = pct + '%';
+  }
+  function fromEvent(e){
+    const rect = slider.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    setPos((x / rect.width) * 100);
+  }
+  handle.addEventListener('mousedown', e => { dragging = true; e.preventDefault(); });
+  handle.addEventListener('touchstart', e => { dragging = true; }, {passive:true});
+  window.addEventListener('mouseup', () => dragging = false);
+  window.addEventListener('touchend', () => dragging = false);
+  window.addEventListener('mousemove', e => { if (dragging) fromEvent(e); });
+  window.addEventListener('touchmove', e => { if (dragging) fromEvent(e); }, {passive:true});
+  slider.addEventListener('click', fromEvent);
+  setPos(50);
+})();
 </script>
 
 <script src="/_vercel/insights/script.js" defer></script>

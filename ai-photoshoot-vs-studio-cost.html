@@ -151,6 +151,48 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">Interactive calculator</p>
+  <h2 class="interactive-title fade-in">Model your <em>actual</em> savings<br>in real numbers.</h2>
+  <p class="interactive-sub fade-in">Drag the sliders for SKU volume and current per-image cost. We compute annualized traditional spend, AI-model spend at volume rates, and the gap.</p>
+  <div class="calc-wrap fade-in">
+    <div class="calc-controls">
+      <div class="calc-field">
+        <label>Monthly SKU volume</label>
+        <input type="range" id="skuRange" min="50" max="2000" step="50" value="500">
+        <div class="calc-value"><span id="skuVal">500</span><em>SKUs / month</em></div>
+      </div>
+      <div class="calc-field">
+        <label>Images per SKU</label>
+        <input type="range" id="imgRange" min="3" max="12" step="1" value="6">
+        <div class="calc-value"><span id="imgVal">6</span><em>images per SKU</em></div>
+      </div>
+      <div class="calc-field">
+        <label>Your current per-image cost</label>
+        <input type="range" id="costRange" min="40" max="200" step="5" value="100">
+        <div class="calc-value">$<span id="costVal">100</span><em>per image (traditional)</em></div>
+      </div>
+    </div>
+    <div class="calc-output">
+      <div class="calc-output-row">
+        <div class="calc-output-label">Traditional annual cost</div>
+        <div class="calc-output-value" id="tradOut">$3.6M</div>
+      </div>
+      <div class="calc-output-row">
+        <div class="calc-output-label">100 Creatives annual cost</div>
+        <div class="calc-output-value" id="aiOut">$1.8M</div>
+      </div>
+      <div class="calc-output-row">
+        <div class="calc-output-label">Your annualized savings</div>
+        <div class="calc-output-value saving" id="saveOut">$1.8M</div>
+        <div class="calc-output-note">Based on AI-model rate of $50/img at 500+ SKUs, $60 at 200-499, $70 below 200.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section-dark">
   <div class="content-inner">
     <div class="section-label fade-in">Where each one wins</div>
@@ -242,6 +284,28 @@
   });
 </script>
 
+<script>
+  (function(){
+    const sku = document.getElementById('skuRange');
+    const img = document.getElementById('imgRange');
+    const cost = document.getElementById('costRange');
+    const fmt = n => n >= 1000000 ? '$' + (n/1000000).toFixed(2) + 'M' : '$' + Math.round(n/1000).toLocaleString() + 'k';
+    function aiRate(skus){ return skus >= 500 ? 50 : skus >= 200 ? 60 : 70; }
+    function update(){
+      const s = +sku.value, i = +img.value, c = +cost.value;
+      document.getElementById('skuVal').textContent = s;
+      document.getElementById('imgVal').textContent = i;
+      document.getElementById('costVal').textContent = c;
+      const trad = s * i * c * 12;
+      const ai = s * i * aiRate(s) * 12;
+      document.getElementById('tradOut').textContent = fmt(trad);
+      document.getElementById('aiOut').textContent = fmt(ai);
+      document.getElementById('saveOut').textContent = fmt(trad - ai);
+    }
+    [sku, img, cost].forEach(el => el && el.addEventListener('input', update));
+    update();
+  })();
+</script>
 <script src="/_vercel/insights/script.js" defer></script>
 </body>
 </html>

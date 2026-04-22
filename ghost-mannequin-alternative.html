@@ -91,6 +91,25 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">Ghost mannequin vs AI on-model</p>
+  <h2 class="interactive-title fade-in">Same garment. Left is a <em>ghost mannequin</em>. Right is <em>AI on-model</em>. Drag to compare.</h2>
+  <div class="ba-wrap fade-in">
+    <div class="ba-slider" id="baSlider">
+      <div class="ba-before" style="background-image:url('/images/anitadongre/lehnga-8.jpg');">
+        <span class="ba-tag">Ghost mannequin</span>
+      </div>
+      <div class="ba-after" style="background-image:url('/images/anitadongre/lehnga-3.jpg');">
+        <span class="ba-tag">AI on-model</span>
+      </div>
+      <div class="ba-handle" id="baHandle"></div>
+    </div>
+    <p class="ba-caption">Same SKU, same colorway, same brand standard — one is hollow, one sells.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section">
   <div class="section-label fade-in">The origin</div>
   <div class="content-split">
@@ -241,6 +260,34 @@
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+</script>
+
+<script>
+(function(){
+  const slider = document.getElementById('baSlider');
+  const handle = document.getElementById('baHandle');
+  if (!slider || !handle) return;
+  const after = slider.querySelector('.ba-after');
+  let dragging = false;
+  function setPos(pct){
+    pct = Math.max(0, Math.min(100, pct));
+    after.style.clipPath = 'inset(0 0 0 ' + pct + '%)';
+    handle.style.left = pct + '%';
+  }
+  function fromEvent(e){
+    const rect = slider.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    setPos((x / rect.width) * 100);
+  }
+  handle.addEventListener('mousedown', e => { dragging = true; e.preventDefault(); });
+  handle.addEventListener('touchstart', e => { dragging = true; }, {passive:true});
+  window.addEventListener('mouseup', () => dragging = false);
+  window.addEventListener('touchend', () => dragging = false);
+  window.addEventListener('mousemove', e => { if (dragging) fromEvent(e); });
+  window.addEventListener('touchmove', e => { if (dragging) fromEvent(e); }, {passive:true});
+  slider.addEventListener('click', fromEvent);
+  setPos(50);
+})();
 </script>
 
 <script src="/_vercel/insights/script.js" defer></script>

@@ -114,6 +114,43 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">Throughput visualizer</p>
+  <h2 class="interactive-title fade-in">Pick your monthly SKU volume. See what it <em>actually means</em> in shoot days, weekly batches, and annual images.</h2>
+  <p class="interactive-sub fade-in">Drag the slider. Compare traditional shoot-day load to AI weekly cadence. Every number updates live.</p>
+  <div class="calc-wrap fade-in">
+    <div class="calc-controls">
+      <div class="calc-field">
+        <label for="volRange">Monthly SKUs <span class="calc-value" id="volVal">1000</span></label>
+        <input type="range" id="volRange" min="100" max="3000" step="50" value="1000">
+      </div>
+      <div class="calc-field">
+        <label for="ipsRange">Images per SKU <span class="calc-value" id="ipsVal">6</span></label>
+        <input type="range" id="ipsRange" min="3" max="12" step="1" value="6">
+      </div>
+    </div>
+    <div class="calc-output">
+      <div>
+        <p class="calc-output-label">Traditional shoot days per month</p>
+        <p class="calc-output-value" id="shootDaysOut">55</p>
+        <p class="calc-output-sub">At 18 looks per day — operationally impossible above 450 SKUs.</p>
+      </div>
+      <div>
+        <p class="calc-output-label">AI weekly batch size</p>
+        <p class="calc-output-value" id="weeklyOut">250</p>
+        <p class="calc-output-sub">Sample Monday · Output Wednesday · Approved Friday.</p>
+      </div>
+      <div>
+        <p class="calc-output-label">Annual images delivered</p>
+        <p class="calc-output-value saving" id="annualImgOut">72k</p>
+        <p class="calc-output-sub">Full catalog output at steady-state cadence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section">
   <div class="section-label fade-in">Cost math</div>
   <div class="content-split">
@@ -231,6 +268,28 @@
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+</script>
+
+<script>
+(function(){
+  const vol = document.getElementById('volRange');
+  const ips = document.getElementById('ipsRange');
+  if (!vol || !ips) return;
+  const fmtK = n => n >= 1000 ? (n/1000).toFixed(n >= 10000 ? 0 : 1) + 'k' : n.toString();
+  function update(){
+    const v = +vol.value, i = +ips.value;
+    document.getElementById('volVal').textContent = v.toLocaleString();
+    document.getElementById('ipsVal').textContent = i;
+    const shootDays = Math.round(v / 18);
+    const weekly = Math.round(v / 4);
+    const annual = v * i * 12;
+    document.getElementById('shootDaysOut').textContent = shootDays;
+    document.getElementById('weeklyOut').textContent = weekly.toLocaleString();
+    document.getElementById('annualImgOut').textContent = fmtK(annual);
+  }
+  [vol, ips].forEach(el => el.addEventListener('input', update));
+  update();
+})();
 </script>
 
 <script src="/_vercel/insights/script.js" defer></script>

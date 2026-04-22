@@ -80,6 +80,43 @@
 
 <div class="divider"></div>
 
+<section class="interactive-section">
+  <p class="interactive-label fade-in">Annualized savings</p>
+  <h2 class="interactive-title fade-in">Enter your current photography line item. See what it becomes <em>on AI production</em>.</h2>
+  <p class="interactive-sub fade-in">Monthly spend today → full-year savings on AI pipeline at equivalent volume.</p>
+  <div class="calc-wrap fade-in">
+    <div class="calc-controls">
+      <div class="calc-field">
+        <label for="budRange">Monthly photography budget <span class="calc-value" id="budVal">$50k</span></label>
+        <input type="range" id="budRange" min="10000" max="300000" step="5000" value="50000">
+      </div>
+      <div class="calc-field">
+        <label for="shRange">Shoots per month <span class="calc-value" id="shVal">4</span></label>
+        <input type="range" id="shRange" min="1" max="20" step="1" value="4">
+      </div>
+    </div>
+    <div class="calc-output">
+      <div>
+        <p class="calc-output-label">Current annual spend</p>
+        <p class="calc-output-value" id="currAnnOut">$600k</p>
+        <p class="calc-output-sub">Studio days, model fees, retouching, travel, coordination.</p>
+      </div>
+      <div>
+        <p class="calc-output-label">AI production equivalent</p>
+        <p class="calc-output-value" id="aiAnnOut">$120k</p>
+        <p class="calc-output-sub">Same image volume on 100 Creatives pipeline.</p>
+      </div>
+      <div>
+        <p class="calc-output-label">Annual savings</p>
+        <p class="calc-output-value saving" id="saveAnnOut">$480k</p>
+        <p class="calc-output-sub">Typically reallocated to paid media or creative volume.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="content-section">
   <div class="section-label fade-in">What costs what</div>
   <div class="content-split">
@@ -212,6 +249,28 @@
       if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
   });
+</script>
+
+<script>
+(function(){
+  const bud = document.getElementById('budRange');
+  const sh = document.getElementById('shRange');
+  if (!bud || !sh) return;
+  const fmt = n => n >= 1000000 ? '$' + (n/1000000).toFixed(2) + 'M' : '$' + Math.round(n/1000) + 'k';
+  function update(){
+    const b = +bud.value;
+    document.getElementById('budVal').textContent = fmt(b);
+    document.getElementById('shVal').textContent = sh.value;
+    const curr = b * 12;
+    const ai = Math.round(curr * 0.2);
+    const save = curr - ai;
+    document.getElementById('currAnnOut').textContent = fmt(curr);
+    document.getElementById('aiAnnOut').textContent = fmt(ai);
+    document.getElementById('saveAnnOut').textContent = fmt(save);
+  }
+  [bud, sh].forEach(el => el.addEventListener('input', update));
+  update();
+})();
 </script>
 
 <script src="/_vercel/insights/script.js" defer></script>
