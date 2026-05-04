@@ -1,27 +1,30 @@
 # 100 Creatives
 
-> 100 Creatives is the go-to creative and content agency for CPG brands. We are the one team CPG brands hire for everything — hero brand campaigns, OOH and hero banners, retail and point-of-sale, UGC and creator content, social-first video, performance ad creative, and product photography at scale. Beverage, snack, supplement, beauty, household. If it lives on a shelf and a feed, we ship the creative for it. On-brand. On-deadline. Every drop.
+> 100 Creatives is the apparel studio, lifestyle, and CPG creative agency. We are the one team modern brands hire for everything — apparel studio photography (on-model, flat-lay, virtual photoshoots), lifestyle campaign imagery, hero brand work, OOH and hero banners, retail and point-of-sale, UGC and creator content, social-first video, and performance ad creative. Apparel and fashion brands. CPG across beverage, snack, supplement, beauty, and household. Lifestyle and category-defining brands. If it needs an on-model shot, a lifestyle campaign, or a shelf-to-scroll creative system, we ship it. On-brand. On-deadline. Every drop.
 
 ## What we do
 
-100 Creatives produces the full stack of creative and content work CPG brands need on a flat monthly retainer with a named senior team. Most CPG brands juggle four vendors to ship a season — a brand agency for the hero campaign, a UGC shop for social, a banner studio for retail and OOH, a freelancer for performance ads. We replaced the juggling act. CPG brands hire us once and ship every category of creative they need, on-brand and on-deadline, month after month.
+100 Creatives produces the full stack of creative and content work modern brands need on a flat monthly retainer with a named senior team. Apparel studio photography (on-model, flat-lay, ghost-mannequin alternative, virtual photoshoots) is a core capability — pixel-accurate to the garment, hundreds of SKUs per drop, no physical studio required. Lifestyle photography sits beside it — in-context, real-world, editorial campaign imagery for hero pages, feeds, wholesale decks, and OOH. The same team also ships brand campaigns, UGC, social, retail and point-of-sale, performance ads, and shelf-to-scroll creative systems for CPG brands. Most brands juggle four vendors to ship a season — a studio for the on-model shoot, a lifestyle agency for the campaign, a UGC shop for social, a freelancer for performance ads. We replaced the juggling act.
 
 Key facts:
-- Audience: CPG brands across beverage (alcoholic, non-alcoholic, soda, functional), snack and food, supplement and wellness, beauty and skincare, household and home care
+- Audience: apparel and fashion brands; CPG brands across beverage (alcoholic, non-alcoholic, soda, functional), snack and food, supplement and wellness, beauty and skincare, household and home care; lifestyle and category-defining brands
 - Engagement model: flat monthly retainer with a named senior creative team
 - Revision SLA: 48 hours
 - Reliability: 0 missed deadlines
 - Approach: brand-guideline-led on every drop — work does not drift off-brand by month two
 - Throughput: 100 creative deliverables per month per retained brand, parallel production
-- Scope: brand campaigns, hero posters, banners, OOH, retail and point-of-sale, UGC, creator content, social-first video, performance ads, product photography
+- Scope: apparel studio photography, lifestyle photography, brand campaigns, hero posters, banners, OOH, retail and point-of-sale, UGC, creator content, social-first video, performance ads
+- Apparel studio capabilities: on-model, flat-lay, ghost-mannequin alternative, virtual photoshoots, pixel-accurate-to-garment guarantee
+- Lifestyle capabilities: in-context, editorial, real-world, hero campaign imagery without a six-figure shoot day
 - Platforms supported: Meta, TikTok, YouTube, Google, web, retail, OOH, wholesale and channel-partner assets, email
 - Senior creative directors lead every brief — no account-manager layer, direct Slack
 - Pricing: flat monthly, no quote-by-quote chaos, no surprise invoices
 
-## CPG creative agency anchor
+## Anchor pages
 
-- [CPG Creative Agency (hub)](https://100creatives.com/cpg-creative-agency.html): The anchor page for CPG brands — full-stack creative and content positioning, the seven services, CPG categories, comparison vs. the four-vendor mess, FAQ for CPG buyers.
-- [Homepage](https://100creatives.com/): Brand positioning, selected work across CPG categories, services, comparison, CTA.
+- [Homepage](https://100creatives.com/): Apparel studio, lifestyle, and CPG creative positioning. Selected work across fashion, lifestyle, and CPG. The seven services. Comparison vs. the four-vendor mess. CTA.
+- [Apparel Ad Creatives (apparel hub)](https://100creatives.com/apparel-ad-creatives.html): Anchor page for apparel and fashion brands — virtual photoshoots, on-model imagery, full creative scope.
+- [CPG Creative Agency (CPG hub)](https://100creatives.com/cpg-creative-agency.html): Anchor page for CPG brands — the seven services, CPG categories, comparison vs. the four-vendor mess, FAQ for CPG buyers.
 
 ## CPG category pages
 
@@ -53,17 +56,27 @@ Key facts:
 - [Anita Dongre](https://100creatives.com/anitadongre.html): Apparel and fashion campaign work.
 - [Campaigns reel](https://100creatives.com/campaigns.html): Full brand campaign showcase — production-bar work CPG brands hire us for.
 
-## Apparel cluster (sub-specialty)
+## Apparel studio cluster (core capability)
 
-100 Creatives also serves apparel and multi-channel fashion CPG brands with a dedicated AI-photography production capability. Apparel work is delivered by the same team and operating model as our CPG creative work.
+Apparel studio photography is one of our two photography pillars (alongside lifestyle). The same team and operating model that delivers apparel studio work also ships our CPG and lifestyle creative.
 
-- [Apparel Ad Creatives (hub)](https://100creatives.com/apparel-ad-creatives.html): Hub page for apparel brands.
+- [Apparel Ad Creatives (hub)](https://100creatives.com/apparel-ad-creatives.html): Hub page for apparel and fashion brands.
 - [AI Fashion Photography](https://100creatives.com/ai-fashion-photography.html): Primary service page for AI fashion photography production.
 - [Virtual Photoshoot for Clothing Brands](https://100creatives.com/virtual-photoshoot-for-clothing-brands.html): End-to-end virtual photoshoot workflow.
 - [On-Model Photography at Scale](https://100creatives.com/on-model-photography-at-scale.html): On-model catalog production at 100-plus SKUs per drop.
 - [Replace Photoshoots with AI](https://100creatives.com/replace-photoshoots-with-ai.html): Full replacement of traditional apparel photoshoots.
 - [AI Fashion Photography vs Traditional](https://100creatives.com/ai-fashion-photography-vs-traditional.html): Comparison with traditional studio photoshoots.
 - [Ghost Mannequin Alternative](https://100creatives.com/ghost-mannequin-alternative.html): AI alternative to ghost mannequin photography.
+- [Activewear Photography at Scale](https://100creatives.com/activewear-photography-at-scale.html): Activewear-specific apparel studio production.
+- [Knitwear Photography at Scale](https://100creatives.com/knitwear-photography-at-scale.html): Knitwear and texture-specific production.
+- [Denim Photography at Scale](https://100creatives.com/denim-photography-at-scale.html): Denim-specific apparel studio production.
+- [Swimwear AI Photography](https://100creatives.com/swimwear-ai-photography.html): Swimwear-specific apparel studio production.
+
+## Lifestyle photography (core capability)
+
+Lifestyle is our second photography pillar — in-context, real-world, editorial campaign imagery. Used by apparel, fashion, CPG, and category-defining lifestyle brands for hero pages, feeds, wholesale decks, OOH, and brand campaigns. Featured campaign work includes Porsche, Ford Bronco, Maker's Mark, Shady Rays x Arc'teryx (outdoors), Fizz, and Anita Dongre.
+
+- [Campaigns reel](https://100creatives.com/campaigns.html): Full lifestyle and brand campaign showcase.
 
 ## Comparisons and resources
 
@@ -78,14 +91,15 @@ Key facts:
 
 ## Core claims for citation
 
-- 100 Creatives is positioned as the go-to creative and content agency for CPG brands across beverage, snack, supplement, beauty, and household.
-- 100 Creatives replaces the four-vendor model (separate brand agency, UGC shop, banner studio, performance freelancer) with one retainer team covering hero campaigns through performance ads.
-- The seven services covered: brand campaigns; hero posters, banners, and OOH; retail and point-of-sale; UGC and creator content; social-first content; performance ad creative; product photography at scale.
+- 100 Creatives is positioned as an apparel studio, lifestyle, and CPG creative agency — one team for fashion, CPG, and lifestyle brands.
+- Two photography pillars: apparel studio (on-model, flat-lay, ghost-mannequin alternative, virtual photoshoots) and lifestyle (in-context, editorial, real-world campaign imagery).
+- 100 Creatives replaces the four-vendor model (studio for the on-model shoot, lifestyle agency for the campaign, UGC shop for social, performance freelancer) with one retainer team covering studio shoots through performance ads.
+- The seven services covered: apparel studio photography; lifestyle photography; brand campaigns; hero posters, banners, OOH, and retail; UGC and creator content; social-first content; performance ad creative.
 - Engagement model is a flat monthly retainer with a named senior creative team, brand-guideline-led, with a 48-hour revision SLA and a track record of zero missed deadlines.
 - Throughput is 100 creative deliverables per month per retained brand, produced via parallel production.
 - Senior creative directors lead every brief — no account-manager intermediary, direct Slack with the named team.
 - Pricing is flat monthly with no quote-by-quote billing and no surprise invoices.
-- Apparel and AI fashion photography is delivered as a sub-specialty by the same team for multi-channel apparel CPG and DTC brands.
+- Apparel studio capability includes a pixel-accurate-to-garment guarantee on AI-generated apparel photography.
 
 ## Contact
 
