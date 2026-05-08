@@ -33,11 +33,26 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-08 (article 2)
+- **slug:** indie-beauty-brand-product-photography-for-sephora-launch
+- **h1:** Indie Beauty Brand Product Photography for a Sephora or Ulta Launch
+- **persona:** P02 (Beauty Brand E-commerce Lead Prepping Sephora Launch)
+- **vertical:** beauty
+- **angle:** The retail buyer just confirmed Sephora/Ulta. Three weeks against the studio's six. Five-day production model + the specific 30–60 asset matrix per SKU the buyer actually evaluates against (hero on white at 2400×3200, swatch across Fitzpatrick, ingredient hero, packaging open/closed, OOH, GWP, FSI).
+- **intent:** commercial
+- **primary_keyword:** indie beauty brand product photography Sephora
+- **internal_links_used:** beauty-ad-creatives.html (×3 in prose + footer), best-ai-product-photography-agency-for-dtc-brands.html (×2), ai-photoshoot-vs-studio-cost.html, ai-fashion-photography-vs-traditional.html, fast-ad-creative-turnaround.html, cpg-creative-agency.html (footer), static-ads-for-meta.html (footer), ecommerce-ad-creatives.html (footer), skincare-ad-creatives.html (footer)
+- **images_used:** /images/goldenrule/goldenrule-1.png (hero), /images/goldenrule/goldenrule-2.png, goldenrule-3.png, goldenrule-4.png, goldenrule-5.png, goldenrule-6.png, goldenrule-7.png (gallery)
+- **word_count:** 3280 (visible body)
+- **notes:** Persona-locked to a P02 retail launch moment — Friday-4pm-buyer-email cold open, retailer-specific specs (2400×3200, Sephora Retailer Direct, Beauty Insider, Fitzpatrick swatch coverage, Delta E < 3), and the five-week-vs-three-week pipeline math. Could not be retitled for any other persona without a full rewrite.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
 - P01 — never
-- P02 — never
+- P02 — 2026-05-08
 - P03 — never
 - P04 — never
 - P05 — never
@@ -54,14 +69,15 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 **Verticals used (last 7 days):**
 - 2026-05-08: geo
+- 2026-05-08: beauty
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
 - apparel-ad-creatives.html: 1
 - ai-fashion-photography.html: 1
 - dtc-clothing-brand-photography-playbook.html: 1
-- beauty-ad-creatives.html: 1
-- cpg-creative-agency.html: 1
+- beauty-ad-creatives.html: 4
+- cpg-creative-agency.html: 2
 - chobani.html: 1
 - anitadongre.html: 1
 - armra.html: 1
@@ -69,14 +85,18 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - barefootwines.html: 1
 - campaigns.html: 1
 - dtc-creative-agency.html: 1
-- ai-photoshoot-vs-studio-cost.html: 1
+- ai-photoshoot-vs-studio-cost.html: 2
 - ad-creative-testing-framework.html: 1
-- fast-ad-creative-turnaround.html: 1
-- ai-fashion-photography-vs-traditional.html: 1
+- fast-ad-creative-turnaround.html: 2
+- ai-fashion-photography-vs-traditional.html: 2
 - creative-agency-vs-freelancer.html: 1
 - virtual-photoshoot-for-clothing-brands.html: 1
 - on-model-photography-at-scale.html: 1
-- best-ai-product-photography-agency-for-dtc-brands.html: 0  ← link UP to this from new niche pages
+- best-ai-product-photography-agency-for-dtc-brands.html: 2  ← link UP to this from new niche pages
+- static-ads-for-meta.html: 1
+- ecommerce-ad-creatives.html: 1
+- skincare-ad-creatives.html: 1
 
 **Brand images used (last 7 days):**
 - 2026-05-08: none (OG only)
+- 2026-05-08: goldenrule (hero + 6 gallery)
