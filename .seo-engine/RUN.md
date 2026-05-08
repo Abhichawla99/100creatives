@@ -191,14 +191,53 @@ The script auto-stages: `{slug}.html`, `sitemap.xml`, the entire `.seo-engine/` 
 
 **Then it auto-pings IndexNow** (Bing, Yandex, Seznam, Naver) with the new URL + sitemap. The script waits 45s for Vercel to deploy first, then POSTs to `api.indexnow.org/IndexNow` with our key (`e6baf767262d12f58083a712d380812b`, hosted at `https://100creatives.com/e6baf767262d12f58083a712d380812b.txt`). HTTP 200 or 202 = accepted. Non-200 is logged but non-fatal — IndexNow rate-limits and re-tries are not necessary for daily cadence.
 
-**Google note.** Google doesn't participate in IndexNow and has no public per-URL submission API for general pages (the Indexing API is restricted to JobPosting and BroadcastEvent). For Google we rely on (a) the sitemap already submitted in Google Search Console and (b) the per-URL `<lastmod>` update we make in STEP 8 — Googlebot polls the sitemap and re-crawls based on freshness. If we ever want faster Google indexing for a specific URL, the user can paste it into GSC's URL Inspection tool and click "Request Indexing" manually.
+**Google note.** Google doesn't participate in IndexNow and has no public per-URL submission API for general pages (the Indexing API is restricted to JobPosting and BroadcastEvent). For Google we use **STEP 11b** below — Chrome MCP automates the same "Request Indexing" button a human would click in GSC.
+
+---
+
+## STEP 11b — Request indexing in Google Search Console (via Chrome MCP)
+
+Google's only fast path to indexing for general pages is the "Request Indexing" button inside GSC's URL Inspection tool. There's no API, but the user is already logged into Google Search Console in their default Chrome profile, so we drive the UI via the Chrome MCP. Run this **after** the publish.sh push succeeds and after waiting ~60s for Vercel to deploy.
+
+```python
+# Pseudocode for the engine — actual calls use mcp__Claude_in_Chrome__* tools
+1. tabs_context_mcp(createIfEmpty=true) → get a tabId
+2. navigate(tabId, "https://search.google.com/search-console")
+   wait 4s, screenshot
+   - If GSC overview shows "100creatives.com" in the property switcher (top-left), proceed.
+   - If a Google account picker / login screen appears, STOP. Report to user:
+     "GSC needs you to log in. After login, re-run this skill."
+3. For each URL to submit (today's new article + sitemap.xml):
+   left_click(tabId, [600, 25])     # the top inspect-URL search bar
+   type(tabId, full_url)            # e.g. https://www.100creatives.com/{slug}.html
+   key(tabId, "Return")
+   wait 8s
+   screenshot                        # confirm "URL Inspection" page rendered
+   left_click(tabId, [1226, 295])    # "REQUEST INDEXING" button
+   wait 60s                          # Google runs a live crawlability test
+   screenshot                        # confirm "Indexing requested" green banner
+   left_click(tabId, [960, 442])     # Dismiss
+4. Report each URL submitted in STEP 12.
+```
+
+**What to submit.** Just the new article. Don't re-submit old URLs — Google's quota is "a few dozen URLs per day per property" and burning it on yesterday's articles wastes the limit. The sitemap is auto-fetched by Google on its own cadence, so no need to inspect it through the URL tool.
+
+**Quota gotchas.**
+- Google rate-limits to roughly 10–20 Request Indexing clicks per property per day. We only submit 1 URL/day so we're nowhere near the limit, but if the engine ever back-fills missed days it should cap at 5/day.
+- "URL is not on Google" → expected for fresh URLs; click Request Indexing.
+- "URL is on Google" → already indexed, no need to request.
+- "URL is on Google, but has issues" → log to MEMORY.md notes, don't auto-fix; surface to user.
+
+**Login failure.** If GSC redirects to accounts.google.com instead of showing the dashboard, the user's Google session has expired in this Chrome profile. STOP the engine and report. Never attempt to log in on the user's behalf — credentials must be entered by the user.
+
+**Coordinate drift.** GSC layout occasionally moves. If `screenshot` after the click doesn't show "Testing if live URL can be indexed" or "Indexing requested", fall back to `find(tabId, "Request Indexing button")` to get the live element ref, then click via `ref`.
 
 ---
 
 ## STEP 12 — Report (one line)
 
 ```
-✓ Published "{h1}" → https://100creatives.com/{slug} (persona {Pxx}, {vertical}, {word_count} words). Vercel deploying.
+✓ Published "{h1}" → https://100creatives.com/{slug} (persona {Pxx}, {vertical}, {word_count} words). Vercel deploying. IndexNow pinged. GSC Request Indexing submitted.
 ```
 
 ---
