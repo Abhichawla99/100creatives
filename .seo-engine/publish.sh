@@ -90,16 +90,63 @@ push_via_tmp_clone() {
   return 0
 }
 
+# ----- INDEXNOW PING (Bing, Yandex, Seznam, Naver) -----
+# Submits the new URL to all IndexNow-compatible search engines via api.indexnow.org.
+# Google does not participate in IndexNow — for Google we rely on sitemap freshness
+# (already submitted to Google Search Console) plus the per-URL <lastmod> update.
+# The key file must be hosted at https://100creatives.com/${INDEXNOW_KEY}.txt and
+# contain exactly the key string. The key file is committed to the repo.
+ping_indexnow() {
+  local INDEXNOW_KEY="e6baf767262d12f58083a712d380812b"
+  local URL="https://100creatives.com/${SLUG}.html"
+  local SITEMAP_URL="https://100creatives.com/sitemap.xml"
+  local KEY_LOC="https://100creatives.com/${INDEXNOW_KEY}.txt"
+
+  echo "→ Pinging IndexNow with ${URL}…"
+
+  # Wait briefly for Vercel to deploy so the URL resolves before search engines crawl
+  sleep 45
+
+  local PAYLOAD
+  PAYLOAD=$(cat <<EOF
+{
+  "host": "100creatives.com",
+  "key": "${INDEXNOW_KEY}",
+  "keyLocation": "${KEY_LOC}",
+  "urlList": ["${URL}", "${SITEMAP_URL}"]
+}
+EOF
+)
+
+  local RESP
+  RESP=$(curl -s -o /tmp/indexnow.out -w "%{http_code}" \
+    -X POST "https://api.indexnow.org/IndexNow" \
+    -H "Content-Type: application/json; charset=utf-8" \
+    -d "${PAYLOAD}" || echo "000")
+
+  case "$RESP" in
+    200|202)
+      echo "  ✓ IndexNow accepted (HTTP $RESP) — Bing/Yandex/Seznam/Naver notified."
+      ;;
+    *)
+      echo "  ⚠ IndexNow returned HTTP $RESP (non-fatal). Body:"
+      cat /tmp/indexnow.out 2>/dev/null | head -5
+      ;;
+  esac
+}
+
 # Try primary, fall back, error if both fail
 if push_from_repo 2>&1; then
   echo ""
   echo "✓ Published: https://100creatives.com/${SLUG}"
   echo "✓ Vercel will deploy in ~30–60 seconds."
+  ping_indexnow || true
 elif push_via_tmp_clone 2>&1; then
   echo ""
   echo "✓ Published via fallback: https://100creatives.com/${SLUG}"
   echo "✓ Vercel will deploy in ~30–60 seconds."
   echo "ℹ Local clone at $REPO may be behind origin — run 'git pull' there to sync."
+  ping_indexnow || true
 else
   echo "" >&2
   echo "✗ Both publish paths failed. Token may be expired, or git auth is broken." >&2

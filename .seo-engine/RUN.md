@@ -181,13 +181,17 @@ THEN update the "Rolling stats" section:
 
 ---
 
-## STEP 11 — Commit + push
+## STEP 11 — Commit + push (+ IndexNow ping)
 
 ```bash
 bash /Users/home/100creatives/.seo-engine/publish.sh "{slug}" "{full h1}"
 ```
 
 The script auto-stages: `{slug}.html`, `sitemap.xml`, the entire `.seo-engine/` directory (including state.json, MEMORY.md, topics.json updates), and `.gitignore`. It commits with a descriptive message and pushes to `main`. Vercel auto-deploys in 30–60 seconds.
+
+**Then it auto-pings IndexNow** (Bing, Yandex, Seznam, Naver) with the new URL + sitemap. The script waits 45s for Vercel to deploy first, then POSTs to `api.indexnow.org/IndexNow` with our key (`e6baf767262d12f58083a712d380812b`, hosted at `https://100creatives.com/e6baf767262d12f58083a712d380812b.txt`). HTTP 200 or 202 = accepted. Non-200 is logged but non-fatal — IndexNow rate-limits and re-tries are not necessary for daily cadence.
+
+**Google note.** Google doesn't participate in IndexNow and has no public per-URL submission API for general pages (the Indexing API is restricted to JobPosting and BroadcastEvent). For Google we rely on (a) the sitemap already submitted in Google Search Console and (b) the per-URL `<lastmod>` update we make in STEP 8 — Googlebot polls the sitemap and re-crawls based on freshness. If we ever want faster Google indexing for a specific URL, the user can paste it into GSC's URL Inspection tool and click "Request Indexing" manually.
 
 ---
 
