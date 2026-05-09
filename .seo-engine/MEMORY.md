@@ -48,12 +48,27 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-09
+- **slug:** ag1-style-supplement-product-photography-for-pdps-that-convert
+- **h1:** AG1-Style Supplement Product Photography for PDPs That Convert
+- **persona:** P03 (Supplements Operator With a Conversion Problem)
+- **vertical:** supplements
+- **angle:** Diagnose the 2.1% CVR floor as a photography problem, not a copy/pricing problem. Decode the AG1/Ritual/LMNT visual language as five structural cues (signature backdrop, directional key, label registration lock, ritual gesture, ingredient pillars as hero) and six PDP carousel pillars with a 3-tier benchmark (2.1 / 3.4 / 4.4%+). Five-business-day refresh on the hero SKU, paid-creative pack inside the same retainer.
+- **intent:** playbook
+- **primary_keyword:** supplement product photography for high CVR PDP
+- **internal_links_used:** best-ai-product-photography-agency-for-dtc-brands.html (×2), armra.html (×1 + footer), fast-ad-creative-turnaround.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), ad-creative-testing-framework.html (×1 + footer), cpg-creative-agency.html (breadcrumb + footer), beauty-ad-creatives.html (footer), static-ads-for-meta.html (footer), ecommerce-ad-creatives.html (footer)
+- **images_used:** /images/armra/armra-1.png (hero + OG), /images/armra/armra-3.png, /images/armra/armra-5.png, /images/armra/armra-6.png, /images/armra/armra-2.png, /images/armra/armra-4.png, /images/armra/armra-7.png (gallery — six pillar examples)
+- **word_count:** 3361 (visible body)
+- **notes:** Persona-locked to P03 (supplement COO/growth lead with hero SKU at 70% of revenue). Cold open names the exact CVR floor (2.1%) and category leader ceiling (4.4%+) by name — AG1, Ritual, LMNT, Seed, Armra. Could not be retitled for any other persona without rewriting the diagnosis frame, the five visual cues, the six pillars, and the 3-tier benchmark. Names competitor brands by name (AG1, Ritual, LMNT, Seed, Armra, Cymbiotika, Bloom, Olipop) and gives concrete shoot economics ($18k–$40k traditional, 5-day delivery, 60–120 bps lift band).
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
 - P01 — never
 - P02 — 2026-05-08
-- P03 — never
+- P03 — 2026-05-09
 - P04 — never
 - P05 — never
 - P06 — never
@@ -70,33 +85,35 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 **Verticals used (last 7 days):**
 - 2026-05-08: geo
 - 2026-05-08: beauty
+- 2026-05-09: supplements
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
 - apparel-ad-creatives.html: 1
 - ai-fashion-photography.html: 1
 - dtc-clothing-brand-photography-playbook.html: 1
-- beauty-ad-creatives.html: 4
-- cpg-creative-agency.html: 2
+- beauty-ad-creatives.html: 5
+- cpg-creative-agency.html: 4
 - chobani.html: 1
 - anitadongre.html: 1
-- armra.html: 1
+- armra.html: 3
 - aspire-drinks.html: 1
 - barefootwines.html: 1
 - campaigns.html: 1
 - dtc-creative-agency.html: 1
-- ai-photoshoot-vs-studio-cost.html: 2
-- ad-creative-testing-framework.html: 1
-- fast-ad-creative-turnaround.html: 2
+- ai-photoshoot-vs-studio-cost.html: 4
+- ad-creative-testing-framework.html: 3
+- fast-ad-creative-turnaround.html: 4
 - ai-fashion-photography-vs-traditional.html: 2
 - creative-agency-vs-freelancer.html: 1
 - virtual-photoshoot-for-clothing-brands.html: 1
 - on-model-photography-at-scale.html: 1
-- best-ai-product-photography-agency-for-dtc-brands.html: 2  ← link UP to this from new niche pages
-- static-ads-for-meta.html: 1
-- ecommerce-ad-creatives.html: 1
+- best-ai-product-photography-agency-for-dtc-brands.html: 4  ← link UP to this from new niche pages
+- static-ads-for-meta.html: 2
+- ecommerce-ad-creatives.html: 2
 - skincare-ad-creatives.html: 1
 
 **Brand images used (last 7 days):**
 - 2026-05-08: none (OG only)
 - 2026-05-08: goldenrule (hero + 6 gallery)
+- 2026-05-09: armra (hero + 6 gallery)
