@@ -63,13 +63,28 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-10
+- **slug:** cpg-snack-brand-photography-for-whole-foods-buyer-meeting
+- **h1:** CPG Snack Brand Photography for Your Whole Foods Buyer Meeting
+- **persona:** P04 (CPG Snack Brand Founder Pre-Whole-Foods)
+- **vertical:** food-bev
+- **angle:** The Friday email from the regional category buyer confirms the meeting in two weeks. The studio quoted six. Diagnose the gap as six rendering disciplines stitched together — GS1-compliant product-on-white at 2400×2400 for IXOne ingestion, panel/UPC/net-weight pack, three-to-five shopper-occasion lifestyle frames, Whole Foods natural-channel shelf simulation, pitch-deck hero, and a 30–50 asset Meta + TikTok creative pack — produced inside the buyer-meeting window on a sub-$5M brand budget.
+- **intent:** playbook
+- **primary_keyword:** CPG snack brand photography for retail buyer meeting
+- **internal_links_used:** cpg-creative-agency.html (×2 + breadcrumb + footer), smackin.html (×1 + footer), chobani.html (×1 + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 + footer), fast-ad-creative-turnaround.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), ad-creative-testing-framework.html (×1 + footer), beauty-ad-creatives.html (footer), static-ads-for-meta.html (footer), ecommerce-ad-creatives.html (footer)
+- **images_used:** /images/smackin/smackin-1.png (hero + OG), /images/smackin/smackin-2.png, /images/smackin/smackin-3.png, /images/smackin/smackin-4.png, /images/smackin/smackin-5.png, /images/smackin/smackin-6.png, /images/smackin/smackin-7.png (gallery — six pillar examples)
+- **word_count:** 4487 (visible body)
+- **notes:** Persona-locked to P04 (CPG snack founder, $1M–$10M ARR, ramping from DTC + farmers markets into Whole Foods/Sprouts/Erewhon/Wegmans). Cold open is the Friday email from the regional category buyer with the two-week deadline against the studio's six-week quote. Names retailer-specific systems by name (Whole Foods IXOne, GS1 GDSN, Source-To-Store, 2400×2400 spec, pure white at 255/255/255) and category leaders by name (365, Siete, Magic Spoon, Graza, Olipop, Vital Proteins, Mid-Day Squares). Tier comparison is DTC / REGIONAL / NATIONAL placement decisions, not generic quality bands. Three-tier shoot economics: $11k freelance scar tissue, $30–60k studio, retainer at meaningful fraction. Could not be retitled for any other persona without rewriting the Friday-email cold open, the IXOne/GS1 spec walk, the six-pillar buyer-meeting pack, the natural-channel shelf-palette discipline, and the placement-day-Tuesday/PIM-ingestion-Wednesday/ad-accounts-live-Thursday post-meeting sequence.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
 - P01 — never
 - P02 — 2026-05-08
 - P03 — 2026-05-09
-- P04 — never
+- P04 — 2026-05-10
 - P05 — never
 - P06 — never
 - P07 — never
@@ -86,34 +101,37 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - 2026-05-08: geo
 - 2026-05-08: beauty
 - 2026-05-09: supplements
+- 2026-05-10: food-bev
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
 - apparel-ad-creatives.html: 1
 - ai-fashion-photography.html: 1
 - dtc-clothing-brand-photography-playbook.html: 1
-- beauty-ad-creatives.html: 5
-- cpg-creative-agency.html: 4
-- chobani.html: 1
+- beauty-ad-creatives.html: 6
+- cpg-creative-agency.html: 6
+- chobani.html: 2
 - anitadongre.html: 1
 - armra.html: 3
 - aspire-drinks.html: 1
 - barefootwines.html: 1
 - campaigns.html: 1
 - dtc-creative-agency.html: 1
-- ai-photoshoot-vs-studio-cost.html: 4
-- ad-creative-testing-framework.html: 3
-- fast-ad-creative-turnaround.html: 4
+- ai-photoshoot-vs-studio-cost.html: 5
+- ad-creative-testing-framework.html: 4
+- fast-ad-creative-turnaround.html: 5
 - ai-fashion-photography-vs-traditional.html: 2
 - creative-agency-vs-freelancer.html: 1
 - virtual-photoshoot-for-clothing-brands.html: 1
 - on-model-photography-at-scale.html: 1
-- best-ai-product-photography-agency-for-dtc-brands.html: 4  ← link UP to this from new niche pages
-- static-ads-for-meta.html: 2
-- ecommerce-ad-creatives.html: 2
+- best-ai-product-photography-agency-for-dtc-brands.html: 5  ← link UP to this from new niche pages
+- static-ads-for-meta.html: 3
+- ecommerce-ad-creatives.html: 3
 - skincare-ad-creatives.html: 1
+- smackin.html: 1
 
 **Brand images used (last 7 days):**
 - 2026-05-08: none (OG only)
 - 2026-05-08: goldenrule (hero + 6 gallery)
 - 2026-05-09: armra (hero + 6 gallery)
+- 2026-05-10: smackin (hero + 6 gallery)
