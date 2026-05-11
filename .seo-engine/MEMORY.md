@@ -78,6 +78,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-11
+- **slug:** ad-creative-volume-for-meta-when-cac-is-rising
+- **h1:** Ad Creative Volume for Meta When CAC Is Rising
+- **persona:** P05 (Performance Marketer Burning Through Creative)
+- **vertical:** geo
+- **angle:** The Q-end Zoom diagnosed "creative fatigue" as the reason for CAC up 30%. Cold prospecting frequency at 3.4, CTR-link under 0.9%, CPM 28% above the trailing 30-day median, in-house pod ships 8–12 concepts/week, auction wants 30–120. Diagnose the gap as a volume-and-rotation problem and prescribe the 7-2-1 weekly drop (7 winners maintained, 2 DNA-share tests, 1 wildcard) composed against a locked brand spine — Monday brief → Wednesday concepts → Friday in-account.
+- **intent:** playbook
+- **primary_keyword:** ad creative volume for Meta when CAC is rising
+- **internal_links_used:** static-ads-for-meta.html (breadcrumb + footer), fast-ad-creative-turnaround.html (×1 + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 + footer), dtc-creative-agency.html (×1 + footer), creative-agency-vs-freelancer.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), chobani.html (×1 + footer), ad-creative-testing-framework.html (×1 + footer), ecommerce-ad-creatives.html (footer), cpg-creative-agency.html (footer), smackin.html (footer)
+- **images_used:** /images/chobani/chobani-1.png (hero + OG), /images/chobani/chobani-2.png, /images/chobani/chobani-3.png, /images/chobani/chobani-4.png, /images/chobani/chobani-5.png, /images/chobani/chobani-6.png, /images/chobani/chobani-7.png (gallery — six pillar examples)
+- **word_count:** 4326 (visible body)
+- **notes:** Persona-locked to P05 (performance/growth marketer at $10M–$100M DTC brand running Meta + TikTok). Cold open is the Friday Q-end Zoom with the CFO and CEO, the CAC-up-30% slide on screen, and "creative fatigue" as the diagnosis-column phrase. Names the auction's specific thresholds (frequency 3.0/3.4, CTR-link 0.9%, CPM 20–40% above 30-day median, Advantage+ Shopping vs ABO ROAS gap). Names Meta-platform mechanics by name (Advantage Plus Shopping, Andromeda, CAPI, broad-audience defaults). Cites Andrew Foxwell's creative diversification index and Common Thread Collective's 2–3%-of-creatives-win-70%-of-spend audit data. Quantifies in-house pod economics ($600k–$900k/yr for CD + 2 designers + motion + copywriter shipping 8–12/wk) vs retainer ($20k–$45k/mo for 30–120/wk). Names category-leader brands running this discipline by name (Liquid Death, Olipop, Magic Spoon, Vuori, Ridge, Athletic Greens, Hexclad, Bombas, Better Help, Squarespace, Mid-Day Squares). Names performance creative agency category competitors by name (Tubescience, Hydroshapes, Pilothouse, Common Thread Collective, Trend). Introduces the 7-2-1 weekly rotation framework as the differentiated mechanic (vs generic "test more creative"). Q4/BFCM playbook expands rotation to 14-4-2 with two weekly drops. Could not be retitled for any other persona without rewriting the Q-end-Zoom cold open, the auction-threshold table, the in-house-pod-vs-retainer cost math, the 7-2-1 rotation, the Monday-brief-Friday-live cadence, and the Advantage Plus / Andromeda / CAPI references.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -85,7 +100,7 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P02 — 2026-05-08
 - P03 — 2026-05-09
 - P04 — 2026-05-10
-- P05 — never
+- P05 — 2026-05-11
 - P06 — never
 - P07 — never
 - P08 — never
@@ -102,6 +117,7 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - 2026-05-08: beauty
 - 2026-05-09: supplements
 - 2026-05-10: food-bev
+- 2026-05-11: geo
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
@@ -109,29 +125,30 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - ai-fashion-photography.html: 1
 - dtc-clothing-brand-photography-playbook.html: 1
 - beauty-ad-creatives.html: 6
-- cpg-creative-agency.html: 6
-- chobani.html: 2
+- cpg-creative-agency.html: 7
+- chobani.html: 3
 - anitadongre.html: 1
 - armra.html: 3
 - aspire-drinks.html: 1
 - barefootwines.html: 1
 - campaigns.html: 1
-- dtc-creative-agency.html: 1
-- ai-photoshoot-vs-studio-cost.html: 5
-- ad-creative-testing-framework.html: 4
-- fast-ad-creative-turnaround.html: 5
+- dtc-creative-agency.html: 2
+- ai-photoshoot-vs-studio-cost.html: 6
+- ad-creative-testing-framework.html: 5
+- fast-ad-creative-turnaround.html: 6
 - ai-fashion-photography-vs-traditional.html: 2
-- creative-agency-vs-freelancer.html: 1
+- creative-agency-vs-freelancer.html: 2
 - virtual-photoshoot-for-clothing-brands.html: 1
 - on-model-photography-at-scale.html: 1
-- best-ai-product-photography-agency-for-dtc-brands.html: 5  ← link UP to this from new niche pages
-- static-ads-for-meta.html: 3
-- ecommerce-ad-creatives.html: 3
+- best-ai-product-photography-agency-for-dtc-brands.html: 6  ← link UP to this from new niche pages
+- static-ads-for-meta.html: 4
+- ecommerce-ad-creatives.html: 4
 - skincare-ad-creatives.html: 1
-- smackin.html: 1
+- smackin.html: 2
 
 **Brand images used (last 7 days):**
 - 2026-05-08: none (OG only)
 - 2026-05-08: goldenrule (hero + 6 gallery)
 - 2026-05-09: armra (hero + 6 gallery)
 - 2026-05-10: smackin (hero + 6 gallery)
+- 2026-05-11: chobani (hero + 6 gallery)
