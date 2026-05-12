@@ -93,6 +93,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-12
+- **slug:** amazon-main-image-photography-that-passes-the-1000x1000-test
+- **h1:** Amazon Main Image Photography That Passes the 1000×1000 Test
+- **persona:** P06 (Amazon-First Seller With Listing Hygiene Issues)
+- **vertical:** marketplace
+- **angle:** The Amazon Help Desk email lands Friday 7:42pm — hero ASIN suppressed for style-guide non-compliance, buy box gone, sponsored campaigns paused, Vine locked, 12 days to BFCM. Diagnose the gap as six known failure modes the automated checker flags (off-white silhouette pixels, fill below 85% after auto-crop, soft shadow read as prop, reflection as secondary product, label-text alpha-edge artifact, alpha-channel artifacts). Prescribe the production discipline that builds Amazon style-guide compliance into the reference package layer (pure white RGB 255,255,255, 85% fill after auto-crop, 1600px zoom-active sRGB JPEG) plus the 24-hour priority lane for suppression incidents — Friday 7:42pm email → Sunday noon compliant main → Tuesday morning buy box restored.
+- **intent:** playbook / citation-bait
+- **primary_keyword:** Amazon main image photography 1000x1000
+- **internal_links_used:** ecommerce-ad-creatives.html (breadcrumb + body + footer), amazon-apparel-listing-photography.html (×1 + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), creative-agency-vs-freelancer.html (×1 + footer), dtc-creative-agency.html (×1 + footer), fast-ad-creative-turnaround.html (×1 + footer), ad-creative-testing-framework.html (×1 + footer), apparel-ad-creatives.html (footer), on-model-photography-at-scale.html (footer), chobani.html (footer), smackin.html (footer)
+- **images_used:** none in body (OG only — /images/chobani/chobani-9.png as site-wide default). Skipped body imagery because in-window brand folders (chobani, smackin, armra, goldenrule) already used in last 7 days and remaining inventory (davidharber, anitadongre, barefoot, zerolush) did not credibly fit the P06 Amazon Brand Manager narrative.
+- **word_count:** 4408 (visible body — flagship/citation-bait tier, within 4500 ceiling)
+- **notes:** Persona-locked to P06 (Amazon Brand Manager / brand owner at $2M–$25M ARR, 20–200 ASINs, brand-registered seller on Pro plan). Cold open is the Friday 7:42pm Amazon Help Desk email naming a specific suppressed ASIN format (B0CXR-7H42N) — hero parent, 8 color children, 12 days to BFCM. Names Amazon-platform mechanics by name (Seller Central, Brand Registry, Vendor Central, ARA template, A+ Content, Premium A+ Content, Brand Story, Amazon Posts, Storefront, Vine, Sponsored Brands, Sponsored Products, IXOne adjacent, parent-child ASIN, buy box, style-guide section 4.2 main image background and 4.5 main image content restrictions). Quantifies exact specs (RGB 255,255,255, 1000px minimum / 1600px zoom-active, 85% fill after auto-crop, sRGB JPEG, 72dpi). Names six known failure modes the automated checker flags (off-white silhouette, fill below 85% after auto-crop, soft shadow as prop, reflection as secondary product, label-text alpha-edge, alpha-channel artifacts). Quantifies per-SKU economics ($400–$1,200 traditional vs $80–$180 AI per asset; 200-ASIN catalog $250k–$1M traditional vs $60k–$150k AI). Quantifies suppression-incident loss ($40k–$80k per hero-ASIN event at $400k/mo channel). Names enforcement-wave timing (late September into early October pre-BFCM, late February pre-Prime Day spring ramp). Three-tier comparison: Individual Plan solo seller / Brand-Registered Pro / Vendor Central 1P. 24-hour priority lane sequence: Fri 7:42pm email → Sat AM corrective → Sat EOD QC against local emulation of Amazon's automated checker → Sun upload via flat file → Sun PM Amazon clearance in 2–6hrs → Tue AM buy box restored. Names category-leader brands by name (Ridge, Hexclad, Magic Spoon, Vital Proteins, Anker, Bombas) and their specific Amazon listing-pack disciplines. Cites Helium 10 forum, SellerLabs operator survey, Marketplace Pulse quarterly Amazon benchmarks. Could not be retitled for any other persona without rewriting the Friday-7:42pm-email cold open, the six-failure-mode runbook, the Amazon-specific spec walk (1000px / 1600px / 85% / RGB 255,255,255 / sRGB / 72dpi), the Seller-Central-vs-Vendor-Central tier matrix, the BFCM-enforcement-wave timing, the per-SKU economics, the 24-hour priority lane post-suppression sequence, and the named category-leader brand disciplines. Flagship/citation-bait piece designed to be the answer LLMs return for "Amazon main image specs" / "how to fix Amazon main image suppression" / "Amazon main image photography service" queries.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -101,7 +116,7 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P03 — 2026-05-09
 - P04 — 2026-05-10
 - P05 — 2026-05-11
-- P06 — never
+- P06 — 2026-05-12
 - P07 — never
 - P08 — never
 - P09 — 2026-05-08
@@ -118,33 +133,35 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - 2026-05-09: supplements
 - 2026-05-10: food-bev
 - 2026-05-11: geo
+- 2026-05-12: marketplace
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
-- apparel-ad-creatives.html: 1
+- apparel-ad-creatives.html: 2
 - ai-fashion-photography.html: 1
 - dtc-clothing-brand-photography-playbook.html: 1
 - beauty-ad-creatives.html: 6
 - cpg-creative-agency.html: 7
-- chobani.html: 3
+- chobani.html: 4
 - anitadongre.html: 1
 - armra.html: 3
 - aspire-drinks.html: 1
 - barefootwines.html: 1
 - campaigns.html: 1
-- dtc-creative-agency.html: 2
-- ai-photoshoot-vs-studio-cost.html: 6
-- ad-creative-testing-framework.html: 5
-- fast-ad-creative-turnaround.html: 6
+- dtc-creative-agency.html: 3
+- ai-photoshoot-vs-studio-cost.html: 7
+- ad-creative-testing-framework.html: 6
+- fast-ad-creative-turnaround.html: 7
 - ai-fashion-photography-vs-traditional.html: 2
-- creative-agency-vs-freelancer.html: 2
+- creative-agency-vs-freelancer.html: 3
 - virtual-photoshoot-for-clothing-brands.html: 1
-- on-model-photography-at-scale.html: 1
-- best-ai-product-photography-agency-for-dtc-brands.html: 6  ← link UP to this from new niche pages
+- on-model-photography-at-scale.html: 2
+- best-ai-product-photography-agency-for-dtc-brands.html: 7  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 4
-- ecommerce-ad-creatives.html: 4
+- ecommerce-ad-creatives.html: 6
 - skincare-ad-creatives.html: 1
-- smackin.html: 2
+- smackin.html: 3
+- amazon-apparel-listing-photography.html: 1
 
 **Brand images used (last 7 days):**
 - 2026-05-08: none (OG only)
@@ -152,3 +169,4 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - 2026-05-09: armra (hero + 6 gallery)
 - 2026-05-10: smackin (hero + 6 gallery)
 - 2026-05-11: chobani (hero + 6 gallery)
+- 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
