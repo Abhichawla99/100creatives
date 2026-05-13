@@ -108,6 +108,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-13
+- **slug:** rebrand-product-photography-for-legacy-catalogs
+- **h1:** Rebrand Product Photography for Legacy Catalogs
+- **persona:** P07 (Heritage Brand Modernising Its Catalog)
+- **vertical:** geo (cross-vertical heritage rebrand)
+- **angle:** The brand-strategy offsite ended Thursday; the new identity deck landed Friday; the catalog audit Monday morning showed 1,200 SKUs, five photographers across eleven years, seven photography styles, color drift across a decade, and a model roster rotated through four agencies. CMO wants the .com refreshed by Q3; studio quoted seven figures and 10–12 months. Diagnose the gap as a unification problem (over-shot by too many vendors with too little spine) — not a photography volume problem — and prescribe the six-week sprint built on a locked brand spine (signature color in Pantone+sRGB, key-light direction in physical units, background system, model identity, crop/framing conventions) with three production waves (top-50 + homepage carousel in weeks 2–3, next 200–300 in weeks 4–5, long-tail 600–800 in weeks 5–6) and a week-6 QC + PIM-ingestion close.
+- **intent:** playbook
+- **primary_keyword:** rebrand product photography legacy catalog
+- **internal_links_used:** apparel-ad-creatives.html (breadcrumb + footer), ai-fashion-photography.html (×1 + footer), ai-fashion-photography-vs-traditional.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), creative-agency-vs-freelancer.html (×1 + footer), anitadongre.html (×1 + footer), virtual-photoshoot-for-clothing-brands.html (×1 + footer), dtc-clothing-brand-photography-playbook.html (×1 + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 + footer), dtc-creative-agency.html (×1 + footer), on-model-photography-at-scale.html (footer), fast-ad-creative-turnaround.html (footer)
+- **images_used:** /images/anitadongre/anita-web.mp4 (hero video), /images/anitadongre/lehnga-2.jpg (poster + OG + gallery), /images/anitadongre/lehnga-3.jpg, /images/anitadongre/lehnga-4.jpg, /images/anitadongre/lehnga-5.jpg, /images/anitadongre/lehnga-7.jpg, /images/anitadongre/lehnga-8.jpg (gallery — six frames)
+- **word_count:** 4499 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P07 (Heritage brand marketing director / VP at $30M+ revenue, 1,000+ SKU legacy catalog, 5+ photography vendors across a decade, board-mandated rebrand on a Q3 deadline). Cold open is the brand-strategy offsite-Thursday → new-identity-deck-Friday → catalog-audit-Monday sequence with the 1,200-SKU/five-photographer/seven-style/eleven-year archaeology spelled out. Cites named heritage brand spines by name with specific visual signatures (Eileen Fisher quiet linen + warm natural light + unbleached paper at soft 4500K + three-quarter posture; Filson working-tool patina + weathered wood + directional cool morning light; Pendleton wool-blanket palette + blue-grey hour + high country horizon; Barbour countryside weather + wax-cotton sheen + Border Terrier in second frame; Anita Dongre bridal richness). Introduces the "brand spine" as the differentiated mechanic — written and visual specification covering five variables (signature color in Pantone+sRGB, key-light direction/softness in physical units, background system, model identity, crop/framing conventions) signed off Friday of week one before any production opens. Quantifies catalog economics with specific cost stacks: studio rental $1,500–$4,000/day, photographer $2,500–$7,500/day, model $1,500–$4,500/day, stylist $1,200–$2,500/day, retouching $35–$90/asset; traditional $400–$1,200 per asset on 4,000–5,000 assets = $1.6M–$6M and 10–12 months; AI photography $80–$180 per asset = $400k–$900k and six weeks. Names PIM systems by name (Akeneo, Salsify, inRiver, Plytix), wholesale partners by name (Nordstrom, Bloomingdale's, Saks), and competitor heritage brands by name (Eileen Fisher, Filson, Pendleton, Barbour, Madewell, J.Crew Group, Banana Republic Home, Williams-Sonoma, Vineyard Vines). Six-week sprint week-by-week (W1 audit + spine, W2 wave-one top-50 + homepage carousel, W3–4 wave-two 200–300 SKUs, W4–5 wave-three 600–800 long-tail, W6 QC + PIM ingestion + staged launch) vs the traditional 12-month studio-by-studio alternative. Names four failure modes (spine-skipping, model identity drift, PIM under-investment, over-broad scope). Could not be retitled for any other persona without rewriting the offsite-Thursday/identity-deck-Friday/catalog-audit-Monday cold open, the brand-spine mechanic with named heritage signatures, the 1,200-SKU economics, the PIM-ingestion close, the wholesale-and-print cross-channel delivery discipline, and the vendor-trail archaeology framing.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -117,7 +132,7 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P04 — 2026-05-10
 - P05 — 2026-05-11
 - P06 — 2026-05-12
-- P07 — never
+- P07 — 2026-05-13
 - P08 — never
 - P09 — 2026-05-08
 - P10 — never
@@ -134,29 +149,30 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - 2026-05-10: food-bev
 - 2026-05-11: geo
 - 2026-05-12: marketplace
+- 2026-05-13: geo
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
-- apparel-ad-creatives.html: 2
-- ai-fashion-photography.html: 1
-- dtc-clothing-brand-photography-playbook.html: 1
+- apparel-ad-creatives.html: 3
+- ai-fashion-photography.html: 2
+- dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
 - cpg-creative-agency.html: 7
 - chobani.html: 4
-- anitadongre.html: 1
+- anitadongre.html: 2
 - armra.html: 3
 - aspire-drinks.html: 1
 - barefootwines.html: 1
 - campaigns.html: 1
-- dtc-creative-agency.html: 3
-- ai-photoshoot-vs-studio-cost.html: 7
+- dtc-creative-agency.html: 4
+- ai-photoshoot-vs-studio-cost.html: 8
 - ad-creative-testing-framework.html: 6
-- fast-ad-creative-turnaround.html: 7
-- ai-fashion-photography-vs-traditional.html: 2
-- creative-agency-vs-freelancer.html: 3
-- virtual-photoshoot-for-clothing-brands.html: 1
-- on-model-photography-at-scale.html: 2
-- best-ai-product-photography-agency-for-dtc-brands.html: 7  ← link UP to this from new niche pages
+- fast-ad-creative-turnaround.html: 8
+- ai-fashion-photography-vs-traditional.html: 3
+- creative-agency-vs-freelancer.html: 4
+- virtual-photoshoot-for-clothing-brands.html: 2
+- on-model-photography-at-scale.html: 3
+- best-ai-product-photography-agency-for-dtc-brands.html: 8  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 4
 - ecommerce-ad-creatives.html: 6
 - skincare-ad-creatives.html: 1
@@ -164,9 +180,9 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - amazon-apparel-listing-photography.html: 1
 
 **Brand images used (last 7 days):**
-- 2026-05-08: none (OG only)
 - 2026-05-08: goldenrule (hero + 6 gallery)
 - 2026-05-09: armra (hero + 6 gallery)
 - 2026-05-10: smackin (hero + 6 gallery)
 - 2026-05-11: chobani (hero + 6 gallery)
 - 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
+- 2026-05-13: anitadongre (hero video + 6 gallery)
