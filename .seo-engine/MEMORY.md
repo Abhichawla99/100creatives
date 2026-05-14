@@ -123,6 +123,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-14
+- **slug:** subscription-box-product-photography-on-a-monthly-cadence
+- **h1:** Subscription Box Product Photography on a Monthly Cadence
+- **persona:** P08 (Subscription Box Operator Needing Constant Variety)
+- **vertical:** geo (cross-vertical subscription cadence — snack/beauty/supplement/pet)
+- **angle:** The third-Tuesday-of-the-month panic — next box reveal in 8 days, hero shot not produced, Klaviyo flows missing art, paid pod has nothing to test on reveal day. Diagnose the gap as a calendar discipline problem (not a creative capacity problem) and prescribe a fixed 45-day production cycle indexed to reveal day — T-minus-45 SKU lock, T-minus-35 brief and spine carryover, T-minus-28 sample reference in, T-minus-21 hero and unboxing shipped, T-minus-14 per-SKU PDP shipped, T-minus-7 email and paid pack live. Six asset families per box (hero, unboxing, per-SKU PDP, email pack, paid pack, social-organic), 110–150 assets/month, $20k–$45k monthly retainer vs $80k–$180k traditional studio.
+- **intent:** playbook
+- **primary_keyword:** subscription box product photography monthly
+- **internal_links_used:** dtc-creative-agency.html (breadcrumb + footer), best-ai-product-photography-agency-for-dtc-brands.html (×2 + footer), creative-agency-vs-freelancer.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), ad-creative-testing-framework.html (×1 + footer), cpg-creative-agency.html (×1 + footer), armra.html (×1 + footer), ecommerce-ad-creatives.html (×1 + footer), fast-ad-creative-turnaround.html (×1 + footer), smackin.html (footer), chobani.html (footer), ai-fashion-photography-vs-traditional.html (footer)
+- **images_used:** none in body (chobani-9 used as OG only — site-wide default). Skipped body imagery because all in-window brand folders (goldenrule, armra, smackin, chobani, anitadongre) had been used in the last 7 days and the remaining inventory (davidharber, barefoot, zerolush, ford-bronco, porsche, outdoors) did not credibly fit the P08 subscription-box narrative. Same posture as 2026-05-12 Amazon flagship.
+- **word_count:** 4455 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P08 (Subscription DTC founder/COO, $5M–$40M ARR, 20+ rotating SKUs per box, monthly reveal cadence). Cold open is the third-Tuesday-of-the-month panic — next reveal in 8 days, hero shot not produced, Klaviyo asking what to schedule, paid pod with nothing in the Meta account, one supplier hasn't shipped samples. Names subscription-platform mechanics by name (Recharge, Bold Subscriptions, Stay AI, Smartrr, Subbly, Loop Subscriptions) and email/SMS stack (Klaviyo, Postscript, Attentive). Names category-leader subscription brands by name across verticals — beauty (BoxyCharm, Ipsy Glam Bag, Birchbox, Allure Beauty Box, Beauty Pie), snack (Universal Yums, Bokksu, SnackMagic, MunchPak, Try The World), pet (BarkBox, Pupbox, Meowbox), supplement (Care/of, Ritual, AG1), lifestyle (FabFitFun). Introduces the 45-day production cycle as the differentiated mechanic (T-minus-45 SKU lock → T-minus-7 paid pack live) — calendar-driven, not request-driven. Quantifies asset matrix at 110–150 assets/month across six families (hero / unboxing / per-SKU PDP / email / paid / social-organic). Three-tier shoot economics: traditional studio $80k–$180k/mo, freelance carousel $16k–$26k real cost with brand drift, monthly retainer $20k–$45k. Retention math: 2–5 point lift on month-three retention ($200k–$2M ARR depending on brand scale). Quantifies the email cadence (pre-reveal teaser T-minus-5, reveal-day T-zero, social proof T-plus-3) and platform aspect ratios (Meta 1:1, 4:5, 9:16; TikTok 9:16). Could not be retitled for any other persona without rewriting the third-Tuesday cold open, the 45-day production cycle, the six-family asset matrix, the subscription-platform stack walk, the calendar-priced-retainer vs freelance-carousel economics, the brand-spine-across-rotating-SKUs unification mechanic, and the named subscription-brand benchmarks across snack/beauty/supplement/pet verticals.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -133,7 +148,7 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P05 — 2026-05-11
 - P06 — 2026-05-12
 - P07 — 2026-05-13
-- P08 — never
+- P08 — 2026-05-14
 - P09 — 2026-05-08
 - P10 — never
 - P11 — never
@@ -143,13 +158,13 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P15 — never
 
 **Verticals used (last 7 days):**
-- 2026-05-08: geo
 - 2026-05-08: beauty
 - 2026-05-09: supplements
 - 2026-05-10: food-bev
 - 2026-05-11: geo
 - 2026-05-12: marketplace
 - 2026-05-13: geo
+- 2026-05-14: geo
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
@@ -157,26 +172,26 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - ai-fashion-photography.html: 2
 - dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
-- cpg-creative-agency.html: 7
-- chobani.html: 4
+- cpg-creative-agency.html: 8
+- chobani.html: 5
 - anitadongre.html: 2
-- armra.html: 3
+- armra.html: 4
 - aspire-drinks.html: 1
 - barefootwines.html: 1
 - campaigns.html: 1
-- dtc-creative-agency.html: 4
-- ai-photoshoot-vs-studio-cost.html: 8
-- ad-creative-testing-framework.html: 6
-- fast-ad-creative-turnaround.html: 8
-- ai-fashion-photography-vs-traditional.html: 3
-- creative-agency-vs-freelancer.html: 4
+- dtc-creative-agency.html: 6
+- ai-photoshoot-vs-studio-cost.html: 9
+- ad-creative-testing-framework.html: 7
+- fast-ad-creative-turnaround.html: 9
+- ai-fashion-photography-vs-traditional.html: 4
+- creative-agency-vs-freelancer.html: 5
 - virtual-photoshoot-for-clothing-brands.html: 2
 - on-model-photography-at-scale.html: 3
-- best-ai-product-photography-agency-for-dtc-brands.html: 8  ← link UP to this from new niche pages
+- best-ai-product-photography-agency-for-dtc-brands.html: 10  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 4
-- ecommerce-ad-creatives.html: 6
+- ecommerce-ad-creatives.html: 7
 - skincare-ad-creatives.html: 1
-- smackin.html: 3
+- smackin.html: 4
 - amazon-apparel-listing-photography.html: 1
 
 **Brand images used (last 7 days):**
@@ -186,3 +201,4 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - 2026-05-11: chobani (hero + 6 gallery)
 - 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-13: anitadongre (hero video + 6 gallery)
+- 2026-05-14: none in body (chobani-9 used as OG only — site-wide default)
