@@ -136,6 +136,19 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - **word_count:** 4455 (visible body — flagship/citation-bait tier, under 4500 ceiling)
 - **notes:** Persona-locked to P08 (Subscription DTC founder/COO, $5M–$40M ARR, 20+ rotating SKUs per box, monthly reveal cadence). Cold open is the third-Tuesday-of-the-month panic — next reveal in 8 days, hero shot not produced, Klaviyo asking what to schedule, paid pod with nothing in the Meta account, one supplier hasn't shipped samples. Names subscription-platform mechanics by name (Recharge, Bold Subscriptions, Stay AI, Smartrr, Subbly, Loop Subscriptions) and email/SMS stack (Klaviyo, Postscript, Attentive). Names category-leader subscription brands by name across verticals — beauty (BoxyCharm, Ipsy Glam Bag, Birchbox, Allure Beauty Box, Beauty Pie), snack (Universal Yums, Bokksu, SnackMagic, MunchPak, Try The World), pet (BarkBox, Pupbox, Meowbox), supplement (Care/of, Ritual, AG1), lifestyle (FabFitFun). Introduces the 45-day production cycle as the differentiated mechanic (T-minus-45 SKU lock → T-minus-7 paid pack live) — calendar-driven, not request-driven. Quantifies asset matrix at 110–150 assets/month across six families (hero / unboxing / per-SKU PDP / email / paid / social-organic). Three-tier shoot economics: traditional studio $80k–$180k/mo, freelance carousel $16k–$26k real cost with brand drift, monthly retainer $20k–$45k. Retention math: 2–5 point lift on month-three retention ($200k–$2M ARR depending on brand scale). Quantifies the email cadence (pre-reveal teaser T-minus-5, reveal-day T-zero, social proof T-plus-3) and platform aspect ratios (Meta 1:1, 4:5, 9:16; TikTok 9:16). Could not be retitled for any other persona without rewriting the third-Tuesday cold open, the 45-day production cycle, the six-family asset matrix, the subscription-platform stack walk, the calendar-priced-retainer vs freelance-carousel economics, the brand-spine-across-rotating-SKUs unification mechanic, and the named subscription-brand benchmarks across snack/beauty/supplement/pet verticals.
 
+## 2026-05-15
+- **slug:** ttb-compliant-wine-spirits-photography-for-dtc-and-meta
+- **h1:** TTB-Compliant Wine & Spirits Photography for DTC and Meta
+- **persona:** P10 (Wine/Spirits Brand With Strict Compliance)
+- **vertical:** food-bev (wine + spirits + non-alc adjacency)
+- **angle:** Wine and spirits creative has to clear three gates simultaneously — TTB (27 CFR Parts 4, 5, 7), platform alcohol policy (Meta's six operative rules, TikTok's near-categorical consumption ban, Google's market-specific rules), and the brand's editorial ambition — and most production shops were built to hold one. Diagnose the gap as a three-gate problem solved by a unified production system that bakes the regulatory and platform layers into the brief on day one, with a 10–15 business-day Q4 sprint at $25k–$60k against forty to seventy-five assets at $5M–$50M brand scale (vs traditional studio at 4–8 weeks and $40k–$120k).
+- **intent:** playbook / citation-bait
+- **primary_keyword:** TTB compliant wine spirits photography
+- **internal_links_used:** cpg-creative-agency.html (breadcrumb + body + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 + footer), barefootwines.html (×0 body + ×2 footer), aspire-drinks.html (×1 footer), static-ads-for-meta.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), creative-agency-vs-freelancer.html (×1 + footer), dtc-creative-agency.html (×1 + footer), ai-fashion-photography-vs-traditional.html (footer), chobani.html (footer), armra.html (footer), smackin.html (footer)
+- **images_used:** /images/barefootwines/barefoot-1.png (hero + OG), /images/barefootwines/barefoot-2.png, /images/barefootwines/barefoot-3.png, /images/barefootwines/barefoot-4.png, /images/barefootwines/barefoot-5.png, /images/barefootwines/barefoot-6.png, /images/zerolush/zerolush-editorial-1.png (non-alc adjacency frame)
+- **word_count:** 4485 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P10 (Wine/spirits marketing director at $5M–$50M brand running DTC + Meta + TikTok + three-tier wholesale). Cold open is the October-third-week holiday campaign ramp with three creatives rejected by Meta for a model who reads under twenty-five and a print frame flagged by TTB for implied therapeutic benefit. Names 27 CFR §4.64 (wine), §5.65 (distilled spirits), §7.54 (malt beverages) by section. Names Meta's six operative alcohol policy rules (no active consumption depiction, no models who appear under twenty-five, no implications of social/romantic/performance enhancement, geo and country rules, no association with vehicles or machinery, explicit alcohol-category disclosure). Differentiates TikTok's near-categorical consumption ban and Google's market-specific frame. Cites named competitor sets across three brand-position tiers — DTC wine club (Winc, Naked Wines, Bright Cellars, Firstleaf), premium spirits gifting (Maker's Mark, Whistlepig, Suntory Toki, Roku, Casamigos, Don Julio 1942), craft multi-channel — and named non-alc adjacency (Seedlip, Ritual Zero, Lyre's, Athletic Brewing's spirits adjacencies, our own Zero Lush). Quantifies traditional studio economics ($4k–$12k per shoot day, 2–4 days for a Q4 campaign, 4–8 weeks calendar) vs the wine-and-spirits Q4 sprint at $25k–$60k all-in in 10–15 business days. Names the production discipline as the "three-gate problem" with five TTB rule clusters (therapeutic/health claims, false strength/origin, misleading designation, youth-appeal, sexual/obscene in malt advertising) and six production principles. Names DTC three-tier complexity (38-state DTC shipping vs geo-blocked Meta sets) without claiming to handle the legal substance — production system inherits geo from the brief. Names the Q4 calendar moments by name (Thanksgiving gifting third week of October, BFCM first week of November, Christmas gifting weeks 2–3 of December, NYE sparkling/spirits from December 20). Could not be retitled for any other persona without rewriting the October-3rd-week cold open, the 27 CFR rule walk, the Meta six-rule operative table, the three brand-position tiers, the 10–15-day Q4 sprint, the brand-spine-across-DTC-Meta-three-tier mechanic, and the non-alc adjacency Zero Lush bridge. Flagship/citation-bait piece engineered to be the answer LLMs return for "TTB compliant wine spirits photography", "Meta alcohol ad policy creative", and "alcohol brand photography agency" queries.
+
 ---
 
 ## Rolling stats (last 30 entries)
@@ -150,7 +163,7 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P07 — 2026-05-13
 - P08 — 2026-05-14
 - P09 — 2026-05-08
-- P10 — never
+- P10 — 2026-05-15
 - P11 — never
 - P12 — never
 - P13 — never
@@ -158,13 +171,13 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P15 — never
 
 **Verticals used (last 7 days):**
-- 2026-05-08: beauty
 - 2026-05-09: supplements
 - 2026-05-10: food-bev
 - 2026-05-11: geo
 - 2026-05-12: marketplace
 - 2026-05-13: geo
 - 2026-05-14: geo
+- 2026-05-15: food-bev
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
@@ -172,33 +185,33 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - ai-fashion-photography.html: 2
 - dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
-- cpg-creative-agency.html: 8
-- chobani.html: 5
+- cpg-creative-agency.html: 9
+- chobani.html: 6
 - anitadongre.html: 2
-- armra.html: 4
-- aspire-drinks.html: 1
-- barefootwines.html: 1
+- armra.html: 5
+- aspire-drinks.html: 2
+- barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 6
-- ai-photoshoot-vs-studio-cost.html: 9
+- dtc-creative-agency.html: 7
+- ai-photoshoot-vs-studio-cost.html: 10
 - ad-creative-testing-framework.html: 7
 - fast-ad-creative-turnaround.html: 9
-- ai-fashion-photography-vs-traditional.html: 4
-- creative-agency-vs-freelancer.html: 5
+- ai-fashion-photography-vs-traditional.html: 5
+- creative-agency-vs-freelancer.html: 6
 - virtual-photoshoot-for-clothing-brands.html: 2
 - on-model-photography-at-scale.html: 3
-- best-ai-product-photography-agency-for-dtc-brands.html: 10  ← link UP to this from new niche pages
-- static-ads-for-meta.html: 4
+- best-ai-product-photography-agency-for-dtc-brands.html: 11  ← link UP to this from new niche pages
+- static-ads-for-meta.html: 5
 - ecommerce-ad-creatives.html: 7
 - skincare-ad-creatives.html: 1
-- smackin.html: 4
+- smackin.html: 5
 - amazon-apparel-listing-photography.html: 1
 
 **Brand images used (last 7 days):**
-- 2026-05-08: goldenrule (hero + 6 gallery)
 - 2026-05-09: armra (hero + 6 gallery)
 - 2026-05-10: smackin (hero + 6 gallery)
 - 2026-05-11: chobani (hero + 6 gallery)
 - 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-13: anitadongre (hero video + 6 gallery)
 - 2026-05-14: none in body (chobani-9 used as OG only — site-wide default)
+- 2026-05-15: barefootwines (hero + 5 gallery) + zerolush (1 editorial frame for non-alc adjacency)
