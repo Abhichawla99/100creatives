@@ -151,6 +151,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-16
+- **slug:** ai-photography-for-bulky-home-goods-without-shipping-to-studio
+- **h1:** AI Photography for Bulky Home Goods (Without Shipping to a Studio)
+- **persona:** P11 (Home Goods / Furniture Brand Going DTC) — first use
+- **vertical:** home
+- **angle:** Bulky home goods is the only category where freight is the unspoken line item that closes the studio quote — 200-pound sectional, 60-pound cookware set, 110-pound mattress, four-foot bronze garden sculpture. Diagnose the gap as a shipment-architecture problem (not a photography-capacity problem) and prescribe the no-shipment production system: one calibrated reference capture at point of manufacture (Macbeth + grey card + 5500K LED + tape) + locked finish library (oak/walnut/brass/bouclé/leather/cast iron/raw concrete/hand-trowelled plaster/frosted glass) + locked room library of 8-12 named environments (Brooklyn loft, Marin modern, English garden, Mediterranean villa, Aspen lodge, Charleston porch, Tokyo minimalist, Park Avenue prewar) + CAD/3D ingestion + per-SKU asset matrix + wholesale-partner pre-cropped variants. Six-week catalog launch at $80k-$290k all-in vs $600k-$2.9M and six-to-nine months traditional. Solves the wholesale-to-DTC pivot where catalog inherited West Elm/Crate & Barrel/Restoration Hardware/Williams-Sonoma/Lulu and Georgia/Anthropologie Home house style.
+- **intent:** service / playbook
+- **primary_keyword:** AI photography for bulky home goods
+- **internal_links_used:** dtc-creative-agency.html (breadcrumb + footer), davidharber.html (×3 + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 + footer), ai-photoshoot-vs-studio-cost.html (×1 + footer), creative-agency-vs-freelancer.html (×1 + footer), ecommerce-ad-creatives.html (×1 + footer), virtual-photoshoot-for-clothing-brands.html (×1 + footer), ai-fashion-photography-vs-traditional.html (×1 + footer), fast-ad-creative-turnaround.html (footer), cpg-creative-agency.html (footer), apparel-ad-creatives.html (footer), ad-creative-testing-framework.html (footer)
+- **images_used:** /images/davidharber/harber-1.png (hero + OG), /images/davidharber/harber-2.png, /images/davidharber/harber-3.png, /images/davidharber/harber-4.png, /images/davidharber/harber-5.png (full gallery — 5 frames covering hero, finish detail, campaign sunrise, architectural scale, seasonal autumn)
+- **word_count:** 4496 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P11 (E-commerce lead at home goods/furniture/mattress/cookware/lighting/outdoor brand, $5M-$25M ARR, transitioning from wholesale to DTC). First-ever use of P11. Cold open is the 200-pound sectional that sat in the Brooklyn warehouse for nine weeks waiting on a studio that could clear a 96-inch door and a freight elevator rated for the weight, the spring catalog slipped two cycles, the studio quote opened Friday at $80k for a four-day shoot covering twelve SKUs — freight excluded, insurance excluded, prop styling on top. Quantifies the hidden freight economics by name — $400-$900 freight per piece round-trip, 1.5%-3% specie insurance on David Harber-grade originals, $800-$2,400 rigging at studio entrance for 200-pound sectional, $2,000-$6,000 per environment prop-house rental on kitchen/porch/bedroom sets. Quantifies the catalog math: 200-SKU bulky catalog = 1,000-1,600 assets, traditional $600-$1,800 per asset = $600k-$2.9M and 6-9 months, AI at $80-$180 per asset = $80k-$290k and 6 weeks. Introduces the "no-shipment production system" as the differentiated mechanic — reference capture (Macbeth color checker + grey card + 5500K LED + tape) + finish library lock + room library lock + CAD ingestion + per-SKU asset matrix + PIM/wholesale syndication. Names category-leader brands by name across sub-categories — furniture (Floyd, Burrow, Article, Inside Weather), mattress (Casper, Saatva, Helix, Tuft & Needle), cookware (Caraway, Our Place, Material Kitchen, GreenPan, Made In), bedding (Parachute, Boll & Branch, Brooklinen), luxury heritage (David Harber, Herman Miller). Names wholesale partners by name (Restoration Hardware, West Elm, Crate & Barrel, Williams-Sonoma, Lulu and Georgia, Anthropologie Home, Wayfair) and quantifies the wholesale-house-style conversion penalty (30%-50% of brand-owned imagery on .com). Three brand-position tiers: Mass DTC (Wayfair tier) / Premium DTC (Parachute, Boll & Branch tier) / Luxury Heritage (David Harber, Herman Miller tier). Names the seasonal calendar by exact dates — spring catalog late Feb, summer outdoor April, fall warmth early Aug, holiday gift late Sept with second-pass through mid-Nov, winter post-holiday early Jan. Four failure modes named (finish-library skipping, room-library improvisation, CAD under-investment, over-broad scope on legacy SKUs) with prevention discipline for each. Could not be retitled for any other persona without rewriting the 200-pound-sectional/96-inch-door cold open, the hidden-freight economics walk, the finish-library + room-library production mechanic, the wholesale-to-DTC pivot frame with named partner house styles, the seasonal-weather-decoupling argument, the David Harber single-piece-original tier, and the cookware/mattress/sectional category-specific texture. First use of davidharber.html case as primary link target (this article opens that case study to broader home-goods queries beyond luxury sculpture).
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -164,54 +179,55 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P08 — 2026-05-14
 - P09 — 2026-05-08
 - P10 — 2026-05-15
-- P11 — never
+- P11 — 2026-05-16
 - P12 — never
 - P13 — never
 - P14 — never
 - P15 — never
 
 **Verticals used (last 7 days):**
-- 2026-05-09: supplements
 - 2026-05-10: food-bev
 - 2026-05-11: geo
 - 2026-05-12: marketplace
 - 2026-05-13: geo
 - 2026-05-14: geo
 - 2026-05-15: food-bev
+- 2026-05-16: home
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
-- apparel-ad-creatives.html: 3
+- apparel-ad-creatives.html: 4
 - ai-fashion-photography.html: 2
 - dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
-- cpg-creative-agency.html: 9
+- cpg-creative-agency.html: 10
 - chobani.html: 6
 - anitadongre.html: 2
 - armra.html: 5
 - aspire-drinks.html: 2
 - barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 7
-- ai-photoshoot-vs-studio-cost.html: 10
-- ad-creative-testing-framework.html: 7
-- fast-ad-creative-turnaround.html: 9
-- ai-fashion-photography-vs-traditional.html: 5
-- creative-agency-vs-freelancer.html: 6
-- virtual-photoshoot-for-clothing-brands.html: 2
+- dtc-creative-agency.html: 9
+- ai-photoshoot-vs-studio-cost.html: 11
+- ad-creative-testing-framework.html: 8
+- fast-ad-creative-turnaround.html: 10
+- ai-fashion-photography-vs-traditional.html: 6
+- creative-agency-vs-freelancer.html: 7
+- virtual-photoshoot-for-clothing-brands.html: 3
 - on-model-photography-at-scale.html: 3
-- best-ai-product-photography-agency-for-dtc-brands.html: 11  ← link UP to this from new niche pages
+- best-ai-product-photography-agency-for-dtc-brands.html: 12  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 5
-- ecommerce-ad-creatives.html: 7
+- ecommerce-ad-creatives.html: 9
 - skincare-ad-creatives.html: 1
 - smackin.html: 5
 - amazon-apparel-listing-photography.html: 1
+- davidharber.html: 4  ← first heavy use as home goods anchor link
 
 **Brand images used (last 7 days):**
-- 2026-05-09: armra (hero + 6 gallery)
 - 2026-05-10: smackin (hero + 6 gallery)
 - 2026-05-11: chobani (hero + 6 gallery)
 - 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-13: anitadongre (hero video + 6 gallery)
 - 2026-05-14: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-15: barefootwines (hero + 5 gallery) + zerolush (1 editorial frame for non-alc adjacency)
+- 2026-05-16: davidharber (hero + 4 gallery — full 5-frame inventory)
