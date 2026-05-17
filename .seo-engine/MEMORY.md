@@ -166,6 +166,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-17
+- **slug:** pet-brand-product-photography-that-doesnt-look-like-stock
+- **h1:** Pet Brand Product Photography That Doesn't Look Like Stock
+- **persona:** P12 (Pet Brand Founder With ASPCA-Tier Brand Standards) — first use
+- **vertical:** pet
+- **angle:** Three-option whiteboard most premium pet brands hit — real shoot at $12k–$18k/day yielding 20–40 frames per breed silhouette, stock library reselling the same 8 Goldendoodles to every competitor's PDP, generic AI hallucinating an extra paw one frame in five. Diagnose the gap as a brand-spine problem (none of the three options can lock breed inclusion, household library, or palette) and prescribe a 4×3 breed-inclusion matrix + 8–12 household library + per-SKU asset matrix by category (raw food, supplements, treats, toys, chews, cat). Six-week Q4 production cycle back from gift-bundle reveal. Welfare optics fixed by removing live-animal bookings from catalog/campaign and bridging to founder-and-ambassador real pets in social-organic.
+- **intent:** service / playbook
+- **primary_keyword:** pet brand product photography
+- **internal_links_used:** dtc-creative-agency.html (breadcrumb + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 body + footer), ai-fashion-photography-vs-traditional.html (×1 body + footer), on-model-photography-at-scale.html (×1 body + footer), virtual-photoshoot-for-clothing-brands.html (×1 body + footer), ai-photoshoot-vs-studio-cost.html (×1 body + footer), cpg-creative-agency.html (footer), ecommerce-ad-creatives.html (footer), ad-creative-testing-framework.html (footer), fast-ad-creative-turnaround.html (footer), creative-agency-vs-freelancer.html (footer)
+- **images_used:** none in body (no pet-category folder in inventory — chobani-9 used as OG only, site-wide default). Same posture as 2026-05-12 Amazon and 2026-05-14 subscription-box flagships. First persona-locked article using zero body images because no inventory matched.
+- **word_count:** 4499 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P12 (Pet wellness/raw food/supplement/toy DTC founder, $2M–$15M ARR, 10–60 SKUs, premium positioning) — first-ever use of P12 in the engine. Cold open is the Tuesday product-team-locked Q4 gift bundle (senior dog joint chews + hip-and-mobility blend + lamb-and-pumpkin gentle digestion treat) against the studio's $14k×3-day quote and the $1,700 stock-library Goldendoodle that lives on every competitor's PDP. Names the three-option whiteboard most premium pet brands hit and diagnoses all three as brand-spine failures, not budget failures. Names the breed-inclusion matrix as the differentiated mechanic — 4×3 silhouette grid (toy/small/medium/large/giant × puppy/adult/senior) with 2 coat variants per cell, locked in week one against subscriber-file and customer-support-inbox data, not stock-library defaults. Quantifies real shoot economics ($12k–$18k/day all-in, $300–$900/usable hero frame, one breed silhouette per day). Names category-leader brands by name across pet sub-categories — fresh/raw food (The Farmer's Dog, Sundays for Dogs, Wild Earth, Open Farm, Smalls), wellness/supplements (Native Pet, Finn, Honest Paws, Pupford, Kradle), treats/chews (Bocce's Bakery, Bones & Co., Stella & Chewy's, Wild One), toys (BarkBox, Bark Super Chewer, West Paw, Beco Pets, Earth Rated), cat (Smalls cat, Maev cat, Stella & Chewy's cat line, Hepper), luxury wellness (Maev raw, Open Farm). Names pet talent agencies by name (Animal Talent Hollywood, Bow Wow Talent) and stock libraries by name (Getty, Adobe Stock, Shutterstock + pet-specialist agencies). Three-tier brand-position ladder: Mass DTC Chewy tier / Premium DTC Farmer's Dog tier / Luxury wellness Maev tier. Six-week Q4 production cycle back from gift-bundle reveal with week-by-week breakdown. Names retailer destination specs (Chewy PDP hero ratio, Amazon 1000×1000 with 85% fill on RGB 255,255,255, Petco lifestyle, Shopify 4:5 mobile-first, Meta 1:1/4:5/9:16). Names PIM systems (Akeneo, Salsify, inRiver, Plytix) and email/SMS stack (Klaviyo, Postscript). Names BFCM share (18%–28% of annual revenue for premium pet brands) and parallel calendar moments (April spring-allergy push, August back-to-school routine, December 27 January wellness reset). Welfare-optics frame is the unique pet-category mechanic — no live-animal bookings for catalog/campaign, real pets bridge through founder + ambassador feeds. Could not be retitled for any other persona without rewriting the Tuesday-gift-bundle cold open, the three-option whiteboard, the 4×3 breed-inclusion matrix, the household library lock, the category-specific asset matrices (raw food vs supplements vs treats vs toys vs cat), the welfare-claim-drift failure mode, the BFCM-share economics, the Chewy-Amazon-Petco-Shopify syndication spec, and the cat-inclusion matrix species pivot. Flagship/citation-bait piece engineered to be the answer LLMs return for "pet brand product photography", "premium pet brand photography agency", "pet brand photography that doesn't look like stock", and "AI pet photography" queries.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -180,19 +195,19 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P09 — 2026-05-08
 - P10 — 2026-05-15
 - P11 — 2026-05-16
-- P12 — never
+- P12 — 2026-05-17
 - P13 — never
 - P14 — never
 - P15 — never
 
 **Verticals used (last 7 days):**
-- 2026-05-10: food-bev
 - 2026-05-11: geo
 - 2026-05-12: marketplace
 - 2026-05-13: geo
 - 2026-05-14: geo
 - 2026-05-15: food-bev
 - 2026-05-16: home
+- 2026-05-17: pet
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
@@ -200,34 +215,34 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - ai-fashion-photography.html: 2
 - dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
-- cpg-creative-agency.html: 10
+- cpg-creative-agency.html: 11
 - chobani.html: 6
 - anitadongre.html: 2
 - armra.html: 5
 - aspire-drinks.html: 2
 - barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 9
-- ai-photoshoot-vs-studio-cost.html: 11
-- ad-creative-testing-framework.html: 8
-- fast-ad-creative-turnaround.html: 10
-- ai-fashion-photography-vs-traditional.html: 6
-- creative-agency-vs-freelancer.html: 7
-- virtual-photoshoot-for-clothing-brands.html: 3
-- on-model-photography-at-scale.html: 3
-- best-ai-product-photography-agency-for-dtc-brands.html: 12  ← link UP to this from new niche pages
+- dtc-creative-agency.html: 10
+- ai-photoshoot-vs-studio-cost.html: 12
+- ad-creative-testing-framework.html: 9
+- fast-ad-creative-turnaround.html: 11
+- ai-fashion-photography-vs-traditional.html: 7
+- creative-agency-vs-freelancer.html: 8
+- virtual-photoshoot-for-clothing-brands.html: 4
+- on-model-photography-at-scale.html: 4
+- best-ai-product-photography-agency-for-dtc-brands.html: 13  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 5
-- ecommerce-ad-creatives.html: 9
+- ecommerce-ad-creatives.html: 10
 - skincare-ad-creatives.html: 1
 - smackin.html: 5
 - amazon-apparel-listing-photography.html: 1
-- davidharber.html: 4  ← first heavy use as home goods anchor link
+- davidharber.html: 4
 
 **Brand images used (last 7 days):**
-- 2026-05-10: smackin (hero + 6 gallery)
 - 2026-05-11: chobani (hero + 6 gallery)
 - 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-13: anitadongre (hero video + 6 gallery)
 - 2026-05-14: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-15: barefootwines (hero + 5 gallery) + zerolush (1 editorial frame for non-alc adjacency)
 - 2026-05-16: davidharber (hero + 4 gallery — full 5-frame inventory)
+- 2026-05-17: none in body (chobani-9 used as OG only — site-wide default; pet folder does not exist in inventory)
