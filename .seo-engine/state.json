@@ -1,7 +1,7 @@
 {
-  "next_index": 12,
-  "last_published_slug": "pet-brand-product-photography-that-doesnt-look-like-stock",
-  "last_published_date": "2026-05-17",
+  "next_index": 13,
+  "last_published_slug": "ai-photography-as-production-infrastructure-for-in-house-creative-teams",
+  "last_published_date": "2026-05-18",
   "history": [
     {
       "date": "2026-05-08",
@@ -57,6 +57,11 @@
       "date": "2026-05-17",
       "slug": "pet-brand-product-photography-that-doesnt-look-like-stock",
       "h1": "Pet Brand Product Photography That Doesn't Look Like Stock"
+    },
+    {
+      "date": "2026-05-18",
+      "slug": "ai-photography-as-production-infrastructure-for-in-house-creative-teams",
+      "h1": "AI Photography as Production Infrastructure for In-House Creative Teams"
     }
   ]
 }

@@ -181,6 +181,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-18
+- **slug:** ai-photography-as-production-infrastructure-for-in-house-creative-teams
+- **h1:** AI Photography as Production Infrastructure for In-House Creative Teams
+- **persona:** P13 (In-House Creative Director at $50M+ Brand) — first use
+- **vertical:** geo
+- **angle:** The Q3 planning slide that hits every in-house CD at a $50M-plus DTC brand — 5.8x output requirement, frozen headcount, a 47-page brand standards document no outside vendor has ever survived. Diagnose the gap as the wrong category of relationship (vendor instead of infrastructure) and prescribe the production-infrastructure model: eight-hour brand-spine ingestion in week one, named-team-of-three locked for engagement duration, white-label by contract, direct integration with the brand's DAM/Figma/Frame.io/Workfront stack, one render compiles to every channel, elastic retainer priced against roadmap quarters at $35k–$120k/mo against 600–1,500 assets monthly. Three engagement lanes (brand stewardship / performance creative / full-stack catalog). Unit economics close in CFO meeting — 8x–12x output at equivalent annual spend vs hiring four to eight roles.
+- **intent:** service / playbook
+- **primary_keyword:** AI photography production partner in-house team
+- **internal_links_used:** dtc-creative-agency.html (breadcrumb + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 body + footer), ai-fashion-photography-vs-traditional.html (×1 body + footer), anitadongre.html (×1 body + footer), davidharber.html (×1 body + footer), on-model-photography-at-scale.html (×1 body + footer), amazon-apparel-listing-photography.html (×1 body + footer), skincare-ad-creatives.html (×1 body + footer), ai-fashion-photography.html (×1 body + footer), apparel-ad-creatives.html (footer), virtual-photoshoot-for-clothing-brands.html (footer), ai-photoshoot-vs-studio-cost.html (footer), creative-agency-vs-freelancer.html (footer), fast-ad-creative-turnaround.html (footer), index.html (header + breadcrumb)
+- **images_used:** none in body (chobani-9 used as OG only — site-wide default). Same imageless-body posture as 2026-05-12, 2026-05-14, 2026-05-17 flagships. No body inventory matched the cross-vertical $50M+ in-house team narrative without skewing to one specific vertical; anitadongre (5 days ago) and davidharber (2 days ago) were both too fresh to reuse within 7-day window, chobani body was at the 7-day boundary.
+- **word_count:** 4496 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P13 (in-house Creative Director / Head of Brand at $50M+ Series B+ DTC company with internal designers, motion lead, retoucher, photo producer, frozen headcount, and a 47-page brand standards document) — first-ever use of P13 in the engine. Cold open is the Q3-planning-Wednesday-slide with the 5.8x output requirement against the frozen-headcount Q4 board deck and the existing in-house team running at 130% capacity. Names the in-house team composition explicitly (Senior Art Director, three designers, motion lead, retoucher, half-time photo producer). Quantifies the hiring path by named role with loaded comp (Senior Photo Producer $135k–$175k loaded, two Senior Designers at $145k each, Senior Retoucher $110k, Senior Motion Designer $160k = $600k–$1.4M annually for 4–8 roles) and recruiting calendar (8–14 weeks retained / 12–20 contingent + 6–10 ramp = 14–22 weeks before full velocity vs 6 weeks roadmap deadline). Differentiates the traditional creative agency tier ($50k–$180k/mo, 20–40 assets/mo, brand-led) from the performance-creative agency tier ($25k–$60k/mo, volume but spine-collapse on deliverable five) — neither solves volume-plus-fidelity simultaneously. Introduces "production infrastructure" as a deliberately different category from vendor relationships — backstage render lane, AWS-for-photography analogy, invisible to executives, board, and industry press. Names the brand-spine ingestion mechanic (one 8-hour Zoom session with CD + AD + production lead + render specialist, walks every page of standards, captures palette in Pantone+sRGB, photography rules, lighting language, model identity, do-not-render list, outputs 40-60 page brand-spine artifact signed by CD that becomes the production contract). Names the named-team-of-three discipline (production lead + render specialist + finisher locked for engagement duration, no account managers). Names the DAM/tooling stack explicitly by name (Bynder, Brandfolder, Frontify, Aprimo, Acquia DAM, Cloudinary; Figma, Frame.io; Workfront, Asana for Creative, Monday Creative; Sprout, Later, Loomly). Names retailer dot-com destination specs (Sephora Retailer Direct, Whole Foods IXOne, Target Vendor Direct, Walmart Connect, Amazon 1000x1000 with 85% fill on RGB 255,255,255, Pinterest 2:3, Klaviyo and Postscript hero packs, Meta 1:1/4:5/9:16, TikTok 9:16, lifecycle email 600px hero). Three engagement lanes (brand stewardship $35k–$55k/mo for 150–350 assets, performance creative $55k–$95k/mo for 500–1,100 assets, full-stack catalog $75k–$120k/mo for 900–1,500 assets) with persona-tier entry points. Four failure modes named (creative encroachment, silent style drift, named-team substitution, publication leak) with contract-level prevention discipline for each. Names the case-study partners explicitly approved for publication (Anita Dongre, Chobani, Armra, David Harber, Smackin', Barefoot Wines, Zero Lush) vs the white-label majority that stays invisible by contract. Names the recognisable external tell (visible 5x–12x output expansion year-over-year while public LinkedIn org chart of in-house team stays flat). Cold-open Wednesday-slide, 47-page-standards-document, named-team-of-three contract, named DAM/Figma/Frame.io integration discipline, eight-hour brand-spine ingestion mechanic, three-lane retainer math, four-failure-mode prevention discipline, and the white-label-by-contract posture would all need to be rewritten for any other persona — could not be retitled. First use of P13 anchors the in-house-team conversation for the engine; future articles can cross-link to this as the canonical in-house infrastructure piece.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -196,53 +211,53 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P10 — 2026-05-15
 - P11 — 2026-05-16
 - P12 — 2026-05-17
-- P13 — never
+- P13 — 2026-05-18
 - P14 — never
 - P15 — never
 
 **Verticals used (last 7 days):**
-- 2026-05-11: geo
 - 2026-05-12: marketplace
 - 2026-05-13: geo
 - 2026-05-14: geo
 - 2026-05-15: food-bev
 - 2026-05-16: home
 - 2026-05-17: pet
+- 2026-05-18: geo
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
-- apparel-ad-creatives.html: 4
-- ai-fashion-photography.html: 2
+- apparel-ad-creatives.html: 5
+- ai-fashion-photography.html: 4
 - dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
 - cpg-creative-agency.html: 11
 - chobani.html: 6
-- anitadongre.html: 2
+- anitadongre.html: 4
 - armra.html: 5
 - aspire-drinks.html: 2
 - barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 10
-- ai-photoshoot-vs-studio-cost.html: 12
+- dtc-creative-agency.html: 12
+- ai-photoshoot-vs-studio-cost.html: 13
 - ad-creative-testing-framework.html: 9
-- fast-ad-creative-turnaround.html: 11
-- ai-fashion-photography-vs-traditional.html: 7
-- creative-agency-vs-freelancer.html: 8
-- virtual-photoshoot-for-clothing-brands.html: 4
-- on-model-photography-at-scale.html: 4
-- best-ai-product-photography-agency-for-dtc-brands.html: 13  ← link UP to this from new niche pages
+- fast-ad-creative-turnaround.html: 12
+- ai-fashion-photography-vs-traditional.html: 9
+- creative-agency-vs-freelancer.html: 9
+- virtual-photoshoot-for-clothing-brands.html: 5
+- on-model-photography-at-scale.html: 6
+- best-ai-product-photography-agency-for-dtc-brands.html: 15  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 5
 - ecommerce-ad-creatives.html: 10
-- skincare-ad-creatives.html: 1
+- skincare-ad-creatives.html: 3
 - smackin.html: 5
-- amazon-apparel-listing-photography.html: 1
-- davidharber.html: 4
+- amazon-apparel-listing-photography.html: 3
+- davidharber.html: 6
 
 **Brand images used (last 7 days):**
-- 2026-05-11: chobani (hero + 6 gallery)
 - 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-13: anitadongre (hero video + 6 gallery)
 - 2026-05-14: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-15: barefootwines (hero + 5 gallery) + zerolush (1 editorial frame for non-alc adjacency)
 - 2026-05-16: davidharber (hero + 4 gallery — full 5-frame inventory)
 - 2026-05-17: none in body (chobani-9 used as OG only — site-wide default; pet folder does not exist in inventory)
+- 2026-05-18: none in body (chobani-9 used as OG only — site-wide default; P13 cross-vertical narrative, anitadongre and davidharber too fresh in 7-day window, chobani body at boundary, fashioned imageless flagship)
