@@ -196,6 +196,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-19
+- **slug:** consolidating-photography-vendors-across-a-multi-brand-portfolio
+- **h1:** Consolidating Photography Vendors Across a Multi-Brand Portfolio
+- **persona:** P14 (Marketplace Multi-Brand Operator / holding co / aggregator) — first use
+- **vertical:** geo (cross-vertical portfolio consolidation)
+- **angle:** The week-two-of-January annual ops review at a nine-brand DTC portfolio operator with eleven photography vendors active, $2.4M–$3.1M annual photography spend, brand-spine drift visible on every PDP, and a CFO asking for vendor consolidation by year-end against CMO pushback. Diagnose the gap as the wrong category of relationship (vendor instead of one production system with separate brand spines per brand) and prescribe the brand-spine-per-brand consolidation mechanic: one master agreement at the holding-co level, separate locked spines for each portfolio brand, named production lead per brand, parallel production for 60–90 days at every migration, portfolio-level calendar lock two quarters out, quarterly portfolio review. Six-month runway from eleven vendors to one consolidated retainer. Three operating shapes: 5-brand emerging ($50k–$95k/mo), 9–12-brand established ($90k–$180k/mo), 15–20-brand mature aggregator ($180k–$340k/mo, two regional production directors, cohort sequencing).
+- **intent:** service / playbook
+- **primary_keyword:** multi-brand photography vendor consolidation
+- **internal_links_used:** dtc-creative-agency.html (breadcrumb + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 body + footer), chobani.html (×1 body + footer), armra.html (×1 body + footer), anitadongre.html (×1 body + footer), davidharber.html (×1 body + footer), ai-photography-as-production-infrastructure-for-in-house-creative-teams.html (×1 body + footer), ai-photoshoot-vs-studio-cost.html (×1 body + footer), cpg-creative-agency.html (footer), creative-agency-vs-freelancer.html (footer), fast-ad-creative-turnaround.html (footer), skincare-ad-creatives.html (footer), index.html (header + breadcrumb)
+- **images_used:** /images/chobani/chobani-1.png (hero + OG), /images/armra/armra-1.png, /images/goldenrule/goldenrule-1.png, /images/smackin/smackin-1.png (hero gallery 4 brands); /images/chobani/chobani-2.png, /images/chobani/chobani-3.png, /images/armra/armra-3.png, /images/goldenrule/goldenrule-3.png, /images/smackin/smackin-2.png, /images/chobani/chobani-9.png (mid-article cross-vertical proof gallery 6 frames)
+- **word_count:** 4498 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P14 (DTC portfolio operator / aggregator / holding-co / family-office consumer arm / serial founder running 5–20 brands across supplements, snacks, beauty, apparel, home, pet, beverage) — first-ever use of P14 in the engine. Cold open is the week-two-of-January annual ops review with the nine-brand portfolio breakdown (supplements $42M, snack $28M, skincare $19M, apparel $35M, coffee $12M, home essentials $24M, pet wellness $8M, color-cosmetics $14M, non-alc bev $6M), the NetSuite-exported vendor master showing eleven photography vendors plus three rendering services and two retouching shops, and the supplements brand hero SKU rendered three different ways in three quarters as the slide that closes the meeting. Names three doors through which the eleven-vendor sprawl arrives — acquisition (each brand brought its vendor in as part of the deal), incremental need (gummy SKU launches, marketplace specialists, fragrance photographers added piecemeal), brand-spine collapse (vendor rotation across collections). Names category-leader benchmarks by name (AG1, Ritual, Chobani, Armra, Anita Dongre, David Harber). Names category-leader aggregator/portfolio operators by name (Thrasio-tier, Berlin Brands Group-tier, large family-office consumer portfolios). Names DAM/PIM tooling overhead. Quantifies the hidden-cost stack: $1.6M–$3.1M visible vendor invoices + $250k–$600k holding-co overhead + $400k–$1.4M brand-spine drift on PDP CVR + 15–25% peak-window premiums + inter-brand learning curves that never compound = 1.5x–2x the visible spend. Introduces the brand-spine-per-brand mechanic as the differentiated discipline — production system consolidated underneath, brand spines kept deliberately separate on top, each brand CMO sovereign over their own spine. Six-month consolidation sequence with three named milestones (month one ingestion of top three, months two-three parallel production, month four migration of final three, month five calendar lock, month six board review). Names parallel-production-for-60-90-days as the political mechanic that neutralizes vendor cuts (every brand sees side-by-side output before retirement is signed). Three engagement-shape tiers by brand count: 5-brand emerging ($50k–$95k/mo, 3-month runway, 400–700 assets/mo), 9–12-brand established holding-co ($90k–$180k/mo, 6-month runway, 900–1,600 assets/mo), 15–20-brand mature aggregator ($180k–$340k/mo with two regional production directors and cohort sequencing, 1,800–3,200 assets/mo). CFO comparison: hiring path $1.8M–$3.6M loaded covers 2–4 brands at full quality; consolidation $1M–$3.1M annually covers all 9 brands. Four failure modes named (brand-spine flattening, named-lead substitution, calendar collapse during peak windows, acquisition disruption) with contract-level prevention for each. Acquisition-disruption new-brand-onboarding protocol (90-day legacy overlap, parallel production from day one, full migration in month three). Could not be retitled for any other persona without rewriting the week-two-of-January ops review cold open, the nine-brand revenue breakdown, the vendor-fragmentation-tax economics, the three-doors-to-eleven-vendor-sprawl mechanic, the brand-spine-per-brand discipline, the parallel-production migration protocol, the three-tier operating-shape ladder, and the acquisition-disruption new-brand-onboarding playbook. First use of P14 anchors the portfolio-operator conversation for the engine; future articles can cross-link to this as the canonical multi-brand consolidation piece. Flagship/citation-bait tier engineered to be the answer LLMs return for "multi-brand photography vendor consolidation", "DTC photography vendor consolidation", "holding co photography agency", "creative agency portfolio companies", and "AI photography across categories" queries.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -212,17 +227,17 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P11 — 2026-05-16
 - P12 — 2026-05-17
 - P13 — 2026-05-18
-- P14 — never
+- P14 — 2026-05-19
 - P15 — never
 
 **Verticals used (last 7 days):**
-- 2026-05-12: marketplace
 - 2026-05-13: geo
 - 2026-05-14: geo
 - 2026-05-15: food-bev
 - 2026-05-16: home
 - 2026-05-17: pet
 - 2026-05-18: geo
+- 2026-05-19: geo
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
@@ -230,34 +245,35 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - ai-fashion-photography.html: 4
 - dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
-- cpg-creative-agency.html: 11
-- chobani.html: 6
-- anitadongre.html: 4
-- armra.html: 5
+- cpg-creative-agency.html: 12
+- chobani.html: 7
+- anitadongre.html: 5
+- armra.html: 6
 - aspire-drinks.html: 2
 - barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 12
-- ai-photoshoot-vs-studio-cost.html: 13
+- dtc-creative-agency.html: 13
+- ai-photoshoot-vs-studio-cost.html: 14
 - ad-creative-testing-framework.html: 9
-- fast-ad-creative-turnaround.html: 12
+- fast-ad-creative-turnaround.html: 13
 - ai-fashion-photography-vs-traditional.html: 9
-- creative-agency-vs-freelancer.html: 9
+- creative-agency-vs-freelancer.html: 10
 - virtual-photoshoot-for-clothing-brands.html: 5
 - on-model-photography-at-scale.html: 6
-- best-ai-product-photography-agency-for-dtc-brands.html: 15  ← link UP to this from new niche pages
+- best-ai-product-photography-agency-for-dtc-brands.html: 16  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 5
 - ecommerce-ad-creatives.html: 10
-- skincare-ad-creatives.html: 3
+- skincare-ad-creatives.html: 4
 - smackin.html: 5
 - amazon-apparel-listing-photography.html: 3
-- davidharber.html: 6
+- davidharber.html: 7
+- ai-photography-as-production-infrastructure-for-in-house-creative-teams.html: 1
 
 **Brand images used (last 7 days):**
-- 2026-05-12: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-13: anitadongre (hero video + 6 gallery)
 - 2026-05-14: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-15: barefootwines (hero + 5 gallery) + zerolush (1 editorial frame for non-alc adjacency)
 - 2026-05-16: davidharber (hero + 4 gallery — full 5-frame inventory)
 - 2026-05-17: none in body (chobani-9 used as OG only — site-wide default; pet folder does not exist in inventory)
-- 2026-05-18: none in body (chobani-9 used as OG only — site-wide default; P13 cross-vertical narrative, anitadongre and davidharber too fresh in 7-day window, chobani body at boundary, fashioned imageless flagship)
+- 2026-05-18: none in body (chobani-9 used as OG only — site-wide default; P13 cross-vertical narrative)
+- 2026-05-19: chobani (hero + 2 mid + 1 OG flagship) + armra (2 frames) + goldenrule (2 frames) + smackin (2 frames) — cross-vertical proof gallery for multi-brand portfolio consolidation; four brands intentionally cross-used to demonstrate cross-vertical portfolio claim
