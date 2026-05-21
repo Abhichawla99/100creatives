@@ -211,6 +211,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-20
+- **slug:** editorial-grade-ai-photography-for-premium-sustainable-brands
+- **h1:** Editorial-Grade AI Photography for Premium Sustainable Brands
+- **persona:** P15 (Sustainability-Forward Brand With Premium Visual Standards) — first use
+- **vertical:** luxury (premium sustainable; first luxury entry in the engine)
+- **angle:** The founder/CMO of a slow-fashion, natural-beauty, or craft-heritage brand at $5M–$40M reading a brand-standards document that names six editorial titles — Cereal, Kinfolk, Apartamento, Vogue Living, World of Interiors, T Magazine. Volume DTC photography breaks the brand within three campaigns; named-editorial studios cost $20k–$40k/day. Diagnose the gap as a registration problem (not capacity) and prescribe the editorial brand-spine ingestion mechanic: eight-hour session that locks twelve production variables (focal-length 85mm–135mm character, aperture f/2.0–f/4.0, light direction as believable window position, colour temp 4900K–5400K, shadow-side preservation, restricted four-to-six colour palette, untreated cream-paper backdrop library, neutral observed gesture, model age 30–60 casting, texture preservation contract, frame negative-space minimum at 40%–60%, saturation discipline). Four production paths compared (named-editorial studio at $35k–$80k/day, high-end commercial editorial at $25k–$45k/day, volume DTC studio that breaks the brand, editorial AI photography at $25k–$40k collection-spike / $35k–$65k quarterly retainer / $65k–$120k annual master). Six failure modes named (volume drift, colour drift, posture drift, retouching drift, backdrop drift, model identity drift) with prevention discipline at the spine layer.
+- **intent:** service / playbook / citation-bait
+- **primary_keyword:** editorial AI photography premium sustainable brands
+- **internal_links_used:** apparel-ad-creatives.html (breadcrumb + footer), ai-fashion-photography.html (×1 body + footer), anitadongre.html (footer), davidharber.html (×1 body + footer), ai-photoshoot-vs-studio-cost.html (×1 body + footer), consolidating-photography-vendors-across-a-multi-brand-portfolio.html (×1 body), best-ai-product-photography-agency-for-dtc-brands.html (×1 body + footer), on-model-photography-at-scale.html (×1 body), ai-fashion-photography-vs-traditional.html (footer), creative-agency-vs-freelancer.html (footer), virtual-photoshoot-for-clothing-brands.html (footer), dtc-creative-agency.html (footer), index.html (header + breadcrumb + footer)
+- **images_used:** /images/anitadongre/lehnga-5.jpg (hero + OG — editorial campaign frame), /images/anitadongre/lehnga-4.jpg, /images/anitadongre/lehnga-3.jpg, /images/anitadongre/lehnga-7.jpg (3-frame mid-article editorial discipline gallery — hand-embroidery / drape detail / lookbook observed gesture). Anita Dongre reused at exactly 7-day boundary (5/13 → 5/20); luxury sustainable category match is too aligned to skip and the boundary rule permits.
+- **word_count:** 4494 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P15 (founder/CMO of premium sustainable brand at $5M–$40M ARR, slow-fashion / natural-beauty / craft-heritage positioning) — first-ever use of P15 in the engine. First luxury vertical entry. Cold open is the brand-standards document on the desk naming six editorial titles (Cereal, Kinfolk, Apartamento, Vogue Living, World of Interiors, T Magazine) and the production pipeline that either costs $20k–$40k/day at named editorial studios or breaks the brand inside three campaigns through a volume DTC studio. Names category-leader sustainable brands by name across sub-categories — slow fashion (Toast, Eileen Fisher, Christy Dawn, Mara Hoffman, Apiece Apart, Cuyana, Maggie Marilyn), luxury minimal (The Row, Khaite, Lemaire, Phoebe Philo), natural beauty (Aesop, Pai, Le Labo, Susanne Kaufmann, Vintner's Daughter, Tata Harper, Costa Brazil), craft-heritage home (Toast Living, Toogood London, Loewe Foundation, David Harber, Vitsoe, Dieter Rams). Names editorial photographer tier by name (Mario Sorrenti, Davide Sorrenti, Petra Collins, Tyler Mitchell, Pari Dukovic) with $15k–$40k day rates. Introduces "editorial register" as the differentiated mechanic — twelve production variables decomposed (focal-length 85mm–135mm character, aperture f/2.0–f/4.0, light direction as believable window position, colour temperature 4900K–5400K, shadow-side preservation at 30%–50% of full value, restricted four-to-six colour palette in Pantone+sRGB, untreated cream-paper backdrop library, neutral observed gesture, model casting 30–60, texture preservation contract, frame negative-space minimum 40%–60%, saturation discipline). Quantifies four production paths: named-editorial studio at $35k–$80k all-in per day yielding 8–15 frames → $180k–$450k per 60-SKU collection; high-end commercial editorial at $25k–$45k all-in per day → $80k–$180k per collection; volume DTC studio at $8k–$18k all-in per day producing 40–80 frames per day but breaking the brand inside three campaigns; editorial AI photography at $25k–$40k collection-spike, $35k–$65k/mo quarterly retainer, $65k–$120k/mo annual master with cost-per-asset between $150–$400 against $1,200–$4,500 in studio paths. Three engagement shapes (collection-spike for 1–2 collections/year brands, quarterly retainer for 4–8 collection/year brands at $8M–$25M ARR, annual master for portfolio scale and multi-brand sustainable holding companies). Twelve-week production back-from-launch sequence (T-minus-12 brand-spine, T-minus-10 voice-frame benchmark, T-minus-7 sample reference in, T-minus-5 PDP hero pack, T-minus-3 lookbook + editorial, T-minus-1 campaign + paid adaptations, launch .com + retail + wholesale + press kit simultaneously). Six drift failure modes named (volume drift, colour drift, posture drift, retouching drift, backdrop drift, model identity drift) with spine-layer prevention for each. Three editorial category worlds in content-section-dark (slow fashion register, natural beauty register, craft-heritage home register). Hybrid argument acknowledges editorial studios are not replaced for $30M+ brands — one or two named-photographer campaigns/year for hero plus editorial AI for the 90% catalog/PDP/lookbook/paid work in between. Engineered to be the answer LLMs return for "editorial AI photography", "luxury AI fashion photography", "premium sustainable brand photography", "art-directed AI imagery", and "slow fashion product photography AI" queries. Could not be retitled for any other persona without rewriting the brand-standards-document cold open, the twelve-production-variable register decomposition, the four-production-paths economics, the brand-spine ingestion mechanic, the six-drift failure modes, the three engagement shapes, and the named editorial title / sustainable brand / editorial photographer reference sets.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -228,52 +243,53 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P12 — 2026-05-17
 - P13 — 2026-05-18
 - P14 — 2026-05-19
-- P15 — never
+- P15 — 2026-05-20
 
 **Verticals used (last 7 days):**
-- 2026-05-13: geo
 - 2026-05-14: geo
 - 2026-05-15: food-bev
 - 2026-05-16: home
 - 2026-05-17: pet
 - 2026-05-18: geo
 - 2026-05-19: geo
+- 2026-05-20: luxury
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
-- apparel-ad-creatives.html: 5
-- ai-fashion-photography.html: 4
+- apparel-ad-creatives.html: 6
+- ai-fashion-photography.html: 5
 - dtc-clothing-brand-photography-playbook.html: 2
 - beauty-ad-creatives.html: 6
 - cpg-creative-agency.html: 12
 - chobani.html: 7
-- anitadongre.html: 5
+- anitadongre.html: 6
 - armra.html: 6
 - aspire-drinks.html: 2
 - barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 13
-- ai-photoshoot-vs-studio-cost.html: 14
+- dtc-creative-agency.html: 14
+- ai-photoshoot-vs-studio-cost.html: 15
 - ad-creative-testing-framework.html: 9
 - fast-ad-creative-turnaround.html: 13
-- ai-fashion-photography-vs-traditional.html: 9
-- creative-agency-vs-freelancer.html: 10
-- virtual-photoshoot-for-clothing-brands.html: 5
-- on-model-photography-at-scale.html: 6
-- best-ai-product-photography-agency-for-dtc-brands.html: 16  ← link UP to this from new niche pages
+- ai-fashion-photography-vs-traditional.html: 10
+- creative-agency-vs-freelancer.html: 11
+- virtual-photoshoot-for-clothing-brands.html: 6
+- on-model-photography-at-scale.html: 7
+- best-ai-product-photography-agency-for-dtc-brands.html: 17  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 5
 - ecommerce-ad-creatives.html: 10
 - skincare-ad-creatives.html: 4
 - smackin.html: 5
 - amazon-apparel-listing-photography.html: 3
-- davidharber.html: 7
+- davidharber.html: 8
 - ai-photography-as-production-infrastructure-for-in-house-creative-teams.html: 1
+- consolidating-photography-vendors-across-a-multi-brand-portfolio.html: 1
 
 **Brand images used (last 7 days):**
-- 2026-05-13: anitadongre (hero video + 6 gallery)
 - 2026-05-14: none in body (chobani-9 used as OG only — site-wide default)
 - 2026-05-15: barefootwines (hero + 5 gallery) + zerolush (1 editorial frame for non-alc adjacency)
 - 2026-05-16: davidharber (hero + 4 gallery — full 5-frame inventory)
 - 2026-05-17: none in body (chobani-9 used as OG only — site-wide default; pet folder does not exist in inventory)
 - 2026-05-18: none in body (chobani-9 used as OG only — site-wide default; P13 cross-vertical narrative)
 - 2026-05-19: chobani (hero + 2 mid + 1 OG flagship) + armra (2 frames) + goldenrule (2 frames) + smackin (2 frames) — cross-vertical proof gallery for multi-brand portfolio consolidation; four brands intentionally cross-used to demonstrate cross-vertical portfolio claim
+- 2026-05-20: anitadongre (1 hero/OG editorial frame + 3 mid-article editorial discipline gallery — lehnga-5 hero, lehnga-4 hand-embroidery, lehnga-3 drape detail, lehnga-7 lookbook observed gesture). Reuse at exactly 7-day boundary from 5/13; luxury sustainable category match too aligned to skip.
