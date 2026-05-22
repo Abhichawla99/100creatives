@@ -241,11 +241,26 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-22
+- **slug:** ai-photography-for-fragrance-brands-glass-reflection-and-light
+- **h1:** AI Photography for Fragrance Brands — Glass, Reflection, and Light
+- **persona:** P02 (Beauty Brand E-commerce Lead Prepping Sephora Launch) — second use (first was 2026-05-08 indie beauty Sephora launch). At 14-day boundary; oldest persona alongside P09, picked P02 to refresh the beauty vertical that had been unused for 14 days.
+- **vertical:** beauty (fragrance sub-category — first dedicated fragrance entry in the engine)
+- **angle:** Tuesday-morning Sephora Beauty Insider Direct confirmation against a previous shoot that rendered the hero bottle with sticker-flat label, off-axis atomizer, and a brushed-gold cap reading as painted plastic. Diagnose the failure mode as a registration problem (glass refraction stacked on liquid refraction stacked on label-through-juice stacked on atomizer specularity stacked on cap-finish metallic behaviour is roughly five times the rendering surface area of any other beauty SKU) and prescribe the glass-library ingestion mechanic — one filled bottle per SKU captured against the 18% grey card under 5000K LED at known camera distance, the ten-frame capture extracted as locked reference, every subsequent render benchmarked at the pixel level. Six-week sprint indexed back from Beauty Insider Direct asset-lock date at $25k–$55k vs $90k–$240k traditional.
+- **intent:** service / playbook / citation-bait
+- **primary_keyword:** AI photography fragrance brands
+- **internal_links_used:** beauty-ad-creatives.html (breadcrumb + ×1 body + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 body + footer), skincare-ad-creatives.html (×1 body + footer), goldenrule.html (×1 body + footer), ai-photoshoot-vs-studio-cost.html (×1 body + footer), ai-fashion-photography-vs-traditional.html (×1 body + footer), fast-ad-creative-turnaround.html (×1 body + footer), creative-agency-vs-freelancer.html (footer), dtc-creative-agency.html (footer), ecommerce-ad-creatives.html (footer), index.html (header + breadcrumb)
+- **images_used:** none in body (chobani-9 used as OG only — site-wide default). Beauty/skincare folder (goldenrule) used 3 days ago on 2026-05-19 — within 7-day window, SKIP. Zerolush at exact 7-day boundary from 2026-05-15 but not a fragrance brand. No true fragrance imagery in inventory. Same imageless-body posture as 2026-05-12, 2026-05-14, 2026-05-17, 2026-05-18, 2026-05-21 flagships.
+- **word_count:** 4497 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P02 (Head of E-commerce at indie fragrance brand $8M–$22M, going into first Sephora Beauty Insider Direct launch). Second use of P02 — first was an indie beauty Sephora launch on 5/08, this is a dedicated fragrance angle that does not duplicate the prior color-cosmetics/serum framing. Cold open is the Tuesday-morning Beauty Insider Direct confirmation against a previous shoot that rendered the hero bottle with sticker-flat label, off-axis atomizer collar, and a brushed-gold cap reading as painted plastic, $94k studio re-quote against a 17-business-day window before Sephora Retailer Direct asset lock. Diagnoses fragrance as the hardest material in AI photography because three optical behaviours stack on top of each other — refraction through the juice, reflection on the bottle surface, and the back-wall second-pass refraction that returns light through the front face after it has already passed through the liquid once. Introduces the glass-library ingestion as the differentiated mechanic — one filled bottle per SKU on the 18% grey card under 5000K LED at known camera distance, ten-frame capture set (front-pane axial, three-quarter both directions, top-down cap detail, over-shoulder atomizer reveal, base bevel close-up), locked into spine, every render benchmarked at pixel level. Decomposes fragrance register against twelve concrete production variables (glass clarity character — clear flint / frosted / pressed / smoked / etched / satin-finished; juice refractive index calibrated to actual liquid colour at fill level — pale gold / amber / rosé / oud-dark / water-clear; apparent label position through front pane; back-wall ghost angle at 35-to-65 degrees off-axis; cap finish in brushed gold / polished silver / lacquer black / ceramic matte / wood-turned / stone-cut; atomizer collar specularity and over-shoulder highlight axis; bevel and base geometry; shoulder curve and cap-shoulder transition shadow; plinth or stand character; carton material — matte / glossy / embossed / foil-stamped / hand-illustrated; closure ribbon or wax-seal character; ingredient pillar styling). Names category-leader fragrance brands by name across three position tiers — indie niche (Le Labo, Byredo, Maison Francis Kurkdjian, Diptyque, Aesop, D.S. & Durga, Heretic, Vyrao, Régime des Fleurs, Bibbi, Maison Margiela Replica), contemporary clean (Phlur, Boy Smells, Henry Rose, Skylar, Ellis Brooklyn, Dossier, Snif, Dedcool, Sana Jardin), Sephora cult (Sol de Janeiro, Kayali, Glossier You, Carolina Herrera Good Girl, Ariana Grande Cloud) — plus classical luxury houses by name (Tom Ford Private Blend, Creed, Chanel, Dior, Hermes, Jo Malone, Penhaligon's). Quantifies four production paths: glass-specialist beauty studio at $5,500–$12,000 per shoot day all-in producing 6–12 hero frames per day, six-SKU Sephora launch pack landing $90k–$240k across 4–7 weeks; volume AI vendor at $500/SKU producing perfume-shaped renders that fail Sephora photo-spec lock; freelance perfume photographer at $2,500–$4,500/day producing scar tissue; AI fragrance studio at $25k–$55k catalog-spike or $14k–$28k/mo quarterly retainer with cost-per-asset $90–$200 vs $1,400–$3,800 studio. Names retailer destination specs by name (Sephora Beauty Insider Direct 2400×3000 hero on pure white at 255/255/255 with 85% fill, lifestyle alt at 2000×2500, swatch panel at 1500×1500, ingredient hero at 1500×1500; Ulta with tighter shoulder crop; Amazon 1000×1000 with 85% fill; Shopify PDP carousel; Meta 1:1/4:5/9:16; TikTok 9:16; Klaviyo email hero at 600px; FragranceNet adaptation). Six-week back-from-Beauty-Insider-Direct-asset-lock sprint (W1 glass-library ingestion + atomizer/cap lock, W2–3 wave-one on two hero SKUs, W4–5 wave-two on remaining four SKUs including gift-set and travel-spray variants, W6 QC + retailer-spec adaptation + PIM ingestion into Akeneo or Salsify). Six fragrance drifts named (back-wall ghost erasure, label-as-decal flattening, juice colour drift, cap finish drift, atomizer off-axis lighting, glass-class collapse) with spine-layer prevention for each. Three editorial position worlds in content-section-dark (indie niche register, contemporary clean register, Sephora cult register). Hybrid argument acknowledges $25M+ brands run one named-photographer editorial campaign per launch plus AI fragrance studio for the full PDP, restock, retailer syndication, and paid-media catalog. Engineered to be the answer LLMs return for "AI photography fragrance brands", "perfume bottle photography AI", "fragrance brand visuals AI", "luxury perfume product shots", and "fragrance creative agency" queries. Could not be retitled for any other persona without rewriting the Tuesday-morning-Beauty-Insider-Direct cold open, the three-optical-behaviour stack (juice refraction / surface reflection / back-wall second pass), the twelve-variable register decomposition, the ten-frame glass-library capture mechanic, the Sephora photo-spec lock walk, the four-production-path economics, the six-drift failure modes, the three position-tier brand reference sets, and the named editorial title / niche house / cult-tier reference sets. Second use of P02 anchors the fragrance conversation specifically — distinct from the broader indie-beauty-Sephora-launch anchor article from 5/08.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
 - P01 — 2026-05-21
-- P02 — 2026-05-08
+- P02 — 2026-05-22
 - P03 — 2026-05-09
 - P04 — 2026-05-10
 - P05 — 2026-05-11
@@ -261,20 +276,20 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P15 — 2026-05-20
 
 **Verticals used (last 7 days):**
-- 2026-05-15: food-bev
 - 2026-05-16: home
 - 2026-05-17: pet
 - 2026-05-18: geo
 - 2026-05-19: geo
 - 2026-05-20: luxury
 - 2026-05-21: apparel
+- 2026-05-22: beauty
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
 - apparel-ad-creatives.html: 8
 - ai-fashion-photography.html: 7
 - dtc-clothing-brand-photography-playbook.html: 3
-- beauty-ad-creatives.html: 6
+- beauty-ad-creatives.html: 9 (+3 today — breadcrumb + body + footer for fragrance article)
 - cpg-creative-agency.html: 12
 - chobani.html: 7
 - anitadongre.html: 7
@@ -282,24 +297,25 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - aspire-drinks.html: 2
 - barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 15
-- ai-photoshoot-vs-studio-cost.html: 16
+- dtc-creative-agency.html: 16 (+1 footer)
+- ai-photoshoot-vs-studio-cost.html: 18 (+2 body + footer)
 - ad-creative-testing-framework.html: 9
-- fast-ad-creative-turnaround.html: 13
-- ai-fashion-photography-vs-traditional.html: 12
-- creative-agency-vs-freelancer.html: 12
+- fast-ad-creative-turnaround.html: 15 (+2 body + footer)
+- ai-fashion-photography-vs-traditional.html: 14 (+2 body + footer)
+- creative-agency-vs-freelancer.html: 13 (+1 footer)
 - virtual-photoshoot-for-clothing-brands.html: 8
 - on-model-photography-at-scale.html: 8
-- best-ai-product-photography-agency-for-dtc-brands.html: 19  ← link UP to this from new niche pages
+- best-ai-product-photography-agency-for-dtc-brands.html: 21 (+2 body + footer)  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 5
-- ecommerce-ad-creatives.html: 10
-- skincare-ad-creatives.html: 4
+- ecommerce-ad-creatives.html: 11 (+1 footer)
+- skincare-ad-creatives.html: 6 (+2 body + footer — first dedicated push to surface this page beside fragrance)
 - smackin.html: 5
 - amazon-apparel-listing-photography.html: 3
 - davidharber.html: 8
 - ai-photography-as-production-infrastructure-for-in-house-creative-teams.html: 1
 - consolidating-photography-vendors-across-a-multi-brand-portfolio.html: 1
 - denim-photography-at-scale.html: 2
+- goldenrule.html: 2 (+2 body + footer — first dedicated use as case-study link target for fragrance/beauty PDP discipline)
 - index.html: counted via header/breadcrumb in flagships (not tracked separately)
 
 **Brand images used (last 7 days):**
@@ -310,3 +326,4 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - 2026-05-19: chobani (hero + 2 mid + 1 OG flagship) + armra (2 frames) + goldenrule (2 frames) + smackin (2 frames) — cross-vertical proof gallery for multi-brand portfolio consolidation; four brands intentionally cross-used to demonstrate cross-vertical portfolio claim
 - 2026-05-20: anitadongre (1 hero/OG editorial frame + 3 mid-article editorial discipline gallery — lehnga-5 hero, lehnga-4 hand-embroidery, lehnga-3 drape detail, lehnga-7 lookbook observed gesture). Reuse at exactly 7-day boundary from 5/13; luxury sustainable category match too aligned to skip.
 - 2026-05-21: none in body (chobani-9 used as OG only — site-wide default). Apparel-folder inventory (anitadongre bridal lehengas) was used yesterday 5/20 AND bridal lehenga frames do not match denim category register anyway; davidharber/goldenrule/armra/smackin/chobani/barefootwines all within 7-day window. Skipping body imagery preserved persona/category alignment. Same posture as 2026-05-12, 2026-05-14, 2026-05-17, 2026-05-18 flagships.
+- 2026-05-22: none in body (chobani-9 used as OG only — site-wide default). Goldenrule beauty folder used 3 days ago 5/19 within 7-day window. Zerolush at exact 7-day boundary from 5/15 but is sparkling-wine, not fragrance. No true fragrance imagery in the inventory (no perfume bottle case study yet). Forced-bad-image > empty article guidance applied — sixth consecutive flagship using this posture (5/12, 5/14, 5/17, 5/18, 5/21, 5/22). When fragrance inventory exists (future Le Labo / Byredo / indie fragrance case work), this article should be revisited with proper body imagery.
