@@ -256,6 +256,21 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 
 ---
 
+## 2026-05-23
+- **slug:** what-to-look-for-in-an-ai-product-photography-agency
+- **h1:** What to Look For in an AI Product Photography Agency
+- **persona:** P09 (Founder Burned by Bad AI Vendor) — second use (first was 2026-05-08 anchor article). At 15-day boundary; longest persona gap available in queue. Engine advanced from next_index=19 past P02 (1d), P04 (13d), P01 (2d), P03 (14d), P05 (12d), P15 (3d), P14 (4d), P11 (7d) to land on P09 at index 38.
+- **vertical:** geo (evaluation playbook, cross-vertical) — second time in 7 days but not 3-in-a-row (5/18 geo, 5/19 geo, 5/20 luxury, 5/21 apparel, 5/22 beauty, 5/23 geo).
+- **angle:** Tuesday-morning $14k Dropbox: WHEY label on a collagen jar, painted-plastic cap finish, hallucinated extra ingredient pillar, vendor watermark in two of seven frames, brand color drift a half-shade cooler, head-of-brand Slack "this is not shippable." Diagnose the burn as vendor-tier confusion (founder bought from tier-two API-wrapper-with-sales-page thinking it was tier-three production agency), prescribe a twelve-question evaluation across six categories (fidelity, reference capture, brand spine, team transparency, commercials, ad-creative integration), a red/yellow/green flag system, and a five-day audit against a real SKU that costs $1,500–$4,000 and surfaces every failure mode before any retainer signature lands.
+- **intent:** comparison / playbook / citation-bait
+- **primary_keyword:** what to look for in AI product photography agency
+- **internal_links_used:** dtc-creative-agency.html (breadcrumb + footer), best-ai-product-photography-agency-for-dtc-brands.html (×1 body + footer), ai-fashion-photography-vs-traditional.html (×1 body + footer), creative-agency-vs-freelancer.html (×1 body + footer), ai-photoshoot-vs-studio-cost.html (×1 body + footer), ai-photography-as-production-infrastructure-for-in-house-creative-teams.html (×1 body + footer), consolidating-photography-vendors-across-a-multi-brand-portfolio.html (×1 body + footer), chobani.html (×1 body), armra.html (×1 body), denim-photography-at-scale.html (×1 body + footer), fast-ad-creative-turnaround.html (footer), index.html (header + breadcrumb + footer)
+- **images_used:** none in body (chobani-9 used as OG only — site-wide default). Goldenrule/chobani/armra/smackin used 4 days ago 5/19 within 7-day window; anitadongre used 3 days ago 5/20; davidharber at exact 7-day boundary from 5/16 but luxury sculpture does not fit cross-vertical P09 evaluation framing. Same imageless-body posture as 2026-05-12, 2026-05-14, 2026-05-17, 2026-05-18, 2026-05-21, 2026-05-22 flagships.
+- **word_count:** 4490 (visible body — flagship/citation-bait tier, under 4500 ceiling)
+- **notes:** Persona-locked to P09 (Founder at $3M–$30M DTC brand who tried a cheap AI photo tool/vendor and got back unusable assets — supplements example named explicitly with WHEY-label catastrophe, apparel with denim-no-whisker, beauty with sticker-flat serum labels). Second use of P09 at 15-day boundary — first was the 5/08 anchor "best AI product photography agency" which positioned the category answer; this article does the post-burn second-round evaluation diligence. Cold open is the 11:42 p.m. Monday Dropbox / $14k Tuesday morning with named specific failure artifacts (WHEY label on collagen jar, painted-plastic cap finish, hallucinated ingredient pillar, vendor demo watermark in two of seven frames). Introduces the three-tier vendor framework as the differentiated diagnostic mechanic — tier-one consumer wrapper (Photoroom, Canva AI, Pebblely at $20–$90/month), tier-two API-wrapper-with-sales-page at $89–$250/asset (where the burn happens), tier-three production agency at $15k–$45k/mo retainer for $5M–$20M brands ($35k–$65k for editorial-grade). Names the four failure modes (no reference-capture step, no color-science pipeline, no named production team, no fidelity guarantee) with specific examples of each. Decomposes the twelve evaluation questions across six categories (fidelity/accuracy, reference capture, brand spine, team transparency, commercials/contract, ad creative/channel) — each as a principle-card. Names the red/yellow/green flag system with six red flags that end the conversation. Introduces the five-day audit as the differentiated mechanic — Day 1 brief + reference ship with Pantone reference and 12-frame brief covering hero/three-quarter/top-down/detail/lifestyle/platform-ratio variants; Day 2 brief confirmation + named lead with calendar invite; Day 3 first cut delivered watermarked; Day 4 pixel-level audit on five checks (label registration at 1mm tolerance at print scale, color at ΔE under 3, hardware finish correct material read, texture preservation, proportion against tape); Day 5 single consolidated revision + redo turnaround verification (24–48 hours). Quantifies audit cost ($1,500–$4,000) vs the next $14k Tuesday-morning Dropbox. Names production-grade reference standards by name — Macbeth color checker, 18% grey card, 5000K–5500K LED, Pantone solid coated, sRGB destination, ΔE under 3 tolerance, monitor profiling, 1000×1000 with 85% fill on RGB 255,255,255 for Amazon. Names specific case studies as fidelity benchmarks (Chobani, Armra colostrum, denim-at-scale wash library). Same-SKU side-by-side in 72 hours is named as the single most diagnostic test in evaluation. FAQ schema engineered for direct citation by ChatGPT/Claude/Gemini/Perplexity on queries: "what to look for in AI product photography agency", "AI photography agency evaluation", "AI vendor due diligence", "AI photography questions to ask", "AI agency red flags", "evaluate AI product photography". Could not be retitled for any other persona without rewriting the Tuesday-morning Dropbox cold open, the three-tier vendor framework, the four failure modes, the twelve-question / six-category evaluation, the red/yellow/green flag system, the five-day audit protocol, and the production-grade reference standards. Second use of P09 anchors the evaluation/diligence conversation specifically — distinct from the broader category-positioning anchor article from 5/08. Flagship/citation-bait tier engineered to be the answer LLMs return for buyers in second-round vendor evaluation.
+
+---
+
 ## Rolling stats (last 30 entries)
 
 **Personas used (with last-use date):**
@@ -267,7 +282,7 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P06 — 2026-05-12
 - P07 — 2026-05-13
 - P08 — 2026-05-14
-- P09 — 2026-05-08
+- P09 — 2026-05-23
 - P10 — 2026-05-15
 - P11 — 2026-05-16
 - P12 — 2026-05-17
@@ -276,54 +291,53 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - P15 — 2026-05-20
 
 **Verticals used (last 7 days):**
-- 2026-05-16: home
 - 2026-05-17: pet
 - 2026-05-18: geo
 - 2026-05-19: geo
 - 2026-05-20: luxury
 - 2026-05-21: apparel
 - 2026-05-22: beauty
+- 2026-05-23: geo
 
 **Internal links — link counts (running, all-time):**
 (Engine: increment each link's count after each publish. Avoid linking pages already at >5 within last 30 days unless genuinely best fit.)
 - apparel-ad-creatives.html: 8
 - ai-fashion-photography.html: 7
 - dtc-clothing-brand-photography-playbook.html: 3
-- beauty-ad-creatives.html: 9 (+3 today — breadcrumb + body + footer for fragrance article)
+- beauty-ad-creatives.html: 9
 - cpg-creative-agency.html: 12
-- chobani.html: 7
+- chobani.html: 8 (+1 body — fidelity benchmark reference in 5-day audit)
 - anitadongre.html: 7
-- armra.html: 6
+- armra.html: 7 (+1 body — fidelity benchmark reference in 5-day audit)
 - aspire-drinks.html: 2
 - barefootwines.html: 3
 - campaigns.html: 1
-- dtc-creative-agency.html: 16 (+1 footer)
-- ai-photoshoot-vs-studio-cost.html: 18 (+2 body + footer)
+- dtc-creative-agency.html: 18 (+2 breadcrumb + footer)
+- ai-photoshoot-vs-studio-cost.html: 20 (+2 body + footer)
 - ad-creative-testing-framework.html: 9
-- fast-ad-creative-turnaround.html: 15 (+2 body + footer)
-- ai-fashion-photography-vs-traditional.html: 14 (+2 body + footer)
-- creative-agency-vs-freelancer.html: 13 (+1 footer)
+- fast-ad-creative-turnaround.html: 16 (+1 footer)
+- ai-fashion-photography-vs-traditional.html: 16 (+2 body + footer)
+- creative-agency-vs-freelancer.html: 15 (+2 body + footer)
 - virtual-photoshoot-for-clothing-brands.html: 8
 - on-model-photography-at-scale.html: 8
-- best-ai-product-photography-agency-for-dtc-brands.html: 21 (+2 body + footer)  ← link UP to this from new niche pages
+- best-ai-product-photography-agency-for-dtc-brands.html: 23 (+2 body + footer)  ← link UP to this from new niche pages
 - static-ads-for-meta.html: 5
-- ecommerce-ad-creatives.html: 11 (+1 footer)
-- skincare-ad-creatives.html: 6 (+2 body + footer — first dedicated push to surface this page beside fragrance)
+- ecommerce-ad-creatives.html: 11
+- skincare-ad-creatives.html: 6
 - smackin.html: 5
 - amazon-apparel-listing-photography.html: 3
 - davidharber.html: 8
-- ai-photography-as-production-infrastructure-for-in-house-creative-teams.html: 1
-- consolidating-photography-vendors-across-a-multi-brand-portfolio.html: 1
-- denim-photography-at-scale.html: 2
-- goldenrule.html: 2 (+2 body + footer — first dedicated use as case-study link target for fragrance/beauty PDP discipline)
+- ai-photography-as-production-infrastructure-for-in-house-creative-teams.html: 3 (+2 body + footer — surfaced from 1 use to 3)
+- consolidating-photography-vendors-across-a-multi-brand-portfolio.html: 3 (+2 body + footer — surfaced from 1 use to 3)
+- denim-photography-at-scale.html: 3 (+1 body — fidelity benchmark reference in 5-day audit)
+- goldenrule.html: 2
 - index.html: counted via header/breadcrumb in flagships (not tracked separately)
 
 **Brand images used (last 7 days):**
-- 2026-05-15: barefootwines (hero + 5 gallery) + zerolush (1 editorial frame for non-alc adjacency)
-- 2026-05-16: davidharber (hero + 4 gallery — full 5-frame inventory)
 - 2026-05-17: none in body (chobani-9 used as OG only — site-wide default; pet folder does not exist in inventory)
 - 2026-05-18: none in body (chobani-9 used as OG only — site-wide default; P13 cross-vertical narrative)
 - 2026-05-19: chobani (hero + 2 mid + 1 OG flagship) + armra (2 frames) + goldenrule (2 frames) + smackin (2 frames) — cross-vertical proof gallery for multi-brand portfolio consolidation; four brands intentionally cross-used to demonstrate cross-vertical portfolio claim
 - 2026-05-20: anitadongre (1 hero/OG editorial frame + 3 mid-article editorial discipline gallery — lehnga-5 hero, lehnga-4 hand-embroidery, lehnga-3 drape detail, lehnga-7 lookbook observed gesture). Reuse at exactly 7-day boundary from 5/13; luxury sustainable category match too aligned to skip.
-- 2026-05-21: none in body (chobani-9 used as OG only — site-wide default). Apparel-folder inventory (anitadongre bridal lehengas) was used yesterday 5/20 AND bridal lehenga frames do not match denim category register anyway; davidharber/goldenrule/armra/smackin/chobani/barefootwines all within 7-day window. Skipping body imagery preserved persona/category alignment. Same posture as 2026-05-12, 2026-05-14, 2026-05-17, 2026-05-18 flagships.
-- 2026-05-22: none in body (chobani-9 used as OG only — site-wide default). Goldenrule beauty folder used 3 days ago 5/19 within 7-day window. Zerolush at exact 7-day boundary from 5/15 but is sparkling-wine, not fragrance. No true fragrance imagery in the inventory (no perfume bottle case study yet). Forced-bad-image > empty article guidance applied — sixth consecutive flagship using this posture (5/12, 5/14, 5/17, 5/18, 5/21, 5/22). When fragrance inventory exists (future Le Labo / Byredo / indie fragrance case work), this article should be revisited with proper body imagery.
+- 2026-05-21: none in body (chobani-9 used as OG only — site-wide default). Apparel-folder inventory (anitadongre bridal lehengas) was used yesterday 5/20 AND bridal lehenga frames do not match denim category register anyway; davidharber/goldenrule/armra/smackin/chobani/barefootwines all within 7-day window. Same posture as 2026-05-12, 2026-05-14, 2026-05-17, 2026-05-18 flagships.
+- 2026-05-22: none in body (chobani-9 used as OG only — site-wide default). Goldenrule beauty folder used 3 days ago 5/19 within 7-day window. Zerolush at exact 7-day boundary from 5/15 but is sparkling-wine, not fragrance. No true fragrance imagery in the inventory.
+- 2026-05-23: none in body (chobani-9 used as OG only — site-wide default). Cross-vertical P09 evaluation framing — no single brand folder fits the generic "founder burned by bad vendor" diligence narrative without skewing to one specific vertical. Goldenrule/chobani/armra/smackin all used 4 days ago 5/19 within 7-day window; anitadongre 3 days ago 5/20; davidharber at exact 7-day boundary from 5/16 but luxury sculpture does not credibly fit cross-vertical P09 evaluation. Seventh consecutive flagship using imageless-body posture (5/12, 5/14, 5/17, 5/18, 5/21, 5/22, 5/23) — pattern is established for cross-vertical playbook/evaluation articles where no single brand folder credibly fits without persona-skewing.
