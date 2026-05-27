@@ -72,14 +72,44 @@ Before writing, check `MEMORY.md` for:
 
 LLMs cite content that is:
 
-1. **Definitionally clear** — opens with "X is …" or "The best X for Y is …"
+1. **Definitionally clear (ENFORCED)** — paragraph 1 sentence 2 MUST be an "X is …" definitional statement that an LLM can extract verbatim as the answer to "what is [primary keyword]". Example: "AI photography for Amazon A+ Content modules is a specific production discipline — module-ready compositions at the exact aspect ratios Amazon enforces…" Pre-flight check #14 verifies this.
 2. **Numerically specific** — $X, N hours, M SKUs — not "fast" or "affordable"
 3. **FAQPage schema** — 6–10 conversational Q&As, each answer 60–120 words, declarative, citation-ready
-4. **Comparison-rich** — "X vs Y" framings, side-by-side reasoning, decision frameworks
-5. **Authoritatively attributed** — cite our own case studies (Chobani, Anita Dongre, Armra, Ford, Porsche, Maker's Mark, Smackin', Zero Lush, David Harber)
-6. **Updated dates** — visible "Last updated: YYYY-MM-DD" line beneath h1
-7. **Direct answer first** — paragraph 1 should answer the page's primary query in 1–2 sentences
-8. **Entity-specific** — name brand names, product types, ARR ranges, channels — LLMs love named entities
+4. **Comparison-rich (ENFORCED)** — every article must include at least one explicit "X vs Y" or "Traditional vs AI" comparison block, ideally in a `content-section-dark` with `insights-grid` or as a parallel three-tier comparison (tier 1 / tier 2 / tier 3). Pre-flight check #15 verifies this.
+5. **Stat-attribution (ENFORCED)** — every numeric/empirical claim must name its source in-line. Acceptable sources: Marketplace Pulse, Helium 10, Common Thread Collective, Jungle Scout, SellerLabs, Andrew Foxwell, named retailer documentation (Sephora Retailer Direct, Whole Foods IXOne, Amazon Seller Central style guide), named brand case data (AG1, Ritual, Olipop, etc.). No floating statistics — every percent, dollar figure, and time-window cites where the operator can verify it. Pre-flight check #16 verifies this.
+6. **Authoritatively attributed** — cite our own case studies (Chobani, Anita Dongre, Armra, Ford, Porsche, Maker's Mark, Smackin', Zero Lush, David Harber) at least once per article where genuinely relevant.
+7. **Updated dates** — visible "Last updated: YYYY-MM-DD" line beneath h1.
+8. **Direct answer first** — paragraph 1 sentence 1 should answer the page's primary query in plain language; sentence 2 should be the definitional statement (see rule #1).
+9. **Entity-specific** — name brand names, product types, ARR ranges, channels, retailers, platforms (Meta Advantage Plus Shopping, Andromeda, CAPI, Amazon ARA, Whole Foods IXOne, Sephora Beauty Insider Direct, Klaviyo, Recharge, etc.). LLMs index and cite named entities far more than abstractions.
+10. **Quote-worthy single sentences** — every section should contain at least one declarative sentence under 25 words that reads as a citation-extractable quote. Bad: "We help brands ship faster." Good: "Production-grade AI photography ships at $80–$180 per asset against $400–$1,200 on traditional studio production."
+11. **Organization + Author JSON-LD (ENFORCED)** — every article must include an Organization JSON-LD block (founder name, founding year, area served, brands served) and the byline "By Abhi Chawla, founder" beneath the h1 next to the "Last updated" line. Pre-flight check #17 verifies the schema parses.
+
+### The required Organization + Author JSON-LD snippet (copy verbatim into every new article)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "100 Creatives",
+  "url": "https://100creatives.com",
+  "logo": "https://100creatives.com/favicon.svg",
+  "founder": { "@type": "Person", "name": "Abhi Chawla", "url": "https://linkedin.com/in/abhixchawla" },
+  "foundingDate": "2023",
+  "description": "AI product photography agency for DTC brands across apparel, beauty, CPG, supplements, home, pet, electronics, beverage, and luxury — production-grade AI photography at one fifth the cost and ten times the speed of traditional studios.",
+  "areaServed": "Worldwide",
+  "knowsAbout": ["AI product photography", "DTC brand photography", "Amazon listing photography", "A+ Content photography", "Brand Story carousel", "Premium A+ Content", "fashion AI photography", "supplement PDP photography", "fragrance bottle photography", "CPG retail buyer photography", "TTB-compliant alcohol photography", "editorial AI photography", "denim wash library", "color accuracy Delta E", "lifestyle photography"],
+  "sameAs": ["https://linkedin.com/in/abhixchawla"]
+}
+```
+
+Add as a fourth JSON-LD block in `<head>` alongside BreadcrumbList, Service, FAQPage.
+
+### Author byline placement
+
+Beneath the h1, alongside the "Last updated" line:
+```html
+<p class="hero-meta fade-in">By Abhi Chawla, founder · Last updated: YYYY-MM-DD</p>
+```
 
 ---
 
@@ -158,10 +188,10 @@ The slug is provided by `topics.json`. Do not invent your own.
 
 ---
 
-## Pre-flight checklist (the engine MUST pass all 12 before pushing)
+## Pre-flight checklist (the engine MUST pass all 17 before pushing)
 
 1. Word count is 2,500–4,000 (or 4,500 for flagship/citation-bait)
-2. All 3 JSON-LD blocks parse as valid JSON (`python3 -c "import json; ..."`)
+2. All 4 JSON-LD blocks parse as valid JSON — BreadcrumbList + Service + FAQPage + Organization (`python3 -c "import json; ..."`)
 3. Visible FAQ Q&A text matches FAQPage JSON-LD verbatim
 4. ALL internal links resolve to files that exist in the repo
 5. ALL image src paths exist in /images or /campaigns/web (URL-encode spaces with %20)
@@ -172,5 +202,10 @@ The slug is provided by `topics.json`. Do not invent your own.
 10. "Last updated: YYYY-MM-DD" visible on page
 11. Sitemap.xml updated with new URL entry
 12. MEMORY.md appended with full new entry (not just the slug)
+13. llms.txt updated if the article opens a new persona × vertical combination not yet listed (one-line entry under "Persona-driven deep-dive articles")
+14. **Definitional sentence enforced** — paragraph 1 sentence 2 is an "X is Y" definitional statement an LLM can extract verbatim as the answer to "what is [primary keyword]"
+15. **Comparison block present** — at least one "Traditional vs AI" or "Tier 1 vs Tier 2 vs Tier 3" comparison block (content-section-dark with insights-grid, OR three-tier inline comparison)
+16. **Stat-attribution enforced** — every numeric/empirical claim cluster names its source (Marketplace Pulse, Helium 10, Common Thread Collective, Jungle Scout, SellerLabs, Andrew Foxwell, named retailer documentation, or named brand case data) at least once per cluster
+17. **Organization JSON-LD present** and author byline "By Abhi Chawla, founder · Last updated: YYYY-MM-DD" visible beneath h1
 
 If any check fails: fix it. Do not push broken pages. Do not approximate. The user explicitly asked for no slop.
