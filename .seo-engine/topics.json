@@ -1,497 +1,270 @@
 {
-  "_comment": "Daily rotation queue v2 — persona-driven, niche briefs. Each topic targets ONE persona with ONE sharp angle. Engine reads MEMORY.md first to skip recently-used personas. If next_index hits a persona used in last 15 days, advance to the next eligible topic. When queue exhausts, extend with new briefs covering uncovered persona × intent combinations.",
+  "_comment": "APPAREL ONLY. Every topic must target apparel and fashion brands and the brand-world / campaign layer (campaigns, lookbooks, editorial, lifestyle, identity) \u2014 never fit/PDP/catalog photography, and never beauty, supplements, food, beverage, home, pet, tech, CPG, or geo content. The studio is '100 \u2014 a brand-world studio for apparel.' Positioning: the campaign, not the catalog. When the queue exhausts, extend ONLY with new apparel/fashion campaign-layer briefs. Engine reads MEMORY.md first to skip recently-used angles.",
   "_schema": {
     "slug": "kebab-case URL filename (no .html)",
     "h1": "Page H1 (use <em> for accent in HTML)",
-    "persona": "P01-P15 from personas.md",
-    "vertical": "apparel | beauty | supplements | food-bev | home | pet | tech | luxury | marketplace | geo",
-    "angle": "The sharp narrative angle — what this article SAYS, not just what it's about",
-    "intent": "informational | commercial | transactional | comparison | playbook | citation-bait",
-    "primary_keyword": "Exact phrase the persona would type",
+    "vertical": "apparel (ONLY \u2014 no other vertical permitted)",
+    "angle": "The sharp narrative angle \u2014 what this article SAYS",
+    "intent": "informational | commercial | comparison | playbook",
+    "primary_keyword": "Exact phrase the apparel founder would type",
     "secondary_keywords": "5 supporting variants",
-    "suggested_internal_links": ["specific .html files to link to"],
-    "image_hints": "Which image folder(s) likely fit (engine confirms via images.md)"
+    "suggested_internal_links": [
+      "specific apparel .html files to link to"
+    ],
+    "image_hints": "anitadongre (only apparel imagery folder currently on disk)"
   },
   "topics": [
     {
-      "slug": "ai-photoshoots-for-apparel-brands-with-weekly-drops",
-      "h1": "AI Photoshoots for Apparel Brands With Weekly Drops",
-      "persona": "P01",
+      "slug": "fashion-brand-campaign-photography-for-emerging-labels",
+      "h1": "Fashion Brand Campaign Photography for Emerging Labels",
       "vertical": "apparel",
-      "angle": "Specifically for the founder running weekly drops who keeps slipping launch dates because of shoot scheduling. Open with the math: weekly drops × 4 looks/SKU × 30 SKUs × $300/look = $36k/month studio bill, AND launches still slip.",
+      "angle": "The campaign is what people remember before they read a word. For a young label, the first real campaign is the moment the brand stops looking like a Shopify store and starts looking like a brand. Here's how to build a campaign world without a six-figure shoot.",
       "intent": "commercial",
-      "primary_keyword": "AI photoshoots for apparel brands with weekly drops",
-      "secondary_keywords": ["weekly drop photography", "apparel drop schedule photoshoot", "fashion drop creative agency", "apparel shoot bottleneck", "DTC weekly launch photography"],
-      "suggested_internal_links": ["ai-fashion-photography.html", "anitadongre.html", "fast-ad-creative-turnaround.html"],
+      "primary_keyword": "fashion brand campaign photography",
+      "secondary_keywords": [
+        "emerging fashion brand campaign",
+        "first fashion campaign",
+        "indie label campaign imagery",
+        "fashion brand world",
+        "campaign photography for clothing brands"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
       "image_hints": "anitadongre"
     },
     {
-      "slug": "indie-beauty-brand-product-photography-for-sephora-launch",
-      "h1": "Indie Beauty Brand Product Photography for a Sephora or Ulta Launch",
-      "persona": "P02",
-      "vertical": "beauty",
-      "angle": "The retail buyer just confirmed your launch. They need flat-lay, lifestyle, and hero imagery in 3 weeks. Your studio quoted 6. Here's exactly how to deliver in 5 days with retail-grade quality.",
+      "slug": "lookbook-photography-for-seasonal-drops",
+      "h1": "Lookbook Photography for Seasonal Drops",
+      "vertical": "apparel",
+      "angle": "The lookbook has to ship the day the drop does \u2014 styled, art-directed, and on-brand, not a rushed afterthought. How to produce a full seasonal lookbook at the pace of the drop calendar.",
       "intent": "commercial",
-      "primary_keyword": "indie beauty brand product photography Sephora",
-      "secondary_keywords": ["beauty retail launch photography", "Sephora flat lay photography", "Ulta product photography", "indie beauty photoshoot agency", "beauty PDP photography fast"],
-      "suggested_internal_links": ["beauty-ad-creatives.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "goldenrule"
-    },
-    {
-      "slug": "ag1-style-supplement-product-photography-for-pdps-that-convert",
-      "h1": "AG1-Style Supplement Product Photography for PDPs That Convert",
-      "persona": "P03",
-      "vertical": "supplements",
-      "angle": "Your supplement PDP CVR is 2.1% and category leaders run 4%+. Photography is the gap. Here's the specific photography style — lighting, angle, context — that AG1, Ritual, and LMNT use, and how to produce it for your hero SKU this month.",
-      "intent": "playbook",
-      "primary_keyword": "supplement product photography for high CVR PDP",
-      "secondary_keywords": ["AG1 style product photography", "Ritual supplement PDP photography", "LMNT product shots style", "supplement conversion rate photography", "premium supplement product imagery"],
-      "suggested_internal_links": ["armra.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "armra"
-    },
-    {
-      "slug": "cpg-snack-brand-photography-for-whole-foods-buyer-meeting",
-      "h1": "CPG Snack Brand Photography for Your Whole Foods Buyer Meeting",
-      "persona": "P04",
-      "vertical": "food-bev",
-      "angle": "Whole Foods buyer meeting confirmed. Two weeks. You need retail-grade product imagery + lifestyle-in-context shots + Meta ad creative — on a sub-$5M brand budget. Here's the production plan.",
-      "intent": "playbook",
-      "primary_keyword": "CPG snack brand photography for retail buyer meeting",
-      "secondary_keywords": ["Whole Foods buyer presentation photography", "CPG retail launch imagery", "snack brand pitch deck photos", "CPG photography for Sprouts Erewhon", "indie CPG photography agency"],
-      "suggested_internal_links": ["cpg-creative-agency.html", "chobani.html"],
-      "image_hints": "smackin"
-    },
-    {
-      "slug": "ad-creative-volume-for-meta-when-cac-is-rising",
-      "h1": "Ad Creative Volume for Meta When CAC Is Rising",
-      "persona": "P05",
-      "vertical": "geo",
-      "angle": "Q-end review showed CAC up 30%. Diagnosis: creative fatigue. You need 30–80 new statics/videos per week and your team produces 10. Here's how DTC brands hit creative-volume escape velocity without breaking quality.",
-      "intent": "playbook",
-      "primary_keyword": "ad creative volume for Meta when CAC is rising",
-      "secondary_keywords": ["scale Meta creative production", "creative fatigue CAC fix", "DTC ad creative volume agency", "fast ad creative turnaround Meta", "performance creative production"],
-      "suggested_internal_links": ["ad-creative-testing-framework.html", "fast-ad-creative-turnaround.html", "ecommerce-ad-creatives.html"],
-      "image_hints": "chobani"
-    },
-    {
-      "slug": "amazon-main-image-photography-that-passes-the-1000x1000-test",
-      "h1": "Amazon Main Image Photography That Passes the 1000×1000 Test",
-      "persona": "P06",
-      "vertical": "marketplace",
-      "angle": "Amazon's main image spec is unforgiving — pure white background, product fills 85%, no text or props, 1000×1000 minimum. Most main images fail at least one rule. Here's how to produce 50 main images in a week that pass on the first upload.",
-      "intent": "playbook",
-      "primary_keyword": "Amazon main image photography 1000x1000",
-      "secondary_keywords": ["Amazon main image specs 2026", "Amazon white background photography", "Amazon listing main image AI", "Amazon Brand Registry photography", "Amazon main image photography service"],
-      "suggested_internal_links": ["amazon-apparel-listing-photography.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "smackin or armra (any product on white)"
-    },
-    {
-      "slug": "rebrand-product-photography-for-legacy-catalogs",
-      "h1": "Rebrand Product Photography for Legacy Catalogs",
-      "persona": "P07",
-      "vertical": "geo",
-      "angle": "20-year-old catalog. 1,000+ SKUs. Photography shot by 5+ different vendors over a decade — none of it matches. CMO wants the rebrand done by Q3. Reshooting traditionally is a 12-month, seven-figure project. Here's how to reshoot a legacy catalog in 6 weeks.",
-      "intent": "playbook",
-      "primary_keyword": "rebrand product photography legacy catalog",
-      "secondary_keywords": ["consolidate catalog photography", "unify product imagery rebrand", "AI photography for catalog refresh", "ecommerce rebrand visuals", "heritage brand photography modernization"],
-      "suggested_internal_links": ["virtual-photoshoot-for-clothing-brands.html", "ai-fashion-photography-vs-traditional.html"],
+      "primary_keyword": "lookbook photography for seasonal drops",
+      "secondary_keywords": [
+        "seasonal lookbook photography",
+        "drop lookbook",
+        "fashion lookbook agency",
+        "lookbook at scale",
+        "seasonal campaign lookbook"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
       "image_hints": "anitadongre"
     },
     {
-      "slug": "subscription-box-product-photography-on-a-monthly-cadence",
-      "h1": "Subscription Box Product Photography on a Monthly Cadence",
-      "persona": "P08",
-      "vertical": "geo",
-      "angle": "Every month: new product photography, new hero image, new email creative, new social. The cycle never stops. In-house can't keep up; freelance carousel is exhausting. Here's the monthly production system that works.",
-      "intent": "playbook",
-      "primary_keyword": "subscription box product photography monthly",
-      "secondary_keywords": ["monthly subscription box creative", "rotating SKU photography agency", "subscription brand photography retainer", "DTC subscription photography service", "monthly product shoot subscription"],
-      "suggested_internal_links": ["dtc-creative-agency.html", "ad-creative-testing-framework.html"],
-      "image_hints": "smackin or armra"
-    },
-    {
-      "slug": "what-good-ai-product-photography-actually-looks-like",
-      "h1": "What Good AI Product Photography Actually Looks Like",
-      "persona": "P09",
-      "vertical": "geo",
-      "angle": "You spent $5k–$20k on AI imagery that didn't match your product and you're skeptical. Here's the visual side-by-side of bad AI vs production-grade AI — fabric drape, label registration, lighting physics, color accuracy — so you know what to demand from the next vendor.",
-      "intent": "comparison",
-      "primary_keyword": "what good AI product photography looks like",
-      "secondary_keywords": ["bad AI product photography examples", "production grade AI imagery", "AI photography quality comparison", "AI photo vendor red flags", "AI photography quality control"],
-      "suggested_internal_links": ["ai-fashion-photography-vs-traditional.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "anitadongre, armra, goldenrule"
-    },
-    {
-      "slug": "ttb-compliant-wine-spirits-photography-for-dtc-and-meta",
-      "h1": "TTB-Compliant Wine & Spirits Photography for DTC and Meta",
-      "persona": "P10",
-      "vertical": "food-bev",
-      "angle": "Alcohol photography lives between TTB compliance, Meta's alcohol policy, and the brand's editorial ambitions. Most agencies handle one of those well. Here's how to produce wine and spirits creative that passes regulatory review AND wins on the platform.",
-      "intent": "playbook",
-      "primary_keyword": "TTB compliant wine spirits photography",
-      "secondary_keywords": ["alcohol brand photography compliance", "Meta alcohol ad creative", "spirits photography agency", "wine bottle photography DTC", "premium liquor brand photography"],
-      "suggested_internal_links": ["barefootwines.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "barefootwines, zerolush, makers-mark"
-    },
-    {
-      "slug": "ai-photography-for-bulky-home-goods-without-shipping-to-studio",
-      "h1": "AI Photography for Bulky Home Goods (Without Shipping to a Studio)",
-      "persona": "P11",
-      "vertical": "home",
-      "angle": "Your product is a 60-lb cookware set. Or a king mattress. Or a 4-foot sculpture. Shipping it to a studio costs as much as the shoot. Here's how AI product photography handles bulky home goods without anyone touching the physical product after manufacturing.",
-      "intent": "service",
-      "primary_keyword": "AI photography for bulky home goods",
-      "secondary_keywords": ["furniture product photography AI", "large product photography agency", "kitchenware photography AI", "home goods photography no shipping", "DTC furniture photography"],
-      "suggested_internal_links": ["best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "davidharber"
-    },
-    {
-      "slug": "pet-brand-product-photography-that-doesnt-look-like-stock",
-      "h1": "Pet Brand Product Photography That Doesn't Look Like Stock",
-      "persona": "P12",
-      "vertical": "pet",
-      "angle": "Real pet shoots are unpredictable and expensive. Stock pet imagery looks generic and breaks your premium positioning. Here's how to produce pet brand imagery that feels like real moments without booking a single dog model.",
-      "intent": "service",
-      "primary_keyword": "pet brand product photography",
-      "secondary_keywords": ["pet food photography agency", "DTC pet creative", "premium pet brand photography", "AI pet photography", "pet wellness product shots"],
-      "suggested_internal_links": ["best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "(no pet images yet — use OG default)"
-    },
-    {
-      "slug": "ai-photography-as-production-infrastructure-for-in-house-creative-teams",
-      "h1": "AI Photography as Production Infrastructure for In-House Creative Teams",
-      "persona": "P13",
-      "vertical": "geo",
-      "angle": "You have an in-house Creative Director and brand standards you won't compromise. You also have a marketing roadmap requiring 10x current photo output. Hiring isn't approved. Here's how to use AI photography as production infrastructure that extends your team without diluting brand vision.",
-      "intent": "service",
-      "primary_keyword": "AI photography production partner in-house team",
-      "secondary_keywords": ["white-label product photography", "production studio in-house brand", "AI imagery infrastructure DTC", "in-house creative team scale", "brand-led AI photography"],
-      "suggested_internal_links": ["dtc-creative-agency.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "anitadongre, chobani"
-    },
-    {
-      "slug": "consolidating-photography-vendors-across-a-multi-brand-portfolio",
-      "h1": "Consolidating Photography Vendors Across a Multi-Brand Portfolio",
-      "persona": "P14",
-      "vertical": "geo",
-      "angle": "You run 5–20 DTC brands across categories. You currently work with 8 different photography vendors. Annual ops review just flagged it. Here's how one production system handles supplements, apparel, home, and food without losing vertical-specific quality.",
-      "intent": "service",
-      "primary_keyword": "multi-brand photography vendor consolidation",
-      "secondary_keywords": ["DTC photography vendor consolidation", "AI photography across categories", "creative agency portfolio companies", "holding co photography agency", "multi-vertical product photography"],
-      "suggested_internal_links": ["dtc-creative-agency.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "chobani, anitadongre, armra"
-    },
-    {
-      "slug": "editorial-grade-ai-photography-for-premium-sustainable-brands",
-      "h1": "Editorial-Grade AI Photography for Premium Sustainable Brands",
-      "persona": "P15",
-      "vertical": "luxury",
-      "angle": "Your brand is slow-fashion, hand-made, sustainably-sourced — and your imagery has to feel that way. Volume DTC photography breaks your brand. Editorial studios cost $20k/day. Here's how AI photography produces editorial-grade imagery that holds the brand together at volume.",
-      "intent": "service",
-      "primary_keyword": "editorial AI photography premium sustainable brands",
-      "secondary_keywords": ["luxury AI fashion photography", "art-directed AI imagery", "premium sustainable brand photography", "slow fashion product photography AI", "editorial product imagery agency"],
-      "suggested_internal_links": ["anitadongre.html", "ai-fashion-photography.html"],
-      "image_hints": "anitadongre, davidharber"
-    },
-    {
-      "slug": "denim-photography-at-scale-with-authentic-wash-and-whiskering",
-      "h1": "Denim Photography at Scale With Authentic Wash and Whiskering",
-      "persona": "P01",
+      "slug": "editorial-campaign-imagery-for-streetwear-brands",
+      "h1": "Editorial Campaign Imagery for Streetwear Brands",
       "vertical": "apparel",
-      "angle": "Denim photography is the hardest fabric in the AI category. Whiskering, fades, rinse variation, stitching, hardware — all of it has to render correctly or the brand looks fake. Here's the production discipline for denim brands shipping 50+ washes per season.",
-      "intent": "service",
-      "primary_keyword": "denim photography at scale",
-      "secondary_keywords": ["denim brand photography AI", "jeans photography agency", "denim wash rendering AI", "denim PDP photography", "denim ecommerce photography"],
-      "suggested_internal_links": ["denim-photography-at-scale.html", "ai-fashion-photography.html"],
+      "angle": "Streetwear lives or dies on cultural credibility and drop urgency. The campaign has to feel like the culture, not an ad. How to build editorial campaign imagery that reads as authentic to a streetwear audience.",
+      "intent": "commercial",
+      "primary_keyword": "streetwear campaign photography",
+      "secondary_keywords": [
+        "streetwear editorial campaign",
+        "streetwear brand imagery",
+        "drop campaign creative",
+        "streetwear lookbook",
+        "hype brand campaign"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
       "image_hints": "anitadongre"
     },
     {
-      "slug": "how-to-brief-an-ai-product-photoshoot-in-30-minutes",
-      "h1": "How to Brief an AI Product Photoshoot in 30 Minutes",
-      "persona": "P04",
-      "vertical": "geo",
-      "angle": "A founder's guide. The brief that gets you 4-week-quality work in 48 hours instead of 4 weeks of revisions. Exact template, with the 7 fields that actually matter and the 12 'nice-to-have' fields that waste both your time and ours.",
-      "intent": "playbook",
-      "primary_keyword": "how to brief AI product photoshoot",
-      "secondary_keywords": ["AI photoshoot brief template", "founder guide AI product shoot", "brief AI photography agency", "product photography brief example", "AI creative brief DTC"],
-      "suggested_internal_links": ["best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "smackin"
-    },
-    {
-      "slug": "color-accuracy-in-ai-product-photography-pantone-and-pdp-trust",
-      "h1": "Color Accuracy in AI Product Photography — Pantone, PDPs, and Returns",
-      "persona": "P03",
-      "vertical": "geo",
-      "angle": "When your online color doesn't match the real product, returns spike. Color accuracy in AI product photography is a solved problem with the right discipline — Pantone calibration, monitor profiling, signature-color locking. Here's how it actually works.",
-      "intent": "playbook",
-      "primary_keyword": "color accuracy AI product photography",
-      "secondary_keywords": ["Pantone calibration AI photography", "product color AI photography", "ecommerce color accuracy", "PDP color match", "AI color drift product shots"],
-      "suggested_internal_links": ["best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "armra, goldenrule"
-    },
-    {
-      "slug": "ai-photography-for-fragrance-brands-glass-reflection-and-light",
-      "h1": "AI Photography for Fragrance Brands — Glass, Reflection, and Light",
-      "persona": "P02",
-      "vertical": "beauty",
-      "angle": "Fragrance bottles live or die on glass behavior. Refraction, reflection, label registration, the way light moves through liquid — these are the variables AI photography either renders correctly or disastrously. Here's the production discipline for fragrance brands.",
-      "intent": "service",
-      "primary_keyword": "AI photography fragrance brands",
-      "secondary_keywords": ["perfume bottle photography AI", "fragrance brand visuals AI", "luxury perfume product shots", "fragrance creative agency", "perfume PDP photography"],
-      "suggested_internal_links": ["beauty-ad-creatives.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "goldenrule, zerolush"
-    },
-    {
-      "slug": "haircare-product-photography-for-multi-skintone-models",
-      "h1": "Haircare Product Photography Across Hair Types and Skin Tones",
-      "persona": "P02",
-      "vertical": "beauty",
-      "angle": "Haircare brands need product imagery on a representative range of hair types and skin tones — coily, kinky, wavy, straight, and every variation across multiple skin tones. Traditional shoots make this prohibitively expensive. AI photography makes it standard. Here's how.",
-      "intent": "service",
-      "primary_keyword": "haircare product photography multi skin tone",
-      "secondary_keywords": ["AI haircare photography", "haircare brand photography agency", "shampoo bottle photography AI", "haircare model diversity photography", "DTC haircare creative"],
-      "suggested_internal_links": ["beauty-ad-creatives.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "goldenrule"
-    },
-    {
-      "slug": "ai-vs-3d-rendering-for-cpg-and-beverage-brands",
-      "h1": "AI vs 3D Rendering for CPG and Beverage Brands",
-      "persona": "P04",
-      "vertical": "food-bev",
-      "angle": "CPG brands evaluating AI photography often ask why not just use 3D/CGI. Both work. The choice depends on packaging complexity, brand position, and how often the visual needs to refresh. Here's the honest decision framework with cost-per-asset for each approach.",
-      "intent": "comparison",
-      "primary_keyword": "AI vs 3D rendering CPG",
-      "secondary_keywords": ["CGI vs AI product photography", "3D rendering vs AI imagery CPG", "CPG visualization choice", "AI vs CGI packaged goods", "beverage 3D vs AI photography"],
-      "suggested_internal_links": ["ai-vs-3d-rendering-apparel.html", "cpg-creative-agency.html"],
-      "image_hints": "chobani, smackin, zerolush"
-    },
-    {
-      "slug": "the-photography-pipeline-for-dtc-brands-doing-1000-skus-monthly",
-      "h1": "The Photography Pipeline for DTC Brands Doing 1,000+ SKUs Monthly",
-      "persona": "P01",
-      "vertical": "geo",
-      "angle": "1,000 SKUs/month means 4,000+ assets monthly when you count on-model + flat lay + detail + ad variants. No traditional studio handles that. Here's the production architecture brands use when catalog velocity becomes the constraint.",
-      "intent": "playbook",
-      "primary_keyword": "photography pipeline DTC brands 1000 SKUs monthly",
-      "secondary_keywords": ["high volume product photography", "DTC catalog photography at scale", "1000 SKU photography pipeline", "ecommerce photography volume", "AI photography production architecture"],
-      "suggested_internal_links": ["on-model-photography-at-scale.html", "ai-fashion-photography.html"],
-      "image_hints": "anitadongre, chobani"
-    },
-    {
-      "slug": "how-much-does-ai-product-photography-cost-real-numbers-2026",
-      "h1": "How Much Does AI Product Photography Cost? Real Numbers (2026)",
-      "persona": "P04",
-      "vertical": "geo",
-      "angle": "Honest pricing. Per-asset benchmarks across DTC verticals, retainer ranges, what's included vs not, where vendors hide costs, and how the AI photography category is pricing itself in 2026. No coy 'contact us' games.",
-      "intent": "comparison",
-      "primary_keyword": "AI product photography cost 2026",
-      "secondary_keywords": ["AI photography pricing", "AI photoshoot cost per asset", "AI product photography retainer pricing", "DTC AI photography cost", "what does AI photography cost"],
-      "suggested_internal_links": ["ai-photoshoot-vs-studio-cost.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "armra"
-    },
-    {
-      "slug": "shopify-pdp-photography-that-actually-converts",
-      "h1": "Shopify PDP Photography That Actually Converts",
-      "persona": "P03",
-      "vertical": "ecommerce",
-      "angle": "Shopify default PDP layout privileges photography. Most brands use it badly — square crops, weak hero, no lifestyle, no detail close-up. Here's the asset pack a high-converting Shopify PDP needs and how AI photography produces it in 48 hours.",
-      "intent": "playbook",
-      "primary_keyword": "Shopify PDP photography conversion",
-      "secondary_keywords": ["Shopify product photography AI", "Shopify PDP imagery", "high converting PDP photography", "Shopify ecommerce photography", "Shopify product shot specs"],
-      "suggested_internal_links": ["amazon-apparel-listing-photography.html"],
-      "image_hints": "armra, smackin"
-    },
-    {
-      "slug": "lifestyle-photography-without-the-location-scout",
-      "h1": "Lifestyle Photography Without the Location Scout",
-      "persona": "P05",
-      "vertical": "geo",
-      "angle": "Lifestyle imagery means a beach, a kitchen, a café, a rooftop. Traditional production: location scout, permits, weather contingency, transportation, talent. AI lifestyle photography: brief on Monday, deliver Wednesday, no truck rolls. Here's what changes when you remove the location.",
-      "intent": "service",
-      "primary_keyword": "AI lifestyle photography no location scout",
-      "secondary_keywords": ["lifestyle product photography AI", "in-context product photography", "AI lifestyle imagery DTC", "DTC lifestyle creative AI", "lifestyle shoots AI"],
-      "suggested_internal_links": ["fast-ad-creative-turnaround.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "outdoors, ford-bronco"
-    },
-    {
-      "slug": "ai-photography-for-functional-beverage-brands",
-      "h1": "AI Photography for Functional Beverage Brands",
-      "persona": "P04",
-      "vertical": "food-bev",
-      "angle": "Functional beverages — adaptogen drinks, energy elixirs, mushroom waters, electrolyte mixes — fight for shelf space and Meta attention. Photography has to communicate 'serious wellness' AND 'fun enough to drink daily.' Here's the visual language that works.",
-      "intent": "service",
-      "primary_keyword": "AI photography functional beverage brands",
-      "secondary_keywords": ["functional drink photography AI", "wellness beverage visuals", "adaptogen drink photography", "energy drink AI photography", "DTC beverage creative AI"],
-      "suggested_internal_links": ["aspire-drinks.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "zerolush, fizz-soda"
-    },
-    {
-      "slug": "footwear-and-sneaker-photography-with-accurate-material-rendering",
-      "h1": "Footwear and Sneaker Photography With Accurate Material Rendering",
-      "persona": "P01",
+      "slug": "campaign-imagery-for-activewear-brands",
+      "h1": "Campaign Imagery for Activewear Brands",
       "vertical": "apparel",
-      "angle": "Footwear photography lives or dies on material accuracy — leather grain, suede nap, mesh translucency, rubber tooling, lacing pattern. Get any wrong and the brand looks counterfeit. Here's the production discipline for footwear and sneaker brands.",
-      "intent": "service",
-      "primary_keyword": "AI footwear sneaker photography material rendering",
-      "secondary_keywords": ["sneaker photography AI", "footwear product shots agency", "shoe photography material accuracy", "sneaker PDP photography", "AI shoe brand creative"],
-      "suggested_internal_links": ["ai-fashion-photography.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "outdoors, anitadongre"
-    },
-    {
-      "slug": "jewelry-product-photography-with-stone-clarity-and-metal-finish",
-      "h1": "Jewelry Product Photography With Stone Clarity and Metal Finish",
-      "persona": "P15",
-      "vertical": "luxury",
-      "angle": "Jewelry photography is the highest-fidelity test in the AI category. Stone clarity, metal finish (brushed, hammered, polished), prong setting accuracy, hallmark legibility. If AI photography clears this bar, it clears any bar. Here's what production-grade jewelry imagery requires.",
-      "intent": "service",
-      "primary_keyword": "AI jewelry product photography",
-      "secondary_keywords": ["jewelry photography agency AI", "diamond photography AI", "luxury jewelry product shots", "fine jewelry photography service", "DTC jewelry creative"],
-      "suggested_internal_links": ["ai-fashion-photography.html", "anitadongre.html"],
-      "image_hints": "anitadongre, davidharber"
-    },
-    {
-      "slug": "the-real-cost-of-traditional-product-photography-in-2026",
-      "h1": "The Real Cost of Traditional Product Photography in 2026",
-      "persona": "P04",
-      "vertical": "geo",
-      "angle": "Studio rental, photographer day rate, model day rate, stylist, assistant, retoucher, post-production, reshoots, location fees, transportation, insurance. Add it up. The all-in cost-per-asset of traditional product photography in 2026 is rarely below $400 and often above $1,200. Here's the full breakdown.",
-      "intent": "comparison",
-      "primary_keyword": "real cost traditional product photography 2026",
-      "secondary_keywords": ["studio shoot cost breakdown", "product photoshoot cost analysis", "DTC photography cost comparison", "cost per product photo agency", "traditional photography cost 2026"],
-      "suggested_internal_links": ["ai-photoshoot-vs-studio-cost.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "smackin"
-    },
-    {
-      "slug": "ai-product-photography-for-international-dtc-brands-multi-region",
-      "h1": "AI Product Photography for International DTC Brands (Multi-Region)",
-      "persona": "P14",
-      "vertical": "geo",
-      "angle": "You sell into US, UK, EU, ANZ, and APAC. Models, settings, and copy need to feel local in each market. Coordinating real shoots across geographies is a logistical nightmare. Here's how AI photography handles regional variants from one production system.",
-      "intent": "service",
-      "primary_keyword": "AI product photography international DTC multi region",
-      "secondary_keywords": ["multi-region product photography", "localized product imagery AI", "international DTC creative", "regional product photography AI", "global brand photography"],
-      "suggested_internal_links": ["dtc-creative-agency.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "anitadongre, chobani"
-    },
-    {
-      "slug": "swimwear-photography-with-skin-fabric-and-water-rendering",
-      "h1": "Swimwear Photography With Accurate Skin, Fabric, and Water",
-      "persona": "P01",
-      "vertical": "apparel",
-      "angle": "Swimwear photography is where AI gets caught most often — skin tones go waxy, fabric clings unrealistically, water behaves like jelly. Real shoots are weather-dependent and seasonally locked. Here's the production discipline for swimwear brands launching cruise drops in October.",
-      "intent": "service",
-      "primary_keyword": "AI swimwear photography skin fabric water",
-      "secondary_keywords": ["swimwear brand photography AI", "swim product shots agency", "bikini photography AI", "swimwear PDP photography", "DTC swim creative"],
-      "suggested_internal_links": ["ai-fashion-photography.html", "anitadongre.html"],
-      "image_hints": "anitadongre, outdoors"
-    },
-    {
-      "slug": "activewear-photography-that-shows-real-performance",
-      "h1": "Activewear Photography That Shows Real Performance",
-      "persona": "P05",
-      "vertical": "apparel",
-      "angle": "Activewear photography needs motion, sweat, breathability, compression — performance cues. Static studio shots don't sell technical apparel. Here's how to produce activewear imagery that signals performance without booking an athlete and a film crew.",
-      "intent": "service",
-      "primary_keyword": "AI activewear photography performance",
-      "secondary_keywords": ["activewear brand photography AI", "athletic apparel product shots", "performance wear photography agency", "fitness apparel creative AI", "DTC activewear photography"],
-      "suggested_internal_links": ["activewear-photography-at-scale.html"],
-      "image_hints": "outdoors"
-    },
-    {
-      "slug": "candles-and-home-fragrance-photography-with-flame-and-vessel",
-      "h1": "Candle and Home Fragrance Photography With Flame and Vessel",
-      "persona": "P11",
-      "vertical": "home",
-      "angle": "Candle photography needs a believable flame, accurate wax color, and the vessel rendered with material truth (frosted glass, ceramic, concrete, metal). Most agencies cheat the flame as a sticker. Here's how to produce candle imagery that holds up at 4K.",
-      "intent": "service",
-      "primary_keyword": "AI candle home fragrance photography",
-      "secondary_keywords": ["candle product shots AI", "home fragrance visuals AI", "luxury candle photography agency", "candle brand creative AI", "home goods AI photography"],
-      "suggested_internal_links": ["best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "davidharber"
-    },
-    {
-      "slug": "how-dtc-brands-get-cited-by-chatgpt-claude-and-gemini",
-      "h1": "How DTC Brands Get Cited by ChatGPT, Claude, and Gemini",
-      "persona": "P05",
-      "vertical": "geo",
-      "angle": "Generative engine optimization (GEO) is the new SEO. When a buyer asks ChatGPT 'what's the best AI product photography agency,' you want your brand in the answer. Here's exactly what the LLMs cite, what content patterns they reward, and how to engineer your site for it.",
-      "intent": "playbook",
-      "primary_keyword": "GEO SEO DTC brands cited by ChatGPT Claude Gemini",
-      "secondary_keywords": ["generative engine optimization DTC", "get cited by ChatGPT", "Claude SEO ecommerce", "Gemini citation strategy", "AI search optimization DTC"],
-      "suggested_internal_links": ["best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "(no images — text-heavy GEO playbook)"
-    },
-    {
-      "slug": "ai-product-photography-for-coffee-and-tea-brands",
-      "h1": "AI Product Photography for Coffee and Tea Brands",
-      "persona": "P04",
-      "vertical": "food-bev",
-      "angle": "Specialty coffee and tea brands compete on craft and origin story. Photography has to render bag matte finishes, bean texture, dry-leaf detail, and the steaming-cup hero shot. Here's the production system for coffee and tea brands shipping seasonal drops.",
-      "intent": "service",
-      "primary_keyword": "AI photography coffee tea brands",
-      "secondary_keywords": ["coffee bag photography AI", "tea product shots agency", "specialty coffee visuals AI", "DTC coffee creative", "tea brand photography"],
-      "suggested_internal_links": ["cpg-creative-agency.html", "best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "smackin, chobani"
-    },
-    {
-      "slug": "frozen-food-and-meal-kit-photography-that-still-looks-fresh",
-      "h1": "Frozen Food and Meal Kit Photography That Still Looks Fresh",
-      "persona": "P04",
-      "vertical": "food-bev",
-      "angle": "Frozen food and meal kits have a presentation problem — packaged frozen looks unappealing, prepared dishes look generic stock. Here's the visual language that bridges the gap and sells the meal-kit value proposition.",
-      "intent": "service",
-      "primary_keyword": "AI frozen food meal kit photography",
-      "secondary_keywords": ["frozen food photography AI", "meal kit photography agency", "frozen meal product shots", "ready-meal photography AI", "DTC food kit creative"],
-      "suggested_internal_links": ["chobani.html", "cpg-creative-agency.html"],
-      "image_hints": "chobani, smackin"
-    },
-    {
-      "slug": "ai-photography-for-eyewear-and-sunglasses-brands",
-      "h1": "AI Photography for Eyewear and Sunglasses Brands",
-      "persona": "P01",
-      "vertical": "apparel",
-      "angle": "Eyewear photography needs lens reflection, frame material accuracy, on-face fit across face shapes, and lifestyle context that doesn't look stock. Real eyewear shoots are model-dependent and slow. Here's the production discipline for eyewear brands.",
-      "intent": "service",
-      "primary_keyword": "AI eyewear sunglasses photography",
-      "secondary_keywords": ["sunglasses product shots AI", "eyewear lookbook AI", "DTC eyewear creative", "frames photography agency", "sunglasses brand visuals"],
-      "suggested_internal_links": ["ai-fashion-photography.html"],
-      "image_hints": "outdoors"
-    },
-    {
-      "slug": "ai-photography-for-bag-and-leather-goods-brands",
-      "h1": "AI Photography for Bag and Leather Goods Brands",
-      "persona": "P15",
-      "vertical": "luxury",
-      "angle": "Leather goods photography rises or falls on grain accuracy, hardware finish, stitch detail, and patina. Premium bags are scrutinized at pixel level by buyers. Here's the production discipline for handbag, wallet, and leather accessory brands.",
-      "intent": "service",
-      "primary_keyword": "AI bag leather goods photography",
-      "secondary_keywords": ["handbag photography AI", "leather goods product shots", "luxury bag visuals AI", "DTC accessories creative", "leather wallet photography"],
-      "suggested_internal_links": ["ai-fashion-photography.html"],
+      "angle": "Activewear campaigns need motion, performance cues, and aspirational body language without sliding into stock-photo cliche. How to make activewear campaign imagery that feels like a brand, not a catalog.",
+      "intent": "commercial",
+      "primary_keyword": "activewear campaign photography",
+      "secondary_keywords": [
+        "activewear brand campaign",
+        "fitness apparel imagery",
+        "activewear lookbook",
+        "performance apparel campaign",
+        "athleisure brand world"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
       "image_hints": "anitadongre"
     },
     {
-      "slug": "what-to-look-for-in-an-ai-product-photography-agency",
-      "h1": "What to Look For in an AI Product Photography Agency",
-      "persona": "P09",
-      "vertical": "geo",
-      "angle": "You've been burned. You're evaluating again. Here are the exact 12 questions to ask any AI product photography vendor, the answers that signal a real production agency vs a wrapper around a model API, and the red flags that should end the conversation.",
-      "intent": "playbook",
-      "primary_keyword": "what to look for in AI product photography agency",
-      "secondary_keywords": ["AI photography agency evaluation", "AI vendor due diligence", "AI photography questions to ask", "AI agency red flags", "evaluate AI product photography"],
-      "suggested_internal_links": ["best-ai-product-photography-agency-for-dtc-brands.html"],
-      "image_hints": "armra, anitadongre"
+      "slug": "denim-brand-campaign-and-editorial",
+      "h1": "Denim Brand Campaign and Editorial",
+      "vertical": "apparel",
+      "angle": "Denim is texture, wash, and attitude. A denim campaign has to render authentic wash and whiskering while telling a brand story. How to build a denim brand's campaign world.",
+      "intent": "commercial",
+      "primary_keyword": "denim brand campaign photography",
+      "secondary_keywords": [
+        "denim campaign imagery",
+        "denim editorial",
+        "denim brand world",
+        "jeans brand campaign",
+        "premium denim photography"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
     },
     {
-      "slug": "ai-photography-for-mens-grooming-and-skincare",
-      "h1": "AI Photography for Men's Grooming and Skincare",
-      "persona": "P02",
-      "vertical": "beauty",
-      "angle": "Men's grooming is a category where the visual language has been stuck — utility-coded packaging, blue-and-grey palette, gym lighting. The brands winning right now (Lumin, Hims, Disco, Huron) broke that mold visually. Here's how to produce men's grooming imagery that doesn't look like 2015.",
-      "intent": "service",
-      "primary_keyword": "AI photography men's grooming skincare",
-      "secondary_keywords": ["men's grooming product shots", "mens skincare photography agency", "DTC mens beauty creative", "shaving brand photography AI", "men's grooming visuals"],
-      "suggested_internal_links": ["beauty-ad-creatives.html"],
-      "image_hints": "goldenrule"
+      "slug": "swimwear-campaign-photography-without-a-location-shoot",
+      "h1": "Swimwear Campaign Photography Without a Location Shoot",
+      "vertical": "apparel",
+      "angle": "Swimwear campaigns traditionally mean a destination shoot and the budget that comes with it. How to build a swimwear campaign world \u2014 beach, light, mood \u2014 without booking the flights.",
+      "intent": "commercial",
+      "primary_keyword": "swimwear campaign photography",
+      "secondary_keywords": [
+        "swimwear campaign",
+        "swimwear editorial",
+        "swim brand imagery",
+        "resort campaign photography",
+        "swimwear lookbook"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
+    },
+    {
+      "slug": "knitwear-lookbook-and-texture-storytelling",
+      "h1": "Knitwear Lookbook and Texture Storytelling",
+      "vertical": "apparel",
+      "angle": "Knitwear sells on hand-feel and texture you can almost touch through the screen. How to art-direct a knitwear lookbook that makes the fabric the hero.",
+      "intent": "commercial",
+      "primary_keyword": "knitwear lookbook photography",
+      "secondary_keywords": [
+        "knitwear campaign",
+        "knit texture photography",
+        "sweater brand lookbook",
+        "knitwear editorial",
+        "cashmere brand imagery"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
+    },
+    {
+      "slug": "luxury-apparel-brand-world-and-campaign",
+      "h1": "Building a Luxury Apparel Brand World",
+      "vertical": "apparel",
+      "angle": "Quiet luxury is a visual language \u2014 negative space, restraint, fabric, light. How to build campaign imagery for a luxury apparel label that signals the price point without saying a word.",
+      "intent": "commercial",
+      "primary_keyword": "luxury apparel campaign photography",
+      "secondary_keywords": [
+        "luxury fashion campaign",
+        "quiet luxury imagery",
+        "high-end apparel brand world",
+        "luxury lookbook",
+        "premium fashion editorial"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
+    },
+    {
+      "slug": "wholesale-lookbook-and-linesheet-imagery",
+      "h1": "Wholesale Lookbook and Linesheet Imagery for Apparel",
+      "vertical": "apparel",
+      "angle": "Before a retailer writes the order, they see the linesheet and the lookbook. How to make wholesale-facing apparel imagery that lands the buyer meeting.",
+      "intent": "commercial",
+      "primary_keyword": "wholesale lookbook photography apparel",
+      "secondary_keywords": [
+        "linesheet photography",
+        "wholesale apparel imagery",
+        "buyer lookbook",
+        "retail line sheet photography",
+        "apparel wholesale creative"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
+    },
+    {
+      "slug": "apparel-brand-identity-and-campaign-system",
+      "h1": "Apparel Brand Identity and Campaign System",
+      "vertical": "apparel",
+      "angle": "A campaign without an identity is just nice pictures. How to build the identity layer \u2014 voice, type, art direction \u2014 that makes every apparel campaign feel like the same brand.",
+      "intent": "commercial",
+      "primary_keyword": "apparel brand identity design",
+      "secondary_keywords": [
+        "fashion brand identity",
+        "apparel visual identity",
+        "fashion brand system",
+        "clothing brand identity",
+        "apparel art direction"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
+    },
+    {
+      "slug": "fashion-lifestyle-campaign-imagery",
+      "h1": "Fashion Lifestyle Campaign Imagery",
+      "vertical": "apparel",
+      "angle": "In-context, real-world imagery is what makes a feed feel like a world. How to build apparel lifestyle imagery that earns the save, not the scroll.",
+      "intent": "commercial",
+      "primary_keyword": "fashion lifestyle photography",
+      "secondary_keywords": [
+        "apparel lifestyle imagery",
+        "fashion in-context photography",
+        "lifestyle campaign apparel",
+        "clothing lifestyle shots",
+        "fashion editorial lifestyle"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
+    },
+    {
+      "slug": "apparel-rebrand-campaign-relaunch",
+      "h1": "Apparel Rebrand: Relaunching the Brand World",
+      "vertical": "apparel",
+      "angle": "A rebrand is only real once the campaign ships. How to relaunch an apparel brand's entire visual world \u2014 campaign, lookbook, lifestyle \u2014 in one coordinated drop.",
+      "intent": "commercial",
+      "primary_keyword": "apparel rebrand campaign",
+      "secondary_keywords": [
+        "fashion rebrand imagery",
+        "apparel relaunch campaign",
+        "brand refresh fashion",
+        "clothing rebrand creative",
+        "fashion brand relaunch"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "ai-lookbook-photography.html"
+      ],
+      "image_hints": "anitadongre"
     }
   ]
 }
