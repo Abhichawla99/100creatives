@@ -1,7 +1,7 @@
 {
-  "next_index": 7,
-  "last_published_slug": "knitwear-lookbook-and-texture-storytelling",
-  "last_published_date": "2026-05-30",
+  "next_index": 8,
+  "last_published_slug": "luxury-apparel-brand-world-and-campaign",
+  "last_published_date": "2026-05-31",
   "history": [
     {
       "date": "2026-05-08",
@@ -122,6 +122,11 @@
       "date": "2026-05-30",
       "slug": "knitwear-lookbook-and-texture-storytelling",
       "h1": "Knitwear Lookbook and Texture Storytelling"
+    },
+    {
+      "date": "2026-05-31",
+      "slug": "luxury-apparel-brand-world-and-campaign",
+      "h1": "A luxury apparel brand world signalled without a word"
     }
   ]
 }
