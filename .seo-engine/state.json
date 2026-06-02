@@ -1,7 +1,7 @@
 {
-  "next_index": 8,
-  "last_published_slug": "luxury-apparel-brand-world-and-campaign",
-  "last_published_date": "2026-05-31",
+  "next_index": 9,
+  "last_published_slug": "wholesale-lookbook-and-linesheet-imagery",
+  "last_published_date": "2026-06-02",
   "history": [
     {
       "date": "2026-05-08",
@@ -127,6 +127,11 @@
       "date": "2026-05-31",
       "slug": "luxury-apparel-brand-world-and-campaign",
       "h1": "A luxury apparel brand world signalled without a word"
+    },
+    {
+      "date": "2026-06-02",
+      "slug": "wholesale-lookbook-and-linesheet-imagery",
+      "h1": "The wholesale deck is the order"
     }
   ]
 }
