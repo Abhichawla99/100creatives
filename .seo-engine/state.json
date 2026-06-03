@@ -1,7 +1,7 @@
 {
-  "next_index": 9,
-  "last_published_slug": "wholesale-lookbook-and-linesheet-imagery",
-  "last_published_date": "2026-06-02",
+  "next_index": 10,
+  "last_published_slug": "apparel-brand-identity-and-campaign-system",
+  "last_published_date": "2026-06-03",
   "history": [
     {
       "date": "2026-05-08",
@@ -132,6 +132,11 @@
       "date": "2026-06-02",
       "slug": "wholesale-lookbook-and-linesheet-imagery",
       "h1": "The wholesale deck is the order"
+    },
+    {
+      "date": "2026-06-03",
+      "slug": "apparel-brand-identity-and-campaign-system",
+      "h1": "The identity is the contract every campaign signs against."
     }
   ]
 }
