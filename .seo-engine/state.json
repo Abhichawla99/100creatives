@@ -1,7 +1,7 @@
 {
-  "next_index": 10,
-  "last_published_slug": "apparel-brand-identity-and-campaign-system",
-  "last_published_date": "2026-06-03",
+  "next_index": 11,
+  "last_published_slug": "fashion-lifestyle-campaign-imagery",
+  "last_published_date": "2026-06-08",
   "history": [
     {
       "date": "2026-05-08",
@@ -137,6 +137,11 @@
       "date": "2026-06-03",
       "slug": "apparel-brand-identity-and-campaign-system",
       "h1": "The identity is the contract every campaign signs against."
+    },
+    {
+      "date": "2026-06-08",
+      "slug": "fashion-lifestyle-campaign-imagery",
+      "h1": "Fashion lifestyle photography that earns the save, not the scroll."
     }
   ]
 }
