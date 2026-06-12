@@ -75,7 +75,9 @@
         "ai-fashion-photography.html",
         "ai-lookbook-photography.html"
       ],
-      "image_hints": "anitadongre"
+      "image_hints": "anitadongre",
+      "published": "2026-06-12",
+      "persona": "P01"
     },
     {
       "slug": "campaign-imagery-for-activewear-brands",
@@ -265,6 +267,260 @@
         "ai-lookbook-photography.html"
       ],
       "image_hints": "anitadongre"
+    },
+    {
+      "slug": "outerwear-photography-for-fall-winter-drops",
+      "persona": "P01",
+      "vertical": "apparel",
+      "angle": "Outerwear-specific drop production \u2014 wool coats, technical shells, puffer jackets, leather pieces \u2014 with the construction-detail-at-300% mechanic the wholesale-deck contract uses, applied to PDP + lifestyle for fall/winter drops at $4M-$25M apparel labels.",
+      "intent": "commercial",
+      "primary_keyword": "outerwear photography fall winter drops",
+      "secondary_keywords": [
+        "wool coat photography",
+        "technical shell photography",
+        "puffer jacket campaign",
+        "leather outerwear lookbook",
+        "fall winter apparel drop"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "fashion-lifestyle-campaign-imagery.html",
+        "seasonal-drop-photography-workflow.html",
+        "best-ai-fashion-photography-services.html"
+      ],
+      "image_hints": [
+        "anitadongre",
+        "outdoors"
+      ]
+    },
+    {
+      "slug": "swimwear-campaign-photography-without-a-location-shoot",
+      "persona": "P15",
+      "vertical": "apparel",
+      "angle": "Swimwear campaign production without the location scout. Coastline, pool, balcony at golden hour as named environment registers locked into the brand spine, casting frame held across the resort drop, in-house team avoids the $90k-$220k traditional location shoot.",
+      "intent": "commercial",
+      "primary_keyword": "swimwear campaign photography",
+      "secondary_keywords": [
+        "resort apparel photography",
+        "bikini lookbook",
+        "swim brand campaign",
+        "coastline editorial AI",
+        "resort drop creative"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "fashion-lifestyle-campaign-imagery.html",
+        "luxury-apparel-brand-world-and-campaign.html",
+        "ai-fashion-photography.html",
+        "best-ai-fashion-photography-services.html"
+      ],
+      "image_hints": [
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "activewear-campaign-imagery-for-performance-apparel-brands",
+      "persona": "P01",
+      "vertical": "apparel",
+      "angle": "Activewear campaign production \u2014 running, training, yoga, hike \u2014 composed against locked sweat-light, movement-blur and locality registers, indexed to drop cadence at brands like Vuori/Outdoor Voices/Year of Ours/ALO Yoga/Bandit/Tracksmith.",
+      "intent": "commercial",
+      "primary_keyword": "activewear campaign imagery",
+      "secondary_keywords": [
+        "activewear photography agency",
+        "running apparel campaign",
+        "yoga brand creative",
+        "performance apparel imagery",
+        "athleisure campaign"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "fashion-lifestyle-campaign-imagery.html",
+        "ai-fashion-photography.html",
+        "seasonal-drop-photography-workflow.html",
+        "best-ai-fashion-photography-services.html"
+      ],
+      "image_hints": [
+        "outdoors",
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "shoe-and-sneaker-campaign-imagery-for-apparel-brands",
+      "persona": "P01",
+      "vertical": "apparel",
+      "angle": "Shoe and sneaker campaign production for apparel brands carrying footwear inside the drop \u2014 leather Italian-made, technical sneaker, sandal, boot \u2014 with the construction-grade-at-300% mechanic, indexed to drop cadence at $4M-$25M apparel labels carrying footwear adjacencies.",
+      "intent": "commercial",
+      "primary_keyword": "sneaker campaign imagery apparel brands",
+      "secondary_keywords": [
+        "footwear campaign photography",
+        "leather shoe lookbook",
+        "sneaker brand creative",
+        "fashion footwear imagery",
+        "shoe drop pack"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "best-ai-fashion-photography-services.html",
+        "seasonal-drop-photography-workflow.html",
+        "fashion-lifestyle-campaign-imagery.html"
+      ],
+      "image_hints": [
+        "outdoors",
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "bag-and-accessory-campaign-imagery-for-apparel-brands",
+      "persona": "P15",
+      "vertical": "apparel",
+      "angle": "Bag and accessory campaign production for apparel-and-accessory brands \u2014 leather goods, jewellery, eyewear, scarves, belts \u2014 composed at editorial register against the brand spine, indexed to drop or seasonal cadence at the $3M-$30M tier.",
+      "intent": "commercial",
+      "primary_keyword": "bag and accessory campaign imagery",
+      "secondary_keywords": [
+        "leather goods photography",
+        "jewellery campaign apparel",
+        "accessory brand creative",
+        "eyewear lookbook",
+        "scarf campaign editorial"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "luxury-apparel-brand-world-and-campaign.html",
+        "ai-fashion-photography.html",
+        "best-ai-fashion-photography-services.html",
+        "fashion-lifestyle-campaign-imagery.html"
+      ],
+      "image_hints": [
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "menswear-tailoring-campaign-and-lookbook-imagery",
+      "persona": "P16",
+      "vertical": "apparel",
+      "angle": "Menswear tailoring campaign production \u2014 suits, separates, sport coats, shirting \u2014 composed against the named-photographer editorial register (Bruce Weber/Steven Klein/Glen Luchford for the tailoring lineage), with locked drape-on-form construction frames at 300% close-up.",
+      "intent": "commercial",
+      "primary_keyword": "menswear tailoring campaign imagery",
+      "secondary_keywords": [
+        "menswear lookbook agency",
+        "suit photography brand campaign",
+        "tailoring editorial AI",
+        "menswear drop pack",
+        "made-to-measure imagery"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "luxury-apparel-brand-world-and-campaign.html",
+        "ai-fashion-photography.html",
+        "best-ai-fashion-photography-services.html",
+        "wholesale-lookbook-and-linesheet-imagery.html"
+      ],
+      "image_hints": [
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "loungewear-and-intimate-apparel-photography-for-dtc-brands",
+      "persona": "P19",
+      "vertical": "apparel",
+      "angle": "Loungewear and intimate apparel production \u2014 sleep sets, bralettes, briefs, lounge knits \u2014 composed against soft-natural-light morning register and the feed-depth contract, at the $3M-$20M tier where the customer reads the comfort frame before the wordmark.",
+      "intent": "commercial",
+      "primary_keyword": "loungewear photography DTC",
+      "secondary_keywords": [
+        "intimate apparel photography",
+        "sleepwear campaign imagery",
+        "lingerie brand creative",
+        "lounge knit lookbook",
+        "comfort apparel imagery"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "fashion-lifestyle-campaign-imagery.html",
+        "ai-fashion-photography.html",
+        "best-ai-fashion-photography-services.html",
+        "ai-fashion-models-vs-real-models.html"
+      ],
+      "image_hints": [
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "kids-and-baby-apparel-photography-for-dtc-brands",
+      "persona": "P12",
+      "vertical": "apparel",
+      "angle": "Kids and baby apparel photography for premium DTC brands \u2014 heritage cotton, organic muslin, prep, charm. Real children are unpredictable and expensive; locked casting-frame discipline lets the brand ship the full season's PDP and lookbook against named-environment lifestyle registers without coordinating real children's schedules.",
+      "intent": "commercial",
+      "primary_keyword": "kids apparel photography DTC",
+      "secondary_keywords": [
+        "baby clothing photography",
+        "children's brand campaign",
+        "premium kids apparel imagery",
+        "kids lookbook agency",
+        "baby apparel lifestyle"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "fashion-lifestyle-campaign-imagery.html",
+        "ai-fashion-photography.html",
+        "ai-fashion-models-vs-real-models.html",
+        "best-ai-fashion-photography-services.html"
+      ],
+      "image_hints": [
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "denim-brand-campaign-and-editorial-for-premium-labels",
+      "persona": "P15",
+      "vertical": "apparel",
+      "angle": "Denim brand campaign and editorial production \u2014 Re/Done, Mother, Citizens of Humanity, AGOLDE register \u2014 composed at editorial level with the wash-library mechanic, distinct from the volume-PDP denim piece.",
+      "intent": "commercial",
+      "primary_keyword": "denim brand campaign editorial",
+      "secondary_keywords": [
+        "premium denim campaign",
+        "denim editorial AI",
+        "Re/Done style editorial",
+        "denim brand world",
+        "jeans campaign agency"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "denim-photography-at-scale.html",
+        "luxury-apparel-brand-world-and-campaign.html",
+        "ai-fashion-photography.html",
+        "best-ai-fashion-photography-services.html"
+      ],
+      "image_hints": [
+        "anitadongre"
+      ]
+    },
+    {
+      "slug": "resort-and-cruise-capsule-photography-for-apparel-brands",
+      "persona": "P15",
+      "vertical": "apparel",
+      "angle": "Resort and cruise capsule production \u2014 pre-season-of-season tier between fall/spring main collections. Editorial lifestyle in named coastal/island/desert localities, composed against the brand spine and the named-photographer reference for the season's tentpole.",
+      "intent": "commercial",
+      "primary_keyword": "resort cruise capsule photography apparel",
+      "secondary_keywords": [
+        "resort campaign apparel",
+        "cruise collection lookbook",
+        "pre-season capsule editorial",
+        "vacation apparel imagery",
+        "destination editorial fashion"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "luxury-apparel-brand-world-and-campaign.html",
+        "fashion-lifestyle-campaign-imagery.html",
+        "ai-fashion-photography.html",
+        "best-ai-fashion-photography-services.html"
+      ],
+      "image_hints": [
+        "anitadongre",
+        "outdoors"
+      ]
     }
   ]
 }
