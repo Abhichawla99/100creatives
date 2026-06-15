@@ -1609,13 +1609,18 @@
     (() => {
       const cols = document.querySelectorAll('.hero-reel .hero-col');
       if (!cols.length) return;
-      function setup(col) {
+      function setup(col, i) {
         const track = col.querySelector('.hero-col__track');
         if (!track) return;
         const original = track.innerHTML;
         track.innerHTML = original + original;
         const direction = col.dataset.direction === 'down' ? -1 : 1;
         const SPEED = 0.35;
+        // Roulette / iPhone-picker entrance: each column starts spinning fast,
+        // then eases down to the steady scroll speed (staggered per column).
+        const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let velocity = reduceMotion ? SPEED : (18 + i * 5);   // initial spin speed (px/frame)
+        const SPIN_DECAY = 0.945 + i * 0.004;                 // closer to 1 = settles slower
         const applyStart = () => {
           const half = track.scrollHeight / 2;
           if (half > 0) col.scrollTop = half / 2;
@@ -1656,8 +1661,13 @@
         function tick() {
           const half = track.scrollHeight / 2;
           if (half > 0) {
+            // ease the entrance spin down toward the steady speed
+            if (velocity > SPEED) {
+              velocity = SPEED + (velocity - SPEED) * SPIN_DECAY;
+              if (velocity - SPEED < 0.03) velocity = SPEED;
+            }
             if (!userInteracting && visible && !document.hidden) {
-              col.scrollTop += direction * SPEED;
+              col.scrollTop += direction * velocity;
             }
             if (col.scrollTop >= half) col.scrollTop -= half;
             else if (col.scrollTop <= 0) col.scrollTop += half;
@@ -1666,7 +1676,7 @@
         }
         requestAnimationFrame(tick);
       }
-      cols.forEach(setup);
+      cols.forEach((col, i) => setup(col, i));
     })();
 
     // ===== SMOOTH ANCHOR SCROLL =====
