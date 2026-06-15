@@ -1303,6 +1303,30 @@
     .cap p { font-size: 15px; line-height: 1.7; color: var(--text); font-weight: 300; }
     @media (max-width: 900px) { .caps { padding: 80px 24px; } .caps-grid { grid-template-columns: 1fr; gap: 40px; } }
 
+    /* ===== PROCESS ===== */
+    .process { padding: 140px 48px 40px; max-width: 1200px; margin: 0 auto; }
+    .process-label {
+      font-size: 12px; letter-spacing: 2.5px; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 40px;
+    }
+    .process-head {
+      font-family: var(--serif); font-size: clamp(34px, 5vw, 64px);
+      font-weight: 400; line-height: 1.0; letter-spacing: -1.5px;
+      margin-bottom: 72px; max-width: 780px;
+    }
+    .process-head em { font-style: italic; }
+    .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+    .step-num {
+      font-family: var(--serif); font-size: 22px; color: var(--muted);
+      padding-bottom: 18px; margin-bottom: 22px; border-bottom: 1px solid var(--border);
+    }
+    .step h3 {
+      font-family: var(--serif); font-size: 26px; font-weight: 400;
+      letter-spacing: -0.5px; margin-bottom: 14px;
+    }
+    .step p { font-size: 15px; line-height: 1.7; color: var(--text); font-weight: 300; }
+    @media (max-width: 900px) { .process { padding: 80px 24px 20px; } .process-grid { grid-template-columns: 1fr; gap: 40px; } }
+
     /* ===== CONTACT ===== */
     .contact { padding: 200px 48px; text-align: center; }
     .contact h2 {
@@ -1483,6 +1507,29 @@
         <div class="mt-row fade-in"><span class="mt-from">Product</span><span class="mt-arrow">&rarr;</span><span class="mt-to">Brand world</span></div>
         <div class="mt-row fade-in"><span class="mt-from">A shoot</span><span class="mt-arrow">&rarr;</span><span class="mt-to">A point of view</span></div>
         <div class="mt-row fade-in"><span class="mt-from">Seen</span><span class="mt-arrow">&rarr;</span><span class="mt-to">Remembered</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" id="process">
+    <div class="process-label fade-in">How it works</div>
+    <h2 class="process-head fade-in">You send a flat lay.<br>We hand back a <em>campaign.</em></h2>
+    <div class="process-grid">
+      <div class="step fade-in">
+        <div class="step-num">01</div>
+        <h3>Send a flat lay</h3>
+        <p>Just a flat lay or a plain product shot of the garment &mdash; no studio to book, no models to cast, no shoot day to schedule.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">02</div>
+        <h3>We build the world</h3>
+        <p>We art-direct the whole thing &mdash; model, location, light, styling and mood. Your exact product, with a brand world built around it.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">03</div>
+        <h3>You get the campaign</h3>
+        <p>Hero images, lookbook, lifestyle, ads and social &mdash; a complete, on-brand campaign delivered in days, not seasons.</p>
       </div>
     </div>
   </section>
