@@ -7,6 +7,9 @@ videos/*
 videos/.DS_Store
 images/anitadongre/anita.mp4
 images/anitadongre/lehnga-*.png
+images/aritzia/*.png
+images/ralphlauren/*.png
+images/veronica beard/
 
 # Campaign sources — only the /campaigns/web/ compressed versions ship
 campaigns/fizz-soda-source.mp4
