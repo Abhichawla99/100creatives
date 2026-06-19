@@ -1,8 +1,14 @@
 {
   "next_index": 24,
-  "last_published_slug": "apparel-subscription-and-rental-brand-campaign-imagery",
-  "last_published_date": "2026-06-17",
+  "last_published_slug": "bridal-and-occasion-wear-apparel-campaign-and-editorial-imagery",
+  "last_published_date": "2026-06-19",
+  "queue_status": "exhausted at 23 entries; bridal article authored outside queue against P21 NEW persona — extend topics.json before next run",
   "history": [
+    {
+      "date": "2026-06-19",
+      "slug": "bridal-and-occasion-wear-apparel-campaign-and-editorial-imagery",
+      "h1": "Bridal and occasion-wear photography that signals the price point before the bride hears it."
+    },
     {
       "date": "2026-05-08",
       "slug": "best-ai-product-photography-agency-for-dtc-brands",
