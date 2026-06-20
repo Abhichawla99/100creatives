@@ -1,0 +1,78 @@
+{
+  "_note": "USA expansion plan (additive to the 20). Static .html at repo root; cleanUrls serves /slug. Hero + 4 gallery imgs each, keys resolve via lib/campaign-assets.json. Service schema with areaServed (United States or the city) — NO LocalBusiness, NO fabricated address. Copy must be genuinely US/city-contextualized (US retail: Nordstrom, Saks, Bloomingdale's, Neiman Marcus, Revolve, Shopbop; US brands per tier; NYFW/LA/Miami Swim Week/Chicago). These are SIBLINGS of the Canada geo pages — differentiate by market, link to the non-geo cluster, do NOT reuse Canada-page copy. Ralph Lauren + Veronica Beard are American brands; lean on them for US credibility.",
+  "_lastUpdated": "2026-06-19",
+  "pages": [
+    {
+      "id": 101, "slug": "apparel-campaign-photography-usa", "primaryKeyword": "apparel campaign photography usa", "intent": "service", "jsonLd": "Service", "areaServed": "United States", "cta": "strong", "module": "funnel",
+      "title": "Apparel Campaign Photography in the USA | 100",
+      "meta": "Apparel campaign photography for US fashion brands: campaign-grade imagery at studio quality, a fraction of the cost, shipped in days not months.",
+      "hero": "ralphlauren_w3", "gallery": ["aritzia_d4","anita_lehnga3","outdoors_hero_run","veronica_r1"],
+      "persona": "US apparel brand tired of NYC/LA studio day-rates. Frame the US campaign-photography market (studio rates, freelance scar tissue), the brand-world alternative, US retail/DTC context.",
+      "links": ["apparel-creative-agency-usa.html","fashion-campaign-studio-usa.html","fashion-campaign-shoot.html","drop-campaign-photography.html"]
+    },
+    {
+      "id": 102, "slug": "apparel-creative-agency-usa", "primaryKeyword": "apparel creative agency usa", "intent": "money", "jsonLd": "Service", "areaServed": "United States", "cta": "strong", "module": "funnel",
+      "title": "Apparel Creative Agency in the USA | 100 Creatives",
+      "meta": "A US apparel creative agency for fashion brands: campaigns, lookbooks, editorial and brand identity from one studio. Brand-world, not catalog.",
+      "hero": "ralphlauren_w5", "gallery": ["veronica_r3","aritzia_d5","anita_lehnga4","outdoors_hero_run"],
+      "persona": "US brand director comparing agencies. MONEY: full-funnel creative partner for American labels; why one studio beats a stack of US freelancers; the agency model across identity -> campaign -> lookbook -> feed.",
+      "links": ["fashion-campaign-studio-usa.html","apparel-brand-identity.html","dtc-fashion-brand-content.html","apparel-brand-social-campaign.html"]
+    },
+    {
+      "id": 103, "slug": "fashion-campaign-studio-usa", "primaryKeyword": "campaign studio for US fashion labels", "intent": "money", "jsonLd": "Service", "areaServed": "United States", "cta": "strong", "module": "calc",
+      "title": "Campaign Studio for US Fashion Labels | 100",
+      "meta": "The campaign studio US independent fashion labels use to ship brand-world imagery at a fraction of studio cost and ten times the speed. Book a call.",
+      "hero": "aritzia_d1", "gallery": ["ralphlauren_w5","veronica_r1","anita_lehnga5","aritzia_d6"],
+      "persona": "US independent label founder choosing a campaign partner. MONEY: cost calculator vs US studio rates; speed; brand-world spine. American market framing.",
+      "links": ["apparel-creative-agency-usa.html","fashion-campaign-shoot.html","apparel-campaign-photography-usa.html","apparel-wholesale-photography.html"]
+    },
+    {
+      "id": 104, "slug": "fashion-brand-identity-usa", "primaryKeyword": "fashion brand identity USA", "intent": "authority/service", "jsonLd": "Service", "areaServed": "United States", "cta": "soft", "module": "principles-grid",
+      "title": "Fashion Brand Identity in the USA | 100 Creatives",
+      "meta": "Building a fashion brand identity in the US: positioning, visual system and campaign spine for American apparel labels competing nationally.",
+      "hero": "ralphlauren_w1", "gallery": ["ralphlauren_w2","veronica_r2","anita_lehnga8","aritzia_d2"],
+      "persona": "US founder building identity for the American market. Authority: identity as an operating spine, US competitive landscape, how identity reads across US DTC + wholesale.",
+      "links": ["apparel-brand-identity.html","apparel-brand-positioning.html","apparel-creative-agency-usa.html","launching-apparel-brand-usa.html"]
+    },
+    {
+      "id": 105, "slug": "launching-apparel-brand-usa", "primaryKeyword": "launching a fashion brand in the USA", "intent": "guide", "jsonLd": "Article", "areaServed": "United States", "cta": "soft-leadmagnet", "module": "timeline",
+      "title": "Launching a Fashion Brand in the USA | 100",
+      "meta": "Launching a fashion brand in the USA: from positioning and identity to your first campaign and wholesale push. The 90-day playbook for US labels.",
+      "hero": "veronica_r3", "gallery": ["aritzia_d1","ralphlauren_w3","veronica_r4","anita_lehnga5"],
+      "persona": "US first-time founder. Guide: US-specific launch path (manufacturing/sourcing, DTC stack, US wholesale/retail, market), then identity -> campaign -> launch timeline. Offer launch checklist.",
+      "links": ["fashion-brand-launch-strategy.html","fashion-brand-identity-usa.html","fashion-campaign-studio-usa.html","apparel-wholesale-photography.html"]
+    },
+    {
+      "id": 106, "slug": "apparel-creative-agency-new-york", "primaryKeyword": "apparel creative agency new york", "intent": "money/local", "jsonLd": "Service", "areaServed": "New York", "cta": "strong", "module": "funnel",
+      "title": "Apparel Creative Agency in New York | 100",
+      "meta": "An apparel creative agency for New York fashion brands: campaigns, lookbooks and editorial built for NYFW, wholesale showrooms and the NYC market.",
+      "hero": "aritzia_d4", "gallery": ["ralphlauren_w1","veronica_r5","aritzia_d2","anita_lehnga4"],
+      "persona": "NYC-based contemporary/luxury label (Garment District, NYFW, showroom/wholesale culture, brands at the Khaite/Tibi/Staud/Theory tier). Deeply NYC: fashion week cadence, showroom + wholesale appointments, editorial press, NYC studio economics.",
+      "links": ["apparel-creative-agency-usa.html","apparel-wholesale-photography.html","fashion-wholesale-deck.html","dtc-fashion-brand-content.html"]
+    },
+    {
+      "id": 107, "slug": "apparel-creative-agency-los-angeles", "primaryKeyword": "apparel creative agency los angeles", "intent": "money/local", "jsonLd": "Service", "areaServed": "Los Angeles", "cta": "strong", "module": "calc",
+      "title": "Apparel Creative Agency in Los Angeles | 100",
+      "meta": "An apparel creative agency for Los Angeles fashion brands: campaign and content velocity for DTC, streetwear and lifestyle labels built in LA.",
+      "hero": "aritzia_d3", "gallery": ["veronica_r4","aritzia_d1","outdoors_hero_run","ralphlauren_w6"],
+      "persona": "LA DTC/streetwear/lifestyle/activewear brand (Reformation/Cuyana/Vuori/Cuts tier). Deeply LA: content velocity, influencer + UGC culture, sunny lifestyle aesthetic, fast drop cadence, paid-social engine.",
+      "links": ["apparel-creative-agency-usa.html","dtc-fashion-brand-content.html","apparel-brand-social-campaign.html","drop-campaign-photography.html"]
+    },
+    {
+      "id": 108, "slug": "apparel-creative-agency-miami", "primaryKeyword": "apparel creative agency miami", "intent": "money/local", "jsonLd": "Service", "areaServed": "Miami", "cta": "strong", "module": "insights-dark",
+      "title": "Apparel Creative Agency in Miami | 100",
+      "meta": "An apparel creative agency for Miami fashion brands: resort, swim and lifestyle campaigns built for Miami Swim Week and the Latin-American market.",
+      "hero": "veronica_r1", "gallery": ["aritzia_d1","aritzia_d4","veronica_r4","anita_lehnga5"],
+      "persona": "Miami resort/swim/lifestyle label. Deeply Miami: Miami Swim Week, resort/cruise drops, color and sun aesthetic, Latin-American + tourism market, bilingual reach.",
+      "links": ["apparel-creative-agency-usa.html","seasonal-fashion-campaign.html","apparel-brand-social-campaign.html","drop-campaign-photography.html"]
+    },
+    {
+      "id": 109, "slug": "apparel-creative-agency-chicago", "primaryKeyword": "apparel creative agency chicago", "intent": "money/local", "jsonLd": "Service", "areaServed": "Chicago", "cta": "strong", "module": "principles-grid",
+      "title": "Apparel Creative Agency in Chicago | 100",
+      "meta": "An apparel creative agency for Chicago fashion brands: campaigns, lookbooks and editorial for Midwest DTC, outerwear and Magnificent Mile retail.",
+      "hero": "ralphlauren_w6", "gallery": ["ralphlauren_w1","veronica_r3","aritzia_d2","outdoors_mud_running"],
+      "persona": "Chicago/Midwest DTC + outerwear label. Deeply Chicago: Midwest practicality, four-season/outerwear needs, Magnificent Mile + Fulton Market retail, value-conscious but quality-driven market.",
+      "links": ["apparel-creative-agency-usa.html","apparel-wholesale-photography.html","dtc-fashion-brand-content.html","apparel-brand-identity.html"]
+    }
+  ]
+}
