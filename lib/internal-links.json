@@ -1,0 +1,25 @@
+{
+  "_note": "Internal linking map for the 20 new pages. Each page links 3-4 siblings contextually in-prose (not a footer dump). Authority is steered toward the money pages. Links use .html (site convention); cleanUrls also serves the extensionless form.",
+  "moneyPages": ["fashion-campaign-studio-canada","apparel-creative-agency-canada","apparel-wholesale-photography","dtc-fashion-brand-content","drop-campaign-photography","apparel-brand-social-campaign"],
+  "inboundToMoneyPages": {
+    "fashion-campaign-studio-canada": ["fashion-brand-world","fashion-campaign-shoot","apparel-campaign-photography-canada","apparel-creative-agency-canada","editorial-vs-campaign-photography","launching-apparel-brand-canada","fashion-brand-launch-strategy","seasonal-fashion-campaign"],
+    "apparel-creative-agency-canada": ["apparel-brand-identity","apparel-campaign-photography-canada","fashion-brand-identity-canada","apparel-brand-positioning","fashion-campaign-studio-canada","campaign-photography-vs-editorial","apparel-wholesale-photography","drop-campaign-photography","dtc-fashion-brand-content"],
+    "apparel-wholesale-photography": ["lookbook-vs-product-photography","product-photography-vs-lookbook","fashion-wholesale-deck"],
+    "dtc-fashion-brand-content": ["product-photography-vs-lookbook","apparel-brand-positioning","apparel-creative-agency-canada","apparel-brand-social-campaign"],
+    "drop-campaign-photography": ["seasonal-fashion-campaign","apparel-brand-social-campaign"],
+    "apparel-brand-social-campaign": ["apparel-creative-agency-canada","drop-campaign-photography","dtc-fashion-brand-content"]
+  },
+  "linksToExistingPages": {
+    "fashion-brand-world": ["luxury-apparel-brand-world-and-campaign.html"],
+    "apparel-brand-identity": ["apparel-brand-identity-and-campaign-system.html"],
+    "apparel-wholesale-photography": ["wholesale-lookbook-and-linesheet-imagery.html"],
+    "seasonal-fashion-campaign": ["seasonal-drop-photography-workflow.html"],
+    "dtc-fashion-brand-content": ["apparel-ad-creatives.html"],
+    "apparel-brand-social-campaign": ["fashion-lifestyle-campaign-imagery.html"]
+  },
+  "siblingPairs": {
+    "5-6": "lookbook-vs-product-photography <-> product-photography-vs-lookbook : differentiate + cross-link, no canonical",
+    "11-12": "editorial-vs-campaign-photography <-> campaign-photography-vs-editorial : differentiate + cross-link, no canonical",
+    "15-16": "launching-apparel-brand-canada <-> fashion-brand-launch-strategy : differentiate + cross-link, no canonical"
+  }
+}

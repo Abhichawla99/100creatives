@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /.claude/
+Disallow: /lib/
+Disallow: /.seo-engine/
 
 Sitemap: https://100creatives.com/sitemap.xml

@@ -1,0 +1,176 @@
+{
+  "_note": "Master plan for the 20 SEO landing pages. Build agents read their entry verbatim. Static .html at repo root; cleanUrls serves /slug. Internal links use .html (site convention). Hero = OG image. Each page: hero + 4 gallery imgs (3-5 rule). Heroes are unique across all 20.",
+  "_lastUpdated": "2026-06-19",
+  "pages": [
+    {
+      "id": 1, "slug": "fashion-brand-world", "primaryKeyword": "brand world for fashion", "intent": "educational/authority", "jsonLd": "Article", "cta": "soft", "module": "principles-grid",
+      "title": "What Is a Brand World for Fashion? | 100 Creatives",
+      "meta": "A brand world is the visual system every fashion campaign signs against. What it is, why it beats one-off shoots, and how apparel labels build one.",
+      "hero": "anita_lehnga4", "gallery": ["aritzia_d5","ralphlauren_w4","veronica_r1","anita_lehnga2"],
+      "persona": "Founder/creative director who keeps re-briefing a 'look' every season and wonders why the brand never compounds. Define the brand world as a durable system (palette, light, casting, environments, negative space) vs. a one-off shoot.",
+      "links": ["apparel-brand-identity.html","apparel-brand-positioning.html","fashion-campaign-studio-canada.html","luxury-apparel-brand-world-and-campaign.html"],
+      "differentiateFrom": "luxury-apparel-brand-world-and-campaign.html (that page = luxury quiet-restraint register; THIS page = the educational 'what is / how to build' primer). Cross-link, no canonical."
+    },
+    {
+      "id": 2, "slug": "apparel-brand-identity", "primaryKeyword": "apparel brand identity", "intent": "authority + service", "jsonLd": "Service", "cta": "soft", "module": "principles-grid",
+      "title": "Apparel Brand Identity | 100 Creatives",
+      "meta": "Apparel brand identity is the spine every campaign is built against. The system that makes a clothing label read as one brand, and how to lock it.",
+      "hero": "ralphlauren_w1", "gallery": ["ralphlauren_w2","veronica_r2","anita_lehnga8","aritzia_d2"],
+      "persona": "Brand manager whose identity lives in a stale PDF that nobody shoots against. Identity as an operational spine (logo/type/palette/voice + photography rules) not a logo file.",
+      "links": ["fashion-brand-world.html","apparel-brand-positioning.html","apparel-creative-agency-canada.html","apparel-brand-identity-and-campaign-system.html"],
+      "differentiateFrom": "apparel-brand-identity-and-campaign-system.html (that page = the productised identity+campaign system service; THIS page = the broader 'what is apparel brand identity' authority answer). Cross-link, no canonical."
+    },
+    {
+      "id": 3, "slug": "fashion-campaign-shoot", "primaryKeyword": "fashion campaign shoot", "intent": "guide", "jsonLd": "Article", "cta": "soft-leadmagnet", "module": "timeline",
+      "title": "How to Plan a Fashion Campaign Shoot | 100",
+      "meta": "How to plan a fashion campaign shoot: brief, casting, location, shot list, budget and post. The full pre-production playbook for apparel brands.",
+      "hero": "ralphlauren_w3", "gallery": ["aritzia_d4","anita_lehnga3","outdoors_hero_run","veronica_r1"],
+      "persona": "First-time-running-a-real-campaign brand owner. Step-by-step: brief against the brand world, casting lock, location/permits, shot list/coverage matrix, budget tiers, post + delivery. Offer a shoot-planning checklist as soft lead magnet.",
+      "links": ["seasonal-fashion-campaign.html","editorial-vs-campaign-photography.html","fashion-campaign-studio-canada.html"]
+    },
+    {
+      "id": 4, "slug": "apparel-campaign-photography-canada", "primaryKeyword": "apparel campaign photography canada", "intent": "local service", "jsonLd": "Service+LocalBusiness", "cta": "strong", "module": "funnel",
+      "title": "Apparel Campaign Photography in Canada | 100",
+      "meta": "Apparel campaign photography in Canada for independent fashion labels. Campaign-grade imagery at studio quality, a fraction of the cost, shipped fast.",
+      "hero": "aritzia_d4", "gallery": ["aritzia_d1","aritzia_d3","ralphlauren_w4","veronica_r3"],
+      "persona": "Canadian apparel brand (Toronto/Vancouver/Calgary/Montreal) tired of paying US-studio rates. Local service angle; reference Canadian fashion context (Aritzia-tier). LocalBusiness Calgary.",
+      "links": ["fashion-campaign-studio-canada.html","apparel-creative-agency-canada.html","fashion-brand-identity-canada.html"]
+    },
+    {
+      "id": 5, "slug": "lookbook-vs-product-photography", "primaryKeyword": "lookbook vs product photography", "intent": "comparison (educational, primary of pair)", "jsonLd": "Article", "cta": "soft", "module": "insights-dark",
+      "title": "Lookbook vs Product Photography for Apparel | 100",
+      "meta": "Lookbook vs product photography for apparel: what each is for, where each wins, and which your brand actually needs. A clear decision framework.",
+      "hero": "anita_lehnga2", "gallery": ["ralphlauren_w1","ralphlauren_w2","veronica_r5","anita_lehnga8"],
+      "persona": "Brand owner confusing the two and over/under-shooting. Educational: definitions, job-to-be-done, where each lives (PDP vs brand/wholesale), how they differ in styling/light/cost.",
+      "links": ["product-photography-vs-lookbook.html","apparel-wholesale-photography.html","fashion-campaign-shoot.html"],
+      "siblingDecision": "Pair 5/6 -> DIFFERENTIATE + cross-link, NO canonical. #5 = educational 'what's the difference / which do I need'. #6 = buyer-intent 'I need both, how to budget & sequence'."
+    },
+    {
+      "id": 6, "slug": "product-photography-vs-lookbook", "primaryKeyword": "product photography vs lookbook", "intent": "comparison (buyer-intent sister)", "jsonLd": "Article", "cta": "soft", "module": "insights-dark",
+      "title": "Product Photography vs Lookbook: What to Shoot First",
+      "meta": "Product photography vs lookbook: when you need both, how to split the budget, and the production order that gets a season shot once and used everywhere.",
+      "hero": "veronica_r5", "gallery": ["ralphlauren_w1","ralphlauren_w2","aritzia_d3","anita_lehnga2"],
+      "persona": "Operator who already knows the difference and needs to decide budget split + sequence for a season. Buyer-intent: one shoot, both outputs; ratios, order, cost.",
+      "links": ["lookbook-vs-product-photography.html","apparel-wholesale-photography.html","dtc-fashion-brand-content.html"],
+      "siblingDecision": "See pair 5/6 note above."
+    },
+    {
+      "id": 7, "slug": "fashion-brand-identity-canada", "primaryKeyword": "fashion brand identity in canada", "intent": "local authority", "jsonLd": "Article+LocalBusiness", "cta": "soft", "module": "timeline",
+      "title": "Building a Fashion Brand Identity in Canada | 100",
+      "meta": "Building a fashion brand identity in Canada: positioning, visual system and campaign spine for Canadian apparel labels competing globally from day one.",
+      "hero": "aritzia_d5", "gallery": ["aritzia_d2","aritzia_d6","ralphlauren_w1","veronica_r3"],
+      "persona": "Canadian founder building identity for a global market. Local authority: Canadian fashion landscape, building a world-class identity from Canada. LocalBusiness Calgary.",
+      "links": ["apparel-brand-identity.html","launching-apparel-brand-canada.html","apparel-creative-agency-canada.html"]
+    },
+    {
+      "id": 8, "slug": "apparel-brand-positioning", "primaryKeyword": "apparel brand positioning", "intent": "strategy authority", "jsonLd": "Article", "cta": "soft", "module": "insights-dark",
+      "title": "Apparel Brand Positioning | 100 Creatives",
+      "meta": "Apparel brand positioning: how clothing labels claim a price point and a customer before a single garment ships, and how imagery makes it legible.",
+      "hero": "anita_lehnga8", "gallery": ["ralphlauren_w1","aritzia_d2","veronica_r3","outdoors_shady_rays"],
+      "persona": "Founder stuck in the 'we're premium but affordable' mush. Positioning frameworks (price tier, customer, against-whom) and how the brand world signals the position before words.",
+      "links": ["apparel-brand-identity.html","fashion-brand-world.html","apparel-creative-agency-canada.html","dtc-fashion-brand-content.html"]
+    },
+    {
+      "id": 9, "slug": "fashion-campaign-studio-canada", "primaryKeyword": "campaign studio for independent fashion labels", "intent": "money", "jsonLd": "Service+LocalBusiness", "cta": "strong", "module": "calc",
+      "title": "Best Campaign Studio for Indie Fashion Labels | 100",
+      "meta": "The campaign studio independent fashion labels use to ship brand-world-grade imagery at a fraction of studio cost and ten times the speed. Book a call.",
+      "hero": "aritzia_d1", "gallery": ["aritzia_d6","ralphlauren_w5","veronica_r1","anita_lehnga5"],
+      "persona": "Independent label founder choosing a campaign partner. MONEY page: why a brand-world studio beats freelancers/big studios; cost calculator; strong CTA + email. LocalBusiness Calgary.",
+      "links": ["apparel-creative-agency-canada.html","fashion-campaign-shoot.html","apparel-campaign-photography-canada.html"]
+    },
+    {
+      "id": 10, "slug": "apparel-creative-agency-canada", "primaryKeyword": "apparel creative agency canada", "intent": "money", "jsonLd": "Service+LocalBusiness", "cta": "strong", "module": "funnel",
+      "title": "Apparel Creative Agency in Canada | 100 Creatives",
+      "meta": "An apparel creative agency in Canada for fashion brands: campaigns, lookbooks, editorial and brand identity from one studio. Brand-world, not catalog.",
+      "hero": "ralphlauren_w5", "gallery": ["aritzia_d5","veronica_r4","anita_lehnga3","outdoors_hero_run"],
+      "persona": "Brand director comparing agencies. MONEY page: full-funnel creative partner (identity -> campaign -> lookbook -> feed); funnel module; strong CTA. LocalBusiness Calgary.",
+      "links": ["fashion-campaign-studio-canada.html","apparel-brand-identity.html","dtc-fashion-brand-content.html","apparel-brand-social-campaign.html"]
+    },
+    {
+      "id": 11, "slug": "editorial-vs-campaign-photography", "primaryKeyword": "editorial vs campaign photography", "intent": "comparison (educational, primary of pair)", "jsonLd": "Article", "cta": "soft", "module": "insights-dark",
+      "title": "Editorial vs Campaign Photography for Brands | 100",
+      "meta": "Editorial vs campaign photography for clothing brands: the goals, the look, and the budget behind each, and how to tell which a season needs.",
+      "hero": "ralphlauren_w4", "gallery": ["anita_lehnga3","aritzia_d1","veronica_r1","ralphlauren_w6"],
+      "persona": "Brand owner who uses 'editorial' and 'campaign' interchangeably. Educational: intent (sell vs story), distribution, art-direction and cost differences.",
+      "links": ["campaign-photography-vs-editorial.html","fashion-campaign-shoot.html","fashion-campaign-studio-canada.html"],
+      "siblingDecision": "Pair 11/12 -> DIFFERENTIATE + cross-link, NO canonical. #11 = educational 'what's the difference'. #12 = buyer-intent 'which to commission this season + budget'."
+    },
+    {
+      "id": 12, "slug": "campaign-photography-vs-editorial", "primaryKeyword": "campaign photography vs editorial", "intent": "comparison (buyer-intent sister)", "jsonLd": "Article", "cta": "soft", "module": "insights-dark",
+      "title": "Campaign vs Editorial Photography: Which to Commission",
+      "meta": "Campaign photography vs editorial: which to commission this season, how to brief each, and how to get both from one production without doubling cost.",
+      "hero": "anita_lehnga3", "gallery": ["aritzia_d4","ralphlauren_w5","veronica_r3","outdoors_mud_running"],
+      "persona": "Operator deciding what to commission now. Buyer-intent: decision tree by goal/season/budget; getting both outputs from one shoot.",
+      "links": ["editorial-vs-campaign-photography.html","seasonal-fashion-campaign.html","apparel-creative-agency-canada.html"],
+      "siblingDecision": "See pair 11/12 note above."
+    },
+    {
+      "id": 13, "slug": "fashion-wholesale-deck", "primaryKeyword": "fashion wholesale deck", "intent": "guide + lead magnet", "jsonLd": "Article", "cta": "soft-leadmagnet", "module": "checklist",
+      "title": "How to Create a Fashion Wholesale Deck | 100",
+      "meta": "How to create a fashion wholesale deck buyers actually open: structure, imagery, linesheet and pricing that win retail orders. With a free checklist.",
+      "hero": "aritzia_d2", "gallery": ["ralphlauren_w1","ralphlauren_w2","anita_lehnga2","veronica_r5"],
+      "persona": "Founder prepping for a wholesale/market appointment. Guide: deck structure, hero/lookbook/linesheet imagery, pricing/MOQ slides, common mistakes. Offer a wholesale-deck template as lead magnet.",
+      "links": ["apparel-wholesale-photography.html","fashion-brand-launch-strategy.html","lookbook-vs-product-photography.html"]
+    },
+    {
+      "id": 14, "slug": "apparel-wholesale-photography", "primaryKeyword": "apparel wholesale photography", "intent": "money/service", "jsonLd": "Service", "cta": "strong", "module": "funnel",
+      "title": "Apparel Wholesale Photography | 100 Creatives",
+      "meta": "Apparel wholesale photography: linesheet, lookbook and on-model imagery that gets buyers to write the order. Studio-accurate, fast, brand-consistent.",
+      "hero": "ralphlauren_w2", "gallery": ["ralphlauren_w1","veronica_r5","anita_lehnga8","aritzia_d3"],
+      "persona": "Brand selling into retail/wholesale. MONEY/service: the asset matrix buyers evaluate (linesheet, lookbook, hero), accuracy + speed; funnel module; strong CTA.",
+      "links": ["fashion-wholesale-deck.html","lookbook-vs-product-photography.html","apparel-creative-agency-canada.html","wholesale-lookbook-and-linesheet-imagery.html"],
+      "differentiateFrom": "wholesale-lookbook-and-linesheet-imagery.html (that page = the detailed linesheet imagery service; THIS page = the broader 'apparel wholesale photography' commercial answer). Cross-link, no canonical."
+    },
+    {
+      "id": 15, "slug": "launching-apparel-brand-canada", "primaryKeyword": "launching a fashion brand in canada", "intent": "guide (local)", "jsonLd": "Article+LocalBusiness", "cta": "soft-leadmagnet", "module": "timeline",
+      "title": "Launching a Fashion Brand in Canada | 100",
+      "meta": "Launching a fashion brand in Canada: from positioning and identity to your first campaign and wholesale push. The 90-day playbook for Canadian labels.",
+      "hero": "aritzia_d6", "gallery": ["aritzia_d1","aritzia_d5","ralphlauren_w3","veronica_r4"],
+      "persona": "Canadian first-time founder. Guide: Canada-specific launch path (manufacturing, market, funding context lightly), then identity->campaign->launch timeline. LocalBusiness Calgary. Offer launch checklist.",
+      "links": ["fashion-brand-launch-strategy.html","fashion-brand-identity-canada.html","fashion-campaign-studio-canada.html"],
+      "siblingDecision": "Pair 15/16 -> DIFFERENTIATE + cross-link, NO canonical. #15 = Canada-specific launch logistics/playbook. #16 = the brand-side launch STRATEGY framework (geo-agnostic)."
+    },
+    {
+      "id": 16, "slug": "fashion-brand-launch-strategy", "primaryKeyword": "fashion brand launch strategy", "intent": "guide", "jsonLd": "Article", "cta": "soft-leadmagnet", "module": "principles-grid",
+      "title": "Fashion Brand Launch Strategy | 100 Creatives",
+      "meta": "A fashion brand launch strategy that compounds: positioning, brand world, a launch campaign and the first 3 drops. The sequence that builds demand.",
+      "hero": "anita_lehnga5", "gallery": ["aritzia_d4","ralphlauren_w5","veronica_r3","outdoors_hero_run"],
+      "persona": "Founder/strategist planning the GTM creative sequence. Strategy framework: positioning -> brand world -> launch campaign -> drop cadence -> demand. Geo-agnostic.",
+      "links": ["launching-apparel-brand-canada.html","apparel-brand-positioning.html","fashion-campaign-studio-canada.html"],
+      "siblingDecision": "See pair 15/16 note above."
+    },
+    {
+      "id": 17, "slug": "seasonal-fashion-campaign", "primaryKeyword": "seasonal fashion campaign", "intent": "use-case", "jsonLd": "Article", "cta": "soft", "module": "timeline",
+      "title": "Fashion Brand Campaign for a Seasonal Drop | 100",
+      "meta": "Run a fashion brand campaign for a seasonal drop: the timeline, asset pack and rollout that turn a new collection into demand across feed and paid.",
+      "hero": "veronica_r1", "gallery": ["aritzia_d1","anita_lehnga5","ralphlauren_w4","outdoors_mud_running"],
+      "persona": "Brand running 2-4 seasonal drops a year. Use-case: the drop campaign timeline, the asset pack per drop, multi-channel rollout. Index to a seasonal calendar.",
+      "links": ["drop-campaign-photography.html","fashion-campaign-shoot.html","fashion-campaign-studio-canada.html","seasonal-drop-photography-workflow.html"],
+      "differentiateFrom": "seasonal-drop-photography-workflow.html (that page = the production workflow; THIS page = the campaign use-case around a seasonal drop). Cross-link, no canonical."
+    },
+    {
+      "id": 18, "slug": "drop-campaign-photography", "primaryKeyword": "drop campaign photography", "intent": "service", "jsonLd": "Service", "cta": "strong", "module": "funnel",
+      "title": "Drop Campaign Photography | 100 Creatives",
+      "meta": "Drop campaign photography that ships at the speed of the drop: hero, lookbook and paid-ready frames produced in days, not the six-week studio cycle.",
+      "hero": "outdoors_mud_running", "gallery": ["outdoors_hero_run","aritzia_d1","anita_lehnga5","veronica_r2"],
+      "persona": "Streetwear/DTC brand doing frequent drops. Service: speed-first production indexed to drop dates; the per-drop pack; strong CTA.",
+      "links": ["seasonal-fashion-campaign.html","apparel-brand-social-campaign.html","apparel-creative-agency-canada.html"]
+    },
+    {
+      "id": 19, "slug": "dtc-fashion-brand-content", "primaryKeyword": "scaling a dtc fashion brand with content", "intent": "authority/money", "jsonLd": "Service", "cta": "strong", "module": "calc",
+      "title": "Scaling a DTC Fashion Brand With Campaign Content",
+      "meta": "Scaling a DTC fashion brand with campaign content: the creative volume Meta's auction needs, produced on a brand spine so the feed reads as one brand.",
+      "hero": "outdoors_hero_run", "gallery": ["aritzia_d3","veronica_r4","ralphlauren_w6","outdoors_mud_running"],
+      "persona": "DTC growth lead with rising CAC and creative fatigue. Authority/money: content volume + brand consistency, the math of creative-as-growth-lever; cost calc; strong CTA.",
+      "links": ["apparel-brand-social-campaign.html","apparel-creative-agency-canada.html","product-photography-vs-lookbook.html","apparel-ad-creatives.html"]
+    },
+    {
+      "id": 20, "slug": "apparel-brand-social-campaign", "primaryKeyword": "apparel brand social campaign", "intent": "service", "jsonLd": "Service", "cta": "strong", "module": "funnel",
+      "title": "Apparel Brand Social Campaign | 100 Creatives",
+      "meta": "An apparel brand social campaign that holds the feed between drops: feed-depth imagery on the brand spine for Instagram, TikTok and paid social.",
+      "hero": "outdoors_shady_rays", "gallery": ["veronica_r2","aritzia_d1","anita_lehnga7","outdoors_hero_run"],
+      "persona": "Social/brand lead who needs a coherent social campaign engine, not random posts. Service: the social asset system across channels on the brand spine; strong CTA.",
+      "links": ["dtc-fashion-brand-content.html","drop-campaign-photography.html","apparel-creative-agency-canada.html","fashion-lifestyle-campaign-imagery.html"]
+    }
+  ]
+}

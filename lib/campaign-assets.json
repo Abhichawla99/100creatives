@@ -1,0 +1,46 @@
+{
+  "_note": "Single source of truth for real campaign imagery. Reference assets by key. Never hardcode a path that is not here. All dims are intrinsic px (for width/height attrs to prevent CLS).",
+  "_domain": "https://100creatives.com",
+  "brands": {
+    "aritzia": { "label": "Aritzia", "context": "Canadian (Vancouver) contemporary womenswear; sun-drenched resort/summer editorial" },
+    "ralphlauren": { "label": "Ralph Lauren", "context": "American heritage/preppy luxury; clean studio lookbook + cinematic nature editorial" },
+    "veronica-beard": { "label": "Veronica Beard", "context": "American contemporary womenswear; Mediterranean coastal linen editorial" },
+    "anitadongre": { "label": "Anita Dongre", "context": "South Asian bridal/occasion couture; heritage-craft lehengas in palace/desert settings" },
+    "outdoors": { "label": "Outdoor / Activewear", "context": "Performance trail/run campaign frames; On-vest, eyewear, mountain & forest" }
+  },
+  "assets": {
+    "aritzia_d1": { "src": "/images/aritzia/d1.jpg", "brand": "aritzia", "w": 1024, "h": 1024, "orientation": "square", "desc": "Blonde model mid-twirl in a light-blue pinstripe sundress against a cobalt-and-terracotta wall; joyful sun-drenched kinetic summer energy" },
+    "aritzia_d2": { "src": "/images/aritzia/d2.jpg", "brand": "aritzia", "w": 2200, "h": 1237, "orientation": "landscape", "desc": "Model seated in profile on an ochre ledge against a deep-blue wall in a pale pinstripe dress; calm composed editorial poise with negative space" },
+    "aritzia_d3": { "src": "/images/aritzia/d3.jpg", "brand": "aritzia", "w": 2048, "h": 1152, "orientation": "landscape", "desc": "Model against a terracotta stucco wall lifting the skirt of a deep-V pinstripe sundress; confident warm Mediterranean summer light" },
+    "aritzia_d4": { "src": "/images/aritzia/d4.jpg", "brand": "aritzia", "w": 1012, "h": 1800, "orientation": "portrait", "desc": "Full-length model against a terracotta building corner meeting deep-blue sky, pinstripe midi dress and white sandals; striking architectural color-blocking" },
+    "aritzia_d5": { "src": "/images/aritzia/d5.jpg", "brand": "aritzia", "w": 1012, "h": 1800, "orientation": "portrait", "desc": "Model centered in a warm plaster interior room with linen curtain and an open door onto a dusk salt-flat; golden-hour cinematic escapism" },
+    "aritzia_d6": { "src": "/images/aritzia/d6.jpg", "brand": "aritzia", "w": 1536, "h": 1024, "orientation": "landscape", "desc": "Model walking across a vast white salt flat under pale-blue sky with a single bare tree; open airy minimalist serenity" },
+    "ralphlauren_w1": { "src": "/images/ralphlauren/w1.jpg", "brand": "ralphlauren", "w": 1772, "h": 2200, "orientation": "portrait", "desc": "Full-length model in a white cotton polo shirtdress on a seamless warm-beige studio backdrop; clean minimal premium with large negative space" },
+    "ralphlauren_w2": { "src": "/images/ralphlauren/w2.jpg", "brand": "ralphlauren", "w": 1772, "h": 2200, "orientation": "portrait", "desc": "Rear view of a white polo shirtdress on a high-key off-white studio backdrop showing collar, yoke and hem; clinical garment-accurate e-commerce clarity" },
+    "ralphlauren_w3": { "src": "/images/ralphlauren/w3.jpg", "brand": "ralphlauren", "w": 1772, "h": 2200, "orientation": "portrait", "desc": "Model walking in profile in a white polo shirtdress across a warm-beige studio set with an architectural corner; refined editorial movement" },
+    "ralphlauren_w4": { "src": "/images/ralphlauren/w4.jpg", "brand": "ralphlauren", "w": 2200, "h": 1772, "orientation": "landscape", "desc": "Model in a crisp white dress amid a lush green rainforest of moss-covered trunks and ferns; atmospheric cinematic nature-immersed editorial" },
+    "ralphlauren_w5": { "src": "/images/ralphlauren/w5.jpg", "brand": "ralphlauren", "w": 1772, "h": 2200, "orientation": "portrait", "desc": "Model walking a wet-sand beach at dusk in a white swing-skirt dress billowing in wind; cinematic romantic golden-hour drama" },
+    "ralphlauren_w6": { "src": "/images/ralphlauren/w6.jpg", "brand": "ralphlauren", "w": 1772, "h": 2200, "orientation": "portrait", "desc": "Model resting against a coastal rock face with a beach behind, white polo dress in soft golden light; serene intimate coastal lifestyle" },
+    "veronica_r1": { "src": "/images/veronica-beard/r1.jpg", "brand": "veronica-beard", "w": 1536, "h": 1024, "orientation": "landscape", "desc": "Model beneath a Mediterranean stucco archway with potted olive tree and hazy sea view, white linen button-front midi; serene sun-washed coastal-resort calm" },
+    "veronica_r2": { "src": "/images/veronica-beard/r2.jpg", "brand": "veronica-beard", "w": 1024, "h": 1024, "orientation": "square", "desc": "Waist-up model by a gauzy window curtain in a white linen button-front dress; quiet intimate soft natural-light serenity" },
+    "veronica_r3": { "src": "/images/veronica-beard/r3.jpg", "brand": "veronica-beard", "w": 2048, "h": 1152, "orientation": "landscape", "desc": "Model small against an expansive sand plaster wall framed by olive trees with a coastal sea view, white linen midi; minimal airy editorial calm" },
+    "veronica_r4": { "src": "/images/veronica-beard/r4.jpg", "brand": "veronica-beard", "w": 2048, "h": 2048, "orientation": "square", "desc": "Model seated on stone steps holding a cup beside a terracotta urn and olive tree in white linen; relaxed sun-drenched lifestyle ease" },
+    "veronica_r5": { "src": "/images/veronica-beard/r5.jpg", "brand": "veronica-beard", "w": 1024, "h": 1536, "orientation": "portrait", "desc": "Model leaning against a warm plaster column in an ivory linen maxi with front slit; refined contemplative sculptural warm light" },
+    "anita_lehnga2": { "src": "/images/anitadongre/lehnga-2.jpg", "brand": "anitadongre", "w": 1289, "h": 1600, "orientation": "portrait", "desc": "Bride in an ivory floral-embroidered lehenga holding the dupatta out, before a sandstone palace arch niche; regal serene heritage-luxury elegance" },
+    "anita_lehnga3": { "src": "/images/anitadongre/lehnga-3.jpg", "brand": "anitadongre", "w": 1289, "h": 1600, "orientation": "portrait", "desc": "Bride walking an aged stone fort corridor in an ivory embroidered lehenga and maang tikka; cinematic atmospheric depth and movement" },
+    "anita_lehnga4": { "src": "/images/anitadongre/lehnga-4.jpg", "brand": "anitadongre", "w": 1289, "h": 1600, "orientation": "portrait", "desc": "Bride in an ivory embroidered lehenga in a grand dark palace hall lit by a single shaft of daylight; dramatic chiaroscuro hushed luxury" },
+    "anita_lehnga5": { "src": "/images/anitadongre/lehnga-5.jpg", "brand": "anitadongre", "w": 1289, "h": 1600, "orientation": "portrait", "desc": "Bride mid-twirl on desert dunes with the embroidered lehenga skirt and dupatta flying, clear blue sky; free dynamic aspirational hero energy" },
+    "anita_lehnga7": { "src": "/images/anitadongre/lehnga-7.jpg", "brand": "anitadongre", "w": 1289, "h": 1600, "orientation": "portrait", "desc": "Bride seated in profile in a sunlit sandstone courtyard with carved jali shadows, ivory embroidered lehenga; intimate contemplative lifestyle warmth" },
+    "anita_lehnga8": { "src": "/images/anitadongre/lehnga-8.jpg", "brand": "anitadongre", "w": 1289, "h": 1600, "orientation": "portrait", "desc": "Bride hand on hip before a cracked ochre wall with a graphic jali shadow, ivory embroidered lehenga; poised sun-drenched heritage minimalism" },
+    "outdoors_hero_run": { "src": "/campaigns/web/outdoors/hero-run.jpg", "brand": "outdoors", "w": 900, "h": 514, "orientation": "landscape", "desc": "Woman trail runner mid-stride in a navy hydration vest and sport sunglasses on a forest trail with motion blur; energetic athletic momentum" },
+    "outdoors_mud_running": { "src": "/campaigns/web/outdoors/mud-running.jpg", "brand": "outdoors", "w": 900, "h": 530, "orientation": "landscape", "desc": "Low-angle woman trail runner splashing through a muddy forest trail in a navy vest and trail shoes; gritty determined weatherproof toughness" },
+    "outdoors_shady_rays": { "src": "/campaigns/web/outdoors/shady-rays-arcteryx.jpg", "brand": "outdoors", "w": 900, "h": 504, "orientation": "landscape", "desc": "Tight profile close-up of a woman athlete in a white cap and orange-mirrored sport sunglasses on a sunlit mountain; focused intense elite-athlete register" }
+  },
+  "videos": {
+    "anita_web": { "src": "/images/anitadongre/anita-web.mp4", "brand": "anitadongre", "note": "bridal couture motion" },
+    "outdoors_hero_run_mp4": { "src": "/campaigns/web/outdoors/hero-run.mp4", "brand": "outdoors" },
+    "outdoors_mud_mp4": { "src": "/campaigns/web/outdoors/mud-running.mp4", "brand": "outdoors" },
+    "outdoors_shady_mp4": { "src": "/campaigns/web/outdoors/shady-rays-arcteryx.mp4", "brand": "outdoors" },
+    "site_hero": { "src": "/videos/100creatives-hero.mp4", "brand": "site" }
+  }
+}

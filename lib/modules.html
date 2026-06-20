@@ -1,0 +1,364 @@
+<!-- ============================================================
+ 100 CREATIVES — BUILD KERNEL (copy-paste module snippets)
+ Every page-build agent copies the blocks it needs and swaps CONTENT ONLY.
+ Do NOT rewrite the JS. All JS is self-contained and id-scoped; one interactive
+ module per page so ids never collide. Module JS goes just before the closing
+ fade-in <script> (shown at the end). Indent/format to match.
+ Placeholders in ALLCAPS. Use real copy — never leave ALLCAPS in output.
+============================================================ -->
+
+
+<!-- ===== HEAD: JSON-LD blocks. BreadcrumbList + Organization ALWAYS.
+       Add Article OR Service (+ LocalBusiness for Canada/money) + FAQPage. ===== -->
+
+<!-- BreadcrumbList (always) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://100creatives.com/"},
+  {"@type":"ListItem","position":2,"name":"Apparel","item":"https://100creatives.com/apparel-ad-creatives.html"},
+  {"@type":"ListItem","position":3,"name":"PAGE NAME","item":"https://100creatives.com/SLUG.html"}
+]}
+</script>
+
+<!-- Article (guides / educational / comparison) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"H1 TEXT","description":"META","author":{"@type":"Person","name":"Abhi Chawla","url":"https://linkedin.com/in/abhixchawla"},"publisher":{"@type":"Organization","name":"100 Creatives","logo":{"@type":"ImageObject","url":"https://100creatives.com/favicon.svg"}},"datePublished":"2026-06-19","dateModified":"2026-06-19","image":"https://100creatives.com/HERO_SRC","mainEntityOfPage":"https://100creatives.com/SLUG.html"}
+</script>
+
+<!-- Service (service / money pages) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"SERVICE NAME","provider":{"@type":"Organization","name":"100 Creatives","url":"https://100creatives.com"},"description":"DESC","serviceType":"SERVICE TYPE","areaServed":"Worldwide","audience":{"@type":"BusinessAudience","audienceType":"AUDIENCE"}}
+</script>
+
+<!-- LocalBusiness (Canada/money pages 4,7,9,10,15 — per brief; no fabricated street/phone) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"100 Creatives","url":"https://100creatives.com","image":"https://100creatives.com/HERO_SRC","description":"DESC","address":{"@type":"PostalAddress","addressLocality":"Calgary","addressRegion":"AB","addressCountry":"CA"},"areaServed":["Canada","Worldwide"],"founder":{"@type":"Person","name":"Abhi Chawla"},"priceRange":"$$"}
+</script>
+
+<!-- FAQPage (mirror EVERY visible <details> Q/A here) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Q1","acceptedAnswer":{"@type":"Answer","text":"A1"}}
+]}
+</script>
+
+<!-- Organization (always; verbatim) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"100 Creatives","url":"https://100creatives.com","logo":"https://100creatives.com/favicon.svg","founder":{"@type":"Person","name":"Abhi Chawla","url":"https://linkedin.com/in/abhixchawla"},"foundingDate":"2023","description":"A brand-world studio and AI product photography agency for apparel brands — campaigns, lookbooks, editorial and brand identity at one fifth the cost and ten times the speed of traditional studios.","areaServed":"Worldwide","sameAs":["https://linkedin.com/in/abhixchawla"]}
+</script>
+
+
+<!-- ===== NAV (verbatim) ===== -->
+<header>
+<nav>
+  <a href="/" class="logo">100</a>
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="/#work">Work</a>
+    <a href="index.html#services">Services</a>
+    <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="nav-cta">Connect</a>
+  </div>
+</nav>
+</header>
+
+
+<!-- ===== BREADCRUMB ===== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html">Home</a><span>/</span><a href="apparel-ad-creatives.html">Apparel</a><span>/</span>PAGE NAME
+</nav>
+
+
+<!-- ===== HERO (≥100-word body, primary keyword in first 100 words + hero img alt) ===== -->
+<section class="hero">
+  <p class="hero-label fade-in">CATEGORY · SHORT DESCRIPTOR</p>
+  <h1 class="fade-in">HEADLINE with one <em>serif-italic phrase.</em></h1>
+  <p class="hero-body fade-in">100+ word answer that opens with a concrete persona moment and uses the primary keyword naturally in the first 100 words...</p>
+  <p class="hero-meta fade-in">By Abhi Chawla, founder · Last updated: 2026-06-19</p>
+  <div class="hero-bottom fade-in">
+    <a href="https://tidycal.com/abhixchawla/strategycall" target="_blank" class="hero-btn">CTA LABEL
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+  </div>
+</section>
+
+
+<!-- ===== HERO GALLERY (interactive-section + gallery-grid). HERO IMAGE FIRST, eager.
+       Remaining gallery imgs lazy. width/height from manifest. ===== -->
+<section class="interactive-section">
+  <p class="interactive-label fade-in">CAMPAIGN REFERENCE</p>
+  <h2 class="interactive-title fade-in">SHORT GALLERY HEADLINE with <em>one italic.</em></h2>
+  <div class="gallery-wrap fade-in">
+    <div class="gallery-grid">
+      <figure class="gallery-item"><img src="HERO_SRC" alt="PRIMARY-KEYWORD-bearing description" width="W" height="H" loading="eager" decoding="async"><figcaption class="gallery-caption">CAPTION.</figcaption></figure>
+      <figure class="gallery-item"><img src="GAL_SRC" alt="DESCRIPTION" width="W" height="H" loading="lazy" decoding="async"><figcaption class="gallery-caption">CAPTION.</figcaption></figure>
+      <!-- ...repeat for each gallery asset... -->
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<!-- ===== CONTENT SECTION (content-split: left H2, right body w/ contextual internal links).
+       Use 4-7 of these. At least one H2 contains the primary keyword. ===== -->
+<section class="content-section">
+  <div class="section-label fade-in">SECTION LABEL</div>
+  <div class="content-split">
+    <div><h2 class="fade-in">SECTION HEADLINE with <em>one italic.</em></h2></div>
+    <div class="content-body fade-in">
+      <p>Specific, expert prose. Name real brands, real production economics, concrete mechanics. <a href="SIBLING.html">contextual internal link</a>.</p>
+      <p>...</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<!-- ===== PRINCIPLES GRID (6 cards). For authority pages, or as numbered 01-06 PROCESS steps for guides. ===== -->
+<section class="content-section">
+  <div class="section-label fade-in">SECTION LABEL</div>
+  <div class="principles-grid fade-in">
+    <div class="principle-card"><div class="principle-number">01</div><h3>CARD TITLE</h3><p>Card body.</p></div>
+    <div class="principle-card"><div class="principle-number">02</div><h3>CARD TITLE</h3><p>Card body.</p></div>
+    <div class="principle-card"><div class="principle-number">03</div><h3>CARD TITLE</h3><p>Card body.</p></div>
+    <div class="principle-card"><div class="principle-number">04</div><h3>CARD TITLE</h3><p>Card body.</p></div>
+    <div class="principle-card"><div class="principle-number">05</div><h3>CARD TITLE</h3><p>Card body.</p></div>
+    <div class="principle-card"><div class="principle-number">06</div><h3>CARD TITLE</h3><p>Card body.</p></div>
+  </div>
+</section>
+
+
+<!-- ===== INSIGHTS GRID (dark, 3 tiers). For comparisons (the 2-3 options) and money pages (alt vs alt vs us). ===== -->
+<section class="content-section-dark">
+  <div class="section-label fade-in">COMPARISON FRAME</div>
+  <h2 class="dark-title fade-in">SHORT DARK HEADLINE with <em>one italic.</em></h2>
+  <div class="insights-grid fade-in">
+    <div class="insight-card"><div class="insight-tier">Option A</div><h3>TITLE</h3><p>Body.</p></div>
+    <div class="insight-card"><div class="insight-tier">Option B</div><h3>TITLE</h3><p>Body.</p></div>
+    <div class="insight-card"><div class="insight-tier">100 Creatives</div><h3>TITLE</h3><p>Body.</p></div>
+  </div>
+</section>
+
+
+<!-- ===== TIMELINE (interactive; guides). Edit the data-* and step text. JS self-contained. ===== -->
+<section class="content-section">
+  <div class="section-label fade-in">THE PROCESS</div>
+  <div class="content-split" style="margin-bottom:48px">
+    <div><h2 class="fade-in">PROCESS HEADLINE with <em>one italic.</em></h2></div>
+    <div class="content-body fade-in"><p>One paragraph framing the timeline below.</p></div>
+  </div>
+  <div class="timeline-wrap fade-in">
+    <div class="timeline-track">
+      <div class="timeline-steps">
+        <button class="timeline-step active" data-i="0"><span class="timeline-dot">1</span><span class="timeline-label">WEEK 1</span><span class="timeline-time">STEP 1</span></button>
+        <button class="timeline-step" data-i="1"><span class="timeline-dot">2</span><span class="timeline-label">WEEK 2</span><span class="timeline-time">STEP 2</span></button>
+        <button class="timeline-step" data-i="2"><span class="timeline-dot">3</span><span class="timeline-label">WEEK 3</span><span class="timeline-time">STEP 3</span></button>
+        <button class="timeline-step" data-i="3"><span class="timeline-dot">4</span><span class="timeline-label">WEEK 4</span><span class="timeline-time">STEP 4</span></button>
+        <button class="timeline-step" data-i="4"><span class="timeline-dot">5</span><span class="timeline-label">WEEK 5</span><span class="timeline-time">STEP 5</span></button>
+      </div>
+    </div>
+    <div class="timeline-detail" id="tlDetail">
+      <h4>STEP 1 TITLE</h4><p>Step 1 detail.</p>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var steps=[
+    {h:"STEP 1 TITLE",p:"Step 1 detail."},
+    {h:"STEP 2 TITLE",p:"Step 2 detail."},
+    {h:"STEP 3 TITLE",p:"Step 3 detail."},
+    {h:"STEP 4 TITLE",p:"Step 4 detail."},
+    {h:"STEP 5 TITLE",p:"Step 5 detail."}
+  ];
+  var btns=document.querySelectorAll('.timeline-step'),d=document.getElementById('tlDetail');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.classList.remove('active')});b.classList.add('active');
+    var s=steps[+b.dataset.i];d.innerHTML='<h4>'+s.h+'</h4><p>'+s.p+'</p>';
+  });});
+})();
+</script>
+
+
+<!-- ===== CHECKLIST (interactive; #13 wholesale-deck). JS toggles + scores. ===== -->
+<section class="content-section">
+  <div class="section-label fade-in">THE CHECKLIST</div>
+  <div class="content-split" style="margin-bottom:48px">
+    <div><h2 class="fade-in">CHECKLIST HEADLINE with <em>one italic.</em></h2></div>
+    <div class="content-body fade-in"><p>One paragraph framing the checklist.</p></div>
+  </div>
+  <div class="checklist fade-in" id="ckl">
+    <div class="checklist-item"><div class="checklist-box"></div><div class="checklist-text"><h4>ITEM 1</h4><p>Why it matters.</p></div></div>
+    <div class="checklist-item"><div class="checklist-box"></div><div class="checklist-text"><h4>ITEM 2</h4><p>Why it matters.</p></div></div>
+    <div class="checklist-item"><div class="checklist-box"></div><div class="checklist-text"><h4>ITEM 3</h4><p>Why it matters.</p></div></div>
+    <div class="checklist-item"><div class="checklist-box"></div><div class="checklist-text"><h4>ITEM 4</h4><p>Why it matters.</p></div></div>
+    <div class="checklist-item"><div class="checklist-box"></div><div class="checklist-text"><h4>ITEM 5</h4><p>Why it matters.</p></div></div>
+    <div class="checklist-item"><div class="checklist-box"></div><div class="checklist-text"><h4>ITEM 6</h4><p>Why it matters.</p></div></div>
+    <div class="checklist-score"><span class="checklist-score-label">Deck readiness</span><span class="checklist-score-value" id="cklScore">0 / 6</span></div>
+  </div>
+</section>
+<script>
+(function(){
+  var items=document.querySelectorAll('#ckl .checklist-item'),out=document.getElementById('cklScore'),n=items.length;
+  function upd(){var c=document.querySelectorAll('#ckl .checklist-item.checked').length;out.textContent=c+' / '+n;}
+  items.forEach(function(it){it.addEventListener('click',function(){it.classList.toggle('checked');upd();});});
+})();
+</script>
+
+
+<!-- ===== COST CALCULATOR (interactive; money pages). Two sliders -> traditional vs 100 cost + saving.
+       Tune the per-unit constants in JS to the page's economics. ===== -->
+<section class="interactive-section">
+  <p class="interactive-label fade-in">THE MATH</p>
+  <h2 class="interactive-title fade-in">CALC HEADLINE with <em>one italic.</em></h2>
+  <div class="calc-wrap fade-in">
+    <div class="calc-controls">
+      <div class="calc-field">
+        <label>Looks per season</label>
+        <input type="range" id="cLooks" min="4" max="40" value="12" step="1">
+        <div class="calc-value" id="cLooksV">12 <em>looks</em></div>
+      </div>
+      <div class="calc-field">
+        <label>Channels to cut for</label>
+        <input type="range" id="cChan" min="1" max="8" value="4" step="1">
+        <div class="calc-value" id="cChanV">4 <em>channels</em></div>
+      </div>
+    </div>
+    <div class="calc-output">
+      <div class="calc-output-row"><div class="calc-output-label">Traditional studio</div><div class="calc-output-value" id="cTrad">$0</div></div>
+      <div class="calc-output-row"><div class="calc-output-label">100 Creatives</div><div class="calc-output-value" id="cOurs">$0</div></div>
+      <div class="calc-output-row"><div class="calc-output-label">You save</div><div class="calc-output-value saving" id="cSave">$0</div><div class="calc-output-note">per season, same coverage</div></div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var looks=document.getElementById('cLooks'),chan=document.getElementById('cChan');
+  var lv=document.getElementById('cLooksV'),cv=document.getElementById('cChanV');
+  var trad=document.getElementById('cTrad'),ours=document.getElementById('cOurs'),save=document.getElementById('cSave');
+  var TRAD_PER_LOOK=850, OURS_PER_LOOK=150, PER_CHANNEL=600, OURS_CHANNEL=0; // tune per page
+  function money(n){return '$'+Math.round(n).toLocaleString('en-US');}
+  function upd(){
+    var L=+looks.value, C=+chan.value;
+    lv.innerHTML=L+' <em>looks</em>'; cv.innerHTML=C+' <em>channels</em>';
+    var t=L*TRAD_PER_LOOK + L*C*PER_CHANNEL*0.15;
+    var o=L*OURS_PER_LOOK;
+    trad.textContent=money(t); ours.textContent=money(o); save.textContent=money(Math.max(0,t-o));
+  }
+  looks.addEventListener('input',upd); chan.addEventListener('input',upd); upd();
+})();
+</script>
+
+
+<!-- ===== FUNNEL (interactive; service/money pages). Click a stage -> its detail. ===== -->
+<section class="content-section">
+  <div class="section-label fade-in">THE ASSET FUNNEL</div>
+  <div class="content-split" style="margin-bottom:48px">
+    <div><h2 class="fade-in">FUNNEL HEADLINE with <em>one italic.</em></h2></div>
+    <div class="content-body fade-in"><p>One paragraph framing the funnel below.</p></div>
+  </div>
+  <div class="funnel-wrap fade-in">
+    <div class="funnel-grid">
+      <button class="funnel-stage active" data-i="0"><div class="funnel-stage-label">STAGE</div><div class="funnel-stage-count">Hero</div></button>
+      <button class="funnel-stage" data-i="1"><div class="funnel-stage-label">STAGE</div><div class="funnel-stage-count">Lookbook</div></button>
+      <button class="funnel-stage" data-i="2"><div class="funnel-stage-label">STAGE</div><div class="funnel-stage-count">PDP</div></button>
+      <button class="funnel-stage" data-i="3"><div class="funnel-stage-label">STAGE</div><div class="funnel-stage-count">Paid</div></button>
+      <button class="funnel-stage" data-i="4"><div class="funnel-stage-label">STAGE</div><div class="funnel-stage-count">Feed</div></button>
+    </div>
+    <div class="funnel-detail" id="fnDetail"><h4>STAGE 1 TITLE</h4><p>Stage 1 detail.</p></div>
+  </div>
+</section>
+<script>
+(function(){
+  var data=[
+    {h:"STAGE 1 TITLE",p:"Stage 1 detail."},
+    {h:"STAGE 2 TITLE",p:"Stage 2 detail."},
+    {h:"STAGE 3 TITLE",p:"Stage 3 detail."},
+    {h:"STAGE 4 TITLE",p:"Stage 4 detail."},
+    {h:"STAGE 5 TITLE",p:"Stage 5 detail."}
+  ];
+  var st=document.querySelectorAll('.funnel-stage'),d=document.getElementById('fnDetail');
+  st.forEach(function(b){b.addEventListener('click',function(){
+    st.forEach(function(x){x.classList.remove('active')});b.classList.add('active');
+    var s=data[+b.dataset.i];d.innerHTML='<h4>'+s.h+'</h4><p>'+s.p+'</p>';
+  });});
+})();
+</script>
+
+
+<!-- ===== FAQ (mirror each Q/A into FAQPage JSON-LD above) ===== -->
+<section class="faq-section" id="faq">
+  <div class="section-label fade-in">FAQ</div>
+  <h2 class="section-title fade-in">PRIMARY KEYWORD · <em>frequent questions</em></h2>
+  <div class="faq-list fade-in">
+    <details><summary>Q1?</summary><p>A1.</p></details>
+    <details><summary>Q2?</summary><p>A2.</p></details>
+    <!-- 5-8 total -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<!-- ===== CTA. STRONG variant (money pages): include email line. SOFT variant (guides/authority).
+       SOFT-LEADMAGNET (guides 3,13,15,16): add the resource-by-email offer line. ===== -->
+<section class="cta-section" id="connect">
+  <p class="cta-label fade-in">SHORT CTA LABEL</p>
+  <h2 class="cta-title fade-in">CTA HEADLINE. <em>Italic close.</em></h2>
+  <p class="cta-body fade-in">Persona-specific close. For SOFT-LEADMAGNET, add: "Email <a href=\"mailto:abhi@paperkites.co\">abhi@paperkites.co</a> and we'll send the [resource]." For STRONG, add: "Send your brand and we'll reply with a plan — <a href=\"mailto:abhi@paperkites.co\">abhi@paperkites.co</a>."</p>
+  <a href="https://tidycal.com/abhixchawla/strategycall" target="_blank" class="cta-btn fade-in">CTA BUTTON LABEL
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+  </a>
+</section>
+
+
+<!-- ===== FOOTER (verbatim) ===== -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">100 creatives</div>
+      <p class="footer-brand-sub">A brand-world studio for apparel. Campaigns, lookbooks, editorial and brand identity. The campaign, not the catalog.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Apparel</h4>
+      <a href="apparel-ad-creatives.html">Apparel Ad Creatives</a>
+      <a href="ai-fashion-photography.html">AI Fashion Photography</a>
+      <a href="ai-lookbook-photography.html">AI Lookbook Photography</a>
+      <a href="knitwear-photography-at-scale.html">Knitwear at Scale</a>
+    </div>
+    <div class="footer-col">
+      <h4>Compare</h4>
+      <a href="ai-fashion-photography-vs-traditional.html">AI vs Traditional</a>
+      <a href="ai-fashion-models-vs-real-models.html">AI vs Real Models</a>
+      <a href="seasonal-drop-photography-workflow.html">Seasonal Drop Workflow</a>
+      <a href="best-ai-fashion-photography-services.html">Best Fashion Services</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="index.html">Home</a>
+      <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-left">100</div>
+    <div class="footer-right"><a href="https://linkedin.com/in/abhixchawla" target="_blank">Connect on LinkedIn</a></div>
+  </div>
+</footer>
+
+
+<!-- ===== CLOSING SCRIPTS (verbatim; ALWAYS last, AFTER any module script) ===== -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+<script src="/_vercel/insights/script.js" defer></script>
