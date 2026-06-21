@@ -54,16 +54,18 @@ Read these files end to end, in order:
 
 ---
 
-## STEP 5 — Pick images (0–4)
+## STEP 5 — Pick images (2–6 REQUIRED)
 
-1. From the topic's `image_hints`, identify the relevant brand folder(s) per `images.md`.
-2. Check MEMORY.md "Brand images used (last 7 days)" — avoid same folder twice in 7 days unless no alternative fits.
+Body imagery is **required**, not optional. Every article ships with at least one hero in `<section class="interactive-section">` AND at least one mid-article gallery frame.
+
+1. From the topic's `image_hints`, identify the relevant brand folder per `images.md`. Under the apparel-only pivot, the four eligible apparel folders are `anitadongre/` (bridal, occasion-wear, South Asian couture), `ralphlauren/` (menswear-tailoring, heritage Americana, Polo / Purple Label / RRL), `aritzia/` (contemporary women's, mid-market premium, drop-cadence), `veronica-beard/` (contemporary American women's, editorial-American register). Plus `campaigns/web/outdoors/` for activewear/outdoor.
+2. Check MEMORY.md "Brand images used" — the per-folder reuse window is **5 days** (relaxed from 7 to reflect the four-folder apparel-only inventory). Per-file reuse window: 14 days. If today's natural-fit folder is inside the 5-day window, rotate to one of the other three apparel folders rather than defaulting to OG-only — the four-folder rotation gives slack on any given day.
 3. Select 2–4 specific files. **Verify each exists**:
    ```bash
    ls "/Users/home/100creatives/images/{folder}/{filename}"
    ```
 4. URL-encode any spaces in filenames as `%20` when writing the `src` attribute.
-5. If no inventory image fits the topic, ship without images. Empty > forced.
+5. **OG-only is a fallback, not a default.** Only acceptable when every eligible apparel folder is inside the 5-day reuse window AND no rotation is possible — and the posture must be explicitly justified in the MEMORY.md notes for the day.
 
 ---
 

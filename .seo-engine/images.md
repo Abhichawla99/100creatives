@@ -5,15 +5,27 @@ The engine consults this file to pick relevant images for each new article. **On
 ## Verticals → image folders
 
 ### Apparel (luxury, bridal, ethnic, fashion)
-- **Anita Dongre** — bridal lehenga collection, AI fashion photography hero work
+- **Anita Dongre** — bridal lehenga collection, South Asian couture, slow-craft atelier register
   - `/images/anitadongre/lehnga-2.jpg` — bridal lehenga, on-model hero
   - `/images/anitadongre/lehnga-3.jpg` — drape detail, fabric fidelity close-up
-  - `/images/anitadongre/lehnga-4.jpg` — embellishment close-up, beadwork
+  - `/images/anitadongre/lehnga-4.jpg` — embellishment close-up, gota patti + zardozi at 300%
   - `/images/anitadongre/lehnga-5.jpg` — editorial/campaign frame
   - `/images/anitadongre/lehnga-7.jpg` — full-look lifestyle context
   - `/images/anitadongre/lehnga-8.jpg` — secondary angle, PDP-grade
   - `/images/anitadongre/anita-web.mp4` — collection motion reel
-  - **Use for:** AI fashion photography, luxury apparel, ethnic/bridal wear, fabric fidelity, on-model at scale
+  - **Use for:** bridal apparel, occasion-wear, South Asian couture, luxury ethnic, fabric fidelity at handwork close-up, on-model lookbook at the slow-craft atelier register
+
+- **Ralph Lauren** — heritage Americana / Polo / Purple Label / RRL menswear and womenswear lineage
+  - `/images/ralphlauren/w1.jpg` through `/images/ralphlauren/w6.jpg`
+  - **Use for:** menswear tailoring, heritage Americana, quiet-luxury menswear, Polo / Purple Label / RRL register, Bruce Weber / Glen Luchford editorial pedigree, suiting and separates campaign, classic apparel brand-world
+
+- **Aritzia** — contemporary women's apparel (Wilfred, Babaton, TNA, Sunday Best)
+  - `/images/aritzia/d1.jpg` through `/images/aritzia/d6.jpg`
+  - **Use for:** contemporary women's apparel, mid-market premium fashion, modern lifestyle apparel, contemporary lookbook, drop-cadence campaign, work-and-weekend separates, North American contemporary register
+
+- **Veronica Beard** — contemporary women's at the editorial-American register
+  - `/images/veronica-beard/r1.jpg` through `/images/veronica-beard/r5.jpg`
+  - **Use for:** contemporary American women's apparel, Dickey jacket / signature-tailoring imagery, work-edit and weekend-edit, contemporary lifestyle apparel, Net-a-Porter / ShopBop / Saks wholesale-deck register, occasion-wear contemporary
 
 ### Beauty / Skincare (premium serums, color cosmetics)
 - **Golden Rule** — premium beauty/skincare brand
@@ -76,11 +88,13 @@ The engine consults this file to pick relevant images for each new article. **On
 
 ## Hero/OG image defaults (when nothing vertical-specific fits)
 - `/images/chobani/chobani-9.png` — flagship default (already used as site-wide OG)
-- `/images/anitadongre/lehnga-2.jpg` — apparel default
+- `/images/anitadongre/lehnga-7.jpg` — apparel default (site-wide OG since 5/28 pivot)
 
 ## Embedding rules
-1. **Picker logic:** Match topic vertical → folder above. If a closer brand fit exists (e.g. article about "supplement product photography" → use Armra), prefer it. Avoid using the same brand twice in 7 days (check MEMORY.md).
-2. **Use existing site patterns:** copy the `<figure class="gallery-item">...<figcaption>` markup from `ai-fashion-photography.html` lines 132–140, OR use `<div class="video-block"><video>...</div>` from lines 99–107 for motion.
-3. **Alt text is mandatory** and must include the primary keyword + brand context (e.g., `alt="Premium skincare product photography — Golden Rule serum bottle in studio light"`).
-4. **OG image:** set `<meta property="og:image">` to the most flagship image used on the page (or default to chobani-9 if none).
-5. **Never** invent image paths. **Never** hotlink external images. **Never** reuse the exact same image set as the previous 3 articles (MEMORY.md tracks this).
+1. **Picker logic:** Match topic vertical → folder above. Under the apparel-only pivot (post 5/28), the eligible apparel folders are anitadongre / ralphlauren / aritzia / veronica-beard plus campaigns/web/outdoors for activewear-and-outdoor lifestyle. Choose the closest sub-segment fit per article — bridal/occasion → anitadongre, menswear-tailoring/heritage → ralphlauren, contemporary women's → aritzia or veronica-beard, activewear/outdoor → outdoors. If a closer brand fit exists outside apparel for a non-apparel piece (e.g., supplements → armra), prefer it.
+2. **Body imagery is required, not optional.** Every article ships with at least 2 body-imagery frames — one hero in `<section class="interactive-section">` and at minimum one gallery frame in a mid-article gallery-grid, OR a 3–6 frame gallery-grid. OG-only (no body imagery) is ONLY acceptable when every eligible apparel folder is inside the 5-day reuse window AND no rotation across folders is possible — and that posture must be justified in the MEMORY.md notes for the day.
+3. **Per-folder reuse window: 5 days** (down from 7). Per-file reuse window: 14 days. Rotate across the four apparel folders (anitadongre / ralphlauren / aritzia / veronica-beard) so the engine never gets cornered into OG-only by a thin inventory — at four folders on a 5-day rotation the engine has slack on any given day.
+4. **Use existing site patterns:** copy the `<figure class="gallery-item">...<figcaption>` markup from `ai-fashion-photography.html` lines 132–140, OR use `<div class="video-block"><video>...</div>` from lines 99–107 for motion.
+5. **Alt text is mandatory** and must include the primary keyword + brand context (e.g., `alt="Premium skincare product photography — Golden Rule serum bottle in studio light"`).
+6. **OG image:** set `<meta property="og:image">` to the most flagship image used on the page (or default to anitadongre/lehnga-7 if none).
+7. **Never** invent image paths. **Never** hotlink external images. **Never** reuse the exact same image set as the previous 3 articles (MEMORY.md tracks this).

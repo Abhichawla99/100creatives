@@ -118,9 +118,10 @@ Beneath the h1, alongside the "Last updated" line:
 Images come ONLY from `images.md`. Never invent paths. Never hotlink external URLs.
 
 ### When to use images
-- 2–4 images per article when they genuinely fit the topic.
-- Skip images entirely if nothing in inventory is relevant — empty article > forced bad image.
-- Article about supplements? Use `armra/`. Article about CPG snacks? Use `smackin/`. Article about fragrance? Use `goldenrule/` or `zerolush/`. Article about bridal/luxury? Use `anitadongre/`. Article about food? Use `chobani/`.
+- **2–6 body images per article — REQUIRED.** Every article ships with at least one hero image in `<section class="interactive-section">` AND at least one mid-article gallery frame (or a 3–6 frame gallery-grid).
+- **OG-only (no body imagery) is NOT the default.** It's a fallback used only when every eligible apparel folder is inside the 5-day reuse window AND no rotation across folders is possible — and that posture must be explicitly justified in the MEMORY.md notes for the day.
+- Under the apparel-only pivot, the four eligible apparel folders are `anitadongre/` (bridal, South Asian couture, occasion-wear), `ralphlauren/` (menswear-tailoring, heritage Americana, quiet-luxury menswear, Polo/Purple Label/RRL register), `aritzia/` (contemporary women's, mid-market premium, drop-cadence), `veronica-beard/` (contemporary American women's, editorial-American register). Plus `campaigns/web/outdoors/` for activewear / running / outdoor lifestyle. Rotate across the apparel folders on a 5-day window so the engine has slack on any given day.
+- For non-apparel articles in the legacy schema (supplements / CPG / fragrance / etc.), use the matching brand folder per `images.md`.
 
 ### Where to place images
 - **Hero image (optional):** one image in an `<section class="interactive-section">` after the hero. Use `<div class="video-block">` if a `.mp4` exists in the brand folder.
@@ -147,7 +148,7 @@ Mandatory. Must include the primary keyword AND brand context.
 - ❌ "product image" or "armra-3.png"
 
 ### Anti-repetition for images
-Don't reuse the same brand folder more than once per 7 days. MEMORY.md tracks this.
+Per-folder reuse window: **5 days** (relaxed from 7 to reflect the apparel-only-pivot inventory at four eligible apparel folders). Per-file reuse window: 14 days. MEMORY.md tracks both. The four apparel folders on a 5-day rotation give the engine slack — if you find yourself reaching for OG-only on a non-flagship day, you missed an open folder.
 
 ---
 
@@ -188,16 +189,16 @@ The slug is provided by `topics.json`. Do not invent your own.
 
 ---
 
-## Pre-flight checklist (the engine MUST pass all 17 before pushing)
+## Pre-flight checklist (the engine MUST pass all 18 before pushing)
 
-1. Word count is 2,500–4,000 (or 4,500 for flagship/citation-bait)
+1. Word count is 2,500–4,000 (or 4,500–7,800 for flagship/citation-bait)
 2. All 4 JSON-LD blocks parse as valid JSON — BreadcrumbList + Service + FAQPage + Organization (`python3 -c "import json; ..."`)
 3. Visible FAQ Q&A text matches FAQPage JSON-LD verbatim
 4. ALL internal links resolve to files that exist in the repo
 5. ALL image src paths exist in /images or /campaigns/web (URL-encode spaces with %20)
 6. Every image has descriptive alt text containing primary keyword
 7. Persona has not been used in last 15 days (per MEMORY.md)
-8. Vertical has not been used 2 days running (3-in-a-row hard fail)
+8. Vertical has not been used 2 days running (3-in-a-row hard fail; superseded under apparel-only pivot by sub-segment rotation tracked in MEMORY.md)
 9. No internal link is over-used (no link with >5 uses in last 30 days unless genuinely best fit)
 10. "Last updated: YYYY-MM-DD" visible on page
 11. Sitemap.xml updated with new URL entry
@@ -207,5 +208,6 @@ The slug is provided by `topics.json`. Do not invent your own.
 15. **Comparison block present** — at least one "Traditional vs AI" or "Tier 1 vs Tier 2 vs Tier 3" comparison block (content-section-dark with insights-grid, OR three-tier inline comparison)
 16. **Stat-attribution enforced** — every numeric/empirical claim cluster names its source (Marketplace Pulse, Helium 10, Common Thread Collective, Jungle Scout, SellerLabs, Andrew Foxwell, named retailer documentation, or named brand case data) at least once per cluster
 17. **Organization JSON-LD present** and author byline "By Abhi Chawla, founder · Last updated: YYYY-MM-DD" visible beneath h1
+18. **Body imagery present** — at least one hero image in `<section class="interactive-section">` AND at least one mid-article gallery frame (2+ body images minimum). OG-only is a fallback that must be explicitly justified in MEMORY.md notes for the day.
 
 If any check fails: fix it. Do not push broken pages. Do not approximate. The user explicitly asked for no slop.
