@@ -189,7 +189,7 @@ The slug is provided by `topics.json`. Do not invent your own.
 
 ---
 
-## Pre-flight checklist (the engine MUST pass all 18 before pushing)
+## Pre-flight checklist (the engine MUST pass all 19 before pushing)
 
 1. Word count is 2,500–4,000 (or 4,500–7,800 for flagship/citation-bait)
 2. All 4 JSON-LD blocks parse as valid JSON — BreadcrumbList + Service + FAQPage + Organization (`python3 -c "import json; ..."`)
@@ -209,5 +209,6 @@ The slug is provided by `topics.json`. Do not invent your own.
 16. **Stat-attribution enforced** — every numeric/empirical claim cluster names its source (Marketplace Pulse, Helium 10, Common Thread Collective, Jungle Scout, SellerLabs, Andrew Foxwell, named retailer documentation, or named brand case data) at least once per cluster
 17. **Organization JSON-LD present** and author byline "By Abhi Chawla, founder · Last updated: YYYY-MM-DD" visible beneath h1
 18. **Body imagery present** — at least one hero image in `<section class="interactive-section">` AND at least one mid-article gallery frame (2+ body images minimum). OG-only is a fallback that must be explicitly justified in MEMORY.md notes for the day.
+19. **IntersectionObserver script footer present** — every `.fade-in` element starts at `opacity:0` in `/css/article.css` and is only made visible by the closing `<script>` that adds `.visible` on scroll. If that script is missing, the entire page renders blank. Verify the file ends with the standard observer block plus `<script src="/_vercel/insights/script.js" defer></script>` before `</body></html>`. Grep test: `grep -c "IntersectionObserver" {slug}.html` must return 1.
 
 If any check fails: fix it. Do not push broken pages. Do not approximate. The user explicitly asked for no slop.
