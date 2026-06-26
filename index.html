@@ -1275,19 +1275,19 @@
     }
     .hs-slide-img {
       width: 380px;
-      max-height: 560px;
+      aspect-ratio: 4/5;
       border-radius: 10px;
       overflow: hidden;
-      background: #f3f3f3;
+      background: #f0f0f0;
       margin-bottom: 16px;
-      aspect-ratio: auto;
+      position: relative;
     }
     .hs-slide-img img,
     .hs-slide-img video {
       width: 100%;
-      height: auto;
-      max-height: 560px;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       display: block;
     }
     .hs-slide-text h3 {
@@ -1359,8 +1359,7 @@
       .hs-card-title { padding: 56px 0 28px; gap: 16px; flex-wrap: wrap; }
       .hs-card-title p { font-size: 15px; }
       .hs-slide { flex: 0 0 280px; }
-      .hs-slide-img { width: 280px; max-height: 420px; }
-      .hs-slide-img img, .hs-slide-img video { max-height: 420px; }
+      .hs-slide-img { width: 280px; }
       .hs-nav { display: none; }
     }
 
