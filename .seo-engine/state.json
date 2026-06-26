@@ -1,9 +1,14 @@
 {
   "next_index": 24,
-  "last_published_slug": "multi-brand-apparel-portfolio-campaign-imagery-and-vendor-consolidation",
-  "last_published_date": "2026-06-20",
-  "queue_status": "exhausted at 23 entries; 6/19 bridal authored outside queue against P21 NEW; 6/20 multi-brand portfolio authored outside queue against P14 (32-day legacy gap) as fifteenth post-pivot apparel sub-segment — extend topics.json before next run",
+  "last_published_slug": "heritage-apparel-brand-archive-campaign-and-modern-relaunch",
+  "last_published_date": "2026-06-21",
+  "queue_status": "exhausted at 23 entries; 6/19 bridal authored outside queue against P21 NEW; 6/20 multi-brand portfolio authored outside queue against P14 (32-day legacy gap); 6/21 heritage-apparel-archive-as-spine authored outside queue against P07 (24-day legacy gap, first post-pivot use) as sixteenth post-pivot apparel sub-segment — extend topics.json before next run",
   "history": [
+    {
+      "date": "2026-06-21",
+      "slug": "heritage-apparel-brand-archive-campaign-and-modern-relaunch",
+      "h1": "Heritage apparel relaunch that uses the archive as the campaign's spine."
+    },
     {
       "date": "2026-06-20",
       "slug": "multi-brand-apparel-portfolio-campaign-imagery-and-vendor-consolidation",
