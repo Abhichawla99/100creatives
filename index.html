@@ -1243,12 +1243,13 @@
     }
 
     .hs-card-body {
-      max-height: 0;
-      overflow: hidden;
+      max-height: none;
+      overflow: visible;
       transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .hs-card.open .hs-card-body {
-      max-height: 2000px;
+    .hs-card:not(.open) .hs-card-body {
+      max-height: 0;
+      overflow: hidden;
     }
 
     .hs-carousel {
@@ -1274,17 +1275,19 @@
     }
     .hs-slide-img {
       width: 380px;
-      height: 480px;
+      max-height: 560px;
       border-radius: 10px;
       overflow: hidden;
       background: #f3f3f3;
       margin-bottom: 16px;
+      aspect-ratio: auto;
     }
     .hs-slide-img img,
     .hs-slide-img video {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      max-height: 560px;
+      object-fit: contain;
       display: block;
     }
     .hs-slide-text h3 {
@@ -1356,7 +1359,8 @@
       .hs-card-title { padding: 56px 0 28px; gap: 16px; flex-wrap: wrap; }
       .hs-card-title p { font-size: 15px; }
       .hs-slide { flex: 0 0 280px; }
-      .hs-slide-img { width: 280px; height: 360px; }
+      .hs-slide-img { width: 280px; max-height: 420px; }
+      .hs-slide-img img, .hs-slide-img video { max-height: 420px; }
       .hs-nav { display: none; }
     }
 
@@ -1634,7 +1638,7 @@
       </div>
 
       <!-- Card 03 — Ralph Lauren -->
-      <div class="hs-card" data-card="3">
+      <div class="hs-card open" data-card="3">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#1B2A3A">Ralph Lauren</span></h2>
           <p>One white cotton dress carried from studio to forest to shoreline — classic American ease.</p>
@@ -1697,7 +1701,7 @@
       </div>
 
       <!-- Card 04 — Anita Dongre -->
-      <div class="hs-card" data-card="4">
+      <div class="hs-card open" data-card="4">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#8B2635">Anita Dongre</span></h2>
           <p>Bridal couture rendered as editorial — a campaign world for one of India's defining luxury houses.</p>
@@ -1760,7 +1764,7 @@
       </div>
 
       <!-- Card 05 — Armra -->
-      <div class="hs-card" data-card="5">
+      <div class="hs-card open" data-card="5">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#C7A653">Armra</span></h2>
           <p>Colostrum-based wellness brand — clean, clinical, but with the warmth of real light.</p>
@@ -1844,7 +1848,7 @@
       </div>
 
       <!-- Card 06 — Barefoot Wines -->
-      <div class="hs-card" data-card="6">
+      <div class="hs-card open" data-card="6">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#7A1B2E">Barefoot Wines</span></h2>
           <p>Accessible wine brand shot for warmth, gatherings, and golden-hour ease.</p>
@@ -1907,7 +1911,7 @@
       </div>
 
       <!-- Card 07 — Chobani -->
-      <div class="hs-card" data-card="7">
+      <div class="hs-card open" data-card="7">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#2A6E3F">Chobani</span></h2>
           <p>Yogurt brand reimagined as a lifestyle world — fruit, light, and the texture of real food.</p>
@@ -1997,64 +2001,8 @@
         </div>
       </div>
 
-      <!-- Card 08 — David Harber -->
-      <div class="hs-card" data-card="8">
-        <div class="hs-card-title" onclick="toggleCard(this)">
-          <h2><span style="background:#3E3A36">David Harber</span></h2>
-          <p>Garden sculpture and sundials — precision craft shot as fine art.</p>
-          <button class="hs-toggle" aria-label="Toggle">&#43;</button>
-        </div>
-        <div class="hs-card-body">
-          <div class="hs-carousel">
-            <button class="hs-nav hs-prev" onclick="scrollCard(this,-1)" aria-label="Previous">&#8249;</button>
-            <button class="hs-nav hs-next" onclick="scrollCard(this,1)" aria-label="Next">&#8250;</button>
-            <div class="hs-track">
-        <div class="hs-slide">
-          <div class="hs-slide-img"><img src="images/davidharber/harber-1.png" alt="David Harber — Hero" loading="lazy"></div>
-          <div class="hs-slide-text">
-            <h3>Hero</h3>
-            <p>The hero frame — the campaign world established in one shot.</p>
-          </div>
-        </div>
-        <div class="hs-slide">
-          <div class="hs-slide-img"><img src="images/davidharber/harber-2.png" alt="David Harber — Garden" loading="lazy"></div>
-          <div class="hs-slide-text">
-            <h3>Garden</h3>
-            <p>Garden — sculpture in context.</p>
-          </div>
-        </div>
-        <div class="hs-slide">
-          <div class="hs-slide-img"><img src="images/davidharber/harber-3.png" alt="David Harber — Detail" loading="lazy"></div>
-          <div class="hs-slide-text">
-            <h3>Detail</h3>
-            <p>Detail frame — texture, craft, and material close-up.</p>
-          </div>
-        </div>
-        <div class="hs-slide">
-          <div class="hs-slide-img"><img src="images/davidharber/harber-4.png" alt="David Harber — Sundial" loading="lazy"></div>
-          <div class="hs-slide-text">
-            <h3>Sundial</h3>
-            <p>Sundial — time as sculpture.</p>
-          </div>
-        </div>
-        <div class="hs-slide">
-          <div class="hs-slide-img"><img src="images/davidharber/harber-5.png" alt="David Harber — Brand" loading="lazy"></div>
-          <div class="hs-slide-text">
-            <h3>Brand</h3>
-            <p>Brand frame — identity, not just product.</p>
-          </div>
-        </div>
-            </div>
-          </div>
-          <div class="hs-impact">
-            <h3>Work Impact</h3>
-            <p>David Harber's sculpture was shot as fine art — five scenes positioning garden sundials as objects of precision and beauty, not product catalog.</p>
-          </div>
-        </div>
-      </div>
-
       <!-- Card 09 — Golden Rule -->
-      <div class="hs-card" data-card="9">
+      <div class="hs-card open" data-card="9">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#B8860B">Golden Rule</span></h2>
           <p>Craft spirits brand with a golden, warm visual identity.</p>
@@ -2131,7 +2079,7 @@
       </div>
 
       <!-- Card 10 — Smackin -->
-      <div class="hs-card" data-card="10">
+      <div class="hs-card open" data-card="10">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#D4471C">Smackin</span></h2>
           <p>Snack brand with bold, punchy, appetite-appeal-first imagery.</p>
@@ -2222,7 +2170,7 @@
       </div>
 
       <!-- Card 11 — Zero Lush -->
-      <div class="hs-card" data-card="11">
+      <div class="hs-card open" data-card="11">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#4A90A4">Zero Lush</span></h2>
           <p>Sparkling beverage brand — editorial, effervescent, and clean.</p>
@@ -2313,7 +2261,7 @@
       </div>
 
       <!-- Card 12 — Porsche -->
-      <div class="hs-card" data-card="12">
+      <div class="hs-card open" data-card="12">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#B0B0B0">Porsche</span></h2>
           <p>Porsche campaign — precision engineering as visual storytelling.</p>
@@ -2376,7 +2324,7 @@
       </div>
 
       <!-- Card 13 — Ford Bronco -->
-      <div class="hs-card" data-card="13">
+      <div class="hs-card open" data-card="13">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#3D5620">Ford Bronco</span></h2>
           <p>Ford Bronco — off-road heritage shot as adventure lifestyle.</p>
@@ -2425,7 +2373,7 @@
       </div>
 
       <!-- Card 14 — Makers Mark -->
-      <div class="hs-card" data-card="14">
+      <div class="hs-card open" data-card="14">
         <div class="hs-card-title" onclick="toggleCard(this)">
           <h2><span style="background:#8B4513">Makers Mark</span></h2>
           <p>Bourbon brand — craft, heritage, and the warmth of the barrel.</p>
@@ -2469,76 +2417,6 @@
           <div class="hs-impact">
             <h3>Work Impact</h3>
             <p>Maker's Mark campaign was shot with matching stills and motion — four scenes covering the full bourbon ritual from barrel to pour.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 15 — Fizz Soda -->
-      <div class="hs-card" data-card="15">
-        <div class="hs-card-title" onclick="toggleCard(this)">
-          <h2><span style="background:#E8552A">Fizz Soda</span></h2>
-          <p>Sparkling soda — effervescent, colorful, built for the feed.</p>
-          <button class="hs-toggle" aria-label="Toggle">&#43;</button>
-        </div>
-        <div class="hs-card-body">
-          <div class="hs-carousel">
-            <button class="hs-nav hs-prev" onclick="scrollCard(this,-1)" aria-label="Previous">&#8249;</button>
-            <button class="hs-nav hs-next" onclick="scrollCard(this,1)" aria-label="Next">&#8250;</button>
-            <div class="hs-track">
-        <div class="hs-slide">
-          <div class="hs-slide-img"><video autoplay loop muted playsinline poster="campaigns/web/fizz-soda.jpg"><source src="campaigns/web/fizz-soda.mp4" type="video/mp4"></video></div>
-          <div class="hs-slide-text">
-            <h3>Hero</h3>
-            <p>The hero frame — the campaign world established in one shot.</p>
-          </div>
-        </div>
-            </div>
-          </div>
-          <div class="hs-impact">
-            <h3>Work Impact</h3>
-            <p>Fizz Soda's campaign was built as a single motion-led hero — one shot designed to stop the scroll and carry the brand.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 16 — Outdoors -->
-      <div class="hs-card" data-card="16">
-        <div class="hs-card-title" onclick="toggleCard(this)">
-          <h2><span style="background:#2D5A27">Outdoors</span></h2>
-          <p>Outdoor lifestyle — movement, terrain, and the gear that gets you there.</p>
-          <button class="hs-toggle" aria-label="Toggle">&#43;</button>
-        </div>
-        <div class="hs-card-body">
-          <div class="hs-carousel">
-            <button class="hs-nav hs-prev" onclick="scrollCard(this,-1)" aria-label="Previous">&#8249;</button>
-            <button class="hs-nav hs-next" onclick="scrollCard(this,1)" aria-label="Next">&#8250;</button>
-            <div class="hs-track">
-        <div class="hs-slide">
-          <div class="hs-slide-img"><video autoplay loop muted playsinline poster="campaigns/web/outdoors/hero-run.jpg"><source src="campaigns/web/outdoors/hero-run.mp4" type="video/mp4"></video></div>
-          <div class="hs-slide-text">
-            <h3>Hero</h3>
-            <p>The hero frame — the campaign world established in one shot.</p>
-          </div>
-        </div>
-        <div class="hs-slide">
-          <div class="hs-slide-img"><video autoplay loop muted playsinline poster="campaigns/web/outdoors/mud-running.jpg"><source src="campaigns/web/outdoors/mud-running.mp4" type="video/mp4"></video></div>
-          <div class="hs-slide-text">
-            <h3>Terrain</h3>
-            <p>Terrain — ground, grit, and grip.</p>
-          </div>
-        </div>
-        <div class="hs-slide">
-          <div class="hs-slide-img"><video autoplay loop muted playsinline poster="campaigns/web/outdoors/shady-rays-arcteryx.jpg"><source src="campaigns/web/outdoors/shady-rays-arcteryx.mp4" type="video/mp4"></video></div>
-          <div class="hs-slide-text">
-            <h3>Brand</h3>
-            <p>Brand frame — identity, not just product.</p>
-          </div>
-        </div>
-            </div>
-          </div>
-          <div class="hs-impact">
-            <h3>Work Impact</h3>
-            <p>The Outdoors campaign was built across three motion scenes — running, terrain, and brand crossover — designed for social-first consumption.</p>
           </div>
         </div>
       </div>
