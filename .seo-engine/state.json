@@ -1,9 +1,14 @@
 {
-  "next_index": 24,
-  "last_published_slug": "heritage-apparel-brand-archive-campaign-and-modern-relaunch",
-  "last_published_date": "2026-06-21",
-  "queue_status": "exhausted at 23 entries; 6/19 bridal authored outside queue against P21 NEW; 6/20 multi-brand portfolio authored outside queue against P14 (32-day legacy gap); 6/21 heritage-apparel-archive-as-spine authored outside queue against P07 (24-day legacy gap, first post-pivot use) as sixteenth post-pivot apparel sub-segment — extend topics.json before next run",
+  "next_index": 25,
+  "last_published_slug": "outerwear-and-cold-weather-apparel-campaign-and-lookbook-imagery",
+  "last_published_date": "2026-06-27",
+  "queue_status": "exhausted at 23 entries; 6/19 bridal authored outside queue against P21 NEW; 6/20 multi-brand portfolio authored outside queue against P14 (32-day legacy gap); 6/21 heritage-apparel-archive-as-spine authored outside queue against P07 (24-day legacy gap, first post-pivot use); 6/27 outerwear-and-cold-weather-capsule authored outside queue against P13 (29-day legacy gap, second post-pivot use after 5/29 brand-world; seventeenth post-pivot apparel sub-segment) — extend topics.json before next run",
   "history": [
+    {
+      "date": "2026-06-27",
+      "slug": "outerwear-and-cold-weather-apparel-campaign-and-lookbook-imagery",
+      "h1": "Cold-weather outerwear photography that holds the down loft, the wool drape and the layering hierarchy."
+    },
     {
       "date": "2026-06-21",
       "slug": "heritage-apparel-brand-archive-campaign-and-modern-relaunch",
@@ -47,7 +52,7 @@
     {
       "date": "2026-05-12",
       "slug": "amazon-main-image-photography-that-passes-the-1000x1000-test",
-      "h1": "Amazon Main Image Photography That Passes the 1000\u00d71000 Test"
+      "h1": "Amazon Main Image Photography That Passes the 1000×1000 Test"
     },
     {
       "date": "2026-05-13",
@@ -97,7 +102,7 @@
     {
       "date": "2026-05-22",
       "slug": "ai-photography-for-fragrance-brands-glass-reflection-and-light",
-      "h1": "AI Photography for Fragrance Brands \u2014 Glass, Reflection, and Light"
+      "h1": "AI Photography for Fragrance Brands — Glass, Reflection, and Light"
     },
     {
       "date": "2026-05-23",
@@ -107,7 +112,7 @@
     {
       "date": "2026-05-24",
       "slug": "color-accuracy-in-ai-product-photography-pantone-and-pdp-trust",
-      "h1": "Color Accuracy in AI Product Photography \u2014 Pantone, PDPs, and Returns"
+      "h1": "Color Accuracy in AI Product Photography — Pantone, PDPs, and Returns"
     },
     {
       "date": "2026-05-25",
