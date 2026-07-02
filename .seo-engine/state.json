@@ -1,9 +1,14 @@
 {
-  "next_index": 27,
-  "last_published_slug": "intimates-and-loungewear-apparel-campaign-and-editorial-imagery",
-  "last_published_date": "2026-07-01",
-  "queue_status": "exhausted at 23 entries; 6/19 bridal outside queue against P21 NEW; 6/20 multi-brand portfolio outside queue against P14 (32d gap); 6/21 heritage-apparel-archive outside queue against P07 (24d gap, first post-pivot use); 6/27 outerwear-cold-weather outside queue against P13 (29d gap, second post-pivot use); 6/28 brand-spine-recovery-after-failed-AI-vendor outside queue against P09 (51-day legacy gap from 5/8, first post-pivot use; eighteenth post-pivot apparel sub-segment); 6/29 workwear-and-heritage-americana outside queue against P17 (27d gap from 6/02, second post-pivot use; nineteenth post-pivot apparel sub-segment); 7/01 intimates-and-loungewear outside queue against P22 NEW (first-use, twentieth post-pivot apparel sub-segment, first intimates/loungewear coverage on the site) — extend topics.json before next run",
+  "next_index": 28,
+  "last_published_slug": "denim-brand-campaign-and-editorial-for-premium-labels",
+  "last_published_date": "2026-07-02",
+  "queue_status": "exhausted at 23 entries; 6/19 bridal outside queue against P21 NEW; 6/20 multi-brand portfolio outside queue against P14 (32d gap); 6/21 heritage-apparel-archive outside queue against P07 (24d gap, first post-pivot use); 6/27 outerwear-cold-weather outside queue against P13 (29d gap, second post-pivot use); 6/28 brand-spine-recovery-after-failed-AI-vendor outside queue against P09 (51-day legacy gap from 5/8, first post-pivot use; eighteenth post-pivot apparel sub-segment); 6/29 workwear-and-heritage-americana outside queue against P17 (27d gap from 6/02, second post-pivot use; nineteenth post-pivot apparel sub-segment); 7/01 intimates-and-loungewear outside queue against P22 NEW (first-use, twentieth post-pivot apparel sub-segment, first intimates/loungewear coverage on the site); 7/02 denim-brand-campaign-and-editorial-for-premium-labels pulled from queue index 21 against P15 (17-day gap from 6/15 luxury-campaign, third post-pivot use; twenty-first post-pivot apparel sub-segment as premium-denim-editorial, distinct from 5/21 volume-PDP-denim-photography-at-scale and 6/29 workwear-heritage-Americana Levi's-Vintage-adjacency) — extend topics.json before next run",
   "history": [
+    {
+      "date": "2026-07-02",
+      "slug": "denim-brand-campaign-and-editorial-for-premium-labels",
+      "h1": "Premium denim brand campaign photography that reads at the wash provenance, not at the wordmark."
+    },
     {
       "date": "2026-07-01",
       "slug": "intimates-and-loungewear-apparel-campaign-and-editorial-imagery",
