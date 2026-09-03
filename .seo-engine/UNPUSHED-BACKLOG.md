@@ -1,98 +1,69 @@
-# Unpushed backlog — needs a manual `git push` on next opportunity
+# Unpushed backlog — needs a manual `git push`
 
-**Last updated:** 2026-05-26 (auto-written by the daily run on this date)
+**Last updated:** 2026-09-03 (auto-written by the daily run)
 
-## What happened
+## Status: 2 articles written + validated locally, BLOCKED on git auth (day 2)
 
-The 2026-05-26 scheduled run wrote today's article, validated it, and updated state.json / MEMORY.md / sitemap.xml correctly — but the **git push step could not complete** because the sandbox shell hit a persistent `no space left on device` error on the host coordination filesystem (`/etc/srt-settings`). The local clone at `/Users/home/100creatives` also has the documented stuck `.git/*.lock` files (sandbox mount permission issue), so the primary push path was unavailable too. The fallback `/tmp clone` path could not run because every shell invocation died on the same RPC error.
+`origin/main` is still at `c0a00b6`. Neither article below is live. Vercel has not deployed them.
 
-Same root cause appears to have hit the 2026-05-24 and 2026-05-25 runs — both wrote articles locally that never reached origin/main.
+### What's ready but not on origin
 
-## What's on local mount but not on origin
+1. `eyewear-and-sunglasses-brand-campaign-and-editorial-imagery.html` — 2026-09-02, P25 (DTC Eyewear Founder), apparel/eyewear sub-segment, ~10,470 words.
+2. `size-inclusive-apparel-brand-campaign-and-editorial-imagery.html` — 2026-09-03, P26 (Extended-Range / Size-Inclusive Head of Brand), apparel/size-inclusive sub-segment, 5,889 wc -w (~3,800 visible words).
+   - Pre-flight: 4/4 JSON-LD blocks valid, title 59 chars, meta description 145 chars, 12/12 internal links resolve, 4/4 image paths resolve, 8/8 FAQ answers match FAQPage JSON-LD verbatim (86–105 words each), IntersectionObserver present, sitemap.xml parses at 169 URLs.
 
-Three article HTML files are written, validated, and registered in `sitemap.xml` + `state.json` + `MEMORY.md`, but missing from `origin/main`:
+`sitemap.xml`, `.seo-engine/state.json` (next_index 24), `.seo-engine/topics.json` (extended 23 → 28), and `.seo-engine/MEMORY.md` are all updated and consistent with both articles.
 
-1. `color-accuracy-in-ai-product-photography-pantone-and-pdp-trust.html` — 2026-05-24, P03, beauty/cross-vertical
-2. `ai-vs-3d-rendering-for-cpg-and-beverage-brands.html` — 2026-05-25, P04, food-bev
-3. `lifestyle-photography-without-the-location-scout.html` — 2026-05-26, P05, geo (today's run)
+### The two blockers (unchanged from 2026-09-02)
 
-The `.seo-engine/` files (`state.json`, `MEMORY.md`, `topics.json`) all reflect the post-2026-05-26 state. `sitemap.xml` includes all three new `<url>` entries.
+1. **No git push credentials.** `remote.origin.url` is the bare
+   `https://github.com/Abhichawla99/100creatives.git`. No PAT, no credential helper, no
+   `~/.netrc`, no `GITHUB_TOKEN`/`GH_TOKEN`, no `gh` CLI. Clone and fetch work (public repo);
+   push fails with `could not read Username for 'https://github.com'`.
+2. **Stuck `.git/index.lock`** in the local clone at `/Users/home/100creatives`. `rm` returns
+   `Operation not permitted` from the sandbox mount, so even a local commit can't be made there.
+   (The `/tmp` clone fallback in `publish.sh` routes around this — it only fails on blocker #1.)
 
-## Recovery procedure
-
-Run this from a working shell (Cowork or local) when the sandbox infrastructure recovers. The local-clone primary path will probably still fail on the `.git/*.lock` issue, so go straight to the `/tmp` fallback clone approach. The repo's GitHub auth token is embedded in `.git/config` — read it from there, never hard-code it:
+## Recovery — run from Terminal on the Mac
 
 ```bash
-REPO=/Users/home/100creatives
-TMPDIR=/tmp/100c-publish-recovery
-REMOTE_URL=$(cd $REPO && git config --get remote.origin.url)
+cd /Users/home/100creatives
 
-rm -rf $TMPDIR
-git clone "$REMOTE_URL" $TMPDIR
-cd $TMPDIR
-git config user.name "100Creatives SEO Bot"
-git config user.email "abhixchawla@gmail.com"
+# 1. Clear the stuck lock (needs a real shell, not the sandbox)
+rm -f .git/index.lock .git/HEAD.lock .git/refs/remotes/origin/main.lock
 
-# Copy the three backlog articles
-cp $REPO/color-accuracy-in-ai-product-photography-pantone-and-pdp-trust.html $TMPDIR/
-cp $REPO/ai-vs-3d-rendering-for-cpg-and-beverage-brands.html $TMPDIR/
-cp $REPO/lifestyle-photography-without-the-location-scout.html $TMPDIR/
+# 2. Restore push auth with a fresh GitHub PAT (repo scope)
+git remote set-url origin "https://Abhichawla99:NEW_TOKEN@github.com/Abhichawla99/100creatives.git"
 
-# Copy updated sitemap and entire .seo-engine/
-cp $REPO/sitemap.xml $TMPDIR/sitemap.xml
-mkdir -p $TMPDIR/.seo-engine
-cp -r $REPO/.seo-engine/. $TMPDIR/.seo-engine/
-
-# .gitignore if it exists
-[ -f $REPO/.gitignore ] && cp $REPO/.gitignore $TMPDIR/.gitignore
-
+# 3. Commit + push both articles
 git add -A
-git commit -m "SEO: catch-up publish — 2026-05-24, 2026-05-25, 2026-05-26 articles
-
-Publishes three articles that were written locally but never reached origin
-due to sandbox infrastructure failures:
-  - color-accuracy-in-ai-product-photography-pantone-and-pdp-trust (2026-05-24, P03)
-  - ai-vs-3d-rendering-for-cpg-and-beverage-brands (2026-05-25, P04)
-  - lifestyle-photography-without-the-location-scout (2026-05-26, P05)
-
-Also updates sitemap.xml and the .seo-engine/ state files."
-
+git commit -m "SEO: publish eyewear (P25) and size-inclusive (P26) apparel campaign articles"
 git push origin main
-
-# Then ping IndexNow for the three URLs:
-curl -s -X POST "https://api.indexnow.org/IndexNow" \
-  -H "Content-Type: application/json; charset=utf-8" \
-  -d '{
-    "host": "100creatives.com",
-    "key": "e6baf767262d12f58083a712d380812b",
-    "keyLocation": "https://100creatives.com/e6baf767262d12f58083a712d380812b.txt",
-    "urlList": [
-      "https://100creatives.com/color-accuracy-in-ai-product-photography-pantone-and-pdp-trust.html",
-      "https://100creatives.com/ai-vs-3d-rendering-for-cpg-and-beverage-brands.html",
-      "https://100creatives.com/lifestyle-photography-without-the-location-scout.html",
-      "https://100creatives.com/sitemap.xml"
-    ]
-  }'
-
-rm -rf $TMPDIR
 ```
 
-## Once recovery is done
+## After the push
 
-Delete this file (`/Users/home/100creatives/.seo-engine/UNPUSHED-BACKLOG.md`) and request GSC indexing for the three URLs (only ~10–20 requests/day allowed, so submit all three).
+Vercel auto-deploys in 30–60s. Then:
 
-## Pre-flight validation already passed for 2026-05-26 article
+```bash
+sleep 45
+curl -sS -X POST https://api.indexnow.org/IndexNow \
+  -H 'Content-Type: application/json' \
+  -d '{"host":"100creatives.com","key":"e6baf767262d12f58083a712d380812b","keyLocation":"https://100creatives.com/e6baf767262d12f58083a712d380812b.txt","urlList":["https://100creatives.com/eyewear-and-sunglasses-brand-campaign-and-editorial-imagery.html","https://100creatives.com/size-inclusive-apparel-brand-campaign-and-editorial-imagery.html","https://100creatives.com/sitemap.xml"]}' -w '\nHTTP %{http_code}\n'
+```
 
-- Word count: 3,968 (visible body) — within 2,500–4,000 ✓
-- All 3 JSON-LD blocks parse as valid JSON ✓
-- 10 FAQ Q&As — visible markup matches FAQPage JSON-LD verbatim ✓
-- All 13 internal links resolve to existing `.html` files in the repo ✓
-- All 5 image src files exist (`/campaigns/web/ford-bronco/*` and `/campaigns/web/outdoors/*`) ✓
-- Every image has descriptive alt text with the primary keyword ✓
-- Persona P05 unused for 15 days (last 2026-05-11) — at boundary, eligible ✓
-- Vertical `geo` — yesterday was `food-bev`, no 3-in-a-row violation ✓
-- "Last updated: 2026-05-26" visible on page ✓
-- Sitemap.xml updated with new `<url>` entry ✓
-- MEMORY.md appended with full entry + rolling-stat updates ✓
+Then request indexing for both URLs in Google Search Console → URL Inspection.
 
-The article is shippable. It's only the network push that didn't run.
+## Fixed in this run
+
+`publish.sh` had a bug that made it print `✓ Published via fallback` even when the push failed —
+which is why the 2026-09-02 run looked successful. Two changes:
+
+- The fallback path now checks the exit status of `git push` and returns failure loudly instead of
+  claiming success.
+- The fallback `/tmp` clone now sweeps in any repo-root `.html` article that isn't already on
+  origin, so once auth is restored a single run ships the whole backlog rather than only that
+  day's article.
+
+**Until the PAT is restored, every daily run will hit this same wall and the backlog will keep
+growing.** Fixing step 2 once unblocks the whole engine.

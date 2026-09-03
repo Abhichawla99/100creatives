@@ -549,6 +549,134 @@
         "anitadongre"
       ],
       "published": "2026-06-17"
+    },
+    {
+      "slug": "size-inclusive-apparel-brand-campaign-and-editorial-imagery",
+      "persona": "P26",
+      "vertical": "apparel",
+      "sub_segment": "size-inclusive / extended sizing",
+      "angle": "Size-anchor registration as the brand spine for a 00-32 range: four named anchors, one locked roster identity per anchor, grade rule as pass-fail input.",
+      "intent": "commercial / citation-bait",
+      "primary_keyword": "size inclusive apparel campaign photography",
+      "secondary_keywords": [
+        "extended sizing photography",
+        "plus size apparel campaign imagery",
+        "size anchor photography",
+        "extended size range lookbook",
+        "inclusive fit photography"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "on-model-photography-at-scale.html",
+        "ai-fashion-models-vs-real-models.html",
+        "scale-ecommerce-apparel-photography.html",
+        "wholesale-lookbook-and-linesheet-imagery.html",
+        "best-ai-product-photography-agency-for-dtc-brands.html"
+      ],
+      "image_hints": [
+        "aritzia",
+        "veronica-beard"
+      ]
+    },
+    {
+      "slug": "adaptive-apparel-brand-campaign-and-editorial-imagery",
+      "persona": "P27",
+      "vertical": "apparel",
+      "sub_segment": "adaptive / disability-inclusive apparel",
+      "angle": "Adaptive apparel campaign imagery where the closure mechanic (magnetic, seated-fit, port-access, one-handed) is the hero frame, not a caption.",
+      "intent": "commercial",
+      "primary_keyword": "adaptive apparel campaign photography",
+      "secondary_keywords": [
+        "adaptive clothing photography",
+        "disability inclusive fashion imagery",
+        "seated fit apparel photography",
+        "magnetic closure apparel imagery"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "on-model-photography-at-scale.html",
+        "best-ai-product-photography-agency-for-dtc-brands.html"
+      ],
+      "image_hints": [
+        "aritzia",
+        "ralphlauren"
+      ]
+    },
+    {
+      "slug": "headwear-and-cap-brand-campaign-and-editorial-imagery",
+      "persona": "P28",
+      "vertical": "apparel",
+      "sub_segment": "headwear / caps / hats",
+      "angle": "Headwear campaign imagery that reads at crown height, brim curve and panel structure across head shapes \u2014 the tightest fit-registration problem in accessories.",
+      "intent": "commercial",
+      "primary_keyword": "headwear brand campaign photography",
+      "secondary_keywords": [
+        "cap brand photography",
+        "hat campaign imagery",
+        "headwear PDP photography",
+        "five panel cap photography"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "ai-fashion-photography.html",
+        "wholesale-lookbook-and-linesheet-imagery.html",
+        "best-ai-product-photography-agency-for-dtc-brands.html"
+      ],
+      "image_hints": [
+        "ralphlauren",
+        "outdoors"
+      ]
+    },
+    {
+      "slug": "maternity-apparel-brand-campaign-and-editorial-imagery",
+      "persona": "P29",
+      "vertical": "apparel",
+      "sub_segment": "maternity / postpartum apparel",
+      "angle": "Maternity campaign imagery that renders the same style across trimester anchors and postpartum, so the customer sees the garment at her actual week.",
+      "intent": "commercial",
+      "primary_keyword": "maternity apparel campaign photography",
+      "secondary_keywords": [
+        "maternity brand photography",
+        "postpartum apparel imagery",
+        "nursing apparel photography",
+        "bump fit photography"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "intimates-and-loungewear-apparel-campaign-and-editorial-imagery.html",
+        "on-model-photography-at-scale.html",
+        "best-ai-product-photography-agency-for-dtc-brands.html"
+      ],
+      "image_hints": [
+        "aritzia",
+        "veronica-beard"
+      ]
+    },
+    {
+      "slug": "uniform-and-team-apparel-brand-campaign-imagery",
+      "persona": "P30",
+      "vertical": "apparel",
+      "sub_segment": "uniform / corporate / team apparel",
+      "angle": "Uniform and team apparel imagery where decoration placement, embroidery register and cross-role consistency are the spec \u2014 not the styling.",
+      "intent": "commercial",
+      "primary_keyword": "uniform apparel campaign photography",
+      "secondary_keywords": [
+        "team apparel photography",
+        "corporate uniform imagery",
+        "embroidery placement photography",
+        "workwear uniform catalog photography"
+      ],
+      "suggested_internal_links": [
+        "apparel-ad-creatives.html",
+        "workwear-and-heritage-americana-campaign-imagery.html",
+        "wholesale-lookbook-and-linesheet-imagery.html",
+        "best-ai-product-photography-agency-for-dtc-brands.html"
+      ],
+      "image_hints": [
+        "ralphlauren",
+        "outdoors"
+      ]
     }
   ]
 }

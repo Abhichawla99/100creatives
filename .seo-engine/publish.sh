@@ -71,6 +71,12 @@ push_via_tmp_clone() {
   # Copy the article + sitemap + entire .seo-engine/ + .gitignore
   cp "$ARTICLE" "$TMPDIR/${SLUG}.html"
   cp "$SITEMAP" "$TMPDIR/sitemap.xml"
+
+  # Sweep in any earlier articles that were written locally but never reached origin
+  for f in "$REPO"/*.html; do
+    b="$(basename "$f")"
+    [ -f "$TMPDIR/$b" ] || { cp "$f" "$TMPDIR/$b"; echo "  + sweeping in unpushed backlog article: $b"; }
+  done
   mkdir -p "$TMPDIR/.seo-engine"
   cp -r "$REPO/.seo-engine/." "$TMPDIR/.seo-engine/"
   [ -f "$REPO/.gitignore" ] && cp "$REPO/.gitignore" "$TMPDIR/.gitignore"
@@ -83,7 +89,14 @@ push_via_tmp_clone() {
   fi
 
   git commit -m "$COMMIT_MSG"
-  git push origin main
+  if ! git push origin main; then
+    echo ""
+    echo "✗ PUSH FAILED — origin was NOT updated. The article is written locally but is NOT live."
+    echo "  Cause is almost always missing push credentials (bare remote URL, no PAT)."
+    echo "  See .seo-engine/UNPUSHED-BACKLOG.md for the recovery commands."
+    rm -rf "$TMPDIR"
+    return 1
+  fi
 
   # Clean up
   rm -rf "$TMPDIR"

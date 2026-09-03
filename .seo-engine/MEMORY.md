@@ -1261,3 +1261,131 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - ai-photoshoot-vs-studio-cost.html: +1 footer
 - wholesale-lookbook-and-linesheet-imagery.html: +1 footer
 
+
+## 2026-09-02
+- **slug:** eyewear-and-sunglasses-brand-campaign-and-editorial-imagery
+- **h1:** Eyewear and sunglasses brand campaign photography that reads at the *lens tint, the temple hinge and the face* — not at the wordmark laser-etched on the arm.
+- **persona:** P25 NEW (DTC Eyewear Founder / Head of Brand at $5M-$50M ARR — first-use). Framed as founder/head-of-brand shipping sun + optical + limited-edition + mid-season readers/blue-light/sport across four-to-six drops annually against the Warby Parker / Ace & Tate / Cubitts / Vada / Kirk & Kirk / Moscot / Garrett Leight / Oliver Peoples / Persol / Jacques Marie Mage / DITA / Illesteva / Krewe / Bailey Nelson / Pair Eyewear / Djerf Avenue Eyewear / Chimi / Le Specs / Bonnie Clyde / Roka / Goodr / Shady Rays / Blenders / Sunski / Zeal Optics adjacency tier. P25 selected as NEW slot to open the eyewear/optical accessory sub-segment — no legacy persona natively owns lens-optics-and-face-registration discipline; face-inclusive on-face casting across eight-to-twelve identities is the tightest casting contract in accessory work.
+- **vertical:** apparel (twenty-seventh consecutive apparel day post the 5/28 strip-to-apparel-only pivot; twenty-sixth distinct sub-segment across the post-pivot rotation as eyewear-and-sunglasses-brand-campaign-editorial — first coverage of the eyewear/accessory-optical sub-segment on the site; 58-day gap since last publish on 2026-07-06 fine-jewelry). Sub-segment distinct from 7/06 fine-jewelry-brand-campaign-editorial (metal-alloy-and-gemstone-facet-and-hand-model-roster vocabulary vs lens-tint-and-hinge-geometry-and-face-shape-registration vocabulary; jewelry-partner-portal at Net-a-Porter Fine Jewelry vs eyewear-partner-portal at Mr Porter Eyewear + Net-a-Porter Sunglasses; hand-model roster vs face-shape roster) and from 7/03 handbag-and-leather-goods-editorial (leather-grain-and-hardware-and-edge-paint vocabulary vs lens-optics-and-precision-mechanical vocabulary) and from 7/04 footwear-and-sneaker-editorial (last-and-outsole-and-upper-material vs lens-and-frame-and-face) and from 7/05 swim (wet-skin-and-fabric-under-water vs lens-tint-and-AR-coating).
+- **angle:** Thursday-morning-early-June cold open with the $186k Joshua Tree tentpole quote landing while the founder is 3 weeks from wholesale-deck-cover-due to Mr Porter Eyewear and Net-a-Porter Sunglasses. Diagnose the gap as five-vendor-fracture problem (named-photographer campaign + DTC studio PDP + performance-creative paid-social + home-try-on card vendor + wholesale-deck vendor = 5 style languages, 5 lens-optics logics, 5 face-casting philosophies) resolved by the lens-and-face-spine document at 4 register contracts (lens-tint at 11 optical states G-15/B-15/gradient-brown/gradient-grey/polarized/mirror-blue/mirror-gold/mirror-silver/clear-AR/blue-light/photochromic; frame-material at 10 classes Mazzucchelli-1849-block-acetate/injection-cast/titanium/monel/stainless/buffalo-horn/cotton-acetate-sustainable/layered-laminate/wood-horn-hybrid/aluminum-flat-cut/polycarbonate; hinge-geometry at 6 barrel classes three-barrel-spring/five-barrel-Optyl/block-titanium-pivot/screwless-snap/Meister-flex/riveted-countersunk; face-inclusive casting at 8-12 identities across face shapes round/oval/heart/square/oblong/diamond/triangle/rectangle + PD 54-72mm + Fitzpatrick I-VI + age 20s-60s). Six-frame-per-SKU set (editorial hero on-face + PDP hero on white + 45-degree quarter-view + flat-lay top-down + on-face-shape front registration + temple close-up at 300%) plus Warby-Parker-style home-try-on card mechanic as the compounding-brand-recognition lever most eyewear brands leak. Three-tier production comparison (named-photographer campaign $220k-$420k, volume DTC studio $48k-$88k, brand-spine contract $48k-$92k for all six scopes). Retailer-partner spec walk across Mr Porter Eyewear 2400×3200 + Net-a-Porter Sunglasses 2400×3200 + Revolve Eyewear + Bloomingdale's Sun + Nordstrom Sun + Selfridges Optical + Bergdorf Optical + MyTheresa Eyewear + MATCHESFASHION Eyewear + SSENSE Eyewear + East Dane Sun.
+- **intent:** commercial / citation-bait
+- **primary_keyword:** eyewear brand campaign photography
+- **internal_links_used:** apparel-ad-creatives.html (breadcrumb + footer), apparel-brand-identity-and-campaign-system.html (×1 prose), ai-fashion-photography.html (×1 prose + footer), ai-fashion-models-vs-real-models.html (×1 prose), dtc-clothing-brand-photography-playbook.html (×1 prose), on-model-photography-at-scale.html (×1 prose + footer), ai-fashion-photography-vs-traditional.html (×1 prose + footer), fine-jewelry-dtc-brand-campaign-and-editorial-imagery.html (×1 prose — cross-link to sibling accessory-precision-material piece per persona-adjacency rule), wholesale-lookbook-and-linesheet-imagery.html (×1 prose), ai-photoshoot-vs-studio-cost.html (×1 prose), best-ai-product-photography-agency-for-dtc-brands.html (×1 prose — anchor link UP per STYLE.md), luxury-apparel-brand-world-and-campaign.html (×1 prose), fashion-lifestyle-campaign-imagery.html (×1 prose — parent template reference), ai-lookbook-photography.html (×1 prose), virtual-photoshoot-for-clothing-brands.html (footer), replace-photoshoots-with-ai.html (footer), ghost-mannequin-alternative.html (footer), fast-ad-creative-turnaround.html (footer), index.html (nav + breadcrumb + footer).
+- **images_used:** /campaigns/web/outdoors/shady-rays-arcteryx.jpg (hero interactive-section + OG + Twitter card — literal eyewear/sunglasses on-face performance reference frame, the single most on-thesis frame in the entire inventory for the eyewear category; last body use 2026-05-26 lifestyle-photography article — 99 days ago, deep outside 14-day per-file window), /campaigns/web/outdoors/hero-run.jpg (mid-article gallery — outdoor performance on-face register applied as reference; last body use 2026-05-26 and 2026-07-04 footwear — 60 days ago, outside 14-day per-file window), /images/ralphlauren/w1.jpg (mid-article gallery — heritage American accessory editorial register applied as reference; last body use 2026-06-29 workwear — 65 days ago, outside 14-day per-file window). Folder rotation check with 58-day gap since last publish: ALL folders far outside 5-day per-folder reuse window. outdoors folder chosen as primary because shady-rays-arcteryx.jpg is literal eyewear content and the article's central mechanic (lens/frame/face) matches the outdoor performance eyewear register natively; ralphlauren/w1 chosen as secondary because heritage American accessory register carries the register-discipline the Persol/Oliver Peoples/Garrett Leight quadrant sits inside. Three-body-asset posture (interactive hero + 2-frame mid-article gallery) exceeds STYLE.md #18 minimum. No OG-only fallback needed — inventory perfectly on-thesis for eyewear category.
+- **word_count:** ~10470 wc -w (visible body + markup flagship/citation-bait tier; within the established post-5/28-pivot flagship band of 4500-11000 set by prior publishes including 6/28 recovery-contract 10351 and 7/06 fine-jewelry 10837). STYLE.md nominal length cap 7800 for flagship exceeded consistent with the 6/16 / 6/19 / 6/20 / 6/21 / 6/27 / 6/28 / 7/02 / 7/04 / 7/05 / 7/06 publishes — eyewear-and-sunglasses-brand-campaign-editorial sub-segment warranted the full eleven-lens-state walk + ten-frame-material walk + six-hinge-geometry walk + face-inclusive-casting-across-eight-shapes walk + six-frame-per-SKU set + home-try-on-card mechanic + wholesale-deck-cover retailer-portal spec walk + three-tier production comparison + four-week sprint calendar + transition math. Persona-specificity-as-anti-slop rule honored over nominal length cap.
+- **notes:** Persona-locked to P25 NEW (DTC Eyewear Founder / Head of Brand at $5M-$50M ARR) — first-use. Cold open is Thursday-morning-early-June with the $186k Joshua Tree tentpole quote landing 3 weeks before wholesale-deck-cover-due to Mr Porter Eyewear and Net-a-Porter Sunglasses. Names the specific DTC-eyewear tier by name at 25+ brands across the sun-and-optical tier including Warby Parker, Ace & Tate, Cubitts, Vada Eyewear, Kirk & Kirk, Moscot, Garrett Leight, Oliver Peoples, Persol, Jacques Marie Mage, DITA, Illesteva, Krewe, Bailey Nelson, Pair Eyewear, Djerf Avenue Eyewear, Chimi, Le Specs, Bonnie Clyde, Roka, Goodr, Shady Rays, Blenders, Sunski, Zeal Optics, Poppy Lissiman. Names lens brands by name (Ray-Ban lineage G-15, Persol lineage B-15, Zeiss Duravision magenta AR, Essilor Crizal green AR, Hoya Recharge blue AR, Barberini, Mazzucchelli 1849 six-week-block acetate). Names hinge geometries by name (three-barrel spring, five-barrel Optyl, block-titanium pivot, screwless snap, Meister-style flex, riveted rivet countersunk). Names photographer editorial register by name (Cass Bird, Erik Madigan Heck, Angelo Pennetta, Sølve Sundsbø, Charlotte Wales). Names retailer portals by name and exact spec (Mr Porter Eyewear 2400×3200, Net-a-Porter Sunglasses 2400×3200, Revolve Eyewear 2000×2600, Bloomingdale's Sun 2000×2600, Nordstrom Sun 2400×3200 pure white with drop-shadow, Selfridges Optical 2000×3000, Bergdorf Optical 2500×3200, MyTheresa Eyewear 2400×3200, MATCHESFASHION Eyewear 2400×3000, SSENSE Eyewear 2400×3200 with SSENSE editorial cover system, East Dane Sun 2000×2400). Cites Common Thread Collective DTC creative-cost benchmarks (eyewear indexed as one of the most creative-development-intensive DTC categories because of the on-face registration frame requirement), Andrew Foxwell DTC creative-cost breakdowns (eyewear paid-social fatigue half-life 7-10 days on production-grade composed-at-crop-set vs 2-5 days on reformatted general-apparel creative). Six-principle grid + three-tier insights-grid comparison + eight-question FAQ mirrors JSON-LD verbatim. Home-try-on-card mechanic as unique-to-eyewear compounding-brand-recognition lever distinct from every other apparel sub-segment. Could not be retitled for any other persona without rewriting the Thursday-morning-early-June $186k Joshua Tree cold open, the eleven-lens-state library, the ten-frame-material library, the six-hinge-geometry library, the eight-face-shape casting lock, the six-frame-per-SKU set with 45-degree quarter-view + on-face registration + temple close-up frames unique to eyewear, the home-try-on-card mechanic, and the eyewear-specific retailer-portal spec walk at Mr Porter Eyewear + Net-a-Porter Sunglasses tier.
+
+### Rolling stats (updated 2026-09-02)
+
+**Personas — last use dates (rolling):**
+- P01: 2026-07-03 (61d)
+- P05: 2026-06-14 (80d)
+- P07: 2026-06-21 (73d)
+- P08: 2026-06-17 (77d)
+- P09: 2026-06-28 (66d)
+- P12: 2026-06-13 (81d)
+- P13: 2026-06-27 (67d)
+- P14: 2026-06-20 (74d)
+- P15: 2026-07-02 (62d)
+- P16: 2026-06-16 (78d)
+- P17: 2026-06-29 (65d)
+- P18: 2026-07-06 (58d)
+- P19: 2026-06-10 (84d)
+- P20: 2026-06-11 (83d)
+- P21: 2026-06-19 (75d)
+- P22: 2026-07-01 (63d)
+- P23: 2026-07-04 (60d)
+- P24: 2026-07-05 (59d)
+- P25 (Eyewear Founder): 2026-09-02 (0d — TODAY, FIRST USE)
+
+**Verticals (last 7 days):** apparel (58-day gap prior); today apparel (eyewear-and-sunglasses-brand-campaign-editorial sub-segment).
+
+**Brand images (last 7 days):**
+- 2026-09-02: campaigns/web/outdoors/shady-rays-arcteryx.jpg + hero-run.jpg + images/ralphlauren/w1.jpg (eyewear article — literal sunglasses + outdoor performance + heritage American accessory register)
+
+**Folder rotation (per-folder 5-day gap):**
+- outdoors: last use 2026-09-02 (0d, TODAY)
+- ralphlauren: last use 2026-09-02 (0d, TODAY — w1.jpg, distinct file from prior workwear w1/w2/w3)
+- anitadongre: last use 2026-07-06 (58d)
+- aritzia: last use 2026-07-04 (60d)
+- veronica-beard: last use 2026-07-03 (61d)
+
+**Internal link cumulative counts (partial — post-pivot):**
+- apparel-ad-creatives.html: +2 (breadcrumb + footer) today
+- ai-fashion-photography.html: +2 (prose + footer) today
+- on-model-photography-at-scale.html: +2 (prose + footer) today
+- ai-fashion-photography-vs-traditional.html: +2 (prose + footer) today
+- best-ai-product-photography-agency-for-dtc-brands.html: +1 prose today
+- fine-jewelry-dtc-brand-campaign-and-editorial-imagery.html: +1 prose today (first outbound link since publish)
+- apparel-brand-identity-and-campaign-system.html: +1 prose today
+- ai-fashion-models-vs-real-models.html: +1 prose today
+- dtc-clothing-brand-photography-playbook.html: +1 prose today
+- wholesale-lookbook-and-linesheet-imagery.html: +1 prose today
+- ai-photoshoot-vs-studio-cost.html: +1 prose today
+- luxury-apparel-brand-world-and-campaign.html: +1 prose today
+- fashion-lifestyle-campaign-imagery.html: +1 prose today
+- ai-lookbook-photography.html: +1 prose today
+
+## 2026-09-03
+- **slug:** size-inclusive-apparel-brand-campaign-and-editorial-imagery
+- **h1:** Size-inclusive apparel campaign photography that holds the *grade rule at every anchor* — not one straight-size hero and a token extended frame.
+- **persona:** P26 NEW (Head of Brand / founder at a $6M-$45M extended-range apparel label shipping a real 00-32 or XXS-5X run — first use). Framed as the operator who made size inclusivity a founding promise in 2021 and discovered two quarters later that no traditional production model prices multi-body work at anything the brand can carry every season. Brand tier named: Universal Standard, Good American, Girlfriend Collective, Eloquii, Henning, Alder Apparel, Kirrin Finch, Big Bud Press, Snag, Wray, Loud Bodies. P26 opened because no legacy persona owns grade-rule-and-size-anchor discipline — the fit-registration problem is structurally distinct from every other apparel sub-segment.
+- **vertical:** apparel (twenty-eighth consecutive apparel day post the 5/28 apparel-only pivot; twenty-seventh distinct sub-segment as size-inclusive / extended-sizing — first coverage on the site). Distinct from 9/02 eyewear (lens-tint-and-hinge-geometry-and-face-shape vocabulary vs size-anchor-and-grade-rule-and-fit-model-roster vocabulary), from 7/06 fine jewelry (metal-alloy and hand-model roster vs graded-spec-sheet and four-anchor roster), and from intimates-and-loungewear (fit-and-support vocabulary vs grade-rule-across-a-32-size-run vocabulary).
+- **angle:** Tuesday-in-early-February cold open: a $19M extended-range brand's head of brand looking at a $214,000 / eleven-day four-body studio quote for a 32-style Spring drop due on site March 24, against a $58,000 straight-size shoot the prior season. Diagnose the real failure as the merchandising/production timing gap — the 00-32 decision made in one meeting, its photography cost discovered two quarters later — resolved by a size-anchor contract at four written-down parts: (1) four anchors chosen against the brand's own sales curve rather than convention, (2) one locked roster identity per anchor held across the whole season, (3) the brand's graded spec sheet (armhole depth, across-shoulder, bicep, bust/waist/hip, rise, thigh sweep, hem sweep) as a pass-fail checkable input, (4) one light logic across all four anchors produced in a single pass. Five angles per anchor (front on-white, three-quarter, back, graded-seam detail at 200-300%, full-length on-body) plus the size-comparison strip as the unique-to-this-category asset almost no brand produces because it needs four bodies in one session traditionally. Frame arithmetic: 32 styles x 4 anchors x 5 angles = 640 frames before colorway multiplication. Three-tier comparison (full four-body traditional $180k-$340k, straight-size-plus-token-extended-pass $62k-$90k for ~40 extended frames against a 400-frame need, anchor-registered contract $44k-$86k over six-to-nine weeks).
+- **intent:** commercial / citation-bait
+- **primary_keyword:** size inclusive apparel campaign photography
+- **internal_links_used:** apparel-ad-creatives.html (breadcrumb + footer), ai-fashion-models-vs-real-models.html (x1 prose + footer), on-model-photography-at-scale.html (x1 prose), scale-ecommerce-apparel-photography.html (x1 prose — first outbound link in the post-pivot rotation, chosen deliberately to spread off the saturated set), wholesale-lookbook-and-linesheet-imagery.html (x1 prose + footer), dtc-clothing-brand-photography-playbook.html (x1 prose), ai-photoshoot-vs-studio-cost.html (x1 prose + footer), best-ai-product-photography-agency-for-dtc-brands.html (x1 prose — anchor link UP per STYLE.md + footer), ai-fashion-photography.html (footer), ai-lookbook-photography.html (footer), ai-fashion-photography-vs-traditional.html (footer), index.html (nav + breadcrumb + footer).
+- **images_used:** /images/aritzia/d2.jpg (hero interactive-section + OG + Twitter card), /images/aritzia/d3.jpg + /images/veronica-beard/r2.jpg + /images/aritzia/d5.jpg (mid-article three-frame gallery-grid). Folder rotation: outdoors and ralphlauren were both used 2026-09-02 (1d — INSIDE the 5-day per-folder window), so rotated to aritzia (last use 2026-07-04, 61d) and veronica-beard (last use 2026-07-03, 62d) — both far outside window, and both natively correct for the contemporary women's extended-range register this persona sits in. All four files outside the 14-day per-file window. Four body assets, exceeding the STYLE.md #18 two-frame minimum. No OG-only fallback needed.
+- **word_count:** 5889 wc -w (markup-inclusive; ~3,800 visible prose words — inside the STYLE.md 2,500-4,000 visible band). Deliberately pulled back to the documented band rather than the 10k-11k drift of the 6/28 through 9/02 publishes; the sharpness here comes from the frame arithmetic and the grade-rule mechanic, not from length.
+- **notes:** Persona-locked to P26 NEW. The whole article turns on one mechanic no other apparel sub-segment has: the grade rule as a pass-fail photographic input, checked against the brand's own graded spec sheets at every named anchor. Names the specific extended-range tier (Universal Standard, Good American, Girlfriend Collective, Eloquii, Henning, Alder, Kirrin Finch, Big Bud Press, Snag, Wray, Loud Bodies), names Old Navy BODEQUALITY and Universal Standard's fit program as the two publicly documented multi-body precedents, cites the Coresight Research / National Retail Federation ~20-30% apparel return band with an explicit hedge that photography alone cannot be credited a specific point reduction, and cites Common Thread Collective + Andrew Foxwell for the DTC creative-cost bands. Retailer specs named at Nordstrom / Anthropologie / Zappos / Amazon Fashion in the 2000x2600-2400x3200 on-white band, with the deliberate observation that none of them REQUIRE a multi-anchor set — which is precisely why producing one is a differentiator rather than a compliance task. Could not be retitled for any other persona: the four-anchor selection-against-sales-curve rule, the 640-frame arithmetic, the graded-seam detail frame, the size-comparison strip, and the translation-tax argument are all specific to a brand shipping a full extended run.
+- **run status:** WRITTEN AND VALIDATED LOCALLY — **NOT PUSHED.** Git push auth is still dead (bare remote URL, no PAT, no credential helper, no GITHUB_TOKEN) and `.git/index.lock` is still stuck with `rm: Operation not permitted`. This is the second consecutive day blocked on the same two issues. See UNPUSHED-BACKLOG.md.
+
+### Rolling stats (updated 2026-09-03)
+
+**Personas — last use dates (rolling):**
+- P01: 2026-07-03 (62d)
+- P05: 2026-06-14 (81d)
+- P07: 2026-06-21 (74d)
+- P08: 2026-06-17 (78d)
+- P09: 2026-06-28 (67d)
+- P12: 2026-06-13 (82d)
+- P13: 2026-06-27 (68d)
+- P14: 2026-06-20 (75d)
+- P15: 2026-07-02 (63d)
+- P16: 2026-06-16 (79d)
+- P17: 2026-06-29 (66d)
+- P18: 2026-07-06 (59d)
+- P19: 2026-06-10 (85d)
+- P20: 2026-06-11 (84d)
+- P21: 2026-06-19 (76d)
+- P22: 2026-07-01 (64d)
+- P23: 2026-07-04 (61d)
+- P24: 2026-07-05 (60d)
+- P25 (Eyewear Founder): 2026-09-02 (1d)
+- P26 (Extended-Range / Size-Inclusive Head of Brand): 2026-09-03 (0d — TODAY, FIRST USE)
+
+**Verticals (last 7 days):** 2026-09-02 apparel (eyewear sub-segment); 2026-09-03 apparel (size-inclusive / extended-sizing sub-segment). Two consecutive apparel days — expected and correct under the apparel-only pivot; sub-segment rotation is the operative anti-repetition control and the two sub-segments share no vocabulary.
+
+**Brand images (last 7 days):**
+- 2026-09-02: campaigns/web/outdoors/shady-rays-arcteryx.jpg + hero-run.jpg + images/ralphlauren/w1.jpg
+- 2026-09-03: images/aritzia/d2.jpg + d3.jpg + d5.jpg + images/veronica-beard/r2.jpg
+
+**Folder rotation (per-folder 5-day gap):**
+- aritzia: last use 2026-09-03 (0d, TODAY)
+- veronica-beard: last use 2026-09-03 (0d, TODAY)
+- outdoors: last use 2026-09-02 (1d — INSIDE window)
+- ralphlauren: last use 2026-09-02 (1d — INSIDE window)
+- anitadongre: last use 2026-07-06 (59d — OPEN, and the only fully-open folder tomorrow)
+
+**Internal link cumulative counts (partial — post-pivot):**
+- apparel-ad-creatives.html: +2 (breadcrumb + footer) today
+- best-ai-product-photography-agency-for-dtc-brands.html: +2 (prose + footer) today
+- ai-fashion-models-vs-real-models.html: +2 (prose + footer) today
+- wholesale-lookbook-and-linesheet-imagery.html: +2 (prose + footer) today
+- ai-photoshoot-vs-studio-cost.html: +2 (prose + footer) today
+- on-model-photography-at-scale.html: +1 prose today
+- scale-ecommerce-apparel-photography.html: +1 prose today (first outbound link since the pivot — deliberate de-saturation pick)
+- dtc-clothing-brand-photography-playbook.html: +1 prose today
+- ai-fashion-photography.html: +1 footer today
+- ai-lookbook-photography.html: +1 footer today
+- ai-fashion-photography-vs-traditional.html: +1 footer today
