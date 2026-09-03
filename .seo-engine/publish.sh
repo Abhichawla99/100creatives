@@ -30,6 +30,33 @@ Daily SEO post — slug: ${SLUG}
 Targets: AI product photography for D2C brands.
 Auto-published by SEO engine on $(date +%Y-%m-%d)."
 
+# ----- PUSH AUTH -----
+# Reads a GitHub token from $REPO/GITHUB-TOKEN.txt (gitignored) and builds
+# an authenticated push URL. The token is never echoed — every failure path below
+# prints a masked URL only.
+TOKEN_FILE="${REPO}/GITHUB-TOKEN.txt"
+
+resolve_push_url() {
+  if [ ! -f "$TOKEN_FILE" ]; then
+    echo "ERROR: no token file at ${TOKEN_FILE}" >&2
+    return 1
+  fi
+  local LINE
+  LINE="$(grep -v '^[[:space:]]*#' "$TOKEN_FILE" | grep -v '^[[:space:]]*$' | head -1 | tr -d '[:space:]')"
+  if [ -z "$LINE" ]; then
+    echo "ERROR: ${TOKEN_FILE} has no credential line." >&2
+    return 1
+  fi
+  if printf '%s' "$LINE" | grep -q 'PASTE_TOKEN_HERE'; then
+    echo "ERROR: token placeholder not replaced in ${TOKEN_FILE}." >&2
+    echo "       Open that file and paste a GitHub PAT with repo scope." >&2
+    return 1
+  fi
+  printf '%s/Abhichawla99/100creatives.git' "${LINE%@github.com}@github.com"
+}
+
+mask() { sed -E 's#//[^@]*@#//***:***@#g'; }
+
 # ----- PRIMARY PATH: commit + push from the original repo -----
 push_from_repo() {
   cd "$REPO"
@@ -47,7 +74,12 @@ push_from_repo() {
   fi
 
   git commit -m "$COMMIT_MSG"
-  git push origin main
+  local PUSH_URL
+  PUSH_URL="$(resolve_push_url)" || return 1
+  if ! git push "$PUSH_URL" HEAD:main 2>&1 | mask; then
+    echo "  push failed on primary path" >&2
+    return 1
+  fi
   return 0
 }
 
@@ -62,7 +94,7 @@ push_via_tmp_clone() {
   local REMOTE_URL
   REMOTE_URL="$(cd "$REPO" && git config --get remote.origin.url)"
 
-  git clone "$REMOTE_URL" "$TMPDIR" >/dev/null 2>&1
+  git clone "$REMOTE_URL" "$TMPDIR" >/dev/null 2>&1 || git clone "https://github.com/Abhichawla99/100creatives.git" "$TMPDIR" >/dev/null 2>&1
   cd "$TMPDIR"
 
   git config user.name "100Creatives SEO Bot"
@@ -89,7 +121,9 @@ push_via_tmp_clone() {
   fi
 
   git commit -m "$COMMIT_MSG"
-  if ! git push origin main; then
+  local PUSH_URL
+  PUSH_URL="$(resolve_push_url)" || { rm -rf "$TMPDIR"; return 1; }
+  if ! git push "$PUSH_URL" HEAD:main 2>&1 | mask; then
     echo ""
     echo "✗ PUSH FAILED — origin was NOT updated. The article is written locally but is NOT live."
     echo "  Cause is almost always missing push credentials (bare remote URL, no PAT)."
