@@ -1,7 +1,7 @@
 {
-  "next_index": 24,
-  "last_published_slug": "size-inclusive-apparel-brand-campaign-and-editorial-imagery",
-  "last_published_date": "2026-09-03",
+  "next_index": 25,
+  "last_published_slug": "adaptive-apparel-brand-campaign-and-editorial-imagery",
+  "last_published_date": "2026-09-04",
   "queue_status": "exhausted at 23 entries; 6/19 bridal outside queue against P21 NEW; 6/20 multi-brand portfolio outside queue against P14 (32d gap); 6/21 heritage-apparel-archive outside queue against P07 (24d gap, first post-pivot use); 6/27 outerwear-cold-weather outside queue against P13 (29d gap, second post-pivot use); 6/28 brand-spine-recovery-after-failed-AI-vendor outside queue against P09 (51-day legacy gap from 5/8, first post-pivot use; eighteenth post-pivot apparel sub-segment); 6/29 workwear-and-heritage-americana outside queue against P17 (27d gap from 6/02, second post-pivot use; nineteenth post-pivot apparel sub-segment); 7/01 intimates-and-loungewear outside queue against P22 NEW (first-use, twentieth post-pivot apparel sub-segment, first intimates/loungewear coverage on the site); 7/02 denim-brand-campaign-and-editorial-for-premium-labels pulled from queue index 21 against P15 (17-day gap from 6/15 luxury-campaign, third post-pivot use; twenty-first post-pivot apparel sub-segment as premium-denim-editorial, distinct from 5/21 volume-PDP-denim-photography-at-scale and 6/29 workwear-heritage-Americana Levi's-Vintage-adjacency) \u2014 extend topics.json before next run; 7/03 handbag-and-leather-goods-brand-campaign-and-editorial-imagery outside queue against P01 (21-day gap from 6/12 fashion-lifestyle-campaign-imagery use; twenty-second post-pivot apparel sub-segment as handbag-and-leather-goods-editorial, first coverage of accessories/leather-goods category on the site) \u2014 extend topics.json before next run; 7/04 footwear-and-sneaker-brand-campaign-and-editorial-imagery outside queue against P23 NEW (first-use \u2014 DTC footwear/sneaker founder persona, $10M-$80M ARR footwear-adjacency tier; twenty-third post-pivot apparel sub-segment as footwear-and-sneaker-editorial, first coverage of the footwear/sneaker category on the site) \u2014 extend topics.json before next run; 7/05 swimwear-brand-campaign-and-editorial-imagery outside queue against P24 NEW (first-use, twenty-fifth post-pivot apparel sub-segment as swimwear-brand-campaign-editorial, first swimwear-brand-campaign coverage on the site distinct from existing 2024 swimwear-ai-photography location/logistics piece; ralphlauren folder rotation at 6-day gap from 6/29 workwear use); 7/06 fine-jewelry-dtc-brand-campaign-and-editorial-imagery outside queue against P18 (33-day gap from 6/03 apparel-brand-identity-and-campaign-system parent-doc use; second post-pivot use; twenty-fourth post-pivot apparel sub-segment as fine-jewelry-brand-campaign-editorial, first fine-jewelry-brand-campaign coverage on the site) \u2014 extend topics.json before next run",
   "history": [
     {
@@ -248,6 +248,11 @@
       "date": "2026-09-03",
       "slug": "size-inclusive-apparel-brand-campaign-and-editorial-imagery",
       "h1": "Size-inclusive apparel campaign photography that holds the grade rule at every anchor \u2014 not one straight-size hero and a token extended frame."
+    },
+    {
+      "date": "2026-09-04",
+      "slug": "adaptive-apparel-brand-campaign-and-editorial-imagery",
+      "h1": "Adaptive apparel campaign photography where the closure mechanic is the hero frame \u2014 not a bullet under the price."
     }
   ]
 }
