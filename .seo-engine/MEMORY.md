@@ -1443,4 +1443,6 @@ Add a new `## YYYY-MM-DD` heading + the structured block below. Then update the 
 - ai-fashion-photography.html: +1 body + footer
 - best-ai-product-photography-agency-for-dtc-brands.html: +1 body (anchor link UP) + footer
 
+**GSC:** Request Indexing submitted 2026-09-04 and accepted ("Indexing requested — URL was added to a priority crawl queue"). Note for future runs: the RUN.md STEP 12 deep-link inspect URL format (?resource_id=...&id=<full url>) returns a 404 on both sc-domain and URL-prefix forms; the working path is to load https://search.google.com/search-console?resource_id=sc-domain:100creatives.com (unencoded), then paste the URL into the top inspect bar. IndexNow accepted HTTP 200 (Bing/Yandex/Seznam/Naver).
+
 **Brand-image 5-day trail:** 9/02 outdoors + ralphlauren · 9/03 aritzia + veronica-beard · 9/04 anitadongre (lehnga-4 hero/OG + lehnga-3, lehnga-8, lehnga-7 gallery) — clean four-folder rotation completed; anitadongre re-entered at a 60-day gap.
