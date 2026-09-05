@@ -1,18 +1,18 @@
 {
-  "next_index": 25,
-  "last_published_slug": "adaptive-apparel-brand-campaign-and-editorial-imagery",
-  "last_published_date": "2026-09-04",
-  "queue_status": "exhausted at 23 entries; 6/19 bridal outside queue against P21 NEW; 6/20 multi-brand portfolio outside queue against P14 (32d gap); 6/21 heritage-apparel-archive outside queue against P07 (24d gap, first post-pivot use); 6/27 outerwear-cold-weather outside queue against P13 (29d gap, second post-pivot use); 6/28 brand-spine-recovery-after-failed-AI-vendor outside queue against P09 (51-day legacy gap from 5/8, first post-pivot use; eighteenth post-pivot apparel sub-segment); 6/29 workwear-and-heritage-americana outside queue against P17 (27d gap from 6/02, second post-pivot use; nineteenth post-pivot apparel sub-segment); 7/01 intimates-and-loungewear outside queue against P22 NEW (first-use, twentieth post-pivot apparel sub-segment, first intimates/loungewear coverage on the site); 7/02 denim-brand-campaign-and-editorial-for-premium-labels pulled from queue index 21 against P15 (17-day gap from 6/15 luxury-campaign, third post-pivot use; twenty-first post-pivot apparel sub-segment as premium-denim-editorial, distinct from 5/21 volume-PDP-denim-photography-at-scale and 6/29 workwear-heritage-Americana Levi's-Vintage-adjacency) \u2014 extend topics.json before next run; 7/03 handbag-and-leather-goods-brand-campaign-and-editorial-imagery outside queue against P01 (21-day gap from 6/12 fashion-lifestyle-campaign-imagery use; twenty-second post-pivot apparel sub-segment as handbag-and-leather-goods-editorial, first coverage of accessories/leather-goods category on the site) \u2014 extend topics.json before next run; 7/04 footwear-and-sneaker-brand-campaign-and-editorial-imagery outside queue against P23 NEW (first-use \u2014 DTC footwear/sneaker founder persona, $10M-$80M ARR footwear-adjacency tier; twenty-third post-pivot apparel sub-segment as footwear-and-sneaker-editorial, first coverage of the footwear/sneaker category on the site) \u2014 extend topics.json before next run; 7/05 swimwear-brand-campaign-and-editorial-imagery outside queue against P24 NEW (first-use, twenty-fifth post-pivot apparel sub-segment as swimwear-brand-campaign-editorial, first swimwear-brand-campaign coverage on the site distinct from existing 2024 swimwear-ai-photography location/logistics piece; ralphlauren folder rotation at 6-day gap from 6/29 workwear use); 7/06 fine-jewelry-dtc-brand-campaign-and-editorial-imagery outside queue against P18 (33-day gap from 6/03 apparel-brand-identity-and-campaign-system parent-doc use; second post-pivot use; twenty-fourth post-pivot apparel sub-segment as fine-jewelry-brand-campaign-editorial, first fine-jewelry-brand-campaign coverage on the site) \u2014 extend topics.json before next run",
+  "next_index": 26,
+  "last_published_slug": "headwear-and-cap-brand-campaign-and-editorial-imagery",
+  "last_published_date": "2026-09-05",
+  "queue_status": "queue extended to 28 entries; pointer advanced 25 -> 26. 9/05 headwear-and-cap-brand-campaign-and-editorial-imagery pulled from queue index 25 against P28 NEW (first use — DTC headwear/cap founder or head of brand, $3M-$35M ARR; twenty-eighth post-pivot apparel sub-segment as headwear/caps/hats, first coverage of the headwear category on the site). Remaining queue: 26 maternity (P29), 27 uniform/team (P30) — extend topics.json after index 27.",
   "history": [
     {
       "date": "2026-09-02",
       "slug": "eyewear-and-sunglasses-brand-campaign-and-editorial-imagery",
-      "h1": "Eyewear and sunglasses brand campaign photography that reads at the metal, the temple hinge and the face \u2014 not at the wordmark laser-etched on the arm."
+      "h1": "Eyewear and sunglasses brand campaign photography that reads at the metal, the temple hinge and the face — not at the wordmark laser-etched on the arm."
     },
     {
       "date": "2026-07-06",
       "slug": "fine-jewelry-dtc-brand-campaign-and-editorial-imagery",
-      "h1": "Fine jewelry brand campaign photography that reads at the metal, the setting and the hand \u2014 not at the wordmark."
+      "h1": "Fine jewelry brand campaign photography that reads at the metal, the setting and the hand — not at the wordmark."
     },
     {
       "date": "2026-07-05",
@@ -97,7 +97,7 @@
     {
       "date": "2026-05-12",
       "slug": "amazon-main-image-photography-that-passes-the-1000x1000-test",
-      "h1": "Amazon Main Image Photography That Passes the 1000\u00d71000 Test"
+      "h1": "Amazon Main Image Photography That Passes the 1000×1000 Test"
     },
     {
       "date": "2026-05-13",
@@ -147,7 +147,7 @@
     {
       "date": "2026-05-22",
       "slug": "ai-photography-for-fragrance-brands-glass-reflection-and-light",
-      "h1": "AI Photography for Fragrance Brands \u2014 Glass, Reflection, and Light"
+      "h1": "AI Photography for Fragrance Brands — Glass, Reflection, and Light"
     },
     {
       "date": "2026-05-23",
@@ -157,7 +157,7 @@
     {
       "date": "2026-05-24",
       "slug": "color-accuracy-in-ai-product-photography-pantone-and-pdp-trust",
-      "h1": "Color Accuracy in AI Product Photography \u2014 Pantone, PDPs, and Returns"
+      "h1": "Color Accuracy in AI Product Photography — Pantone, PDPs, and Returns"
     },
     {
       "date": "2026-05-25",
@@ -247,12 +247,17 @@
     {
       "date": "2026-09-03",
       "slug": "size-inclusive-apparel-brand-campaign-and-editorial-imagery",
-      "h1": "Size-inclusive apparel campaign photography that holds the grade rule at every anchor \u2014 not one straight-size hero and a token extended frame."
+      "h1": "Size-inclusive apparel campaign photography that holds the grade rule at every anchor — not one straight-size hero and a token extended frame."
     },
     {
       "date": "2026-09-04",
       "slug": "adaptive-apparel-brand-campaign-and-editorial-imagery",
-      "h1": "Adaptive apparel campaign photography where the closure mechanic is the hero frame \u2014 not a bullet under the price."
+      "h1": "Adaptive apparel campaign photography where the closure mechanic is the hero frame — not a bullet under the price."
+    },
+    {
+      "date": "2026-09-05",
+      "slug": "headwear-and-cap-brand-campaign-and-editorial-imagery",
+      "h1": "Headwear campaign photography that reads at crown height, brim curve and panel structure — not at sixty-two separately quoted SKUs."
     }
   ]
 }
