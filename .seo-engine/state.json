@@ -1,7 +1,7 @@
 {
-  "next_index": 26,
-  "last_published_slug": "headwear-and-cap-brand-campaign-and-editorial-imagery",
-  "last_published_date": "2026-09-05",
+  "next_index": 27,
+  "last_published_slug": "maternity-apparel-brand-campaign-and-editorial-imagery",
+  "last_published_date": "2026-09-06",
   "queue_status": "queue extended to 28 entries; pointer advanced 25 -> 26. 9/05 headwear-and-cap-brand-campaign-and-editorial-imagery pulled from queue index 25 against P28 NEW (first use — DTC headwear/cap founder or head of brand, $3M-$35M ARR; twenty-eighth post-pivot apparel sub-segment as headwear/caps/hats, first coverage of the headwear category on the site). Remaining queue: 26 maternity (P29), 27 uniform/team (P30) — extend topics.json after index 27.",
   "history": [
     {
@@ -258,6 +258,11 @@
       "date": "2026-09-05",
       "slug": "headwear-and-cap-brand-campaign-and-editorial-imagery",
       "h1": "Headwear campaign photography that reads at crown height, brim curve and panel structure — not at sixty-two separately quoted SKUs."
+    },
+    {
+      "date": "2026-09-06",
+      "slug": "maternity-apparel-brand-campaign-and-editorial-imagery",
+      "h1": "Maternity campaign photography that renders the same dress at fourteen weeks, thirty-two weeks and three weeks postpartum — not at whatever week the model happened to be on shoot day."
     }
   ]
 }
