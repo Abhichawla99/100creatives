@@ -226,7 +226,7 @@ Google's only fast path to indexing for general pages is the "Request Indexing" 
 **What to submit.** Just the new article. Don't re-submit old URLs — Google's quota is "a few dozen URLs per day per property" and burning it on yesterday's articles wastes the limit. The sitemap is auto-fetched by Google on its own cadence, so no need to inspect it through the URL tool.
 
 **Quota gotchas.**
-- Google rate-limits to roughly 10–20 Request Indexing clicks per property per day. We only submit 1 URL/day so we're nowhere near the limit, but if the engine ever back-fills missed days it should cap at 5/day.
+- **Observed quota is ~3–4 submissions per property per day** (measured 2026-09-08: three accepted, the fourth returned "Quota Exceeded"). Earlier notes here said 10–20; that is wrong. We normally submit 1 URL/day so this only bites on back-fill days. When more than three are needed, prioritise: (1) URLs GSC reports as "unknown to Google", (2) the homepage or a hub page, (3) the day's new article. Anything not submitted still reaches Google via sitemap.xml and reaches Bing/Yandex/Seznam/Naver via IndexNow.
 - "URL is not on Google" → expected for fresh URLs; click Request Indexing.
 - "URL is on Google" → already indexed, no need to request.
 - "URL is on Google, but has issues" → log to MEMORY.md notes, don't auto-fix; surface to user.

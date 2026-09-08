@@ -1780,3 +1780,19 @@ The old declared canonical was the two-hop form on all 178 pages, which is why G
 **Expected effect.** GSC reported 179 not-indexed vs 55 indexed today, flat since 9/06 and down from 173/58 on 9/05. Every page now declares a canonical that resolves to itself with no redirect, the sitemap declares the same form, and internal links no longer redirect — so sitemap↔canonical association should finally resolve. **This will not move overnight; watch the indexed/not-indexed split over 1–3 weeks.** If it has not started moving by roughly 9/22, the next thing to check is whether GSC's sc-domain property is consolidating www and non-www as expected, and whether a `Host`-level redirect (rather than the current 307) would serve better as a 301.
 
 **Not done, deliberately:** the llms.txt "Persona-driven deep-dive articles" backlog (now seven articles, 9/02–9/08) is still outstanding — it is a content-inventory task, unrelated to the canonical fix, and bundling it into a 181-file infrastructure commit would have made the diff unreviewable.
+
+**GSC re-submission after the canonical fix, 2026-09-08.** Deploy verified live first (6 pages spot-checked: 200, self-referencing canonical, correct `og:url`, zero internal `.html` links). Then re-submitted through URL Inspection on the sc-domain property:
+
+1. `https://www.100creatives.com/modest-fashion-brand-campaign-and-editorial-imagery` — **accepted** (submitted earlier in the day, pre-fix).
+2. `https://www.100creatives.com/` — **accepted.** The inspection produced the single most useful diagnostic of this whole investigation: status **"Page is not indexed: Alternate page with proper canonical tag"**, with **User-declared canonical: `https://100creatives.com/`** from a crawl dated **Aug 22, 2026**. That is Google stating in its own words that it crawled the www homepage, read the non-www canonical, and deferred to a URL that redirects straight back to the page it just left. Five runs of inference confirmed by the tool directly, and it is the clearest possible evidence the fix targets the actual cause rather than a symptom.
+3. `https://www.100creatives.com/vetting-an-ai-photography-vendor-for-apparel-brands` — **accepted.** Status was **"URL is unknown to Google"** with "No referring sitemaps detected" and "Referring page: None detected" — completely undiscovered, exactly as predicted for a live, indexable article that had never appeared in sitemap.xml since publishing on 6/22.
+4. `https://www.100creatives.com/collab-and-capsule-campaign-imagery-for-apparel-brands` — **QUOTA EXCEEDED.** "Sorry - we couldn't process this request because you've exceeded your daily quota."
+5. `https://www.100creatives.com/market-week-production-sprint-for-apparel-wholesale-brands` — not attempted, quota already spent.
+
+**ACTION FOR THE 9/09 RUN — submit these two FIRST, before the new article:**
+- `https://www.100creatives.com/collab-and-capsule-campaign-imagery-for-apparel-brands`
+- `https://www.100creatives.com/market-week-production-sprint-for-apparel-wholesale-brands`
+
+Both are now in sitemap.xml and were accepted by IndexNow (HTTP 200), so Bing/Yandex/Seznam/Naver already have them and Google will reach them via the sitemap regardless — the manual submission just accelerates it. Non-fatal either way.
+
+**Observed daily GSC quota is ~3–4 URL submissions per property, not the 10–12 assumed in RUN.md STEP 12.** Three accepted today before the cap. RUN.md's quota note should be revised down, and any run needing to submit more than three URLs should prioritise: (1) previously-unknown URLs, (2) the homepage or a hub, (3) the day's new article.
