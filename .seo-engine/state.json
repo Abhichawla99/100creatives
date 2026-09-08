@@ -1,18 +1,18 @@
 {
-  "next_index": 28,
-  "last_published_slug": "uniform-and-team-apparel-brand-campaign-imagery",
-  "last_published_date": "2026-09-07",
-  "queue_status": "queue extended 28 -> 40 entries; pointer advanced 27 -> 28. 9/07 uniform-and-team-apparel-brand-campaign-imagery pulled from queue index 27 against P30 NEW (first use - uniform / corporate apparel / team kit founder or program lead, $3M-$50M; thirty-first post-pivot apparel sub-segment as uniform/corporate/team, first coverage of the B2B decorated-apparel category on the site). Index 27 was the last entry in the old queue, so twelve new persona-specific apparel briefs (P31-P42) were appended per RUN.md queue-exhaustion handling: scrubs/medical, socks/hosiery, modest fashion, vintage/resale, school uniform, technical outdoor, western/ranch, sleepwear, golf/club, costume/cosplay, DTC-to-wholesale expansion, Q4 creative sprint. Next up: index 28 scrubs-and-medical-apparel-brand-campaign-imagery (P31).",
+  "next_index": 31,
+  "last_published_slug": "modest-fashion-brand-campaign-and-editorial-imagery",
+  "last_published_date": "2026-09-08",
+  "queue_status": "pointer moved 28 -> 31 (published index 30). 9/08 published modest-fashion-brand-campaign-and-editorial-imagery from queue index 30 against P33 NEW (modest fashion / hijab / abaya / tznius founder or head of brand, $1M-$25M; thirty-second post-pivot apparel sub-segment, first coverage of modest fashion on the site). Index 28 (scrubs / medical, P31) and index 29 (socks / hosiery, P32) were DELIBERATELY SKIPPED and remain live in the queue: index 28 was skipped because 9/07's uniform/corporate-apparel article already named FIGS, Jaanuu and Medelita in its persona tier, so publishing scrubs the following day would produce exactly the vocabulary collision that sub-segment rotation discipline exists to prevent - it should run once several days separate it from the uniform piece; index 29 was skipped because its image_hints (ralphlauren, outdoors) are both fully consumed inside the 14-day per-file window, so it could not have shipped with body imagery. Index 30's image_hints (anitadongre, veronica-beard) mapped exactly onto the only three unused files left in the entire eligible inventory. Queue remains 40 entries; next_index 31 -> vintage/resale (P34). Indexes 28 and 29 must be picked up on a future run.",
   "history": [
     {
       "date": "2026-09-02",
       "slug": "eyewear-and-sunglasses-brand-campaign-and-editorial-imagery",
-      "h1": "Eyewear and sunglasses brand campaign photography that reads at the metal, the temple hinge and the face \u2014 not at the wordmark laser-etched on the arm."
+      "h1": "Eyewear and sunglasses brand campaign photography that reads at the metal, the temple hinge and the face — not at the wordmark laser-etched on the arm."
     },
     {
       "date": "2026-07-06",
       "slug": "fine-jewelry-dtc-brand-campaign-and-editorial-imagery",
-      "h1": "Fine jewelry brand campaign photography that reads at the metal, the setting and the hand \u2014 not at the wordmark."
+      "h1": "Fine jewelry brand campaign photography that reads at the metal, the setting and the hand — not at the wordmark."
     },
     {
       "date": "2026-07-05",
@@ -97,7 +97,7 @@
     {
       "date": "2026-05-12",
       "slug": "amazon-main-image-photography-that-passes-the-1000x1000-test",
-      "h1": "Amazon Main Image Photography That Passes the 1000\u00d71000 Test"
+      "h1": "Amazon Main Image Photography That Passes the 1000×1000 Test"
     },
     {
       "date": "2026-05-13",
@@ -147,7 +147,7 @@
     {
       "date": "2026-05-22",
       "slug": "ai-photography-for-fragrance-brands-glass-reflection-and-light",
-      "h1": "AI Photography for Fragrance Brands \u2014 Glass, Reflection, and Light"
+      "h1": "AI Photography for Fragrance Brands — Glass, Reflection, and Light"
     },
     {
       "date": "2026-05-23",
@@ -157,7 +157,7 @@
     {
       "date": "2026-05-24",
       "slug": "color-accuracy-in-ai-product-photography-pantone-and-pdp-trust",
-      "h1": "Color Accuracy in AI Product Photography \u2014 Pantone, PDPs, and Returns"
+      "h1": "Color Accuracy in AI Product Photography — Pantone, PDPs, and Returns"
     },
     {
       "date": "2026-05-25",
@@ -247,27 +247,32 @@
     {
       "date": "2026-09-03",
       "slug": "size-inclusive-apparel-brand-campaign-and-editorial-imagery",
-      "h1": "Size-inclusive apparel campaign photography that holds the grade rule at every anchor \u2014 not one straight-size hero and a token extended frame."
+      "h1": "Size-inclusive apparel campaign photography that holds the grade rule at every anchor — not one straight-size hero and a token extended frame."
     },
     {
       "date": "2026-09-04",
       "slug": "adaptive-apparel-brand-campaign-and-editorial-imagery",
-      "h1": "Adaptive apparel campaign photography where the closure mechanic is the hero frame \u2014 not a bullet under the price."
+      "h1": "Adaptive apparel campaign photography where the closure mechanic is the hero frame — not a bullet under the price."
     },
     {
       "date": "2026-09-05",
       "slug": "headwear-and-cap-brand-campaign-and-editorial-imagery",
-      "h1": "Headwear campaign photography that reads at crown height, brim curve and panel structure \u2014 not at sixty-two separately quoted SKUs."
+      "h1": "Headwear campaign photography that reads at crown height, brim curve and panel structure — not at sixty-two separately quoted SKUs."
     },
     {
       "date": "2026-09-06",
       "slug": "maternity-apparel-brand-campaign-and-editorial-imagery",
-      "h1": "Maternity campaign photography that renders the same dress at fourteen weeks, thirty-two weeks and three weeks postpartum \u2014 not at whatever week the model happened to be on shoot day."
+      "h1": "Maternity campaign photography that renders the same dress at fourteen weeks, thirty-two weeks and three weeks postpartum — not at whatever week the model happened to be on shoot day."
     },
     {
       "date": "2026-09-07",
       "slug": "uniform-and-team-apparel-brand-campaign-imagery",
-      "h1": "Uniform and team apparel photography where the decoration is a specification, not a styling decision \u2014 and the spec can be rendered before it can be sewn."
+      "h1": "Uniform and team apparel photography where the decoration is a specification, not a styling decision — and the spec can be rendered before it can be sewn."
+    },
+    {
+      "date": "2026-09-08",
+      "slug": "modest-fashion-brand-campaign-and-editorial-imagery",
+      "h1": "Modest fashion photography where coverage, opacity and length are specifications you can photograph — not qualities a flattering pose is allowed to imply."
     }
   ]
 }
