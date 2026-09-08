@@ -141,13 +141,14 @@ push_via_tmp_clone() {
 # Submits the new URL to all IndexNow-compatible search engines via api.indexnow.org.
 # Google does not participate in IndexNow — for Google we rely on sitemap freshness
 # (already submitted to Google Search Console) plus the per-URL <lastmod> update.
-# The key file must be hosted at https://100creatives.com/${INDEXNOW_KEY}.txt and
+# The key file must be hosted at https://www.100creatives.com/${INDEXNOW_KEY}.txt and
 # contain exactly the key string. The key file is committed to the repo.
+# Canonical URL form is www + extensionless (see STYLE.md "URL CANONICAL FORM").
 ping_indexnow() {
   local INDEXNOW_KEY="e6baf767262d12f58083a712d380812b"
-  local URL="https://100creatives.com/${SLUG}.html"
-  local SITEMAP_URL="https://100creatives.com/sitemap.xml"
-  local KEY_LOC="https://100creatives.com/${INDEXNOW_KEY}.txt"
+  local URL="https://www.100creatives.com/${SLUG}"
+  local SITEMAP_URL="https://www.100creatives.com/sitemap.xml"
+  local KEY_LOC="https://www.100creatives.com/${INDEXNOW_KEY}.txt"
 
   echo "→ Pinging IndexNow with ${URL}…"
 
@@ -157,7 +158,7 @@ ping_indexnow() {
   local PAYLOAD
   PAYLOAD=$(cat <<EOF
 {
-  "host": "100creatives.com",
+  "host": "www.100creatives.com",
   "key": "${INDEXNOW_KEY}",
   "keyLocation": "${KEY_LOC}",
   "urlList": ["${URL}", "${SITEMAP_URL}"]
@@ -165,11 +166,18 @@ ping_indexnow() {
 EOF
 )
 
-  local RESP
-  RESP=$(curl -s -o /tmp/indexnow.out -w "%{http_code}" \
-    -X POST "https://api.indexnow.org/IndexNow" \
-    -H "Content-Type: application/json; charset=utf-8" \
-    -d "${PAYLOAD}" || echo "000")
+  # NOTE: capture curl's exit status SEPARATELY. This was previously
+  #   RESP=$(curl ... -w "%{http_code}" || echo "000")
+  # which concatenated both outputs when curl exited non-zero and produced the
+  # bogus "HTTP 200000" log line on every run even though the ping succeeded.
+  local RESP CURL_RC
+  RESP=$(curl -s -o /tmp/indexnow.out -w "%{http_code}"     -X POST "https://api.indexnow.org/IndexNow"     -H "Content-Type: application/json; charset=utf-8"     -d "${PAYLOAD}")
+  CURL_RC=$?
+
+  if [ "$CURL_RC" -ne 0 ]; then
+    echo "  ⚠ IndexNow curl failed (exit ${CURL_RC}, http '${RESP:-none}') — non-fatal."
+    return 0
+  fi
 
   case "$RESP" in
     200|202)
@@ -177,7 +185,7 @@ EOF
       ;;
     *)
       echo "  ⚠ IndexNow returned HTTP $RESP (non-fatal). Body:"
-      cat /tmp/indexnow.out 2>/dev/null | head -5
+      head -5 /tmp/indexnow.out 2>/dev/null
       ;;
   esac
 }
@@ -185,12 +193,12 @@ EOF
 # Try primary, fall back, error if both fail
 if push_from_repo 2>&1; then
   echo ""
-  echo "✓ Published: https://100creatives.com/${SLUG}"
+  echo "✓ Published: https://www.100creatives.com/${SLUG}"
   echo "✓ Vercel will deploy in ~30–60 seconds."
   ping_indexnow || true
 elif push_via_tmp_clone 2>&1; then
   echo ""
-  echo "✓ Published via fallback: https://100creatives.com/${SLUG}"
+  echo "✓ Published via fallback: https://www.100creatives.com/${SLUG}"
   echo "✓ Vercel will deploy in ~30–60 seconds."
   echo "ℹ Local clone at $REPO may be behind origin — run 'git pull' there to sync."
   ping_indexnow || true

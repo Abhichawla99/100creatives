@@ -37,13 +37,43 @@ Before writing, check `MEMORY.md` for:
 
 ---
 
+## URL CANONICAL FORM (non-negotiable — fixed 2026-09-08)
+
+**The site canonical form is `https://www.100creatives.com/{slug}` — www, no `.html` extension.**
+
+This is not a style preference. It is what the server actually serves, and getting it wrong breaks indexing site-wide. Vercel runs `cleanUrls: true`, so:
+
+| Requested URL | Result |
+|---|---|
+| `https://www.100creatives.com/{slug}` | **200 — the only form that serves directly** |
+| `https://100creatives.com/{slug}` | 307 → www |
+| `https://www.100creatives.com/{slug}.html` | 308 → extensionless |
+| `https://100creatives.com/{slug}.html` | 307 → 308 → **two hops** |
+
+Until 2026-09-08 every page declared the two-hop form as its canonical, so no page's declared canonical self-referenced, and GSC reported "User-declared canonical: N/A" and "No referring sitemaps detected" across the whole site. That was logged on five consecutive runs before being fixed in a repo-wide rewrite.
+
+### Apply the canonical form to ALL of these
+- `<link rel="canonical" href="https://www.100creatives.com/{slug}">`
+- `<meta property="og:url" content="https://www.100creatives.com/{slug}">`
+- `<meta property="og:image">` and `<meta name="twitter:image">` — `https://www.100creatives.com/images/...` (www; keep the file extension on assets)
+- JSON-LD BreadcrumbList `item` values, Service `provider.url`, Organization `url` and `logo`, and any `mainEntityOfPage` / `image`
+- `sitemap.xml` `<loc>` entries
+- Homepage is `https://www.100creatives.com/` (trailing slash, no slug)
+
+### Internal links
+Write internal links **root-relative and extensionless**: `href="/apparel-ad-creatives"`, not `href="apparel-ad-creatives.html"`. The homepage is `href="/"`, and anchors append directly: `href="/#services"`, `href="/some-page#faq"`. Writing `.html` still works but costs a 308 redirect hop on every internal link, which wastes crawl budget across ~3,700 site-wide links.
+
+**Assets keep their extensions** — `/css/article.css`, `/favicon.svg`, `/images/foo.jpg` are unchanged. Only page slugs drop `.html`.
+
+---
+
 ## Page formula (every article)
 
 ### Head
 1. `<title>` — ≤60 chars. Format: "{H1 short} | 100 Creatives".
 2. `<meta name="description">` — ≤160 chars, includes primary keyword + the persona's pain in one sentence.
 3. `<meta name="keywords">` — primary + 5 secondary from topics.json.
-4. `<link rel="canonical">` — full URL.
+4. `<link rel="canonical">` — full URL in the **site canonical form** (see below). MUST be `https://www.100creatives.com/{slug}` — www, no `.html`.
 5. Full Open Graph block (type, title, description, url, site_name, image, image:width/height, locale).
 6. Twitter card block (summary_large_image).
 7. Three JSON-LD blocks: BreadcrumbList + Service + FAQPage. The FAQPage answers MUST match the visible page FAQ verbatim.
@@ -91,8 +121,8 @@ LLMs cite content that is:
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "100 Creatives",
-  "url": "https://100creatives.com",
-  "logo": "https://100creatives.com/favicon.svg",
+  "url": "https://www.100creatives.com",
+  "logo": "https://www.100creatives.com/favicon.svg",
   "founder": { "@type": "Person", "name": "Abhi Chawla", "url": "https://linkedin.com/in/abhixchawla" },
   "foundingDate": "2023",
   "description": "AI product photography agency for DTC brands across apparel, beauty, CPG, supplements, home, pet, electronics, beverage, and luxury — production-grade AI photography at one fifth the cost and ten times the speed of traditional studios.",
@@ -189,7 +219,7 @@ The slug is provided by `topics.json`. Do not invent your own.
 
 ---
 
-## Pre-flight checklist (the engine MUST pass all 19 before pushing)
+## Pre-flight checklist (the engine MUST pass all 20 before pushing)
 
 1. Word count is 2,500–4,000 (or 4,500–7,800 for flagship/citation-bait)
 2. All 4 JSON-LD blocks parse as valid JSON — BreadcrumbList + Service + FAQPage + Organization (`python3 -c "import json; ..."`)
@@ -209,6 +239,15 @@ The slug is provided by `topics.json`. Do not invent your own.
 16. **Stat-attribution enforced** — every numeric/empirical claim cluster names its source (Marketplace Pulse, Helium 10, Common Thread Collective, Jungle Scout, SellerLabs, Andrew Foxwell, named retailer documentation, or named brand case data) at least once per cluster
 17. **Organization JSON-LD present** and author byline "By Abhi Chawla, founder · Last updated: YYYY-MM-DD" visible beneath h1
 18. **Body imagery present** — at least one hero image in `<section class="interactive-section">` AND at least one mid-article gallery frame (2+ body images minimum). OG-only is a fallback that must be explicitly justified in MEMORY.md notes for the day.
-19. **IntersectionObserver script footer present** — every `.fade-in` element starts at `opacity:0` in `/css/article.css` and is only made visible by the closing `<script>` that adds `.visible` on scroll. If that script is missing, the entire page renders blank. Verify the file ends with the standard observer block plus `<script src="/_vercel/insights/script.js" defer></script>` before `</body></html>`. Grep test: `grep -c "IntersectionObserver" {slug}.html` must return 1.
+19. **Canonical form correct (ENFORCED)** — `<link rel="canonical">`, `og:url`, all JSON-LD `item` / `url` / `logo` / `image` values and the new `sitemap.xml` `<loc>` all use `https://www.100creatives.com/{slug}` (www, no `.html`), the canonical self-references the page's own slug, and every internal `href` is root-relative and extensionless. Test:
+```bash
+# must all return 0
+grep -c "https://100creatives\.com" {slug}.html
+grep -oh "https://www\.100creatives\.com/[a-z0-9-]*\.html" {slug}.html | wc -l
+grep -oh 'href="[^"]*\.html[^"]*"' {slug}.html | wc -l
+# canonical must equal https://www.100creatives.com/{slug}
+grep -o '<link rel="canonical" href="[^"]*"' {slug}.html
+```
+20. **IntersectionObserver script footer present** — every `.fade-in` element starts at `opacity:0` in `/css/article.css` and is only made visible by the closing `<script>` that adds `.visible` on scroll. If that script is missing, the entire page renders blank. Verify the file ends with the standard observer block plus `<script src="/_vercel/insights/script.js" defer></script>` before `</body></html>`. Grep test: `grep -c "IntersectionObserver" {slug}.html` must return 1.
 
 If any check fails: fix it. Do not push broken pages. Do not approximate. The user explicitly asked for no slop.

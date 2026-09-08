@@ -76,6 +76,7 @@ Create `/Users/home/100creatives/{slug}.html` following the page formula in STYL
 - **2,500–4,000 words** of long-form prose (4,500 OK for flagship/citation-bait).
 - **Persona-first opening**: paragraph 1 addresses the persona's pain in their language and answers the primary keyword query directly.
 - **`<head>` block**: title ≤60 chars, meta description ≤160 chars, keywords, canonical, OG, Twitter, BreadcrumbList JSON-LD, Service JSON-LD, FAQPage JSON-LD.
+- **CANONICAL FORM (fixed 2026-09-08):** every absolute self-URL is `https://www.100creatives.com/{slug}` — **www, no `.html`**. Applies to `rel=canonical`, `og:url`, `og:image`/`twitter:image` (www, keep asset extension), every JSON-LD `item`/`url`/`logo`/`image`, and the sitemap `<loc>`. Internal links are root-relative and extensionless: `href="/apparel-ad-creatives"`, homepage `href="/"`. See the URL CANONICAL FORM section in STYLE.md — getting this wrong is what broke indexing site-wide for five straight runs.
 - **Hero**: `<section class="hero">` with hero-label, h1 with `<em>`, hero-body, "Last updated: YYYY-MM-DD" line, hero-btn → tidycal.
 - **(Optional) Image hero**: one image in `<section class="interactive-section">` after hero.
 - **4–6 content-sections** with section-label + h2 + 3-5 paragraph content-body, separated by `<div class="divider"></div>`.
@@ -112,7 +113,7 @@ print('All valid')
 "
 
 # 4. Internal links exist
-grep -oE 'href=\"[a-z0-9-]+\.html\"' {slug}.html | sed 's/href=\"//;s/\"//' | sort -u | while read f; do
+grep -oE 'href=\"/[a-z0-9-]+\"' {slug}.html | sed 's|href=\"/||;s/\"//' | sed 's/$/.html/' | sort -u | while read f; do
   [ -f \"$f\" ] && echo \"✓ $f\" || echo \"✗ MISSING: $f\"
 done
 
@@ -132,7 +133,7 @@ If ANY check fails, fix the article. Do not push broken pages.
 Edit `/Users/home/100creatives/sitemap.xml`. Insert this block immediately before `</urlset>`:
 ```xml
   <url>
-    <loc>https://100creatives.com/{slug}.html</loc>
+    <loc>https://www.100creatives.com/{slug}</loc>
     <lastmod>{TODAY YYYY-MM-DD}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -191,7 +192,7 @@ bash /Users/home/100creatives/.seo-engine/publish.sh "{slug}" "{full h1}"
 
 The script auto-stages: `{slug}.html`, `sitemap.xml`, the entire `.seo-engine/` directory (including state.json, MEMORY.md, topics.json updates), and `.gitignore`. It commits with a descriptive message and pushes to `main`. Vercel auto-deploys in 30–60 seconds.
 
-**Then it auto-pings IndexNow** (Bing, Yandex, Seznam, Naver) with the new URL + sitemap. The script waits 45s for Vercel to deploy first, then POSTs to `api.indexnow.org/IndexNow` with our key (`e6baf767262d12f58083a712d380812b`, hosted at `https://100creatives.com/e6baf767262d12f58083a712d380812b.txt`). HTTP 200 or 202 = accepted. Non-200 is logged but non-fatal — IndexNow rate-limits and re-tries are not necessary for daily cadence.
+**Then it auto-pings IndexNow** (Bing, Yandex, Seznam, Naver) with the new URL + sitemap. The script waits 45s for Vercel to deploy first, then POSTs to `api.indexnow.org/IndexNow` with our key (`e6baf767262d12f58083a712d380812b`, hosted at `https://www.100creatives.com/e6baf767262d12f58083a712d380812b.txt`). HTTP 200 or 202 = accepted. Non-200 is logged but non-fatal — IndexNow rate-limits and re-tries are not necessary for daily cadence.
 
 **Google note.** Google doesn't participate in IndexNow and has no public per-URL submission API for general pages (the Indexing API is restricted to JobPosting and BroadcastEvent). For Google we use **STEP 11b** below — Chrome MCP automates the same "Request Indexing" button a human would click in GSC.
 
@@ -211,7 +212,7 @@ Google's only fast path to indexing for general pages is the "Request Indexing" 
      "GSC needs you to log in. After login, re-run this skill."
 3. For each URL to submit (today's new article + sitemap.xml):
    left_click(tabId, [600, 25])     # the top inspect-URL search bar
-   type(tabId, full_url)            # e.g. https://www.100creatives.com/{slug}.html
+   type(tabId, full_url)            # e.g. https://www.100creatives.com/{slug}   (www, NO .html)
    key(tabId, "Return")
    wait 8s
    screenshot                        # confirm "URL Inspection" page rendered
@@ -239,7 +240,7 @@ Google's only fast path to indexing for general pages is the "Request Indexing" 
 ## STEP 12 — Report (one line)
 
 ```
-✓ Published "{h1}" → https://100creatives.com/{slug} (persona {Pxx}, {vertical}, {word_count} words). Vercel deploying. IndexNow pinged. GSC Request Indexing submitted.
+✓ Published "{h1}" → https://www.100creatives.com/{slug} (persona {Pxx}, {vertical}, {word_count} words). Vercel deploying. IndexNow pinged. GSC Request Indexing submitted.
 ```
 
 ---
