@@ -6,7 +6,7 @@ template, SEO rules, copy register, and conventions extracted from the live site
 no framework. `vercel.json` has `cleanUrls:true`, so `slug.html` serves at `/slug`.
 
 ## Hard rules
-- **Domain:** `https://100creatives.com` (NOT `.co`).
+- **Domain:** `https://www.100creatives.com` (NOT `.co`).
 - **Stylesheet:** every page links `/css/article.css` — do NOT add page `<style>` unless a
   module needs it; reuse existing classes only (list below). Never invent unstyled classes.
 - **Fonts:** Inter + Instrument Serif via the Google Fonts `<link>` (preconnect first). The
@@ -40,20 +40,20 @@ no framework. `vercel.json` has `cleanUrls:true`, so `slug.html` serves at `/slu
   <meta name="author" content="100 Creatives">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://100creatives.com/SLUG.html">
+  <link rel="canonical" href="https://www.100creatives.com/SLUG">
   <meta property="og:type" content="article">
   <meta property="og:title" content="TITLE">
   <meta property="og:description" content="META">
-  <meta property="og:url" content="https://100creatives.com/SLUG.html">
+  <meta property="og:url" content="https://www.100creatives.com/SLUG">
   <meta property="og:site_name" content="100 Creatives">
-  <meta property="og:image" content="https://100creatives.com/OG_IMAGE">
+  <meta property="og:image" content="https://www.100creatives.com/OG_IMAGE">
   <meta property="og:image:width" content="OG_W">
   <meta property="og:image:height" content="OG_H">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="TITLE">
   <meta name="twitter:description" content="META">
-  <meta name="twitter:image" content="https://100creatives.com/OG_IMAGE">
+  <meta name="twitter:image" content="https://www.100creatives.com/OG_IMAGE">
 
   <!-- JSON-LD: BreadcrumbList ALWAYS. Then per page type:
        guides/educational/comparison -> Article ; services -> Service ;
@@ -71,16 +71,16 @@ no framework. `vercel.json` has `cleanUrls:true`, so `slug.html` serves at `/slu
 <nav>
   <a href="/" class="logo">100</a>
   <div class="nav-right">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="/#work">Work</a>
-    <a href="index.html#services">Services</a>
+    <a href="/#services">Services</a>
     <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="nav-cta">Connect</a>
   </div>
 </nav>
 </header>
 <main>
 <nav class="breadcrumb" aria-label="Breadcrumb">
-  <a href="index.html">Home</a><span>/</span><a href="apparel-ad-creatives.html">Apparel</a><span>/</span>PAGE NAME
+  <a href="/">Home</a><span>/</span><a href="/apparel-ad-creatives">Apparel</a><span>/</span>PAGE NAME
 </nav>
 <section class="hero">
   <p class="hero-label fade-in">CATEGORY · SUBHEAD</p>
@@ -128,12 +128,12 @@ self-contained. If unsure, fall back to `principles-grid` (no JS) + `gallery-gri
 
 ## Organization JSON-LD (paste verbatim into every page)
 ```
-{"@context":"https://schema.org","@type":"Organization","name":"100 Creatives","url":"https://100creatives.com","logo":"https://100creatives.com/favicon.svg","founder":{"@type":"Person","name":"Abhi Chawla","url":"https://linkedin.com/in/abhixchawla"},"foundingDate":"2023","description":"A brand-world studio and AI product photography agency for apparel brands — campaigns, lookbooks, editorial and brand identity at one fifth the cost and ten times the speed of traditional studios.","areaServed":"Worldwide","sameAs":["https://linkedin.com/in/abhixchawla"]}
+{"@context":"https://schema.org","@type":"Organization","name":"100 Creatives","url":"https://www.100creatives.com","logo":"https://www.100creatives.com/favicon.svg","founder":{"@type":"Person","name":"Abhi Chawla","url":"https://linkedin.com/in/abhixchawla"},"foundingDate":"2023","description":"A brand-world studio and AI product photography agency for apparel brands — campaigns, lookbooks, editorial and brand identity at one fifth the cost and ten times the speed of traditional studios.","areaServed":"Worldwide","sameAs":["https://linkedin.com/in/abhixchawla"]}
 ```
 
 ## LocalBusiness JSON-LD (Canada/money pages 4,7,9,10,15 — per brief)
 ```
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"100 Creatives","url":"https://100creatives.com","image":"https://100creatives.com/OG_IMAGE","description":"...","address":{"@type":"PostalAddress","addressLocality":"Calgary","addressRegion":"AB","addressCountry":"CA"},"areaServed":["Canada","Worldwide"],"founder":{"@type":"Person","name":"Abhi Chawla"}}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"100 Creatives","url":"https://www.100creatives.com","image":"https://www.100creatives.com/OG_IMAGE","description":"...","address":{"@type":"PostalAddress","addressLocality":"Calgary","addressRegion":"AB","addressCountry":"CA"},"areaServed":["Canada","Worldwide"],"founder":{"@type":"Person","name":"Abhi Chawla"}}
 ```
 (No street/postal/phone — not fabricated. Flagged: add real address for full rich-result eligibility.)
 

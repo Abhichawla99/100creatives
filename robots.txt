@@ -4,4 +4,4 @@ Disallow: /.claude/
 Disallow: /lib/
 Disallow: /.seo-engine/
 
-Sitemap: https://100creatives.com/sitemap.xml
+Sitemap: https://www.100creatives.com/sitemap.xml
