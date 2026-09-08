@@ -104,10 +104,26 @@ push_via_tmp_clone() {
   cp "$ARTICLE" "$TMPDIR/${SLUG}.html"
   cp "$SITEMAP" "$TMPDIR/sitemap.xml"
 
-  # Sweep in any earlier articles that were written locally but never reached origin
+  # Sweep in every local page: NEW files that never reached origin, AND pages that
+  # exist on origin but have been MODIFIED locally. The old version only copied
+  # files missing from the clone, so a site-wide edit (e.g. the 2026-09-08 canonical
+  # rewrite) silently pushed only the new article and left 178 edits behind.
   for f in "$REPO"/*.html; do
+    [ -e "$f" ] || continue
     b="$(basename "$f")"
-    [ -f "$TMPDIR/$b" ] || { cp "$f" "$TMPDIR/$b"; echo "  + sweeping in unpushed backlog article: $b"; }
+    if [ ! -f "$TMPDIR/$b" ]; then
+      cp "$f" "$TMPDIR/$b"; echo "  + sweeping in unpushed article: $b"
+    elif ! cmp -s "$f" "$TMPDIR/$b"; then
+      cp "$f" "$TMPDIR/$b"; echo "  ~ syncing locally-modified page: $b"
+    fi
+  done
+
+  # Same for the other site-level files the engine can touch
+  for rel in robots.txt llms.txt vercel.json lib/modules.html lib/build-spec.md; do
+    if [ -f "$REPO/$rel" ] && ! cmp -s "$REPO/$rel" "$TMPDIR/$rel"; then
+      mkdir -p "$TMPDIR/$(dirname "$rel")"
+      cp "$REPO/$rel" "$TMPDIR/$rel"; echo "  ~ syncing: $rel"
+    fi
   done
   mkdir -p "$TMPDIR/.seo-engine"
   cp -r "$REPO/.seo-engine/." "$TMPDIR/.seo-engine/"
@@ -170,12 +186,18 @@ EOF
   #   RESP=$(curl ... -w "%{http_code}" || echo "000")
   # which concatenated both outputs when curl exited non-zero and produced the
   # bogus "HTTP 200000" log line on every run even though the ping succeeded.
-  local RESP CURL_RC
-  RESP=$(curl -s -o /tmp/indexnow.out -w "%{http_code}"     -X POST "https://api.indexnow.org/IndexNow"     -H "Content-Type: application/json; charset=utf-8"     -d "${PAYLOAD}")
+  # Use mktemp rather than a fixed /tmp path: a stale or non-writable
+  # /tmp/indexnow.out made curl exit 23 (CURLE_WRITE_ERROR) even on an HTTP 200.
+  local RESP CURL_RC OUTF
+  OUTF="$(mktemp 2>/dev/null || echo "/tmp/indexnow.$$.out")"
+  RESP=$(curl -s -o "$OUTF" -w "%{http_code}"     -X POST "https://api.indexnow.org/IndexNow"     -H "Content-Type: application/json; charset=utf-8"     -d "${PAYLOAD}")
   CURL_RC=$?
 
-  if [ "$CURL_RC" -ne 0 ]; then
+  # Exit 23 is a LOCAL write error, not a delivery failure: if the HTTP status
+  # came back 200/202 the submission was accepted regardless of curl's exit code.
+  if [ "$CURL_RC" -ne 0 ] && [ "$RESP" != "200" ] && [ "$RESP" != "202" ]; then
     echo "  ⚠ IndexNow curl failed (exit ${CURL_RC}, http '${RESP:-none}') — non-fatal."
+    rm -f "$OUTF" 2>/dev/null || true
     return 0
   fi
 
@@ -185,9 +207,10 @@ EOF
       ;;
     *)
       echo "  ⚠ IndexNow returned HTTP $RESP (non-fatal). Body:"
-      head -5 /tmp/indexnow.out 2>/dev/null
+      head -5 "$OUTF" 2>/dev/null
       ;;
   esac
+  rm -f "$OUTF" 2>/dev/null || true
 }
 
 # Try primary, fall back, error if both fail
