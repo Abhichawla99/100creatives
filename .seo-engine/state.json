@@ -1,9 +1,14 @@
 {
-  "next_index": 31,
-  "last_published_slug": "modest-fashion-brand-campaign-and-editorial-imagery",
-  "last_published_date": "2026-09-08",
-  "queue_status": "pointer moved 28 -> 31 (published index 30). 9/08 published modest-fashion-brand-campaign-and-editorial-imagery from queue index 30 against P33 NEW (modest fashion / hijab / abaya / tznius founder or head of brand, $1M-$25M; thirty-second post-pivot apparel sub-segment, first coverage of modest fashion on the site). Index 28 (scrubs / medical, P31) and index 29 (socks / hosiery, P32) were DELIBERATELY SKIPPED and remain live in the queue: index 28 was skipped because 9/07's uniform/corporate-apparel article already named FIGS, Jaanuu and Medelita in its persona tier, so publishing scrubs the following day would produce exactly the vocabulary collision that sub-segment rotation discipline exists to prevent - it should run once several days separate it from the uniform piece; index 29 was skipped because its image_hints (ralphlauren, outdoors) are both fully consumed inside the 14-day per-file window, so it could not have shipped with body imagery. Index 30's image_hints (anitadongre, veronica-beard) mapped exactly onto the only three unused files left in the entire eligible inventory. Queue remains 40 entries; next_index 31 -> vintage/resale (P34). Indexes 28 and 29 must be picked up on a future run.",
+  "next_index": 32,
+  "last_published_slug": "vintage-and-secondhand-apparel-marketplace-imagery",
+  "last_published_date": "2026-09-09",
+  "queue_status": "pointer moved 31 -> 32 (published index 31). 9/09 published vintage-and-secondhand-apparel-marketplace-imagery against P34 NEW (vintage / archive / resale operator, $500K-$20M; thirty-third post-pivot apparel sub-segment, first coverage of one-of-one resale inventory on the site). Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now two days clear of the 9/07 uniform article but the FIGS/Jaanuu/Medelita vocabulary overlap is still close, and should get several more days; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 32 -> school uniform (P35), which shares a buyer-facing register with the 9/07 uniform piece and may itself need to be deferred. Indexes 28 and 29 must be picked up on a future run.",
   "history": [
+    {
+      "date": "2026-09-09",
+      "slug": "vintage-and-secondhand-apparel-marketplace-imagery",
+      "h1": "Vintage and resale photography where every unit is a one-of-one SKU — and the flaw you photograph is the one that never comes back."
+    },
     {
       "date": "2026-09-02",
       "slug": "eyewear-and-sunglasses-brand-campaign-and-editorial-imagery",
