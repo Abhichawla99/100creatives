@@ -1,9 +1,14 @@
 {
-  "next_index": 32,
-  "last_published_slug": "vintage-and-secondhand-apparel-marketplace-imagery",
-  "last_published_date": "2026-09-09",
-  "queue_status": "pointer moved 31 -> 32 (published index 31). 9/09 published vintage-and-secondhand-apparel-marketplace-imagery against P34 NEW (vintage / archive / resale operator, $500K-$20M; thirty-third post-pivot apparel sub-segment, first coverage of one-of-one resale inventory on the site). Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now two days clear of the 9/07 uniform article but the FIGS/Jaanuu/Medelita vocabulary overlap is still close, and should get several more days; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 32 -> school uniform (P35), which shares a buyer-facing register with the 9/07 uniform piece and may itself need to be deferred. Indexes 28 and 29 must be picked up on a future run.",
+  "next_index": 34,
+  "last_published_slug": "technical-outdoor-apparel-brand-campaign-imagery",
+  "last_published_date": "2026-09-10",
+  "queue_status": "pointer moved 32 -> 34 (published index 33, deferred index 32). 9/10 published technical-outdoor-apparel-brand-campaign-imagery against P36 NEW (technical outdoor / alpine / expedition gear founder, $3M-$35M; thirty-fourth post-pivot apparel sub-segment, first coverage of functional-proof/comparison-review-driven buying on the site). Index 32 (school uniform, P35) was deliberately skipped per the 9/09 note's own recommendation — it shares a buyer-facing register with the 9/07 uniform-and-team piece and needed more distance; it remains live in the queue for a future run. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now three days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 34 -> western/ranch apparel (P37).",
   "history": [
+    {
+      "date": "2026-09-10",
+      "slug": "technical-outdoor-apparel-brand-campaign-imagery",
+      "h1": "Technical outdoor apparel photography that proves the hydrostatic head, the taped seam and the layering stack — not a summit at golden hour."
+    },
     {
       "date": "2026-09-09",
       "slug": "vintage-and-secondhand-apparel-marketplace-imagery",
