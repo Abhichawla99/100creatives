@@ -1,9 +1,14 @@
 {
-  "next_index": 34,
-  "last_published_slug": "technical-outdoor-apparel-brand-campaign-imagery",
-  "last_published_date": "2026-09-10",
-  "queue_status": "pointer moved 32 -> 34 (published index 33, deferred index 32). 9/10 published technical-outdoor-apparel-brand-campaign-imagery against P36 NEW (technical outdoor / alpine / expedition gear founder, $3M-$35M; thirty-fourth post-pivot apparel sub-segment, first coverage of functional-proof/comparison-review-driven buying on the site). Index 32 (school uniform, P35) was deliberately skipped per the 9/09 note's own recommendation — it shares a buyer-facing register with the 9/07 uniform-and-team piece and needed more distance; it remains live in the queue for a future run. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now three days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 34 -> western/ranch apparel (P37).",
+  "next_index": 35,
+  "last_published_slug": "western-and-ranch-apparel-brand-campaign-imagery",
+  "last_published_date": "2026-09-11",
+  "queue_status": "pointer moved 34 -> 35 (published index 34). 9/11 published western-and-ranch-apparel-brand-campaign-imagery against P37 NEW (founder/CMO at a $3M-$25M DTC western, ranch and rodeo apparel brand shipping into Boot Barn, Cavender's, Sheplers and Rod's Western Palace; thirty-fifth post-pivot apparel sub-segment). Index 32 (school uniform, P35) remains deliberately skipped and live in the queue. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now four days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 35 -> sleepwear and pajama apparel (P38).",
   "history": [
+    {
+      "date": "2026-09-11",
+      "slug": "western-and-ranch-apparel-brand-campaign-imagery",
+      "h1": "Western apparel campaign photography that reads at the yoke, the snap and the hat crease, not at a straight-leg jean and a borrowed felt hat."
+    },
     {
       "date": "2026-09-10",
       "slug": "technical-outdoor-apparel-brand-campaign-imagery",
