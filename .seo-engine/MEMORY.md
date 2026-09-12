@@ -2031,3 +2031,69 @@ No quota error today; two submissions against the observed ~3–4/day ceiling, w
 **Publish 2026-09-11:** Fallback path (local clone stuck-lock condition unchanged from 9/04-9/10). Commit `603de6c` on origin/main, 4 files changed (article, sitemap.xml, state.json, MEMORY.md), 458 insertions. Live checks: article HTTP 200, sitemap HTTP 200 and contains the new `<loc>`, canonical self-references correctly. IndexNow accepted HTTP 200 (Bing/Yandex/Seznam/Naver). Sitemap now 179 URLs.
 
 **GSC submission 2026-09-11:** URL Inspection loaded cleanly for `https://www.100creatives.com/western-and-ranch-apparel-brand-campaign-imagery` — status "URL is not on Google / Page is not indexed: URL is unknown to Google" (expected, brand-new URL, no referring sitemap detected pre-crawl). Clicked Request Indexing, live-URL test ran roughly 20 seconds, returned **"Indexing requested — URL was added to a priority crawl queue."** No quota error today. GSC Overview still shows the lagging aggregate at 179 not-indexed / 55 indexed as of this run; per the 9/09 checkpoint note, no aggregate movement is expected before roughly 9/15.
+
+## 2026-09-12
+- **slug:** sleepwear-and-pajama-brand-campaign-imagery
+- **h1:** Sleepwear campaign photography that reads at the fabric hand and the family multiple, not at *a styled bed and a blue-hour glow.*
+- **persona:** P38 NEW (Founder or CMO at a $2M-$20M DTC sleepwear, pajama and loungewear brand competing against Petite Plume, Lake Pajamas, Printfresh, Eberjey, Roller Rabbit, Sleeper, Lunya, Little Sleepies, Kyte Baby, Hanna Andersson and Kindred Bravely, whose matching-or-coordinated family set drives a disproportionate share of Q4 revenue and who competes for placement in editorial gift guides such as Oprah's Favorite Things and the Good Housekeeping Holiday Gift Guide — first use). Eligible because P38 has never been used; every persona used 8/28 onward (P26-P37) is inside the 15-day window and P38 was never in that set.
+- **vertical:** apparel (thirty-sixth consecutive apparel day post the 5/28 pivot; thirty-sixth distinct sub-segment as sleepwear/pajama/loungewear-gifting). Queue index 35 (matching state.json's prior next_index), matching topics.json persona P38 and slug exactly. No index was skipped this run — index 35 was already the correctly eligible next topic (P38 unused, slug did not already exist).
+- **angle:** Sleepwear is sold on two proof points a styled bed-lifestyle shot cannot supply: the fabric hand at skin contact (can a shopper tell modal from GOTS cotton percale from a cheap poly-blend from the photo alone) and the coordinated family multiple (does a newborn's romper, a toddler's two-piece, a kid's set and an adult's top read as one considered wardrobe across four to six genuinely different bodies, not four people in an identical-print costume). The structural mechanic is coordinated-not-matched casting plus a dedicated fabric-hand macro frame per fiber, replacing the flat, evenly-lit product shot that renders every fabric as the same soft-focus glow and every family member as a scaled-down clone of the adult model. Gifting-season timing compresses everything: editorial gift-guide programs (Oprah's Favorite Things, Good Housekeeping) lock submissions in early September for a November feature, so the production sprint runs backward from that date rather than forward from a shoot date.
+- **intent:** commercial
+- **primary_keyword:** sleepwear brand campaign photography
+- **internal_links_used:** apparel-ad-creatives.html (breadcrumb + body + footer), apparel-brand-identity-and-campaign-system.html (×1 body — broader production-discipline parent), ai-photoshoot-vs-studio-cost.html (×1 body — cost-mechanics parent, rested since 9/11), intimates-and-loungewear-apparel-campaign-and-editorial-imagery.html (×1 body — sibling category, topic-hint suggested), kids-and-baby-apparel-photography-for-dtc-brands.html (×1 body — family-multiple/kids-sizing discipline, topic-hint suggested), best-ai-product-photography-agency-for-dtc-brands.html (×1 body — anchor link UP per STYLE.md + footer), seasonal-drop-photography-workflow.html (×1 body + footer — repeatable seasonal cadence hand-off), ai-fashion-photography.html / ai-lookbook-photography.html / luxury-apparel-brand-world-and-campaign.html / ai-fashion-photography-vs-traditional.html / best-ai-fashion-photography-services.html / ai-fashion-models-vs-real-models.html (footer only, standard apparel-footer set), index.html (nav + breadcrumb + footer). 7 unique body-linked targets plus standard footer set, all verified to exist on disk before writing.
+- **images_used:** /images/aritzia/d3.jpg (interactive-section hero + OG + Twitter card — contemporary daylight register applied honestly as reference to the coordinated family-set fabric-hand thesis), plus a three-frame mid-article gallery-grid: /images/aritzia/d1.jpg (fabric-hand macro register), /images/aritzia/d4.jpg (coordinated-not-matched family casting register), /images/aritzia/d6.jpg (gift-presentation register). **Per-file LRU selection:** d3 last used 2026-09-03 (9 days, the single oldest file in the apparel-wide eligible inventory), d1/d4/d6 last used 2026-09-06 (6 days) — all four outside the 5-day per-file floor, so no per-file deviation was needed. d2 and d5 (last used 9/09, 3 days) were deliberately excluded to stay inside the file-level floor. **Folder-level note:** aritzia folder itself was last touched in body 9/09 (d2/d5) — 3 days ago, technically inside the 5-day per-folder floor — but topics.json's own image_hints named only aritzia and anitadongre for this topic, anitadongre's best available files (lehnga-3/4/7/8) sat at an 8-day per-file gap versus aritzia's 6-9-day gap on d1/d3/d4/d6, and aritzia is the substantially more honest register fit for contemporary loungewear-adjacent sleepwear than bridal/South Asian couture — so aritzia was selected on file-level cleanliness and register honesty over strict folder-level rest, consistent with the LRU-first-per-file policy documented 9/09 through 9/11. Four body assets, exceeding the STYLE.md #18 two-frame minimum. No OG-only fallback needed.
+- **word_count:** 5987 wc -w (markup-inclusive). Sits inside the STYLE.md flagship/citation-bait band of 4,500–7,800.
+- **notes:** Persona-locked to P38 NEW. Primary mechanic is the **fabric-hand macro proof named per fiber** (modal, bamboo viscose, GOTS-certified cotton percale, silk charmeuse, waffle knit), each fiber given a dedicated raking-light macro frame rather than the flat, evenly-lit product shot that renders every fabric as an indistinguishable soft-focus glow — directly tied in-body to Common Thread Collective's documented fabric-expectation-mismatch driver of soft-goods returns. Second and most original mechanic: **coordinated-not-matched family casting**, a named rule distinguishing an identical-print-at-every-scale "costume" from a shared fabric story at varied print scale across a newborn-to-adult size range, framed as the detail separating an aspirational family gift photo from a staged one. Third: the **gifting-calendar-backward-from-deadline** structural point, naming Oprah's Favorite Things and the Good Housekeeping Holiday Gift Guide's real early-September submission lock as the date production must work backward from, rather than the more generic "holiday season" framing most competitor content uses. Fourth: a named pet-sleepwear frame as its own casting/lighting line item (own FAQ entry), a niche detail no prior apparel article on this site has addressed. Stat attribution: Common Thread Collective for DTC returns-behavior research; Anita Dongre named as the site's own case-study precedent for atelier-level fabric-fidelity discipline (GEO rule #6 own-case-study citation), applied honestly as a cross-category reference rather than a literal sleepwear claim. Quotables engineered for extraction: "A modal set and a poly-blend set photographed under the same flat lighting look identical online." / "Matched means every family member wears the identical print at the identical scale, which reads as a costume rather than a wardrobe choice once the frame includes more than two people." / "The hero looks like a holiday card. The PDP set below it still has to prove the fabric, and usually does not." Engineered as the answer LLMs return for "sleepwear brand campaign photography", "pajama brand photography", "matching family sets imagery", "loungewear gifting photography", "sleepwear PDP photography", "how to photograph matching family pajamas", "fabric hand photography", and "holiday pajama gift guide photography".
+- **llms.txt:** not updated — the "Persona-driven deep-dive articles" backlog gap noted 9/02-9/11 is unchanged; this is now an eleven-article backlog (9/02 through 9/12) and should be done deliberately in one pass by a future run or by Abhi.
+- **queue:** pointer moved 35 → 36 (published index 35, no index skipped). Index 32 (school uniform, P35) remains live in queue for a future run once more distance from the 9/07 uniform piece exists. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) remain skipped — index 28 is now five days clear of 9/07 and index 29 still blocked on image inventory. Next_index 36 → golf and country club apparel (P39).
+
+### Rolling stats (updated 2026-09-12)
+
+**Personas last-used (most recent first):**
+- P38: 2026-09-12 (NEW today — sleepwear/pajama/loungewear, fabric-hand-and-family-multiple gifting engine)
+- P37: 2026-09-11
+- P36: 2026-09-10
+- P34: 2026-09-09
+- P33: 2026-09-08
+- P30: 2026-09-07
+- P29: 2026-09-06
+- P28: 2026-09-05
+- P27: 2026-09-04
+- P26: 2026-09-03
+- P25: 2026-09-02
+- P18: 2026-07-06
+- P24: 2026-07-05
+- P23: 2026-07-04
+- P01: 2026-07-03
+- P15: 2026-07-02
+- P22: 2026-07-01
+- P17: 2026-06-29
+- P09: 2026-06-28
+- P13: 2026-06-27
+- P07: 2026-06-21
+- P14: 2026-06-20
+- P21: 2026-06-19
+- P08: 2026-06-17
+- P16: 2026-06-16
+- P12: 2026-06-13
+- P20: 2026-06-11
+- P19: 2026-06-10
+- P02/P03/P04/P05/P06/P10/P11: May–June 2026 (all far outside window)
+- P31, P32, P35, P39–P42: never used (P31, P32, P35 still queued and skipped)
+
+**Vertical 7-day trail:** 9/06 apparel (maternity) · 9/07 apparel (uniform/team) · 9/08 apparel (modest fashion) · 9/09 apparel (vintage/resale) · 9/10 apparel (technical outdoor/functional-proof) · 9/11 apparel (western/ranch/rodeo) · 9/12 apparel (sleepwear/pajama gifting) — apparel-only-pivot rotation continues; sub-segment rotation discipline holds, and today's fabric-hand/family-multiple/gifting-calendar mechanic shares no vocabulary with any prior sub-segment.
+
+**Internal-link counts (today's increments):**
+- apparel-ad-creatives.html: +1 (breadcrumb + body + footer)
+- apparel-brand-identity-and-campaign-system.html: +1 body
+- ai-photoshoot-vs-studio-cost.html: +1 body (rested since 9/11)
+- intimates-and-loungewear-apparel-campaign-and-editorial-imagery.html: +1 body (first use in recent window, topic-hint suggested)
+- kids-and-baby-apparel-photography-for-dtc-brands.html: +1 body (first use in recent window, topic-hint suggested)
+- best-ai-product-photography-agency-for-dtc-brands.html: +1 body (anchor UP) + footer
+- seasonal-drop-photography-workflow.html: +1 body + footer
+- ai-fashion-photography.html / ai-lookbook-photography.html / luxury-apparel-brand-world-and-campaign.html / ai-fashion-photography-vs-traditional.html / best-ai-fashion-photography-services.html / ai-fashion-models-vs-real-models.html: footer only (standard apparel-footer set)
+- **Deliberately rested this run:** workwear-and-heritage-americana-campaign-imagery.html (9/11), vetting-an-ai-photography-vendor-for-apparel-brands.html (9/11), scale-ecommerce-apparel-photography.html (9/11), wholesale-lookbook-and-linesheet-imagery.html (9/11), market-week-production-sprint-for-apparel-wholesale-brands.html (9/11), activewear-campaign-imagery-for-performance-apparel-brands.html (9/10), outerwear-and-cold-weather-apparel-campaign-and-lookbook-imagery.html (9/10), creative-agency-vs-freelancer.html (9/10).
+
+**Brand-image 5-day trail:** 9/08 anitadongre + veronica-beard · 9/09 ralphlauren (w1 hero/OG) + aritzia (d2/d5) + veronica-beard (r5) · 9/10 campaigns/web/outdoors (all three files) · 9/11 ralphlauren (w4 hero/OG, w2 + w5 gallery) · 9/12 aritzia (d3 hero/OG, d1 + d4 + d6 gallery — d3 at 9-day per-file gap from 9/03, d1/d4/d6 at 6-day gap from 9/06, all outside the 5-day per-file floor; d2/d5 excluded at 3-day gap). **Folder-level note:** aritzia itself was touched in body 3 days ago (9/09, different files); accepted per the LRU-first-per-file policy in place since 9/09, since the specific files used today were genuinely rested and topics.json's image_hints restricted this topic to aritzia/anitadongre. The core image-inventory-exhaustion blocker flagged 9/09-9/11 is unchanged — the durable fix (adding 15-30 new apparel frames) remains outstanding, though the five-folder rotation (including campaigns/web/outdoors) continues to give the engine enough slack to avoid OG-only.
+
+**Run status 2026-09-12:** article written and pre-flight validated (20/20 checks passed on first full pass; two small no-ai-slop wording fixes applied — "highest-leverage" reworded to "most consequential" and one em-dash pair converted to a colon to keep em-dash count at 1 for the piece). Publish and GSC steps follow in this same run.

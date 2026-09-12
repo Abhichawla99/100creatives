@@ -1,9 +1,14 @@
 {
-  "next_index": 35,
-  "last_published_slug": "western-and-ranch-apparel-brand-campaign-imagery",
-  "last_published_date": "2026-09-11",
-  "queue_status": "pointer moved 34 -> 35 (published index 34). 9/11 published western-and-ranch-apparel-brand-campaign-imagery against P37 NEW (founder/CMO at a $3M-$25M DTC western, ranch and rodeo apparel brand shipping into Boot Barn, Cavender's, Sheplers and Rod's Western Palace; thirty-fifth post-pivot apparel sub-segment). Index 32 (school uniform, P35) remains deliberately skipped and live in the queue. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now four days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 35 -> sleepwear and pajama apparel (P38).",
+  "next_index": 36,
+  "last_published_slug": "sleepwear-and-pajama-brand-campaign-imagery",
+  "last_published_date": "2026-09-12",
+  "queue_status": "pointer moved 35 -> 36 (published index 35). 9/12 published sleepwear-and-pajama-brand-campaign-imagery against P38 NEW (founder/CMO at a $2M-$20M DTC sleepwear, pajama and loungewear brand building the matching-family-set gifting engine that drives its Q4 revenue; thirty-sixth post-pivot apparel sub-segment). No index skipped this run - index 35 was already the correctly eligible next topic (P38 unused, slug did not already exist). Index 32 (school uniform, P35) remains deliberately skipped and live in the queue. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now five days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 36 -> golf and country club apparel (P39).",
   "history": [
+    {
+      "date": "2026-09-12",
+      "slug": "sleepwear-and-pajama-brand-campaign-imagery",
+      "h1": "Sleepwear campaign photography that reads at the fabric hand and the family multiple, not at a styled bed and a blue-hour glow."
+    },
     {
       "date": "2026-09-11",
       "slug": "western-and-ranch-apparel-brand-campaign-imagery",
