@@ -1,9 +1,14 @@
 {
-  "next_index": 36,
-  "last_published_slug": "sleepwear-and-pajama-brand-campaign-imagery",
-  "last_published_date": "2026-09-12",
-  "queue_status": "pointer moved 35 -> 36 (published index 35). 9/12 published sleepwear-and-pajama-brand-campaign-imagery against P38 NEW (founder/CMO at a $2M-$20M DTC sleepwear, pajama and loungewear brand building the matching-family-set gifting engine that drives its Q4 revenue; thirty-sixth post-pivot apparel sub-segment). No index skipped this run - index 35 was already the correctly eligible next topic (P38 unused, slug did not already exist). Index 32 (school uniform, P35) remains deliberately skipped and live in the queue. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now five days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 36 -> golf and country club apparel (P39).",
+  "next_index": 37,
+  "last_published_slug": "golf-and-country-club-apparel-brand-campaign-imagery",
+  "last_published_date": "2026-09-13",
+  "queue_status": "pointer moved 36 -> 37 (published index 36). 9/13 published golf-and-country-club-apparel-brand-campaign-imagery against P39 NEW (founder/CMO at a $3M-$25M DTC golf, tennis and country club apparel brand selling into green-grass pro shops and the PGA Show wholesale channel; thirty-seventh post-pivot apparel sub-segment). No index skipped this run - index 36 was already the correctly eligible next topic (P39 unused, slug did not already exist). Index 32 (school uniform, P35) remains deliberately skipped and live in the queue. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now six days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 37 -> costume and cosplay apparel (P40).",
   "history": [
+    {
+      "date": "2026-09-13",
+      "slug": "golf-and-country-club-apparel-brand-campaign-imagery",
+      "h1": "Golf apparel campaign photography that reads at the collar, the backswing and the pro-shop linesheet, not at a fairway sunset and a stock swing."
+    },
     {
       "date": "2026-09-12",
       "slug": "sleepwear-and-pajama-brand-campaign-imagery",
