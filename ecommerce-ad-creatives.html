@@ -61,7 +61,7 @@
       "name": "100 Creatives",
       "url": "https://www.100creatives.com"
     },
-    "description": "High-converting static ad creatives designed specifically for ecommerce and Shopify brands. Product hero shots, UGC-style statics, comparison ads, social proof creatives, and lifestyle hybrids. 48-hour turnaround with precision revisions.",
+    "description": "Static ad creatives designed for ecommerce and Shopify brands: product hero shots, UGC-style statics, comparison ads, social proof creatives and lifestyle hybrids. Creative batches turn around in 48 hours, with revisions returned within 48 hours.",
     "serviceType": "Ecommerce Ad Creative Design",
     "areaServed": "Worldwide",
     "audience": {
@@ -70,7 +70,12 @@
     },
     "offers": {
       "@type": "Offer",
-      "description": "Flat, transparent pricing with precision revisions and 48-hour turnaround"
+      "description": "Quoted per engagement, with a fixed total in writing before work starts. Static and video ad creative engagements start at $4,000 USD.",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "minPrice": 4000,
+        "priceCurrency": "USD"
+      }
     }
   }
   </script>
@@ -267,6 +272,26 @@
     }
 
     .hero-btn:hover svg { transform: translateX(3px); }
+
+    .hero-meta {
+      margin-top: 32px;
+      font-family: var(--sans);
+      font-size: 13px;
+      letter-spacing: 0.3px;
+      color: var(--muted);
+    }
+
+    .content-body a, .work-header p a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .work-spec {
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--text);
+    }
 
     /* ===== DIVIDER ===== */
     .divider {
@@ -653,6 +678,7 @@
   <section class="hero">
     <p class="hero-label fade-in">Static ad creatives for ecommerce brands</p>
     <h1 class="fade-in">Ecommerce ad<br>creatives that<br><em>actually sell.</em></h1>
+    <p class="hero-meta fade-in">Last updated: 2026-09-14</p>
     <p class="hero-body fade-in">Your product photos are beautiful. But they are not ads. We design ecommerce ad creatives built to stop the scroll, earn the click, and drive the purchase. Engineered for Meta. Delivered in 48 hours.</p>
     <div class="hero-bottom fade-in">
       <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="hero-btn">
@@ -673,7 +699,7 @@
       </div>
       <div class="content-body fade-in">
         <p>Most ecommerce brands launch their first paid campaigns using product photography straight from their website. Clean white backgrounds. Flat lays. Lifestyle shots from the brand shoot. It looks good on the product page, but it disappears in the feed.</p>
-        <p>The problem is not quality. The problem is context. A Meta feed is chaotic. People scroll fast. Your product has roughly 1.5 seconds to earn attention, and a product photo on a white background does not do that. It lacks a hook. It lacks a reason to stop. It looks like every other ecommerce ad in the feed.</p>
+        <p>The problem is not quality. The problem is context. A Meta feed is chaotic. People scroll fast. Meta's own research found people spend 1.7 seconds on average with a piece of mobile feed content (<a href="https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative" target="_blank" rel="noopener">Facebook IQ, 2016</a>), and a product photo on a white background often does too little in that time. It lacks a hook. It lacks a reason to stop. It looks like every other ecommerce ad in the feed.</p>
         <p>Dedicated ecommerce ad creatives are designed differently. They lead with a hook that creates curiosity or urgency. They layer in social proof, star ratings, "as seen in" mentions, and customer quotes that build instant trust. They frame the product inside a narrative, not just a catalog layout. And they do all of this while staying true to the brand and looking like something you would be proud to run.</p>
         <p>Product photography is what you use on your Shopify store. Ecommerce ad creatives are what you use to get people there. They are two different jobs, and they require two different skill sets.</p>
       </div>
@@ -687,7 +713,7 @@
     <div class="section-label fade-in">What converts</div>
     <h2 class="fade-in">Types of ecommerce ad creatives<br>that <em>convert</em></h2>
     <div class="content-body fade-in" style="margin-bottom: 16px;">
-      <p>Not every product ad creative is the same. Different stages of the funnel, different audiences, and different objectives require different formats. Here are the core ecommerce ad creative types we design for DTC brands every day.</p>
+      <p>Not every product ad creative is the same. Different stages of the funnel, different audiences, and different objectives require different formats. Here are the core ecommerce ad creative types we design for DTC brands. If you are new to the format, start with <a href="/static-ads">what a static ad is</a>.</p>
     </div>
     <div class="types-grid">
       <article class="type-card fade-in">
@@ -708,12 +734,12 @@
       <article class="type-card fade-in">
         <span class="type-number">04</span>
         <h3>Social Proof &amp; Review Ads</h3>
-        <p>Customer reviews, star ratings, and trust signals designed into a visually compelling static. For online store ad creatives, social proof is one of the highest-converting angles because it answers the buyer's biggest question: does this actually work?</p>
+        <p>Customer reviews, star ratings, and trust signals designed into a visually compelling static. For online store ad creatives, social proof answers the buyer's biggest question: does this actually work? Use only reviews and ratings you can document.</p>
       </article>
       <article class="type-card fade-in">
         <span class="type-number">05</span>
         <h3>Before &amp; After</h3>
-        <p>Transformation-focused creatives that show the problem state and the product as the solution. Extremely effective for skincare, supplements, food, and any product where the result is visible. These ecommerce ad creatives drive curiosity and click-through.</p>
+        <p>Transformation-focused creatives that show the problem state and the product as the solution. Suited to products where the result is visible. Show real results only, and check the ad platform's policies for your category before running them.</p>
       </article>
       <article class="type-card fade-in">
         <span class="type-number">06</span>
@@ -735,7 +761,7 @@
         </div>
         <div class="content-body fade-in">
           <p>We do not design ads for local restaurants or SaaS companies. We design ecommerce ad creatives for product brands selling direct to consumer. That focus matters, because what converts on Meta for an online store is fundamentally different from what works for other business types.</p>
-          <p>We understand the ecommerce funnel deeply. We know that a cold traffic ad needs a different hook than a retargeting ad. We know that your average order value changes what kind of creative can profitably acquire a customer. We know that Shopify ad creatives need to match the landing page experience so the transition from ad to checkout feels seamless.</p>
+          <p>We understand the ecommerce funnel deeply. We know that a cold traffic ad needs a different hook than a retargeting ad. We know that your average order value changes what kind of creative can profitably acquire a customer. We know that Shopify ad creatives need to match the landing page experience so the move from ad to checkout feels consistent.</p>
           <p>We study the DTC ecommerce ads that are winning right now across categories. We reverse-engineer what makes them work, from the copy structure to the visual framing to the trust signals. Then we apply those learnings to your brand, your products, and your audience. Every creative has a strategy behind it, not just a design.</p>
           <p>Whether you are scaling a single hero SKU or launching a new product line, our ecommerce ad design process is built around what actually drives revenue for product brands on paid social.</p>
         </div>
@@ -749,7 +775,7 @@
       <div class="section-label fade-in" style="border-bottom-color: #2a2a2a;">Speed advantage</div>
       <h2 class="fade-in">From brief to live<br>in <em>48 hours</em></h2>
       <div class="content-body fade-in" style="margin-bottom: 16px;">
-        <p>Ecommerce moves fast. Trends shift, inventory changes, competitors launch new angles, and your media buyer needs fresh creatives to test. Traditional agencies take two to four weeks per batch. By then, the window has closed. We deliver production-ready ecommerce ad creatives in as fast as 48 hours so you can test new angles before your competitors even brief theirs.</p>
+        <p>Ecommerce moves fast. Trends shift, inventory changes, competitors launch new angles, and your media buyer needs fresh creatives to test. We deliver production-ready ecommerce ad creatives with a 48-hour turnaround on creative batches, so new angles reach your ad account while they are still relevant.</p>
       </div>
       <div class="speed-steps">
         <div class="speed-step fade-in">
@@ -760,17 +786,17 @@
         <div class="speed-step fade-in">
           <div class="speed-step-number">02</div>
           <h3>We design</h3>
-          <p>Our senior designers build your ecommerce ad creatives using proven frameworks tailored to your product and audience.</p>
+          <p>Our team makes the product imagery with AI, without a physical shoot, and designs the ads around your product and audience.</p>
         </div>
         <div class="speed-step fade-in">
           <div class="speed-step-number">03</div>
           <h3>Review + revise</h3>
-          <p>You get your creatives within 48 hours. Request revisions until every detail is right. No extra charges.</p>
+          <p>You get your creative batch within 48 hours. Revisions come back within 48 hours.</p>
         </div>
         <div class="speed-step fade-in">
           <div class="speed-step-number">04</div>
           <h3>Launch + test</h3>
-          <p>Creatives are delivered in every format your media buyer needs. Upload to Meta, hit publish, and start testing.</p>
+          <p>Creatives are exported to the specs agreed at brand intake. Upload to Meta, hit publish, and start testing.</p>
         </div>
       </div>
     </div>
@@ -779,17 +805,18 @@
   <!-- Case study showcase -->
   <section class="work" id="work">
     <div class="work-header fade-in">
-      <h2>Ecommerce brands<br>we've <em>worked with</em></h2>
-      <p>Product ad creatives designed to convert for leading DTC and ecommerce brands.</p>
+      <h2>Spec concepts for<br><em>ecommerce brands</em></h2>
+      <p>Most of our client work is under NDA, so these are spec concepts: work made for brands that did not commission it. See all 25 with notes in our <a href="/dtc-ad-examples">DTC static ad examples</a>.</p>
     </div>
     <div class="work-items">
       <div class="work-item fade-in">
         <a href="/chobani" class="work-card">
-          <img src="images/chobani/chobani-9.png" alt="Chobani ecommerce ad creative - product hero shot with social proof overlay - by 100 Creatives" loading="lazy">
+          <img src="images/chobani/chobani-9.png" alt="Chobani ecommerce static ad spec concept by 100 Creatives, not commissioned by Chobani" loading="lazy">
         </a>
         <div class="work-brand">
-          Chobani &mdash; Greek Yogurt
-          <a href="/chobani" class="view-project">View project
+          Chobani &middot; Greek Yogurt
+          <span class="work-spec">Spec work, not commissioned by Chobani</span>
+          <a href="/chobani" class="view-project">View spec concept
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
@@ -797,11 +824,12 @@
 
       <div class="work-item fade-in">
         <a href="/armra" class="work-card">
-          <img src="images/armra/armra-5.png" alt="ARMRA Colostrum ecommerce ad creative - DTC supplement ad design - by 100 Creatives" loading="lazy">
+          <img src="images/armra/armra-5.png" alt="ARMRA Colostrum ecommerce static ad spec concept by 100 Creatives, not commissioned by ARMRA" loading="lazy">
         </a>
         <div class="work-brand">
-          ARMRA &mdash; Colostrum
-          <a href="/armra" class="view-project">View project
+          ARMRA &middot; Colostrum
+          <span class="work-spec">Spec work, not commissioned by ARMRA</span>
+          <a href="/armra" class="view-project">View spec concept
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
@@ -809,11 +837,12 @@
 
       <div class="work-item fade-in">
         <a href="/barefootwines" class="work-card">
-          <img src="images/barefootwines/barefoot-1.png" alt="Barefoot Wines ecommerce ad creative - lifestyle product hybrid ad - by 100 Creatives" loading="lazy">
+          <img src="images/barefootwines/barefoot-1.png" alt="Barefoot wine ecommerce static ad spec concept by 100 Creatives, not commissioned by Barefoot" loading="lazy">
         </a>
         <div class="work-brand">
-          Barefoot &mdash; Wines
-          <a href="/barefootwines" class="view-project">View project
+          Barefoot &middot; Wine
+          <span class="work-spec">Spec work, not commissioned by Barefoot</span>
+          <a href="/barefootwines" class="view-project">View spec concept
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
@@ -824,7 +853,7 @@
   <!-- Final CTA -->
   <section class="cta-section" id="connect">
     <h2 class="fade-in">Ready for ecommerce<br>ads that <em>convert?</em></h2>
-    <p class="fade-in">Stop running product photos as ads. Get ecommerce ad creatives designed to stop the scroll and drive purchases for your online store.</p>
+    <p class="fade-in">Stop running product photos as ads. Engagements are quoted, from $4,000, with a fixed total in writing before work starts.</p>
     <div class="fade-in">
       <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="hero-btn">
         Get in touch

@@ -55,7 +55,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Fast Ad Creative Turnaround — 48 Hour Static Ad Creatives",
+    "name": "Fast Ad Creative Turnaround: 48-Hour Static Ad Creatives",
     "provider": {
       "@type": "Organization",
       "name": "100 Creatives",
@@ -66,7 +66,12 @@
     "areaServed": "Worldwide",
     "offers": {
       "@type": "Offer",
-      "description": "Flat, transparent pricing with 48-hour turnaround and precision revisions"
+      "description": "Quoted per engagement, with a fixed total in writing before work starts. Static and video ad creative engagements start at $4,000 USD. Creative batches turn around in 48 hours, and revisions are returned within 48 hours.",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "minPrice": 4000,
+        "priceCurrency": "USD"
+      }
     }
   }
   </script>
@@ -270,6 +275,26 @@
     }
 
     .hero-btn:hover svg { transform: translateX(3px); }
+
+    .hero-meta {
+      margin-top: 32px;
+      font-family: var(--sans);
+      font-size: 13px;
+      letter-spacing: 0.3px;
+      color: var(--muted);
+    }
+
+    .deliverables-intro a, .work-header p a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .work-spec {
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--text);
+    }
 
     /* ===== DIVIDER ===== */
     .divider {
@@ -768,7 +793,8 @@
   <section class="hero">
     <p class="hero-label fade-in">48 hour ad creatives for DTC brands</p>
     <h1 class="fade-in">Fast ad creative<br>turnaround.<br><em>No compromises.</em></h1>
-    <p class="hero-body fade-in">Your competitors are testing ten new angles this week. Traditional agencies take two to four weeks to deliver a single batch. We deliver polished, Meta-ready static ad creatives in 48 hours so you never fall behind.</p>
+    <p class="hero-meta fade-in">Last updated: 2026-09-14</p>
+    <p class="hero-body fade-in">New angles need to reach your ad account while they are still relevant. 100 Creatives delivers Meta-ready static ad creatives with a 48-hour turnaround on creative batches, and revisions come back within 48 hours.</p>
     <div class="hero-bottom fade-in">
       <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="hero-btn">
         Get started today
@@ -785,16 +811,16 @@
       <div class="metric-label">Turnaround time</div>
     </div>
     <div class="metric fade-in">
-      <div class="metric-value">8x</div>
-      <div class="metric-label">Faster than agencies</div>
+      <div class="metric-value">48h</div>
+      <div class="metric-label">Revisions returned</div>
     </div>
     <div class="metric fade-in">
-      <div class="metric-value">100s</div>
-      <div class="metric-label">Creatives / month</div>
+      <div class="metric-value">3</div>
+      <div class="metric-label">Platforms: Meta, TikTok, Google</div>
     </div>
     <div class="metric fade-in">
-      <div class="metric-value">$0</div>
-      <div class="metric-label">Revision fees</div>
+      <div class="metric-value">$4,000</div>
+      <div class="metric-label">Smallest engagement (USD)</div>
     </div>
   </section>
   <div class="divider"></div>
@@ -804,14 +830,14 @@
     <div class="section-label fade-in">Why speed matters in paid media</div>
     <h2 class="fade-in">Every day without<br>fresh creative <em>costs you money</em></h2>
     <div class="fade-in">
-      <p>Paid media moves fast. Algorithms reward novelty, audiences develop creative fatigue within days, and the brands that win are the ones constantly feeding their ad accounts with new angles, new hooks, and new visuals. A fast ad creative turnaround is not a luxury. It is a competitive necessity.</p>
-      <p>Creative fatigue is the silent killer of paid performance. When your audience sees the same static ad for the third or fourth time, click-through rates plummet, cost per acquisition climbs, and your media buyer is left struggling with diminishing returns. The only cure is fresh creative, and the only way to stay ahead is rapid creative production that keeps pace with how quickly the platforms burn through your assets.</p>
+      <p>Paid media moves fast. Audiences tire of creative they have seen before, and brands that keep feeding their ad accounts with new angles, new hooks and new visuals give themselves more chances to find a winner. A fast ad creative turnaround is not a luxury. It is a competitive necessity.</p>
+      <p>Creative fatigue wears down paid performance. As an audience sees the same static ad again and again, click-through rates tend to fall, cost per acquisition tends to rise, and your media buyer runs out of room to optimize. The only cure is fresh creative, and the only way to stay ahead is rapid creative production that keeps pace with how quickly the platforms burn through your assets.</p>
 
       <h3>Testing velocity wins</h3>
-      <p>The highest-performing DTC brands on Meta and TikTok are not running one or two creatives at a time. They are testing ten, twenty, sometimes fifty angles per week. That kind of testing velocity is impossible when you are waiting two to four weeks for a traditional agency to turn around a single batch. By the time the assets land in your inbox, the trend has passed, the seasonal moment is over, and your competitors have already captured the attention you were planning to buy.</p>
+      <p>Brands that test many angles on Meta and TikTok need a steady supply of new creative. That is hard to sustain when each batch takes weeks to arrive, because by the time the assets land in your inbox, the trend or the seasonal moment may have passed.</p>
 
       <h3>The cost of waiting</h3>
-      <p>Consider the math. If your brand spends fifty thousand dollars a month on Meta and your creatives fatigue after seven days, you need fresh assets every single week. A traditional agency operating on a two to four week cycle means you are running stale creative for at least half your ad spend. That is twenty-five thousand dollars a month going toward ads that have already peaked. A quick ad design service that delivers in 48 hours means you never have to run a fatigued ad again.</p>
+      <p>Take a hypothetical. A brand spends fifty thousand dollars a month on Meta, and its creatives fatigue after about a week, so it needs fresh assets every week. If new creative only arrives every two weeks, roughly half of each cycle runs on ads that have already peaked, which is about twenty-five thousand dollars of that month's spend. A 48-hour turnaround on creative batches shortens that gap.</p>
     </div>
   </section>
 
@@ -821,28 +847,28 @@
   <section class="content-section" id="how">
     <div class="section-label fade-in">How we deliver in 48 hours</div>
     <h2 class="fade-in">Built for speed<br><em>from the ground up</em></h2>
-    <p class="fade-in">We did not take a traditional agency and try to make it faster. We built 100 Creatives from scratch around one goal: the fastest ad creative turnaround in the industry without sacrificing quality. Every part of our process exists to remove friction between your brief and finished, platform-ready creatives.</p>
+    <p class="fade-in">100 Creatives is built around a 48-hour turnaround on creative batches. Every part of our process exists to remove friction between your brief and finished, platform-ready creatives.</p>
 
     <div class="process-grid">
       <div class="process-card fade-in">
         <div class="process-number">01</div>
-        <h4>Lean, senior-only team</h4>
-        <p>No junior designers learning on your dime. No account managers relaying messages between you and the person actually doing the work. Our designers are senior-level professionals who have produced thousands of high-converting static ads for DTC brands. They understand performance creative intuitively, which means less back-and-forth and faster execution.</p>
+        <h4>Brand intake up front</h4>
+        <p>Before production, a brand intake covers your visual language, model preferences, colorways and export specs. Settling those rules once means less back-and-forth on every batch that follows.</p>
       </div>
       <div class="process-card fade-in">
         <div class="process-number">02</div>
-        <h4>Direct access, zero layers</h4>
-        <p>At a traditional agency, your feedback passes through an account manager, a project manager, and a creative director before reaching the designer. Each layer adds a day or more to the timeline. At 100 Creatives, you talk directly to the person making your ads. Questions get answered in minutes, not days.</p>
+        <h4>AI production, art-directed</h4>
+        <p>Product and lifestyle imagery is made with AI, without a physical shoot, so there is no studio booking, sample shipping or shoot day in the timeline. Our team art-directs the output, including AI video when the engagement includes it.</p>
       </div>
       <div class="process-card fade-in">
         <div class="process-number">03</div>
-        <h4>Streamlined brief process</h4>
-        <p>We have distilled the creative brief down to exactly what matters: your product, your audience, your angle, and your brand guidelines. No sixty-page strategy decks. No three-hour kickoff calls. You send us what we need, and we start designing the same day. This is what makes same day ad creatives possible.</p>
+        <h4>A short brief</h4>
+        <p>The creative brief covers what matters: your product, your audience, your angle and your brand guidelines. No sixty-page strategy decks and no three-hour kickoff calls.</p>
       </div>
       <div class="process-card fade-in">
         <div class="process-number">04</div>
-        <h4>Specialists, not generalists</h4>
-        <p>We only do one thing: static ad creatives for DTC brands. We are not splitting attention across branding projects, website redesigns, and video production. That singular focus is what allows us to be the fast creative agency that delivers in 48 hours while others need weeks.</p>
+        <h4>Revisions in 48 hours</h4>
+        <p>Revisions come back within 48 hours, so a round of feedback doesn't stall the next batch. The same team makes static ads, AI video ads and the product imagery behind them for Meta, TikTok and Google.</p>
       </div>
     </div>
   </section>
@@ -851,32 +877,30 @@
   <section class="comparison" id="compare">
     <div class="comparison-inner">
       <div class="comparison-header fade-in">
-        <h2>Traditional agency<br>vs. <em>100 Creatives</em></h2>
-        <p>Side by side, the difference in speed and value becomes hard to ignore.</p>
+        <h2>Common delays<br>vs. <em>100 Creatives</em></h2>
+        <p>Where creative production often loses time, and how 100 Creatives works instead.</p>
       </div>
       <div class="comp-grid fade-in">
         <div class="comp-col them">
-          <h3>Traditional Agency</h3>
+          <h3>Common delays</h3>
           <ul>
-            <li>2-4 week turnaround</li>
-            <li>$5K+ monthly retainers</li>
-            <li>Account managers relay your feedback</li>
-            <li>Revisions cost extra or take days</li>
-            <li>Generalists juggling multiple project types</li>
-            <li>One batch per cycle, limited testing</li>
-            <li>Strategy decks before any design starts</li>
+            <li>Waiting for a studio and a shoot date</li>
+            <li>Shipping product samples to a shoot</li>
+            <li>Feedback relayed through several people</li>
+            <li>Revisions queued behind other work</li>
+            <li>Long strategy decks before any design</li>
+            <li>One size designed, the rest cropped</li>
           </ul>
         </div>
         <div class="comp-col us">
           <h3>100 Creatives</h3>
           <ul>
-            <li>48-hour turnaround, every time</li>
-            <li>Flat, transparent pricing</li>
-            <li>Direct access to your designer</li>
-            <li>We nail it in fewer rounds</li>
-            <li>Static ad specialists, nothing else</li>
-            <li>High-volume output for aggressive testing</li>
-            <li>Streamlined brief, design starts same day</li>
+            <li>48-hour turnaround on creative batches</li>
+            <li>Imagery made without a physical shoot</li>
+            <li>Revisions returned within 48 hours</li>
+            <li>Brand intake once, before production</li>
+            <li>A short brief instead of a deck</li>
+            <li>Written quote with a fixed total, from $4,000</li>
           </ul>
         </div>
       </div>
@@ -887,7 +911,7 @@
   <section class="content-section" id="deliverables">
     <div class="section-label fade-in">What you get in 48 hours</div>
     <h2 class="fade-in">Finished creatives,<br>not <em>rough drafts</em></h2>
-    <p class="fade-in">When we say 48 hour ad creatives, we do not mean wireframes or concepts that need three more rounds of revision. You receive fully designed, export-ready static ad creatives built to perform on Meta, TikTok, and Google. Multiple variations, properly sized for every placement, with copy and design working together to stop the scroll and drive action.</p>
+    <p class="fade-in deliverables-intro">When we say 48-hour ad creatives, we mean finished files, not wireframes. Depending on the scope in your quote, you receive fully designed, export-ready static ad creatives for Meta, TikTok and Google, sized to each placement. Our <a href="/static-ads">static ads guide</a> lists the current image specs for each platform.</p>
 
     <div class="deliverables fade-in">
       <div class="deliverable-item">Fully designed static ad creatives</div>
@@ -897,7 +921,7 @@
       <div class="deliverable-item">On-brand with your guidelines</div>
       <div class="deliverable-item">Headline and copy variations included</div>
       <div class="deliverable-item">High-resolution export files</div>
-      <div class="deliverable-item">Revisions included until it's right</div>
+      <div class="deliverable-item">Revisions returned within 48 hours</div>
     </div>
   </section>
 
@@ -913,39 +937,42 @@
   <!-- Case Study Showcase -->
   <section class="work" id="case-studies">
     <div class="work-header fade-in">
-      <h2>Delivered in <em>48 hours</em></h2>
-      <p>Real static ad creatives for real brands. Designed, revised, and shipped in under two days.</p>
+      <h2>Spec <em>concepts</em></h2>
+      <p>Most of our client work is under NDA, so these are spec concepts: campaign imagery made for brands that did not commission it.</p>
     </div>
     <div class="work-items">
       <div class="work-item fade-in">
         <a href="/anitadongre" class="work-card">
-          <img src="images/anitadongre/lehnga-2.jpg" alt="Anita Dongre apparel campaign imagery delivered fast by 100" loading="lazy">
+          <img src="images/anitadongre/lehnga-2.jpg" alt="Anita Dongre couture campaign imagery spec concept by 100 Creatives, not commissioned by Anita Dongre" loading="lazy">
         </a>
         <div class="work-brand">
-          Anita Dongre &mdash; Couture
-          <a href="/anitadongre" class="view-project">View project
+          Anita Dongre &middot; Couture
+          <span class="work-spec">Spec work, not commissioned by Anita Dongre</span>
+          <a href="/anitadongre" class="view-project">View spec concept
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
       </div>
       <div class="work-item fade-in">
         <a href="/apparel-ad-creatives" class="work-card">
-          <img src="images/aritzia/d3.jpg" alt="Aritzia resort campaign imagery by 100" loading="lazy">
+          <img src="images/aritzia/d3.jpg" alt="Aritzia resort campaign imagery spec concept by 100 Creatives, not commissioned by Aritzia" loading="lazy">
         </a>
         <div class="work-brand">
-          Aritzia &mdash; Resort
-          <a href="/apparel-ad-creatives" class="view-project">View project
+          Aritzia &middot; Resort
+          <span class="work-spec">Spec work, not commissioned by Aritzia</span>
+          <a href="/apparel-ad-creatives" class="view-project">See apparel ad creatives
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
       </div>
       <div class="work-item fade-in">
         <a href="/anitadongre" class="work-card">
-          <img src="images/anitadongre/lehnga-7.jpg" alt="Anita Dongre bridal couture campaign by 100" loading="lazy">
+          <img src="images/anitadongre/lehnga-7.jpg" alt="Anita Dongre bridal campaign imagery spec concept by 100 Creatives, not commissioned by Anita Dongre" loading="lazy">
         </a>
         <div class="work-brand">
-          Anita Dongre &mdash; Bridal
-          <a href="/anitadongre" class="view-project">View project
+          Anita Dongre &middot; Bridal
+          <span class="work-spec">Spec work, not commissioned by Anita Dongre</span>
+          <a href="/anitadongre" class="view-project">View spec concept
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
           </a>
         </div>
@@ -956,7 +983,7 @@
   <!-- Final CTA -->
   <section class="cta-section" id="connect">
     <h2 class="fade-in">Stop waiting.<br>Start <em>shipping.</em></h2>
-    <p class="fade-in">Your next batch of high-converting static ad creatives could be in your hands within 48 hours. No retainers, no onboarding marathons. Just fast ad creative turnaround that keeps your paid media performing.</p>
+    <p class="fade-in">Creative batches turn around in 48 hours, and every engagement starts with a written quote and a fixed total, from $4,000.</p>
     <div class="fade-in">
       <a href="https://tidycal.com/abhixchawla/strategy-web" target="_blank" class="hero-btn">
         Get in touch
