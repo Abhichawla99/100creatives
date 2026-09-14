@@ -1,9 +1,14 @@
 {
-  "next_index": 37,
-  "last_published_slug": "golf-and-country-club-apparel-brand-campaign-imagery",
-  "last_published_date": "2026-09-13",
-  "queue_status": "pointer moved 36 -> 37 (published index 36). 9/13 published golf-and-country-club-apparel-brand-campaign-imagery against P39 NEW (founder/CMO at a $3M-$25M DTC golf, tennis and country club apparel brand selling into green-grass pro shops and the PGA Show wholesale channel; thirty-seventh post-pivot apparel sub-segment). No index skipped this run - index 36 was already the correctly eligible next topic (P39 unused, slug did not already exist). Index 32 (school uniform, P35) remains deliberately skipped and live in the queue. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now six days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 37 -> costume and cosplay apparel (P40).",
+  "next_index": 38,
+  "last_published_slug": "costume-and-cosplay-apparel-brand-campaign-imagery",
+  "last_published_date": "2026-09-14",
+  "queue_status": "pointer moved 37 -> 38 (published index 37). 9/14 published costume-and-cosplay-apparel-brand-campaign-imagery against P40 NEW (founder/CMO at a $2M-$15M DTC costume, cosplay and character apparel brand carrying an active studio license or a fixed convention-calendar deadline; thirty-eighth post-pivot apparel sub-segment). No index skipped this run - index 37 was already the correctly eligible next topic (P40 unused, slug did not already exist). Index 32 (school uniform, P35) remains deliberately skipped and live in the queue. Indexes 28 (scrubs/medical, P31) and 29 (socks/hosiery, P32) REMAIN SKIPPED and live in the queue: index 28 is now seven days clear of the 9/07 uniform article; index 29 remains blocked on image inventory. Queue remains 40 entries; next_index 38 -> apparel wholesale expansion photography (P41).",
   "history": [
+    {
+      "date": "2026-09-14",
+      "slug": "costume-and-cosplay-apparel-brand-campaign-imagery",
+      "h1": "Costume and cosplay apparel campaign photography that clears licensor approval, proves the seam and lands before the con, not a moody hallway shot the license desk bounces back."
+    },
     {
       "date": "2026-09-13",
       "slug": "golf-and-country-club-apparel-brand-campaign-imagery",
