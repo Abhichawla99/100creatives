@@ -55,6 +55,9 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
   - Accuracy fixes on `/ecommerce-ad-creatives` and `/fast-ad-creative-turnaround`
 - **Engine v3:** FACTS.md, RUN.md, STYLE.md, topics.json (9 jobs), validate.py, OFFSITE.md, aeo baseline script.
 - **Validation:** `validate.py --changed` passes except 34 FAQ visible/JSON-LD mismatches that were already live on origin/main before today (see debt).
+- **Shipped:** origin/main `3e7e523`, verified live 2026-09-14. New pages return 200 with self-referencing canonicals. `/.seo-engine/*`, `/lib/*` and `/.claude/*` return 404. Spec and geo pages serve `noindex, follow`. The live sitemap has 134 URLs.
+- **IndexNow:** HTTP 200 for 70 URLs (every page with a visible change, plus the sitemap).
+- **Search Console:** `/static-ads` inspected as "URL is unknown to Google". Request indexing returned "Quota Exceeded", because the 09-14 v2 run had already used the quota, so nothing was requested. The whole indexing debt list below is still open.
 - **Links added:**
   - /static-ads ← what-makes-a-good-static-ad, dtc-ad-examples, static-ads-for-meta, static-vs-video-ads, ecommerce-ad-creatives, fast-ad-creative-turnaround, index, about
   - /ad-creative-agency-pricing ← unlimited-ad-creatives, creative-agency-vs-freelancer, static-ad-design-service, static-ads-for-meta, pricing, faq, about, index
