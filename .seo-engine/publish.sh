@@ -100,34 +100,39 @@ push_via_tmp_clone() {
   git config user.name "100Creatives SEO Bot"
   git config user.email "abhixchawla@gmail.com"
 
-  # Copy the article + sitemap + entire .seo-engine/ + .gitignore
+  # Copy ONLY what this run produced: the article, its sitemap entry, and the
+  # engine's own state files. Never sweep other pages or site-level files from
+  # the local checkout. The local mount is routinely behind origin (the stuck
+  # index.lock means it never pulls), so a "copy whatever differs" sweep pushes
+  # stale local copies over newer work on origin. That is how a site-wide edit
+  # made in another session would silently get reverted the next morning.
   cp "$ARTICLE" "$TMPDIR/${SLUG}.html"
-  cp "$SITEMAP" "$TMPDIR/sitemap.xml"
 
-  # Sweep in every local page: NEW files that never reached origin, AND pages that
-  # exist on origin but have been MODIFIED locally. The old version only copied
-  # files missing from the clone, so a site-wide edit (e.g. the 2026-09-08 canonical
-  # rewrite) silently pushed only the new article and left 178 edits behind.
-  for f in "$REPO"/*.html; do
-    [ -e "$f" ] || continue
-    b="$(basename "$f")"
-    if [ ! -f "$TMPDIR/$b" ]; then
-      cp "$f" "$TMPDIR/$b"; echo "  + sweeping in unpushed article: $b"
-    elif ! cmp -s "$f" "$TMPDIR/$b"; then
-      cp "$f" "$TMPDIR/$b"; echo "  ~ syncing locally-modified page: $b"
-    fi
-  done
+  # Merge this run's <url> entry into origin's sitemap instead of replacing the
+  # whole file with the (possibly stale) local one.
+  python3 - "$SITEMAP" "$TMPDIR/sitemap.xml" "$SLUG" <<'PY'
+import re, sys, datetime
+local_path, clone_path, slug = sys.argv[1:4]
+loc = f"https://www.100creatives.com/{slug}"
+clone = open(clone_path).read()
+if f"<loc>{loc}</loc>" in clone:
+    sys.exit(0)
+local = open(local_path).read()
+m = re.search(r"\s*<url>\s*<loc>" + re.escape(loc) + r"</loc>.*?</url>", local, re.S)
+block = m.group(0) if m else (
+    f"\n  <url>\n    <loc>{loc}</loc>\n    <lastmod>{datetime.date.today()}</lastmod>\n"
+    "    <changefreq>monthly</changefreq>\n    <priority>0.9</priority>\n  </url>")
+open(clone_path, "w").write(clone.replace("</urlset>", block.rstrip() + "\n</urlset>", 1))
+print(f"  + sitemap entry merged for {slug}")
+PY
 
-  # Same for the other site-level files the engine can touch
-  for rel in robots.txt llms.txt vercel.json lib/modules.html lib/build-spec.md; do
-    if [ -f "$REPO/$rel" ] && ! cmp -s "$REPO/$rel" "$TMPDIR/$rel"; then
-      mkdir -p "$TMPDIR/$(dirname "$rel")"
-      cp "$REPO/$rel" "$TMPDIR/$rel"; echo "  ~ syncing: $rel"
-    fi
-  done
+  # Engine state written by the run. Procedure files (RUN.md, STYLE.md,
+  # personas.md, images.md, publish.sh) are edited by people on origin and are
+  # deliberately not copied back.
   mkdir -p "$TMPDIR/.seo-engine"
-  cp -r "$REPO/.seo-engine/." "$TMPDIR/.seo-engine/"
-  [ -f "$REPO/.gitignore" ] && cp "$REPO/.gitignore" "$TMPDIR/.gitignore"
+  for rel in MEMORY.md state.json topics.json; do
+    [ -f "$REPO/.seo-engine/$rel" ] && cp "$REPO/.seo-engine/$rel" "$TMPDIR/.seo-engine/$rel"
+  done
 
   git add -A
   if git diff --cached --quiet; then

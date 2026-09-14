@@ -1,0 +1,9 @@
+# Internal files that must never be served on www.100creatives.com.
+# Vercel deploys this repo as a static site, so anything not listed here is public.
+.seo-engine
+lib
+.claude
+.worktrees
+seo-reports
+GITHUB-TOKEN.txt
+*.local
