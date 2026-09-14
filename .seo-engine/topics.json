@@ -1,982 +1,330 @@
 {
-  "_comment": "APPAREL ONLY. Every topic must target apparel and fashion brands and the brand-world / campaign layer (campaigns, lookbooks, editorial, lifestyle, identity) \u2014 never fit/PDP/catalog photography, and never beauty, supplements, food, beverage, home, pet, tech, CPG, or geo content. The studio is '100 \u2014 a brand-world studio for apparel.' Positioning: the campaign, not the catalog. When the queue exhausts, extend ONLY with new apparel/fashion campaign-layer briefs. Engine reads MEMORY.md first to skip recently-used angles.",
-  "_schema": {
-    "slug": "kebab-case URL filename (no .html)",
-    "h1": "Page H1 (use <em> for accent in HTML)",
-    "vertical": "apparel (ONLY \u2014 no other vertical permitted)",
-    "angle": "The sharp narrative angle \u2014 what this article SAYS",
-    "intent": "informational | commercial | comparison | playbook",
-    "primary_keyword": "Exact phrase the apparel founder would type",
-    "secondary_keywords": "5 supporting variants",
-    "suggested_internal_links": [
-      "specific apparel .html files to link to"
-    ],
-    "image_hints": "anitadongre (only apparel imagery folder currently on disk)"
-  },
-  "topics": [
+ "_comment": "v3 queue (2026-09-14). Ad-creative positioning. Every topic carries the evidence that justifies it. Strengthen jobs keep the URL. Evidence = Search Console, 3 months to 2026-09-11, unless stated.",
+ "_schema": {
+  "id": "stable id",
+  "type": "strengthen | new",
+  "slug": "page slug",
+  "reader": "who the page is for",
+  "evidence": [
+   {
+    "string": "exact query or prompt",
+    "source": "GSC query | GSC page | AI baseline | Abhi",
+    "impressions": "count if GSC",
+    "date": "YYYY-MM-DD"
+   }
+  ],
+  "angle": "what the page must answer better than today",
+  "links_in_from": "existing pages that should link to it",
+  "status": "queued | published | skipped"
+ },
+ "topics": [
+  {
+   "id": "S1",
+   "type": "strengthen",
+   "slug": "how-to-scale-ad-creatives",
+   "reader": "Growth lead at a DTC brand whose Meta results slip when creative runs stale",
+   "evidence": [
     {
-      "slug": "fashion-brand-campaign-photography-for-emerging-labels",
-      "h1": "Fashion Brand Campaign Photography for Emerging Labels",
-      "vertical": "apparel",
-      "angle": "The campaign is what people remember before they read a word. For a young label, the first real campaign is the moment the brand stops looking like a Shopify store and starts looking like a brand. Here's how to build a campaign world without a six-figure shoot.",
-      "intent": "commercial",
-      "primary_keyword": "fashion brand campaign photography",
-      "secondary_keywords": [
-        "emerging fashion brand campaign",
-        "first fashion campaign",
-        "indie label campaign imagery",
-        "fashion brand world",
-        "campaign photography for clothing brands"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
+     "string": "GSC page how-to-scale-ad-creatives",
+     "source": "GSC page",
+     "impressions": "806 at avg position 61.6 (www)",
+     "date": "2026-09-13"
     },
     {
-      "slug": "lookbook-photography-for-seasonal-drops",
-      "h1": "Lookbook Photography for Seasonal Drops",
-      "vertical": "apparel",
-      "angle": "The lookbook has to ship the day the drop does \u2014 styled, art-directed, and on-brand, not a rushed afterthought. How to produce a full seasonal lookbook at the pace of the drop calendar.",
-      "intent": "commercial",
-      "primary_keyword": "lookbook photography for seasonal drops",
-      "secondary_keywords": [
-        "seasonal lookbook photography",
-        "drop lookbook",
-        "fashion lookbook agency",
-        "lookbook at scale",
-        "seasonal campaign lookbook"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
+     "string": "scaling strategies for creative agencies",
+     "source": "GSC query",
+     "impressions": 159,
+     "date": "2026-09-13"
     },
     {
-      "slug": "editorial-campaign-imagery-for-streetwear-brands",
-      "h1": "Editorial Campaign Imagery for Streetwear Brands",
-      "vertical": "apparel",
-      "angle": "Streetwear lives or dies on cultural credibility and drop urgency. The campaign has to feel like the culture, not an ad. How to build editorial campaign imagery that reads as authentic to a streetwear audience.",
-      "intent": "commercial",
-      "primary_keyword": "streetwear campaign photography",
-      "secondary_keywords": [
-        "streetwear editorial campaign",
-        "streetwear brand imagery",
-        "drop campaign creative",
-        "streetwear lookbook",
-        "hype brand campaign"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre",
-      "published": "2026-06-12",
-      "persona": "P01"
+     "string": "scale ad creative without breaking brand systems",
+     "source": "GSC query",
+     "impressions": 97,
+     "date": "2026-09-13"
     },
     {
-      "slug": "campaign-imagery-for-activewear-brands",
-      "h1": "Campaign Imagery for Activewear Brands",
-      "vertical": "apparel",
-      "angle": "Activewear campaigns need motion, performance cues, and aspirational body language without sliding into stock-photo cliche. How to make activewear campaign imagery that feels like a brand, not a catalog.",
-      "intent": "commercial",
-      "primary_keyword": "activewear campaign photography",
-      "secondary_keywords": [
-        "activewear brand campaign",
-        "fitness apparel imagery",
-        "activewear lookbook",
-        "performance apparel campaign",
-        "athleisure brand world"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
+     "string": "ad creative scaling",
+     "source": "GSC query",
+     "impressions": 93,
+     "date": "2026-09-13"
     },
     {
-      "slug": "denim-brand-campaign-and-editorial",
-      "h1": "Denim Brand Campaign and Editorial",
-      "vertical": "apparel",
-      "angle": "Denim is texture, wash, and attitude. A denim campaign has to render authentic wash and whiskering while telling a brand story. How to build a denim brand's campaign world.",
-      "intent": "commercial",
-      "primary_keyword": "denim brand campaign photography",
-      "secondary_keywords": [
-        "denim campaign imagery",
-        "denim editorial",
-        "denim brand world",
-        "jeans brand campaign",
-        "premium denim photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
+     "string": "scaling creative production",
+     "source": "GSC query",
+     "impressions": 88,
+     "date": "2026-09-13"
     },
     {
-      "slug": "swimwear-campaign-photography-without-a-location-shoot",
-      "h1": "Swimwear Campaign Photography Without a Location Shoot",
-      "vertical": "apparel",
-      "angle": "Swimwear campaigns traditionally mean a destination shoot and the budget that comes with it. How to build a swimwear campaign world \u2014 beach, light, mood \u2014 without booking the flights.",
-      "intent": "commercial",
-      "primary_keyword": "swimwear campaign photography",
-      "secondary_keywords": [
-        "swimwear campaign",
-        "swimwear editorial",
-        "swim brand imagery",
-        "resort campaign photography",
-        "swimwear lookbook"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
-    },
-    {
-      "slug": "knitwear-lookbook-and-texture-storytelling",
-      "h1": "Knitwear Lookbook and Texture Storytelling",
-      "vertical": "apparel",
-      "angle": "Knitwear sells on hand-feel and texture you can almost touch through the screen. How to art-direct a knitwear lookbook that makes the fabric the hero.",
-      "intent": "commercial",
-      "primary_keyword": "knitwear lookbook photography",
-      "secondary_keywords": [
-        "knitwear campaign",
-        "knit texture photography",
-        "sweater brand lookbook",
-        "knitwear editorial",
-        "cashmere brand imagery"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
-    },
-    {
-      "slug": "luxury-apparel-brand-world-and-campaign",
-      "h1": "Building a Luxury Apparel Brand World",
-      "vertical": "apparel",
-      "angle": "Quiet luxury is a visual language \u2014 negative space, restraint, fabric, light. How to build campaign imagery for a luxury apparel label that signals the price point without saying a word.",
-      "intent": "commercial",
-      "primary_keyword": "luxury apparel campaign photography",
-      "secondary_keywords": [
-        "luxury fashion campaign",
-        "quiet luxury imagery",
-        "high-end apparel brand world",
-        "luxury lookbook",
-        "premium fashion editorial"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
-    },
-    {
-      "slug": "wholesale-lookbook-and-linesheet-imagery",
-      "h1": "Wholesale Lookbook and Linesheet Imagery for Apparel",
-      "vertical": "apparel",
-      "angle": "Before a retailer writes the order, they see the linesheet and the lookbook. How to make wholesale-facing apparel imagery that lands the buyer meeting.",
-      "intent": "commercial",
-      "primary_keyword": "wholesale lookbook photography apparel",
-      "secondary_keywords": [
-        "linesheet photography",
-        "wholesale apparel imagery",
-        "buyer lookbook",
-        "retail line sheet photography",
-        "apparel wholesale creative"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
-    },
-    {
-      "slug": "apparel-brand-identity-and-campaign-system",
-      "h1": "Apparel Brand Identity and Campaign System",
-      "vertical": "apparel",
-      "angle": "A campaign without an identity is just nice pictures. How to build the identity layer \u2014 voice, type, art direction \u2014 that makes every apparel campaign feel like the same brand.",
-      "intent": "commercial",
-      "primary_keyword": "apparel brand identity design",
-      "secondary_keywords": [
-        "fashion brand identity",
-        "apparel visual identity",
-        "fashion brand system",
-        "clothing brand identity",
-        "apparel art direction"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
-    },
-    {
-      "slug": "fashion-lifestyle-campaign-imagery",
-      "h1": "Fashion Lifestyle Campaign Imagery",
-      "vertical": "apparel",
-      "angle": "In-context, real-world imagery is what makes a feed feel like a world. How to build apparel lifestyle imagery that earns the save, not the scroll.",
-      "intent": "commercial",
-      "primary_keyword": "fashion lifestyle photography",
-      "secondary_keywords": [
-        "apparel lifestyle imagery",
-        "fashion in-context photography",
-        "lifestyle campaign apparel",
-        "clothing lifestyle shots",
-        "fashion editorial lifestyle"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
-    },
-    {
-      "slug": "apparel-rebrand-campaign-relaunch",
-      "h1": "Apparel Rebrand: Relaunching the Brand World",
-      "vertical": "apparel",
-      "angle": "A rebrand is only real once the campaign ships. How to relaunch an apparel brand's entire visual world \u2014 campaign, lookbook, lifestyle \u2014 in one coordinated drop.",
-      "intent": "commercial",
-      "primary_keyword": "apparel rebrand campaign",
-      "secondary_keywords": [
-        "fashion rebrand imagery",
-        "apparel relaunch campaign",
-        "brand refresh fashion",
-        "clothing rebrand creative",
-        "fashion brand relaunch"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "ai-lookbook-photography.html"
-      ],
-      "image_hints": "anitadongre"
-    },
-    {
-      "slug": "outerwear-photography-for-fall-winter-drops",
-      "persona": "P01",
-      "vertical": "apparel",
-      "angle": "Outerwear-specific drop production \u2014 wool coats, technical shells, puffer jackets, leather pieces \u2014 with the construction-detail-at-300% mechanic the wholesale-deck contract uses, applied to PDP + lifestyle for fall/winter drops at $4M-$25M apparel labels.",
-      "intent": "commercial",
-      "primary_keyword": "outerwear photography fall winter drops",
-      "secondary_keywords": [
-        "wool coat photography",
-        "technical shell photography",
-        "puffer jacket campaign",
-        "leather outerwear lookbook",
-        "fall winter apparel drop"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "fashion-lifestyle-campaign-imagery.html",
-        "seasonal-drop-photography-workflow.html",
-        "best-ai-fashion-photography-services.html"
-      ],
-      "image_hints": [
-        "anitadongre",
-        "outdoors"
-      ]
-    },
-    {
-      "slug": "swimwear-campaign-photography-without-a-location-shoot",
-      "persona": "P15",
-      "vertical": "apparel",
-      "angle": "Swimwear campaign production without the location scout. Coastline, pool, balcony at golden hour as named environment registers locked into the brand spine, casting frame held across the resort drop, in-house team avoids the $90k-$220k traditional location shoot.",
-      "intent": "commercial",
-      "primary_keyword": "swimwear campaign photography",
-      "secondary_keywords": [
-        "resort apparel photography",
-        "bikini lookbook",
-        "swim brand campaign",
-        "coastline editorial AI",
-        "resort drop creative"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "fashion-lifestyle-campaign-imagery.html",
-        "luxury-apparel-brand-world-and-campaign.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html"
-      ],
-      "image_hints": [
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "activewear-campaign-imagery-for-performance-apparel-brands",
-      "persona": "P01",
-      "vertical": "apparel",
-      "angle": "Activewear campaign production \u2014 running, training, yoga, hike \u2014 composed against locked sweat-light, movement-blur and locality registers, indexed to drop cadence at brands like Vuori/Outdoor Voices/Year of Ours/ALO Yoga/Bandit/Tracksmith.",
-      "intent": "commercial",
-      "primary_keyword": "activewear campaign imagery",
-      "secondary_keywords": [
-        "activewear photography agency",
-        "running apparel campaign",
-        "yoga brand creative",
-        "performance apparel imagery",
-        "athleisure campaign"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "fashion-lifestyle-campaign-imagery.html",
-        "ai-fashion-photography.html",
-        "seasonal-drop-photography-workflow.html",
-        "best-ai-fashion-photography-services.html"
-      ],
-      "image_hints": [
-        "outdoors",
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "shoe-and-sneaker-campaign-imagery-for-apparel-brands",
-      "persona": "P01",
-      "vertical": "apparel",
-      "angle": "Shoe and sneaker campaign production for apparel brands carrying footwear inside the drop \u2014 leather Italian-made, technical sneaker, sandal, boot \u2014 with the construction-grade-at-300% mechanic, indexed to drop cadence at $4M-$25M apparel labels carrying footwear adjacencies.",
-      "intent": "commercial",
-      "primary_keyword": "sneaker campaign imagery apparel brands",
-      "secondary_keywords": [
-        "footwear campaign photography",
-        "leather shoe lookbook",
-        "sneaker brand creative",
-        "fashion footwear imagery",
-        "shoe drop pack"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html",
-        "seasonal-drop-photography-workflow.html",
-        "fashion-lifestyle-campaign-imagery.html"
-      ],
-      "image_hints": [
-        "outdoors",
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "bag-and-accessory-campaign-imagery-for-apparel-brands",
-      "persona": "P15",
-      "vertical": "apparel",
-      "angle": "Bag and accessory campaign production for apparel-and-accessory brands \u2014 leather goods, jewellery, eyewear, scarves, belts \u2014 composed at editorial register against the brand spine, indexed to drop or seasonal cadence at the $3M-$30M tier.",
-      "intent": "commercial",
-      "primary_keyword": "bag and accessory campaign imagery",
-      "secondary_keywords": [
-        "leather goods photography",
-        "jewellery campaign apparel",
-        "accessory brand creative",
-        "eyewear lookbook",
-        "scarf campaign editorial"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "luxury-apparel-brand-world-and-campaign.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html",
-        "fashion-lifestyle-campaign-imagery.html"
-      ],
-      "image_hints": [
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "menswear-tailoring-campaign-and-lookbook-imagery",
-      "persona": "P16",
-      "vertical": "apparel",
-      "angle": "Menswear tailoring campaign production \u2014 suits, separates, sport coats, shirting \u2014 composed against the named-photographer editorial register (Bruce Weber/Steven Klein/Glen Luchford for the tailoring lineage), with locked drape-on-form construction frames at 300% close-up.",
-      "intent": "commercial",
-      "primary_keyword": "menswear tailoring campaign imagery",
-      "secondary_keywords": [
-        "menswear lookbook agency",
-        "suit photography brand campaign",
-        "tailoring editorial AI",
-        "menswear drop pack",
-        "made-to-measure imagery"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "luxury-apparel-brand-world-and-campaign.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html",
-        "wholesale-lookbook-and-linesheet-imagery.html"
-      ],
-      "image_hints": [
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "loungewear-and-intimate-apparel-photography-for-dtc-brands",
-      "persona": "P19",
-      "vertical": "apparel",
-      "angle": "Loungewear and intimate apparel production \u2014 sleep sets, bralettes, briefs, lounge knits \u2014 composed against soft-natural-light morning register and the feed-depth contract, at the $3M-$20M tier where the customer reads the comfort frame before the wordmark.",
-      "intent": "commercial",
-      "primary_keyword": "loungewear photography DTC",
-      "secondary_keywords": [
-        "intimate apparel photography",
-        "sleepwear campaign imagery",
-        "lingerie brand creative",
-        "lounge knit lookbook",
-        "comfort apparel imagery"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "fashion-lifestyle-campaign-imagery.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html",
-        "ai-fashion-models-vs-real-models.html"
-      ],
-      "image_hints": [
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "kids-and-baby-apparel-photography-for-dtc-brands",
-      "persona": "P12",
-      "vertical": "apparel",
-      "angle": "Kids and baby apparel photography for premium DTC brands \u2014 heritage cotton, organic muslin, prep, charm. Real children are unpredictable and expensive; locked casting-frame discipline lets the brand ship the full season's PDP and lookbook against named-environment lifestyle registers without coordinating real children's schedules.",
-      "intent": "commercial",
-      "primary_keyword": "kids apparel photography DTC",
-      "secondary_keywords": [
-        "baby clothing photography",
-        "children's brand campaign",
-        "premium kids apparel imagery",
-        "kids lookbook agency",
-        "baby apparel lifestyle"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "fashion-lifestyle-campaign-imagery.html",
-        "ai-fashion-photography.html",
-        "ai-fashion-models-vs-real-models.html",
-        "best-ai-fashion-photography-services.html"
-      ],
-      "image_hints": [
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "denim-brand-campaign-and-editorial-for-premium-labels",
-      "persona": "P15",
-      "vertical": "apparel",
-      "angle": "Denim brand campaign and editorial production \u2014 Re/Done, Mother, Citizens of Humanity, AGOLDE register \u2014 composed at editorial level with the wash-library mechanic, distinct from the volume-PDP denim piece.",
-      "intent": "commercial",
-      "primary_keyword": "denim brand campaign editorial",
-      "secondary_keywords": [
-        "premium denim campaign",
-        "denim editorial AI",
-        "Re/Done style editorial",
-        "denim brand world",
-        "jeans campaign agency"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "denim-photography-at-scale.html",
-        "luxury-apparel-brand-world-and-campaign.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html"
-      ],
-      "image_hints": [
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "resort-and-cruise-capsule-photography-for-apparel-brands",
-      "persona": "P15",
-      "vertical": "apparel",
-      "angle": "Resort and cruise capsule production \u2014 pre-season-of-season tier between fall/spring main collections. Editorial lifestyle in named coastal/island/desert localities, composed against the brand spine and the named-photographer reference for the season's tentpole.",
-      "intent": "commercial",
-      "primary_keyword": "resort cruise capsule photography apparel",
-      "secondary_keywords": [
-        "resort campaign apparel",
-        "cruise collection lookbook",
-        "pre-season capsule editorial",
-        "vacation apparel imagery",
-        "destination editorial fashion"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "luxury-apparel-brand-world-and-campaign.html",
-        "fashion-lifestyle-campaign-imagery.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html"
-      ],
-      "image_hints": [
-        "anitadongre",
-        "outdoors"
-      ]
-    },
-    {
-      "slug": "apparel-subscription-and-rental-brand-campaign-imagery",
-      "persona": "P08",
-      "vertical": "apparel",
-      "angle": "Apparel subscription and rental brand monthly-cadence campaign-imagery production indexed to box-reveal Tuesday \u2014 a 21-day pre-reveal sprint, brand-spine document held across twelve reveals a year, locked three-to-four-face casting frame across the subscription year, named-environment register that lets each reveal look new while the brand holds. NUULY at Urban Outfitters Inc, Rent The Runway, Armoire, Vince Unfold, FashionPass, Frank And Oak Style Plan, Stitch Fix Freestyle and Pickle tier at $20M-$120M ARR. Unit economics close at subscriber retention contribution, not at a wholesale buy-window.",
-      "intent": "commercial",
-      "primary_keyword": "apparel subscription brand campaign imagery",
-      "secondary_keywords": [
-        "apparel rental campaign photography",
-        "NUULY campaign imagery",
-        "Rent The Runway editorial",
-        "monthly capsule reveal imagery",
-        "subscription apparel brand world"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "apparel-brand-identity-and-campaign-system.html",
-        "fashion-lifestyle-campaign-imagery.html",
-        "brand-world-campaign-photography-for-in-house-apparel-creative-teams.html",
-        "luxury-apparel-brand-world-and-campaign.html",
-        "ai-fashion-photography.html",
-        "best-ai-fashion-photography-services.html"
-      ],
-      "image_hints": [
-        "anitadongre"
-      ],
-      "published": "2026-06-17"
-    },
-    {
-      "slug": "size-inclusive-apparel-brand-campaign-and-editorial-imagery",
-      "persona": "P26",
-      "vertical": "apparel",
-      "sub_segment": "size-inclusive / extended sizing",
-      "angle": "Size-anchor registration as the brand spine for a 00-32 range: four named anchors, one locked roster identity per anchor, grade rule as pass-fail input.",
-      "intent": "commercial / citation-bait",
-      "primary_keyword": "size inclusive apparel campaign photography",
-      "secondary_keywords": [
-        "extended sizing photography",
-        "plus size apparel campaign imagery",
-        "size anchor photography",
-        "extended size range lookbook",
-        "inclusive fit photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "on-model-photography-at-scale.html",
-        "ai-fashion-models-vs-real-models.html",
-        "scale-ecommerce-apparel-photography.html",
-        "wholesale-lookbook-and-linesheet-imagery.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "aritzia",
-        "veronica-beard"
-      ]
-    },
-    {
-      "slug": "adaptive-apparel-brand-campaign-and-editorial-imagery",
-      "persona": "P27",
-      "vertical": "apparel",
-      "sub_segment": "adaptive / disability-inclusive apparel",
-      "angle": "Adaptive apparel campaign imagery where the closure mechanic (magnetic, seated-fit, port-access, one-handed) is the hero frame, not a caption.",
-      "intent": "commercial",
-      "primary_keyword": "adaptive apparel campaign photography",
-      "secondary_keywords": [
-        "adaptive clothing photography",
-        "disability inclusive fashion imagery",
-        "seated fit apparel photography",
-        "magnetic closure apparel imagery"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "on-model-photography-at-scale.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "aritzia",
-        "ralphlauren"
-      ]
-    },
-    {
-      "slug": "headwear-and-cap-brand-campaign-and-editorial-imagery",
-      "persona": "P28",
-      "vertical": "apparel",
-      "sub_segment": "headwear / caps / hats",
-      "angle": "Headwear campaign imagery that reads at crown height, brim curve and panel structure across head shapes \u2014 the tightest fit-registration problem in accessories.",
-      "intent": "commercial",
-      "primary_keyword": "headwear brand campaign photography",
-      "secondary_keywords": [
-        "cap brand photography",
-        "hat campaign imagery",
-        "headwear PDP photography",
-        "five panel cap photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-photography.html",
-        "wholesale-lookbook-and-linesheet-imagery.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "ralphlauren",
-        "outdoors"
-      ]
-    },
-    {
-      "slug": "maternity-apparel-brand-campaign-and-editorial-imagery",
-      "persona": "P29",
-      "vertical": "apparel",
-      "sub_segment": "maternity / postpartum apparel",
-      "angle": "Maternity campaign imagery that renders the same style across trimester anchors and postpartum, so the customer sees the garment at her actual week.",
-      "intent": "commercial",
-      "primary_keyword": "maternity apparel campaign photography",
-      "secondary_keywords": [
-        "maternity brand photography",
-        "postpartum apparel imagery",
-        "nursing apparel photography",
-        "bump fit photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "intimates-and-loungewear-apparel-campaign-and-editorial-imagery.html",
-        "on-model-photography-at-scale.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "aritzia",
-        "veronica-beard"
-      ]
-    },
-    {
-      "slug": "uniform-and-team-apparel-brand-campaign-imagery",
-      "persona": "P30",
-      "vertical": "apparel",
-      "sub_segment": "uniform / corporate / team apparel",
-      "angle": "Uniform and team apparel imagery where decoration placement, embroidery register and cross-role consistency are the spec \u2014 not the styling.",
-      "intent": "commercial",
-      "primary_keyword": "uniform apparel campaign photography",
-      "secondary_keywords": [
-        "team apparel photography",
-        "corporate uniform imagery",
-        "embroidery placement photography",
-        "workwear uniform catalog photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "workwear-and-heritage-americana-campaign-imagery.html",
-        "wholesale-lookbook-and-linesheet-imagery.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "ralphlauren",
-        "outdoors"
-      ]
-    },
-    {
-      "slug": "scrubs-and-medical-apparel-brand-campaign-imagery",
-      "persona": "P31",
-      "vertical": "apparel",
-      "sub_segment": "scrubs / medical / clinical apparel",
-      "angle": "Scrubs and medical apparel imagery where pocket architecture, antimicrobial finish behaviour and the twelve-hour shift are the spec \u2014 not the smiling clinician in a corridor.",
-      "intent": "commercial",
-      "primary_keyword": "scrubs brand campaign photography",
-      "secondary_keywords": [
-        "medical apparel photography",
-        "scrubs product photography",
-        "clinical apparel imagery",
-        "healthcare uniform photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "uniform-and-team-apparel-brand-campaign-imagery.html",
-        "maternity-apparel-brand-campaign-and-editorial-imagery.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "aritzia",
-        "veronica-beard"
-      ]
-    },
-    {
-      "slug": "sock-and-hosiery-brand-campaign-and-editorial-imagery",
-      "persona": "P32",
-      "vertical": "apparel",
-      "sub_segment": "socks / hosiery / legwear",
-      "angle": "Sock and hosiery imagery where knit gauge, cuff recovery and the multipack are the commercial unit \u2014 not a single foot on a white sweep.",
-      "intent": "commercial",
-      "primary_keyword": "sock brand campaign photography",
-      "secondary_keywords": [
-        "hosiery photography",
-        "legwear brand imagery",
-        "multipack apparel photography",
-        "knitwear detail photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "amazon-apparel-listing-photography.html",
-        "scale-ecommerce-apparel-photography.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "ralphlauren",
-        "outdoors"
-      ]
-    },
-    {
-      "slug": "modest-fashion-brand-campaign-and-editorial-imagery",
-      "persona": "P33",
-      "vertical": "apparel",
-      "sub_segment": "modest fashion / hijab / abaya / tznius",
-      "angle": "Modest fashion imagery where coverage geometry, opacity under light and the drape at motion are the specification \u2014 not a cropped frame that hides the thing the customer is buying.",
-      "intent": "commercial",
-      "primary_keyword": "modest fashion campaign photography",
-      "secondary_keywords": [
-        "hijab brand photography",
-        "abaya campaign imagery",
-        "modest apparel photography",
-        "opacity and coverage photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "ai-fashion-models-vs-real-models.html",
-        "anitadongre.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "anitadongre",
-        "veronica-beard"
-      ]
-    },
-    {
-      "slug": "vintage-and-secondhand-apparel-marketplace-imagery",
-      "persona": "P34",
-      "vertical": "apparel",
-      "sub_segment": "vintage / resale / one-of-one inventory",
-      "angle": "Vintage and resale imagery where every unit is a one-of-one SKU with its own flaws, and condition disclosure is the conversion asset \u2014 not a hero shot you can reuse.",
-      "intent": "commercial",
-      "primary_keyword": "vintage apparel resale photography",
-      "secondary_keywords": [
-        "secondhand clothing photography",
-        "resale marketplace imagery",
-        "one-of-one SKU photography",
-        "condition disclosure photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "scale-ecommerce-apparel-photography.html",
-        "heritage-apparel-brand-archive-campaign-and-modern-relaunch.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "ralphlauren",
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "school-uniform-and-scholastic-apparel-program-imagery",
-      "persona": "P35",
-      "vertical": "apparel",
-      "sub_segment": "school uniform / scholastic programs",
-      "angle": "School uniform program imagery built for the parent buying online in August and the administrator approving the dress code in February \u2014 two audiences, one catalog, no overlap in what they need to see.",
-      "intent": "commercial",
-      "primary_keyword": "school uniform program photography",
-      "secondary_keywords": [
-        "scholastic apparel imagery",
-        "school dress code catalog photography",
-        "youth uniform photography",
-        "parent-facing uniform catalog"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "uniform-and-team-apparel-brand-campaign-imagery.html",
-        "kids-and-baby-apparel-photography-for-dtc-brands.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "ralphlauren",
-        "aritzia"
-      ]
-    },
-    {
-      "slug": "technical-outdoor-apparel-brand-campaign-imagery",
-      "persona": "P36",
-      "vertical": "apparel",
-      "sub_segment": "technical outdoor / alpine / expedition",
-      "angle": "Technical outdoor imagery where the membrane, the seam tape and the layering system are the argument \u2014 not a person on a summit at golden hour.",
-      "intent": "commercial",
-      "primary_keyword": "technical outdoor apparel photography",
-      "secondary_keywords": [
-        "alpine apparel campaign imagery",
-        "waterproof membrane photography",
-        "layering system photography",
-        "expedition apparel imagery"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "activewear-campaign-imagery-for-performance-apparel-brands.html",
-        "outerwear-and-cold-weather-apparel-campaign-and-lookbook-imagery.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "outdoors",
-        "ralphlauren"
-      ]
-    },
-    {
-      "slug": "western-and-ranch-apparel-brand-campaign-imagery",
-      "persona": "P37",
-      "vertical": "apparel",
-      "sub_segment": "western / ranch / rodeo apparel",
-      "angle": "Western apparel imagery where the yoke, the snap, the boot-cut break and the hat crease carry a hundred years of code \u2014 and getting one wrong tells the customer you are not from here.",
-      "intent": "commercial",
-      "primary_keyword": "western apparel campaign photography",
-      "secondary_keywords": [
-        "ranch apparel imagery",
-        "rodeo apparel photography",
-        "western shirt yoke photography",
-        "cowboy hat brand imagery"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "workwear-and-heritage-americana-campaign-imagery.html",
-        "headwear-and-cap-brand-campaign-and-editorial-imagery.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "ralphlauren",
-        "outdoors"
-      ]
-    },
-    {
-      "slug": "sleepwear-and-pajama-brand-campaign-imagery",
-      "persona": "P38",
-      "vertical": "apparel",
-      "sub_segment": "sleepwear / pajamas / matching sets",
-      "angle": "Sleepwear imagery where the matching-set gifting unit, the fabric hand at skin contact and the family multiple are the commercial engine \u2014 not a bed at blue hour.",
-      "intent": "commercial",
-      "primary_keyword": "sleepwear brand campaign photography",
-      "secondary_keywords": [
-        "pajama brand photography",
-        "matching family sets imagery",
-        "loungewear gifting photography",
-        "sleepwear PDP photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "intimates-and-loungewear-apparel-campaign-and-editorial-imagery.html",
-        "kids-and-baby-apparel-photography-for-dtc-brands.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "aritzia",
-        "anitadongre"
-      ]
-    },
-    {
-      "slug": "golf-and-country-club-apparel-brand-campaign-imagery",
-      "persona": "P39",
-      "vertical": "apparel",
-      "sub_segment": "golf / racquet / country club apparel",
-      "angle": "Golf and club apparel imagery where the dress-code boundary, the swing range and the pro-shop wholesale deck are three separate jobs the same photograph is usually asked to do badly.",
-      "intent": "commercial",
-      "primary_keyword": "golf apparel campaign photography",
-      "secondary_keywords": [
-        "country club apparel imagery",
-        "pro shop wholesale photography",
-        "racquet apparel photography",
-        "performance polo photography"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "activewear-campaign-imagery-for-performance-apparel-brands.html",
-        "wholesale-lookbook-and-linesheet-imagery.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "ralphlauren",
-        "outdoors"
-      ]
-    },
-    {
-      "slug": "costume-and-cosplay-apparel-brand-campaign-imagery",
-      "persona": "P40",
-      "vertical": "apparel",
-      "sub_segment": "costume / cosplay / character apparel",
-      "angle": "Costume and cosplay imagery where licensing constraints, construction accuracy and the deadline-driven convention calendar govern every frame \u2014 and a generic lifestyle shot is worthless.",
-      "intent": "commercial",
-      "primary_keyword": "costume apparel campaign photography",
-      "secondary_keywords": [
-        "cosplay brand photography",
-        "character apparel imagery",
-        "licensed apparel photography",
-        "convention season creative"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "editorial-campaign-imagery-for-streetwear-brands.html",
-        "collab-and-capsule-campaign-imagery-for-apparel-brands.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "anitadongre",
-        "veronica-beard"
-      ]
-    },
-    {
-      "slug": "apparel-brand-photography-for-a-retail-wholesale-expansion",
-      "persona": "P41",
-      "vertical": "apparel",
-      "sub_segment": "DTC brand entering brick-and-mortar wholesale",
-      "angle": "The imagery set a DTC apparel brand suddenly needs the week a major retailer says yes \u2014 retailer asset specs, in-store signage, and a linesheet that has to survive a buyer who has never seen your Instagram.",
-      "intent": "commercial",
-      "primary_keyword": "apparel wholesale expansion photography",
-      "secondary_keywords": [
-        "retailer asset spec photography",
-        "in-store signage imagery",
-        "apparel linesheet photography",
-        "DTC to retail creative"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "wholesale-lookbook-and-linesheet-imagery.html",
-        "dtc-clothing-brand-photography-playbook.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "veronica-beard",
-        "aritzia"
-      ]
-    },
-    {
-      "slug": "apparel-brand-photography-for-a-black-friday-creative-sprint",
-      "persona": "P42",
-      "vertical": "apparel",
-      "sub_segment": "peak-season paid-media creative volume",
-      "angle": "The apparel creative sprint that has to produce eleven weeks of Q4 paid-media variation in three, without shooting eleven weeks of it \u2014 and without every frame looking like the same shoot.",
-      "intent": "commercial",
-      "primary_keyword": "black friday apparel ad creative",
-      "secondary_keywords": [
-        "Q4 apparel creative volume",
-        "peak season ad creative apparel",
-        "paid media creative sprint",
-        "holiday apparel campaign imagery"
-      ],
-      "suggested_internal_links": [
-        "apparel-ad-creatives.html",
-        "fast-ad-creative-turnaround.html",
-        "ai-photoshoot-vs-studio-cost.html",
-        "best-ai-product-photography-agency-for-dtc-brands.html"
-      ],
-      "image_hints": [
-        "aritzia",
-        "ralphlauren"
-      ]
+     "string": "video ad creative scaling",
+     "source": "GSC query",
+     "impressions": 35,
+     "date": "2026-09-13"
     }
-  ]
+   ],
+   "angle": "How brands produce more ads per month without breaking the brand: volume targets tied to spend, the production options and their real costs, and where AI statics and video fit. Remove unsourced stats.",
+   "links_in_from": [
+    "static-ads",
+    "ad-creative-agency-pricing",
+    "how-many-ad-creatives-do-i-need"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "S2",
+   "type": "strengthen",
+   "slug": "dtc-creative-agency",
+   "reader": "DTC founder or CMO hiring a creative partner",
+   "evidence": [
+    {
+     "string": "GSC page dtc-creative-agency",
+     "source": "GSC page",
+     "impressions": "414 at avg position 78.7",
+     "date": "2026-09-13"
+    },
+    {
+     "string": "dtc branding agency",
+     "source": "GSC query",
+     "impressions": 120,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "dtc marketing agency",
+     "source": "GSC query",
+     "impressions": 80,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "dtc agency",
+     "source": "GSC query",
+     "impressions": 58,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "dtc agencies",
+     "source": "GSC query",
+     "impressions": 57,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "Rewrite from 'CPG agency for everything' to an accurate page: what kinds of DTC agencies exist (branding, performance, creative production), what each costs (link /ad-creative-agency-pricing), and where 100 Creatives fits as the ad-creative production partner. Verdict rule applies.",
+   "links_in_from": [
+    "about",
+    "creative-agency-vs-freelancer"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "S3",
+   "type": "strengthen",
+   "slug": "ecommerce-ad-creatives",
+   "reader": "Ecommerce marketer who needs ad creative for Shopify products",
+   "evidence": [
+    {
+     "string": "GSC page ecommerce-ad-creatives",
+     "source": "GSC page",
+     "impressions": "156 at avg position 50.3",
+     "date": "2026-09-13"
+    },
+    {
+     "string": "e commerce creative",
+     "source": "GSC query",
+     "impressions": 47,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "e-commerce ad creative production",
+     "source": "GSC query",
+     "impressions": 29,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "What ecommerce ad creative production involves (formats, product imagery, volume), options and costs, 100 Creatives' scoped fit.",
+   "links_in_from": [
+    "static-ads",
+    "static-ad-design-service"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "S4",
+   "type": "strengthen",
+   "slug": "health-and-wellness-ad-creatives",
+   "reader": "Marketing lead at a supplement or wellness brand",
+   "evidence": [
+    {
+     "string": "GSC page health-and-wellness-ad-creatives",
+     "source": "GSC page",
+     "impressions": "102 at avg position 18.4; 10 Google AI-feature impressions",
+     "date": "2026-09-13"
+    },
+    {
+     "string": "health and wellness cpg branding agency",
+     "source": "GSC query",
+     "impressions": 31,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "Ad creative for health and wellness brands: Meta's health and wellness ad policies and claim limits (cite Meta's policy pages), what compliant statics and video look like, and 100 Creatives' scoped fit. No named clients.",
+   "links_in_from": [
+    "supplement-ad-creatives",
+    "static-ads-for-meta"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "S5",
+   "type": "strengthen",
+   "slug": "ugc-ad-creatives",
+   "reader": "Performance marketer testing UGC-style ads",
+   "evidence": [
+    {
+     "string": "GSC page ugc-ad-creatives",
+     "source": "GSC page",
+     "impressions": "70 at avg position 57.3",
+     "date": "2026-09-13"
+    },
+    {
+     "string": "ugc ad creatives",
+     "source": "GSC query",
+     "impressions": 20,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "ugc static ads",
+     "source": "GSC query",
+     "impressions": 8,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "what are different styles of ugc ads i can create",
+     "source": "GSC query",
+     "impressions": 3,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "UGC-style static and video ads: the styles, when they beat polished creative, disclosure rules for creator-style ads (cite FTC/Meta), how to make them without creators, and costs.",
+   "links_in_from": [
+    "static-ads",
+    "what-makes-a-good-static-ad"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "S6",
+   "type": "strengthen",
+   "slug": "how-many-ad-creatives-do-i-need",
+   "reader": "DTC marketer sizing monthly creative volume",
+   "evidence": [
+    {
+     "string": "how do brands with 2,000+ sku catalogs manage producing meta ad creatives for each product without a dedicated design team?",
+     "source": "GSC query",
+     "impressions": 8,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "how many ad creatives to test",
+     "source": "GSC query",
+     "impressions": 1,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "A sourced way to size creative volume by spend and account structure (cite Meta's own creative guidance where possible), including the large-catalog case and catalog/dynamic ads.",
+   "links_in_from": [
+    "how-to-scale-ad-creatives",
+    "ad-creative-agency-pricing"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "S7",
+   "type": "strengthen",
+   "slug": "ad-creative-testing-framework",
+   "reader": "Media buyer or creative strategist building a testing process",
+   "evidence": [
+    {
+     "string": "best practices for scaling ad creation on social media",
+     "source": "GSC query",
+     "impressions": 8,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "creative testing at scale",
+     "source": "GSC query",
+     "impressions": 7,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "what's the best way to test ad creatives at scale",
+     "source": "GSC query",
+     "impressions": 2,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "A testing framework grounded in Meta's documented testing tools (A/B test, Advantage+ creative) with sourced guidance; remove the unsourced '20-40% CAC reduction' claim.",
+   "links_in_from": [
+    "how-to-scale-ad-creatives",
+    "static-vs-video-ads"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "S8",
+   "type": "strengthen",
+   "slug": "performance-creative-agency",
+   "reader": "DTC brand choosing between a performance agency and a creative production partner",
+   "evidence": [
+    {
+     "string": "dtc performance marketing agency",
+     "source": "GSC query",
+     "impressions": 6,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "performance marketing agency for cpg",
+     "source": "GSC query",
+     "impressions": 4,
+     "date": "2026-09-13"
+    },
+    {
+     "string": "dtc performance agency",
+     "source": "GSC query",
+     "impressions": 8,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "What a performance creative agency does vs a media-buying agency vs a production partner, prices (link /ad-creative-agency-pricing), and 100 Creatives' scoped fit (creative only).",
+   "links_in_from": [
+    "dtc-creative-agency",
+    "creative-agency-vs-freelancer"
+   ],
+   "status": "queued"
+  },
+  {
+   "id": "N1",
+   "type": "new",
+   "slug": "ai-video-ads",
+   "reader": "DTC marketer who wants video ads for Reels and TikTok without a shoot",
+   "evidence": [
+    {
+     "string": "static and video creative agency but using AI",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-14"
+    },
+    {
+     "string": "video ad creative scaling",
+     "source": "GSC query",
+     "impressions": 35,
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "Service and guide page for AI-made video ads: what AI video tools do well and badly for product ads today (sourced, hedged), formats and specs for Reels/TikTok/Stories (cite platform docs), how 100 Creatives makes them, prices from FACTS.md, and when a real shoot or UGC creators are the better buy.",
+   "links_in_from": [
+    "static-vs-video-ads",
+    "index",
+    "static-ads"
+   ],
+   "status": "queued"
+  }
+ ]
 }

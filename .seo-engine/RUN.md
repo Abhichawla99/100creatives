@@ -1,283 +1,136 @@
-# Daily SEO Run — Procedure (v2)
+# Daily SEO + AEO run: procedure v3 (2026-09-14)
 
-This is the canonical procedure the scheduled task fires every morning at 6 AM PT. Follow it exactly. Do not skip steps. Do not cut corners. The user explicitly asked for niche, persona-driven articles — not slop.
+**This file replaces RUN v2 and overrides the scheduled task prompt wherever the two disagree.** The persona rotation, the apparel sub-niche queue, "one article a day", 5,000-8,000-word citation-bait articles, personas.md and "cite our own case studies" are retired. Abhi repositioned 100 Creatives on 2026-09-14 after Search Console showed 87% of impressions came from static-ad and ad-creative pages, while ~100 apparel articles had earned about 20 impressions in three months.
 
----
+## What 100 Creatives is
 
-## STEP 1 — Load context (read everything below before writing anything)
+100 Creatives is an AI-powered creative agency in Calgary, Canada, that makes static and video ads, and the product imagery behind them, for DTC and consumer brands advertising on Meta, TikTok and Google.
 
-Read these files end to end, in order:
+`.seo-engine/FACTS.md` is the source of truth for every claim, price and name. When a page and FACTS.md disagree, the page is wrong.
 
-1. `/Users/home/100creatives/.seo-engine/MEMORY.md` — what's been published, which personas are recently used, which links/images are saturated. **This is the most important file.**
-2. `/Users/home/100creatives/.seo-engine/personas.md` — the 15 personas you can target.
-3. `/Users/home/100creatives/.seo-engine/STYLE.md` — voice, formula, GEO rules, image rules, link rules, pre-flight checklist.
-4. `/Users/home/100creatives/.seo-engine/images.md` — image inventory by vertical/brand.
-5. `/Users/home/100creatives/.seo-engine/topics.json` — the queue.
-6. `/Users/home/100creatives/.seo-engine/state.json` — `next_index` pointer.
+## Goal
 
----
+Rank in Google and get cited, then recommended, by ChatGPT, Perplexity, Gemini, Copilot and Google AI Overviews for the questions ad-creative buyers ask: what static ads are, what ad creative agencies cost, unlimited ad creative subscriptions, agency vs freelancer, AI video ads, UGC-style ads, and ad creative for specific categories.
 
-## STEP 2 — Pick today's topic + persona
-
-1. Read `state.json.next_index`. Tentatively pick `topics[next_index]`.
-2. Cross-check the topic's `persona` against MEMORY.md "Personas used" stats.
-   - If that persona was used within the **last 15 days**, ADVANCE: try `topics[next_index + 1]`, then `+2`, etc., until you find one whose persona has the longest gap (or has never been used).
-   - Update `next_index` to whichever index you actually picked (skipped indexes are fine — go back to them later).
-3. Cross-check the topic's `vertical` against MEMORY.md "Verticals used (last 7 days)".
-   - If the same vertical was used **yesterday AND the day before** (3-in-a-row), advance further to a different vertical.
-4. Verify the chosen topic's slug doesn't already exist as `/Users/home/100creatives/{slug}.html`. If it does, advance by 1 and re-verify.
+Fewer, better pages. Google's 2026 spam policies target mass-produced AI content and self-serving "best of" lists. Assistants lift checkable facts from vendor pages, but they recommend brands that other sites vouch for. So the daily run improves pages that already earn impressions, adds a new page only when real search evidence supports it, and never invents proof.
 
 ---
 
-## STEP 3 — Inspect site to mirror voice and structure
-
-1. Read `/Users/home/100creatives/index.html` lines 1–100 (head + nav).
-2. Read ONE existing page in the same vertical:
-   - apparel → `ai-fashion-photography.html`
-   - beauty → `beauty-ad-creatives.html`
-   - food-bev or supplements → `cpg-creative-agency.html`
-   - geo/comparison → `best-ai-product-photography-agency-for-dtc-brands.html`
-3. Note the section structure and copy verbatim where instructed (header nav, footer, scripts).
-
----
-
-## STEP 4 — Pick internal links (3+ minimum)
-
-1. From the topic's `suggested_internal_links`, **verify each file exists** in the repo:
-   ```bash
-   ls /Users/home/100creatives/{filename}.html
-   ```
-2. From MEMORY.md "Internal links — link counts", check each candidate's recent count.
-   - If a candidate has 5+ links in last 30 days, find a similar-but-less-linked alternative.
-3. ALWAYS include a link UP to `best-ai-product-photography-agency-for-dtc-brands.html` (the anchor) where genuinely relevant.
-4. Final list: 3–6 links woven into the prose (not a footer dump).
-
----
-
-## STEP 5 — Pick images (2–6 REQUIRED)
-
-Body imagery is **required**, not optional. Every article ships with at least one hero in `<section class="interactive-section">` AND at least one mid-article gallery frame.
-
-1. From the topic's `image_hints`, identify the relevant brand folder per `images.md`. Under the apparel-only pivot, the four eligible apparel folders are `anitadongre/` (bridal, occasion-wear, South Asian couture), `ralphlauren/` (menswear-tailoring, heritage Americana, Polo / Purple Label / RRL), `aritzia/` (contemporary women's, mid-market premium, drop-cadence), `veronica-beard/` (contemporary American women's, editorial-American register). Plus `campaigns/web/outdoors/` for activewear/outdoor.
-2. Check MEMORY.md "Brand images used" — the per-folder reuse window is **5 days** (relaxed from 7 to reflect the four-folder apparel-only inventory). Per-file reuse window: 14 days. If today's natural-fit folder is inside the 5-day window, rotate to one of the other three apparel folders rather than defaulting to OG-only — the four-folder rotation gives slack on any given day.
-3. Select 2–4 specific files. **Verify each exists**:
-   ```bash
-   ls "/Users/home/100creatives/images/{folder}/{filename}"
-   ```
-4. URL-encode any spaces in filenames as `%20` when writing the `src` attribute.
-5. **OG-only is a fallback, not a default.** Only acceptable when every eligible apparel folder is inside the 5-day reuse window AND no rotation is possible — and the posture must be explicitly justified in the MEMORY.md notes for the day.
-
----
-
-## STEP 6 — Write the article
-
-Create `/Users/home/100creatives/{slug}.html` following the page formula in STYLE.md exactly. Hard requirements (also in the pre-flight checklist):
-
-- **2,500–4,000 words** of long-form prose (4,500 OK for flagship/citation-bait).
-- **Persona-first opening**: paragraph 1 addresses the persona's pain in their language and answers the primary keyword query directly.
-- **`<head>` block**: title ≤60 chars, meta description ≤160 chars, keywords, canonical, OG, Twitter, BreadcrumbList JSON-LD, Service JSON-LD, FAQPage JSON-LD.
-- **CANONICAL FORM (fixed 2026-09-08):** every absolute self-URL is `https://www.100creatives.com/{slug}` — **www, no `.html`**. Applies to `rel=canonical`, `og:url`, `og:image`/`twitter:image` (www, keep asset extension), every JSON-LD `item`/`url`/`logo`/`image`, and the sitemap `<loc>`. Internal links are root-relative and extensionless: `href="/apparel-ad-creatives"`, homepage `href="/"`. See the URL CANONICAL FORM section in STYLE.md — getting this wrong is what broke indexing site-wide for five straight runs.
-- **Hero**: `<section class="hero">` with hero-label, h1 with `<em>`, hero-body, "Last updated: YYYY-MM-DD" line, hero-btn → tidycal.
-- **(Optional) Image hero**: one image in `<section class="interactive-section">` after hero.
-- **4–6 content-sections** with section-label + h2 + 3-5 paragraph content-body, separated by `<div class="divider"></div>`.
-- **One principles-grid** with 6 numbered cards (01–06).
-- **(Optional) Image gallery** mid-article: 3–6 images in gallery-grid pattern.
-- **(Optional) content-section-dark** with insights-grid for comparison/decision content.
-- **FAQ section**: 6–10 `<details><summary>` Q&As. EACH answer must match the FAQPage JSON-LD answer verbatim, 60–120 words each, declarative.
-- **CTA section** → tidycal.
-- **Footer** copied verbatim.
-- **3+ internal links** to existing pages, woven into prose.
-- **2–4 images** if relevant, with descriptive alt text containing primary keyword.
-
----
-
-## STEP 7 — Pre-flight validation
-
-Run all 12 checks from STYLE.md "Pre-flight checklist". Programmatic where possible:
+## Step 0: sync
 
 ```bash
-cd /Users/home/100creatives
-
-# 1. Word count
-wc -w {slug}.html
-
-# 2. JSON-LD validity
-python3 -c "
-import re, json, sys
-html = open('{slug}.html').read()
-blocks = re.findall(r'<script type=\"application/ld\+json\">(.*?)</script>', html, re.DOTALL)
-print(f'{len(blocks)} JSON-LD blocks')
-for i, b in enumerate(blocks):
-    json.loads(b)
-print('All valid')
-"
-
-# 4. Internal links exist
-grep -oE 'href=\"/[a-z0-9-]+\"' {slug}.html | sed 's|href=\"/||;s/\"//' | sed 's/$/.html/' | sort -u | while read f; do
-  [ -f \"$f\" ] && echo \"✓ $f\" || echo \"✗ MISSING: $f\"
-done
-
-# 5. Image src files exist
-grep -oE 'src=\"/images/[^\"]+\"|src=\"/campaigns/[^\"]+\"' {slug}.html | sed 's/src=\"//;s/\"//' | while read p; do
-  decoded=$(printf '%b' \"${p//%/\\x}\")
-  [ -f \".$decoded\" ] && echo \"✓ $p\" || echo \"✗ MISSING: $p\"
-done
+cd /Users/home/100creatives && git pull --rebase origin main
 ```
 
-If ANY check fails, fix the article. Do not push broken pages.
+If it fails on a stuck `.git/index.lock`: run `pgrep -fl "git "`. If no git process is running, `rm -f .git/index.lock` and retry once. If `rm` isn't permitted in this sandbox, continue anyway. `publish.sh`'s fallback pushes only the files you name, so a stale checkout can't overwrite newer work.
 
----
+## Step 1: read, in this order
 
-## STEP 8 — Update sitemap.xml
+1. `.seo-engine/FACTS.md`, all of it
+2. `.seo-engine/STYLE.md`, all of it
+3. `.seo-engine/LEDGER.md`, all of it (short: v3 runs only)
+4. `.seo-engine/topics.json` and `.seo-engine/state.json`
 
-Edit `/Users/home/100creatives/sitemap.xml`. Insert this block immediately before `</urlset>`:
-```xml
-  <url>
-    <loc>https://www.100creatives.com/{slug}</loc>
-    <lastmod>{TODAY YYYY-MM-DD}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-```
+Do **not** read `.seo-engine/MEMORY.md` end to end. It's the 740KB v2 archive (through 2026-09-14). Grep it only when you need a specific past fact.
 
----
+## Step 2: gather signal (about 15 minutes)
 
-## STEP 9 — Update state.json
+Use Claude in Chrome, where the user is logged in. Read only; never change settings.
 
-```json
-{
-  "next_index": [the index AFTER the one you used + 1],
-  "last_published_slug": "{slug}",
-  "last_published_date": "{TODAY YYYY-MM-DD}",
-  "history": [...existing, {"date": "...", "slug": "...", "h1": "..."}]
-}
-```
+1. **Search Console Performance**, property `sc-domain:100creatives.com`, last 28 days: `https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3A100creatives.com&num_of_days=28&breakdown=query`. Record the top 30 queries by impressions, then open the Pages breakdown (`&breakdown=page`) and record pages at average position 8 to 40 with 30+ impressions.
+2. **Indexing counts**: `https://search.google.com/search-console/index?resource_id=sc-domain%3A100creatives.com`. Record indexed and not indexed, and the "Crawled, currently not indexed" count.
+3. **Mondays only:**
+   - Search Console, Performance, Generative AI report: impressions by page.
+   - Bing Webmaster Tools, AI Performance, site 100creatives.com: citations, grounding queries, citation share.
+   - The AI answer baseline, if `/Users/home/dialsheet/.env.local` is readable: `python3 .seo-engine/aeo/aeo_baseline.py .seo-engine/aeo/baseline-$(date +%F).json`. Never print the API key. If the file isn't reachable from this sandbox, skip it and log "baseline skipped: no key access".
 
-If you skipped indexes in STEP 2, those topics are still in queue — they'll come up later when the engine cycles back. Don't try to be clever.
+Write a short "Signal" block for today in LEDGER.md (numbers only, no prose).
 
----
+## Step 3: pick exactly one job
 
-## STEP 10 — Append to MEMORY.md
+Work down this list and take the first job that applies.
 
-Add a new dated section at the bottom of MEMORY.md (above the "Rolling stats" section). Use exactly this format:
+1. **Fix.** Any live page that contradicts FACTS.md, found in Step 2 or on a page you opened: a named client, a banned claim, a price that doesn't match, a missing spec label. Fix up to five pages in one run.
+2. **Strengthen.** A `strengthen` topic in topics.json, or any ad-creative page from Step 2 at position 8 to 40, that hasn't been strengthened in the last 14 days (check LEDGER.md). Take the one with the most impressions and bring it up to the page spec in STYLE.md. Keep its URL.
+3. **New page.** The next `new` topic with `"status": "queued"`, but only if its evidence still holds: the quoted query appears in Search Console, or the quoted prompt is in the baseline. Never start more than one new page per run. Skip this option entirely if indexed pages dropped since the last run.
+4. **Nothing qualifies.** Ship no new page. Run the fact patrol (open 3 live pages, compare them with FACTS.md, fix drift) and log it. That counts as a successful run.
 
-```markdown
-## YYYY-MM-DD
-- **slug:** {slug}
-- **h1:** {full h1}
-- **persona:** {Pxx} ({short label})
-- **vertical:** {vertical}
-- **angle:** {one-sentence angle}
-- **intent:** {intent}
-- **primary_keyword:** {exact phrase}
-- **internal_links_used:** {comma-separated .html files}
-- **images_used:** {comma-separated paths or "none"}
-- **word_count:** {n}
-- **notes:** {1-2 sentences on what makes this article niche/specific}
-```
+Every third run (`state.json` `run_count % 3 == 2`) is strengthen or fix only.
 
-THEN update the "Rolling stats" section:
-- "Personas used" — set this persona's last-use date to today
-- "Verticals used (last 7 days)" — append today's entry; trim entries older than 7 days
-- "Internal links — link counts" — increment count for each link used; add new entries if the page wasn't tracked yet
-- "Brand images used (last 7 days)" — append today's entry; trim entries older than 7 days
+Write the chosen job and its evidence into LEDGER.md **before** writing any copy. Evidence means the exact query or prompt string, where it came from, the impression count and the date. Never build on a phrase you invented.
 
----
+## Step 4: write to the page spec
 
-## STEP 11 — Commit + push (+ IndexNow ping)
+Follow STYLE.md exactly. The short version:
+
+- Answer the query in the first two sentences.
+- Commercial pages get a TL;DR under the hero that names who should pick 100 Creatives, with 3 to 5 concrete reasons, plus "Pick something else if" naming who should buy a rival and which one.
+- Every fact about 100 Creatives comes from FACTS.md. Every external fact carries its source link and the month you checked it.
+- Spec work is always labeled. Never name a client.
+- Six FAQs, identical in the HTML and the FAQPage JSON-LD.
+- Byline "By Abhi Chawla, founder" and a visible "Last updated" date (change the date only when the content changed).
+
+## Step 5: links in and out
+
+- **New page:** add a sentence-level link to it from 2 or 3 existing ad-creative pages that already earn impressions (from Step 2). A page linked only from the sitemap tends to sit at "Discovered, currently not indexed".
+- **Every page you touch:** link out to 3 to 5 related pages with descriptive anchor text.
+- Record every link you add in LEDGER.md as `from -> to`.
+
+## Step 6: validate (everything must pass)
+
+Run from the repo root, passing every HTML file you touched:
 
 ```bash
-bash /Users/home/100creatives/.seo-engine/publish.sh "{slug}" "{full h1}"
+python3 .seo-engine/validate.py about.html static-ads.html   # replace with the files you touched
 ```
 
-The script auto-stages: `{slug}.html`, `sitemap.xml`, the entire `.seo-engine/` directory (including state.json, MEMORY.md, topics.json updates), and `.gitignore`. It commits with a descriptive message and pushes to `main`. Vercel auto-deploys in 30–60 seconds.
+`validate.py` checks: JSON-LD parses; the FAQ matches its JSON-LD word for word; every internal link resolves; the canonical is `https://www.100creatives.com/{slug}`; no banned claims (named clients, "leading", "five years", "one fifth the cost", "zero missed deadlines", AggregateRating); the page isn't noindex unless intended. It also counts em dashes in the body. Then run the no-ai-slop eval (`~/.claude/skills/no-ai-slop/eval.md`) on the new copy yourself and fix any failure.
 
-**Then it auto-pings IndexNow** (Bing, Yandex, Seznam, Naver) with the new URL + sitemap. The script waits 45s for Vercel to deploy first, then POSTs to `api.indexnow.org/IndexNow` with our key (`e6baf767262d12f58083a712d380812b`, hosted at `https://www.100creatives.com/e6baf767262d12f58083a712d380812b.txt`). HTTP 200 or 202 = accepted. Non-200 is logged but non-fatal — IndexNow rate-limits and re-tries are not necessary for daily cadence.
+## Step 7: sitemap and llms.txt
 
-**Google note.** Google doesn't participate in IndexNow and has no public per-URL submission API for general pages (the Indexing API is restricted to JobPosting and BroadcastEvent). For Google we use **STEP 11b** below — Chrome MCP automates the same "Request Indexing" button a human would click in GSC.
+- New page: add a `<url>` block to `sitemap.xml` with today's `<lastmod>`.
+- Strengthened or fixed page: update that page's `<lastmod>` to today.
+- New commercial or reference page: add one line to `llms.txt` under the right heading. Keep llms.txt consistent with FACTS.md.
+
+## Step 8: publish
+
+```bash
+bash /Users/home/100creatives/.seo-engine/publish.sh "{slug}" "{short description of the change}" [other files you edited...]
+```
+
+Pass every other file you edited (pages you added links to, llms.txt) as extra arguments. The fallback path pushes only the named files plus the sitemap entry and engine state.
+
+## Step 9: verify live and request indexing
+
+1. Wait about 60 seconds, then curl the page: HTTP 200, the `<h1>` is present, and the canonical is correct.
+2. publish.sh pings IndexNow. Confirm HTTP 200 or 202 in its output.
+3. In Search Console, use URL Inspection → Request indexing for the new or strengthened URL. The quota is about 3 a day, so spend it on today's URL first, then the "Indexing debt" list in LEDGER.md. When you see "Quota exceeded", stop and add the rest to the debt list.
+
+## Step 10: log and close
+
+Append today's entry to LEDGER.md:
+
+```
+## YYYY-MM-DD, run {n}: {fix | strengthen | new | patrol}
+- URL:
+- Evidence: "{exact query or prompt}", {source}, {impressions}, {date}
+- Signal: indexed {n} / not indexed {n}; top ad-lane page positions
+- Changed: (3-6 short bullets)
+- Links added: from -> to
+- Validation: pass/fail details
+- IndexNow: {status}; GSC: {verdict}
+- Next run should start with:
+```
+
+Update `state.json`: increment `run_count`, and set `last_run`, `last_job` and the `strengthened` map (slug → date). Mark a new topic's status as `"published"`. Close any Chrome tabs you opened.
 
 ---
 
-## STEP 11b — Request indexing in Google Search Console (via Chrome MCP)
+## Never
 
-Google's only fast path to indexing for general pages is the "Request Indexing" button inside GSC's URL Inspection tool. There's no API, but the user is already logged into Google Search Console in their default Chrome profile, so we drive the UI via the Chrome MCP. Run this **after** the publish.sh push succeeds and after waiting ~60s for Vercel to deploy.
-
-```python
-# Pseudocode for the engine — actual calls use mcp__Claude_in_Chrome__* tools
-1. tabs_context_mcp(createIfEmpty=true) → get a tabId
-2. navigate(tabId, "https://search.google.com/search-console")
-   wait 4s, screenshot
-   - If GSC overview shows "100creatives.com" in the property switcher (top-left), proceed.
-   - If a Google account picker / login screen appears, STOP. Report to user:
-     "GSC needs you to log in. After login, re-run this skill."
-3. For each URL to submit (today's new article + sitemap.xml):
-   left_click(tabId, [600, 25])     # the top inspect-URL search bar
-   type(tabId, full_url)            # e.g. https://www.100creatives.com/{slug}   (www, NO .html)
-   key(tabId, "Return")
-   wait 8s
-   screenshot                        # confirm "URL Inspection" page rendered
-   left_click(tabId, [1226, 295])    # "REQUEST INDEXING" button
-   wait 60s                          # Google runs a live crawlability test
-   screenshot                        # confirm "Indexing requested" green banner
-   left_click(tabId, [960, 442])     # Dismiss
-4. Report each URL submitted in STEP 12.
-```
-
-**What to submit.** Just the new article. Don't re-submit old URLs — Google's quota is "a few dozen URLs per day per property" and burning it on yesterday's articles wastes the limit. The sitemap is auto-fetched by Google on its own cadence, so no need to inspect it through the URL tool.
-
-**Quota gotchas.**
-- **Observed quota is ~3–4 submissions per property per day** (measured 2026-09-08: three accepted, the fourth returned "Quota Exceeded"). Earlier notes here said 10–20; that is wrong. We normally submit 1 URL/day so this only bites on back-fill days. When more than three are needed, prioritise: (1) URLs GSC reports as "unknown to Google", (2) the homepage or a hub page, (3) the day's new article. Anything not submitted still reaches Google via sitemap.xml and reaches Bing/Yandex/Seznam/Naver via IndexNow.
-- "URL is not on Google" → expected for fresh URLs; click Request Indexing.
-- "URL is on Google" → already indexed, no need to request.
-- "URL is on Google, but has issues" → log to MEMORY.md notes, don't auto-fix; surface to user.
-
-**Login failure.** If GSC redirects to accounts.google.com instead of showing the dashboard, the user's Google session has expired in this Chrome profile. STOP the engine and report. Never attempt to log in on the user's behalf — credentials must be entered by the user.
-
-**Coordinate drift.** GSC layout occasionally moves. If `screenshot` after the click doesn't show "Testing if live URL can be indexed" or "Indexing requested", fall back to `find(tabId, "Request Indexing button")` to get the live element ref, then click via `ref`.
-
----
-
-## STEP 12 — Report (one line)
-
-```
-✓ Published "{h1}" → https://www.100creatives.com/{slug} (persona {Pxx}, {vertical}, {word_count} words). Vercel deploying. IndexNow pinged. GSC Request Indexing submitted.
-```
-
----
-
-## Edge cases
-
-### Queue exhaustion
-If `next_index >= topics.length` (or all remaining topics have personas used too recently):
-1. Read MEMORY.md to identify uncovered persona × intent × vertical combinations.
-2. Extend `topics.json` with 20–40 new briefs filling those gaps. Each new topic gets the same schema as existing topics (persona, vertical, angle, intent, primary_keyword, secondary_keywords, suggested_internal_links, image_hints).
-3. Set `next_index` to the first new topic's index.
-4. Then proceed with STEP 6.
-
-### Stuck git locks
-If `.git/*.lock` files exist and block commit:
-1. Try `rm -f /Users/home/100creatives/.git/index.lock /Users/home/100creatives/.git/HEAD.lock /Users/home/100creatives/.git/refs/remotes/origin/main.lock`.
-2. If `rm` fails with "Operation not permitted" (sandbox mount issue): report to user with the exact command — they can run it from Terminal.
-3. Never use `sudo`.
-
-### Auth failure on push
-Report to user: "GitHub PAT in .git/config may have expired or been rotated. Reset with: `cd /Users/home/100creatives && git remote set-url origin "https://Abhichawla99:NEW_TOKEN@github.com/Abhichawla99/100creatives.git"`". **NEVER echo or log the existing token.**
-
-### Sitemap parse failure
-Validate sitemap.xml after edit. If parse fails, revert the change and stop. Do not push partial state.
-
-### Slug collision
-If `{slug}.html` already exists in the repo (e.g. you generated it before but state wasn't updated): advance `next_index` and pick the next eligible topic.
-
----
-
-## What "no slop" looks like (read this last, before writing)
-
-The user explicitly asked for niche, persona-driven articles — not "we help every D2C brand under the sun" generic content. Before writing each section, ask yourself:
-
-- Would the persona recognize their own situation in this paragraph?
-- Is there a specific number, name, or detail that proves we know the niche?
-- Could a competitor write this exact paragraph? If yes, rewrite.
-- Does the article help the persona make a decision today, or just describe the category?
-
-If you finish a draft and it could be re-titled for any other persona without much change — STOP, rewrite. The whole point is sharpness.
+- Name a brand as a client, or describe spec work as a real shoot or campaign.
+- Invent statistics, prices, reviews, ratings, testimonials or quotes.
+- Publish self-ranking "best agencies" lists that put 100 Creatives first.
+- Add city or country landing pages for places where 100 Creatives has no presence.
+- Change FACTS.md. Only Abhi changes positioning, prices or client facts. If you think something in it is wrong, say so in LEDGER.md.
+- Enter credentials, post anywhere, email anyone, or change Search Console or Bing settings.

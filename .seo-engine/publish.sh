@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Daily SEO publish — pulls latest, stages, commits, pushes to main.
-# Usage: bash publish.sh "<slug>" "<h1 title>"
+# Usage: bash publish.sh "<slug>" "<h1 title or change summary>" [extra files edited this run...]
 #
 # Resilience: if the local clone has stuck .git/*.lock files (Cowork sandbox
 # mount issue), this script falls back to a fresh clone in /tmp, copies the
@@ -11,6 +11,9 @@ set -euo pipefail
 
 SLUG="${1:?slug required}"
 TITLE="${2:?title required}"
+shift 2
+# Other files this run edited (pages that got new links, llms.txt). bash 3.2-safe under set -u.
+EXTRA=("$@")
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO="$(cd "$SCRIPT_DIR/.." && pwd)"
@@ -27,7 +30,7 @@ fi
 COMMIT_MSG="SEO: publish ${TITLE}
 
 Daily SEO post — slug: ${SLUG}
-Targets: AI product photography for D2C brands.
+Targets: static and video ad creative (RUN v3).
 Auto-published by SEO engine on $(date +%Y-%m-%d)."
 
 # ----- PUSH AUTH -----
@@ -67,6 +70,7 @@ push_from_repo() {
 
   # Stage everything the engine touches
   git add "${SLUG}.html" sitemap.xml .seo-engine/ .gitignore 2>/dev/null || true
+  if [ ${#EXTRA[@]} -gt 0 ]; then git add ${EXTRA[@]+"${EXTRA[@]}"}; fi
 
   if git diff --cached --quiet; then
     echo "Nothing staged. Did the article get written?"
@@ -130,9 +134,21 @@ PY
   # personas.md, images.md, publish.sh) are edited by people on origin and are
   # deliberately not copied back.
   mkdir -p "$TMPDIR/.seo-engine"
-  for rel in MEMORY.md state.json topics.json; do
+  for rel in MEMORY.md LEDGER.md state.json topics.json; do
     [ -f "$REPO/.seo-engine/$rel" ] && cp "$REPO/.seo-engine/$rel" "$TMPDIR/.seo-engine/$rel"
   done
+
+  # Extra files this run edited, named explicitly by the caller.
+  if [ ${#EXTRA[@]} -gt 0 ]; then
+    for rel in ${EXTRA[@]+"${EXTRA[@]}"}; do
+      if [ -f "$REPO/$rel" ]; then
+        mkdir -p "$TMPDIR/$(dirname "$rel")"
+        cp "$REPO/$rel" "$TMPDIR/$rel"; echo "  ~ including: $rel"
+      else
+        echo "  ⚠ extra file not found, skipped: $rel"
+      fi
+    done
+  fi
 
   git add -A
   if git diff --cached --quiet; then
