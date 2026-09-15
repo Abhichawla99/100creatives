@@ -81,8 +81,9 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
   - sitemap.xml `<lastmod>` bumped to 2026-09-15 for this URL.
 - **Links added:** none new (page already carries 5 contextual outbound links: /unlimited-ad-creatives, /fast-ad-creative-turnaround, /ecommerce-ad-creatives, /performance-creative-agency, /ad-creative-testing-framework). No inbound-link step required for a fix job.
 - **Validation:** `python3 .seo-engine/validate.py how-many-ad-creatives-do-i-need.html` → `ok`, 0 failures, 0 warnings (was 1 failure + 3 warnings before the fix).
-- **IndexNow:** see publish.sh output at push time.
-- **GSC:** URL Inspection → Request indexing attempted for this URL; see push-time notes below for verdict.
+- **IndexNow:** HTTP 200, accepted (Bing/Yandex/Seznam/Naver notified for this URL + sitemap.xml).
+- **GSC:** URL Inspection showed "URL is not on Google" (unknown to Google, no referring sitemap/page detected yet). Request Indexing → "Indexing requested, added to priority crawl queue." No quota error today (unlike 09-14, which had already burned the day's quota).
+- **New signal noticed, not acted on:** GSC Overview recommendation flagged `https://www.100creatives.com/static-ads-for-meta.html` (the old `.html` URL form) down 93% in impressions recently. That's expected decay of the deprecated non-canonical URL now that `/static-ads-for-meta` (extensionless) is live and 308-redirecting it; flagging here in case it's actually a canonicalization problem worth checking next run.
 - **Local checkout note:** `.git/index.lock` and `.git/ORIG_HEAD.lock` in the local sandbox mount are not removable (`Operation not permitted`), so `git pull`/`git stash` fail there. Read every engine file via `git show origin/main:...` instead of trusting the local working tree, and synced `.seo-engine/{LEDGER.md,state.json,topics.json}` and `sitemap.xml` from `origin/main` before editing them, per RUN.md Step 0's guidance to continue rather than abort. Published through publish.sh's fallback path.
 - **Next run should start with:** the next item on the "Four core ad pages" debt list — `ad-creative-testing-framework` (remove the unsourced "20-40% CAC reduction" claim per its topics.json S7 angle, and check it for the same "unlimited"/"$5M+" language), then spend the Search Console quota on the indexing debt list below.
 
