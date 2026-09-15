@@ -1,8 +1,11 @@
 {
   "version": 3,
-  "run_count": 0,
-  "last_run": null,
-  "last_job": null,
+  "run_count": 1,
+  "last_run": "2026-09-15",
+  "last_job": "fix: how-many-ad-creatives-do-i-need (removed unlimited/flat-monthly/$5M+ claims, aligned with FACTS.md)",
+  "fixed": {
+    "how-many-ad-creatives-do-i-need": "2026-09-15"
+  },
   "strengthened": {
     "unlimited-ad-creatives": "2026-09-14",
     "creative-agency-vs-freelancer": "2026-09-14",
