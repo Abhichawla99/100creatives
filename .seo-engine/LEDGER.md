@@ -89,6 +89,29 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 
 ---
 
+## 2026-09-16, run 2: fix
+
+- **Signal:** not re-pulled from Search Console this run (Claude in Chrome signal-gathering step skipped; see note below). Indexing last confirmed 2026-09-15: 55 indexed / 179 not indexed, unchanged from the 2026-09-13 baseline.
+- **URL:** https://www.100creatives.com/ad-creative-testing-framework
+- **Evidence:** LEDGER 2026-09-15 run 1 "Next run should start with" note: fix `ad-creative-testing-framework` — remove the unsourced "20-40% CAC reduction" claim per its topics.json S7 angle, and check it for the same "unlimited"/"$5M+" language flagged in the 2026-09-14 Known Debt list. Confirmed directly on the page (opened and read the live copy).
+- **Changed:**
+  - Removed the unsourced "typically see a 20-40% reduction in customer acquisition cost within the first 60 days" claim (banned per FACTS.md: no unsourced CAC/ROAS/CTR/CVR lift stat). Replaced with a claim-free sentence about what a testing system does mechanically.
+  - Removed "DTC brands doing $5M+ per year" framing about our client base (same unsourced-scale claim the 2026-09-15 fix removed from `how-many-ad-creatives-do-i-need`).
+  - Rewrote "Our clients typically test 15-25 new ad creatives per week... competitors who are still waiting two weeks for their agency" (unsourced client-behavior stat, competitor jab, and an implied unlimited/continuous creative stream that contradicts FACTS.md's fixed-quote project model) into a sentence about the 48-hour turnaround and fixed-total quoting, both sourced from FACTS.md. Dropped the anchor link to `/unlimited-ad-creatives` since the sentence no longer describes unlimited velocity.
+  - Fixed the Article JSON-LD `author` from `Organization` to `Person` "Abhi Chawla" (linkedin.com/in/abhixchawla) per STYLE.md; added `publisher.@id`; bumped `dateModified` to 2026-09-16.
+  - Added the missing byline "By Abhi Chawla, founder" + visible "Last updated: September 16, 2026" under the hero (STYLE.md pre-flight checklist item 7 — page had neither).
+  - Shortened the meta/OG/Twitter/JSON-LD description from 182 to 139 characters (STYLE.md caps it at 155).
+  - Fixed a pre-existing FAQ visible/JSON-LD text mismatch (curly quotes in the visible HTML vs straight quotes in the JSON-LD, in the "angles vs variations" answer) that was failing `validate.py`. This page was on the "Legacy FAQ mismatches" Known Debt list; removed from that list below.
+  - `sitemap.xml` `<lastmod>` bumped to 2026-09-16 for this URL.
+- **Links added:** none new. No inbound-link step required for a fix job.
+- **Validation:** `python3 .seo-engine/validate.py ad-creative-testing-framework.html` → `ok`, 0 failures (1 advisory warning: 5 pre-existing em dashes in body copy I did not touch; no em dashes in the new copy).
+- **IndexNow:** see publish step below.
+- **GSC:** Search Console signal-gathering and Request Indexing were not run this pass — Claude in Chrome was not used this run. Logging this as a gap rather than a false "requested" claim; next run should either do the Step 2 signal pull and spend the indexing-debt quota, or explicitly note why it's skipped again.
+- **Local checkout note:** same sandbox-mount issue as 2026-09-15 — local `.git` had stuck lock files and 14 commits of stale local history behind `origin/main`, plus leftover uncommitted working-tree changes from a prior aborted run (already superseded by what's on origin). Synced `.seo-engine/{LEDGER.md,state.json,topics.json,FACTS.md,STYLE.md,RUN.md,validate.py}` and `sitemap.xml` from `origin/main` via `git show` before editing, confirmed local `LEDGER.md`/`state.json` already matched origin byte-for-byte, then edited the working tree directly. Did not attempt `git reset --hard`/`git clean` with elevated permissions after it failed once with `Operation not permitted`; left recovery to `publish.sh`'s fallback path per RUN.md Step 0.
+- **Next run should start with:** the remaining "unlimited"/"flat monthly"/"$5M+" Known Debt items — `ugc-ad-creatives` and `performance-creative-agency` — then a real Step 2 Search Console pull (this run skipped it) and spending the indexing-debt quota below, starting at `/static-ads`.
+
+---
+
 ## Indexing debt (request in Search Console in this order, about 3 a day)
 
 1. https://www.100creatives.com/static-ads
@@ -104,9 +127,9 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 
 ## Known debt (not fixed on 2026-09-14)
 
-- **Legacy FAQ mismatches.** 34 pages have visible FAQ text that differs from their FAQPage JSON-LD, all present before today. Core ad pages in that list (apparel, beauty, skincare, supplement, health-and-wellness and food-and-beverage ad creatives, ad-creative-testing-framework, cpg-creative-agency) get fixed when their strengthen job comes up.
+- **Legacy FAQ mismatches.** 33 pages have visible FAQ text that differs from their FAQPage JSON-LD, all present before 2026-09-14. Core ad pages still in that list (apparel, beauty, skincare, supplement, health-and-wellness and food-and-beverage ad creatives, cpg-creative-agency) get fixed when their strengthen job comes up. (`ad-creative-testing-framework` fixed 2026-09-16, see run 2 above.)
 - **`/what-to-look-for-in-an-ai-product-photography-agency`** tells buyers that capped revisions and no contractual accuracy guarantee are red flags. Our own terms cap revision rounds and offer no such guarantee. Rewrite before strengthening anything else in the photography lane.
-- **Core ad pages still say "unlimited", "flat monthly" or "$5M+":** ad-creative-testing-framework, ugc-ad-creatives, performance-creative-agency. Fix-first priority (RUN.md Step 3.1), one per run. (`how-many-ad-creatives-do-i-need` fixed 2026-09-15, see run 1 above.)
+- **Core ad pages still say "unlimited", "flat monthly" or "$5M+":** ugc-ad-creatives, performance-creative-agency. Fix-first priority (RUN.md Step 3.1), one per run. (`how-many-ad-creatives-do-i-need` fixed 2026-09-15, `ad-creative-testing-framework` fixed 2026-09-16, see run 1 and run 2 above.)
 - **The 88 older apparel/photography articles** still contain unsourced third-party attributions (Andrew Foxwell, Common Thread Collective, BoF, Vogue), guarantees and prices that aren't on /pricing. Abhi chose to leave them as they are on 2026-09-14, so don't bulk-edit them. Touch one only when it's the target of a fix or strengthen job.
 - **`images/barefootwines/barefoot-2.png`** prints its subline twice. It's used on dtc-ad-examples.
 - **Titles ending "| 100"** on 43 older pages. Change to "| 100 Creatives" when a page is touched.
