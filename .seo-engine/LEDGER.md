@@ -112,6 +112,32 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 
 ---
 
+## 2026-09-17, run 3: fix
+
+- **Signal (28 days, GSC Performance):** 23 clicks, 1.52K impressions, 1.5% avg CTR, avg position 51. Top queries: static advertising 77 · what is a static ad 54 · scaling strategies for creative agencies 53 · what are static ads 46 · ad creative scaling 30 · scale ad creative without breaking brand systems 29 · scaling creative production 23 · "when should a dtc ecommerce brand hire a google ads agency instead of a freelancer?" 22 · static ad 18. No new query or page surfaced outside topics.json's queued jobs.
+- **Indexing:** 74 indexed / 191 not indexed (page with redirect 68, crawled-not-indexed 42, alternate canonical 28, redirect error 29, 404 17, noindex 7). Confirms the 74/191 movement run 2 flagged as "not re-verified" — same count today, so treat as the new stable baseline rather than a one-off blip.
+- **Job:** `run_count` was 2 (2 % 3 == 2), so this run is fix/strengthen only per RUN.md Step 3. Took the fix-first Known Debt item queued by run 2's "Next run should start with": `ugc-ad-creatives`.
+- **URL:** https://www.100creatives.com/ugc-ad-creatives
+- **Evidence:** LEDGER 2026-09-16 run 2 "Next run should start with" note, and the Known Debt "Core ad pages still say unlimited/flat monthly/$5M+" line naming `ugc-ad-creatives` and `performance-creative-agency`. Confirmed directly on the page (opened and read the live copy).
+- **Changed:**
+  - Removed the unsourced "Data from hundreds of DTC campaigns shows... 15 to 30 percent lower CPAs" claim (banned: unsourced CAC/CPA lift stat) and the duplicate "consistently see 15 to 30 percent lower cost per acquisition" claim in the insights grid. Rewrote both sentences around mechanics (why the format earns attention, why it fits cold prospecting) instead of an invented number.
+  - Removed "We have designed UGC ad creatives for DTC brands doing five million dollars a year and up" (the same unsourced-scale "$5M+" claim already removed from `how-many-ad-creatives-do-i-need` and `ad-creative-testing-framework`). Replaced with the FACTS.md-sourced brand-intake process (visual language, model preferences, colorways, export specs).
+  - Fixed the footer tagline "High-converting static ad creatives for DTC brands doing $5M+ a year" to match the current sitewide copy ("AI-made static and video ads for DTC and consumer brands. Calgary, Canada.", per `about.html`/`index.html`).
+  - Added the missing byline "By Abhi Chawla, founder" + visible "Last updated: September 17, 2026" under the hero (STYLE.md checklist item 7 — page had neither).
+  - Fixed all 5 FAQ visible/JSON-LD text mismatches (visible HTML had extra "Learn more about..." link sentences and straight punctuation that the JSON-LD `text` fields didn't carry, plus em-dash list formatting in the JSON-LD that the visible copy didn't use). Unified both to the same plain text per question, added to the "Legacy FAQ mismatches" Known Debt list's implicit scope even though this page wasn't named on it.
+  - Shortened the title (63 → 53 chars) and meta/OG/Twitter description (166 → 141/130/91 chars) to pass STYLE.md's 60/155-char limits; new meta description names 100 Creatives with the $4,000 starting quote per STYLE.md item 6.
+  - Fixed the Service JSON-LD `offers` block: replaced the vague "Flat, transparent pricing" description (which implied a flat-rate/monthly plan FACTS.md doesn't support) with the same quoted-budget-range wording used on `static-ad-design-service`, and added `priceCurrency`/`priceSpecification` (minPrice 4000) to match.
+  - `meta name="author"` changed from "100 Creatives" to "Abhi Chawla" to match the new visible byline.
+  - `sitemap.xml` `<lastmod>` bumped to 2026-09-17 for this URL.
+- **Links added:** none new. No inbound-link step required for a fix job; page already carries contextual outbound links to /static-ads-for-meta, /how-to-scale-ad-creatives, /ecommerce-ad-creatives, /how-many-ad-creatives-do-i-need, /skincare-ad-creatives, /supplement-ad-creatives, /food-and-beverage-ad-creatives, /creative-agency-vs-freelancer, /dtc-ad-examples, /what-makes-a-good-static-ad, /performance-creative-agency, /static-ads-for-meta, /fast-ad-creative-turnaround, /dtc-creative-agency.
+- **Validation:** `python3 .seo-engine/validate.py ugc-ad-creatives.html` → `ok`, 0 failures, 0 warnings. Manual no-ai-slop check: 0 banned words, 0 em dashes in the file.
+- **IndexNow:** see publish step below.
+- **GSC:** see publish step below.
+- **Local checkout note:** same sandbox-mount issue as runs 1 and 2 — `.git/index.lock` in the local mount is not removable (`Operation not permitted`), and `git pull --rebase` fails on it even though the branch was already up to date with `origin/main` (only local diff was an irrelevant `.claude/settings.local.json` change plus a stray untracked temp file). Edited the working tree directly since RUN.md Step 0 says continue rather than abort; left recovery to `publish.sh`'s fallback path.
+- **Next run should start with:** the last remaining "unlimited"/"flat monthly"/"$5M+" Known Debt item — `performance-creative-agency` — then a full Step 2 pull including the Pages breakdown (this run only pulled the Queries breakdown and the Indexing overview, not per-page positions) once that's done. Indexing debt list below still open; spend today's quota on it after `ugc-ad-creatives`.
+
+---
+
 ## Indexing debt (request in Search Console in this order, about 3 a day)
 
 1. https://www.100creatives.com/static-ads
@@ -129,7 +155,7 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 
 - **Legacy FAQ mismatches.** 33 pages have visible FAQ text that differs from their FAQPage JSON-LD, all present before 2026-09-14. Core ad pages still in that list (apparel, beauty, skincare, supplement, health-and-wellness and food-and-beverage ad creatives, cpg-creative-agency) get fixed when their strengthen job comes up. (`ad-creative-testing-framework` fixed 2026-09-16, see run 2 above.)
 - **`/what-to-look-for-in-an-ai-product-photography-agency`** tells buyers that capped revisions and no contractual accuracy guarantee are red flags. Our own terms cap revision rounds and offer no such guarantee. Rewrite before strengthening anything else in the photography lane.
-- **Core ad pages still say "unlimited", "flat monthly" or "$5M+":** ugc-ad-creatives, performance-creative-agency. Fix-first priority (RUN.md Step 3.1), one per run. (`how-many-ad-creatives-do-i-need` fixed 2026-09-15, `ad-creative-testing-framework` fixed 2026-09-16, see run 1 and run 2 above.)
+- **Core ad pages still say "unlimited", "flat monthly" or "$5M+":** performance-creative-agency. Fix-first priority (RUN.md Step 3.1), one per run. (`how-many-ad-creatives-do-i-need` fixed 2026-09-15, `ad-creative-testing-framework` fixed 2026-09-16, `ugc-ad-creatives` fixed 2026-09-17, see runs 1-3 above.)
 - **The 88 older apparel/photography articles** still contain unsourced third-party attributions (Andrew Foxwell, Common Thread Collective, BoF, Vogue), guarantees and prices that aren't on /pricing. Abhi chose to leave them as they are on 2026-09-14, so don't bulk-edit them. Touch one only when it's the target of a fix or strengthen job.
 - **`images/barefootwines/barefoot-2.png`** prints its subline twice. It's used on dtc-ad-examples.
 - **Titles ending "| 100"** on 43 older pages. Change to "| 100 Creatives" when a page is touched.
@@ -145,4 +171,4 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 - [ ] Cowork task prompt → "Read RUN.md and follow it exactly"
 - [ ] Trademark question on "100 Creatives™" (lawyer)
 
-**Next run should start with:** see the 2026-09-15 run 1 entry above — `ad-creative-testing-framework` fix, then the indexing debt list.
+**Next run should start with:** see the 2026-09-17 run 3 entry above — `performance-creative-agency` fix, then a full Step 2 Pages-breakdown pull, then the indexing debt list.
