@@ -139,6 +139,28 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 
 ---
 
+## 2026-09-18, run 4: fix
+
+- **Signal (28 days, GSC Performance):** 25 clicks, 1.54K impressions, 1.6% avg CTR, avg position 49.2. Top queries: static advertising 74 · what is a static ad 56 · scaling strategies for creative agencies 52 · what are static ads 46 · ad creative scaling 30 · scale ad creative without breaking brand systems 29 · scaling creative production 23 · "when should a dtc ecommerce brand hire a google ads agency instead of a freelancer?" 22 · static ad 19 · unlimited ads 1 (new, 1 click). No new query or page surfaced outside topics.json's queued jobs.
+- **Indexing:** 74 indexed / 191 not indexed (page with redirect 68, redirect error 29, alternate canonical 28, crawled-not-indexed 42, 404 17, noindex 7). Same as the 2026-09-17 count — confirms it as the stable baseline.
+- **Job:** `run_count` was 3 at start (3 % 3 == 0, not restricted to fix/strengthen only), but Fix still took priority per RUN.md Step 3.1 — it was the last remaining item on the "unlimited/flat monthly/$5M+" Known Debt list.
+- **URL:** https://www.100creatives.com/performance-creative-agency
+- **Evidence:** LEDGER 2026-09-17 run 3 "Next run should start with" note, and the Known Debt line "Core ad pages still say unlimited/flat monthly/$5M+: performance-creative-agency." Confirmed directly by reading the live page source.
+- **Changed:**
+  - Removed "flat retainer" / "Flat Monthly Retainer" / "same retainer" / "weekly cadence inside the retainer" / "no new SOW" framing from 9 spots (Service JSON-LD description, Offer description, 3 body paragraphs, 2 approach cards, 1 difference-row card, final CTA line). The whole page described an open-ended monthly retainer/subscription, which FACTS.md does not support — every engagement gets a written quote with a fixed total in budget ranges of $4,000-$10,000 / $10,000-$25,000 / $25,000-$50,000 / $50,000+. Rewrote each spot around quoted batches with a 48-hour turnaround and a fixed total agreed in writing, keeping the legitimate "same team as your brand work" claim intact.
+  - Fixed the Service JSON-LD `offers` block: replaced "Flat, transparent pricing..." with the same quoted-budget-range wording used on `static-ad-design-service`/`ugc-ad-creatives`, added `priceCurrency`/`priceSpecification` (minPrice 4000).
+  - Renamed two card headings that named the retainer model: "Weekly Cadence" → "Fast, Repeatable Batches"; "Flat Monthly Retainer" → "One Fixed Quote, Every Category".
+  - Added the missing byline "By Abhi Chawla, founder" + visible "Last updated: September 18, 2026" under the hero (STYLE.md checklist item 7 — page had neither).
+  - `meta name="author"` changed from "100 Creatives" to "Abhi Chawla" to match the new visible byline.
+  - Shortened the meta description (222 → 141 chars) and OG/Twitter descriptions to pass STYLE.md's 155-char cap; new meta description names 100 Creatives with the $4,000 starting quote per STYLE.md item 6.
+  - `sitemap.xml` `<lastmod>` bumped to 2026-09-18 for this URL.
+- **Links added:** performance-creative-agency → /ad-creative-agency-pricing, /static-ads-for-meta, /creative-agency-vs-freelancer (3 new contextual outbound links; page previously linked only to spec brand pages, pricing, and legal pages). No inbound-link step required for a fix job.
+- **Validation:** `python3 .seo-engine/validate.py performance-creative-agency.html` → `ok`, 0 failures (1 advisory warning: 11 pre-existing em dashes in body copy not touched by this fix; no em dashes in the new copy).
+- **IndexNow:** see publish step below.
+- **GSC:** see publish step below.
+- **Local checkout note:** same sandbox-mount issue as runs 1-3 — `.git/index.lock` in the local mount is not removable (`Operation not permitted`). Confirmed the local working tree matched `origin/main` byte-for-byte (via `git show origin/main:...` diff) before editing, except an irrelevant `.claude/settings.local.json` permissions change and a stray untracked temp file in `images/armra/`. Edited the working tree directly per RUN.md Step 0; left recovery to `publish.sh`'s fallback path.
+- **Next run should start with:** a full Step 2 Pages-breakdown pull sorted by impressions (this run's Pages tab was sorted by clicks, so it under-samples high-impression/zero-click pages), then the indexing debt list below. The "unlimited/flat monthly/$5M+" Known Debt list is now fully cleared across all four flagged pages (how-many-ad-creatives-do-i-need, ad-creative-testing-framework, ugc-ad-creatives, performance-creative-agency) — next Fix-priority item is the "Legacy FAQ mismatches" list (33 pages, apparel/beauty/skincare/supplement/health-and-wellness/food-and-beverage ad-creatives, cpg-creative-agency) or the `/what-to-look-for-in-an-ai-product-photography-agency` red-flag contradiction, whichever a strengthen job doesn't reach first.
+
 ## Indexing debt (request in Search Console in this order, about 3 a day)
 
 1. https://www.100creatives.com/static-ads
