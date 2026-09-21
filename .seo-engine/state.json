@@ -1,10 +1,10 @@
 {
   "version": 3,
-  "run_count": 6,
-  "last_run": "2026-09-20",
-  "last_job": "strengthen: how-to-scale-ad-creatives (topics.json S1; full v3 page-spec rewrite; removed unlimited-volume/flat-monthly-retainer/no-extra-charge-revisions claims that contradicted FACTS.md; replaced unsourced win-rate/fatigue-window/spend-divisor stats with a Meta Business Help Center citation and honest no-formula framing; added TL;DR, Which-should-you-buy, byline, BreadcrumbList+Person-author Article JSON-LD, 6 FAQs; added inbound links from static-ads, ad-creative-agency-pricing, how-many-ad-creatives-do-i-need)",
+  "run_count": 7,
+  "last_run": "2026-09-21",
+  "last_job": "fix: how-many-ad-creatives-do-i-need (removed 5 unsourced/invented-precision claims flagged in run 6 - fatigue-window day-counts, spend-divide formula, designer daily-capacity numbers, unsourced competitor agency pricing, unsourced client-volume claim; fixed Article JSON-LD author to Person, added BreadcrumbList, added outbound link to creative-agency-vs-freelancer in place of the removed unsourced agency pricing)",
   "fixed": {
-    "how-many-ad-creatives-do-i-need": "2026-09-15",
+    "how-many-ad-creatives-do-i-need": "2026-09-21",
     "ad-creative-testing-framework": "2026-09-16",
     "ugc-ad-creatives": "2026-09-17",
     "performance-creative-agency": "2026-09-18",
