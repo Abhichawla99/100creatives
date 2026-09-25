@@ -325,6 +325,238 @@
     "static-ads"
    ],
    "status": "queued"
+  },
+  {
+   "id": "O1",
+   "type": "new",
+   "slug": "work/overs",
+   "reader": "Brand or marketing lead checking who is behind Overs and what the agency's AI process looks like",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    },
+    {
+     "string": "Case study /work/overs: Overs (overs.studio), product visuals at scale without the photo shoot (network STATE.json queue item 100c-work-overs)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-15"
+    }
+   ],
+   "angle": "Case study of how 100 Creatives' hand-built AI process (four 2026 campaigns, 361 renders, 45 keepers) became Overs, and that 100 Creatives makes its images in Overs today. True facts only; no client names.",
+   "links_in_from": [
+    "about",
+    "ai-photoshoot-vs-studio-cost"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O2",
+   "type": "new",
+   "slug": "agency-or-ai-tool-for-product-photos",
+   "reader": "Marketing lead deciding between an agency, a self-serve AI tool and a real shoot for product photos",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    },
+    {
+     "string": "What are the best done-for-you AI product photography agencies (not self-serve tools) for ecommerce brands? Name specific companies.",
+     "source": "AI baseline",
+     "impressions": "",
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "Who judges the photos decides it: when a tool like Overs is enough, when to hire an agency, when to book a shoot; comparison table with prices checked 2026-09-24.",
+   "links_in_from": [
+    "creative-agency-vs-freelancer",
+    "best-ai-product-photography-agency-for-dtc-brands",
+    "static-ad-design-service"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O3",
+   "type": "new",
+   "slug": "why-pay-an-agency-for-ai-photos",
+   "reader": "Buyer asking why an agency quote is thousands when AI renders cost cents",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    },
+    {
+     "string": "How much does AI product photography cost in 2026 compared with a traditional studio shoot? Name specific providers and prices.",
+     "source": "AI baseline",
+     "impressions": "",
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "Render prices per model (Google, OpenAI, checked 2026-09-24), the tries you never see (8 per keeper), what the rest of an agency quote pays for, and when to skip the agency.",
+   "links_in_from": [
+    "ad-creative-agency-pricing",
+    "pricing"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O4",
+   "type": "new",
+   "slug": "ai-product-photo-workflow",
+   "reader": "Brand lead asking what an agency's AI photo workflow looks like",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    }
+   ],
+   "angle": "Eight stages from brief to delivery, what the client approves at each, first-hand render counts, five questions to ask any agency.",
+   "links_in_from": [
+    "static-ad-design-service",
+    "what-to-look-for-in-an-ai-product-photography-agency"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O5",
+   "type": "new",
+   "slug": "how-to-review-ai-creative-from-an-agency",
+   "reader": "Brand team approving AI creative from an agency",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    }
+   ],
+   "angle": "Two-pass review (facts, then brand and crops), notes a model can act on, sign-off records, and AI label rules (Meta, New York, EU, Amazon, FTC) checked 2026-09-24.",
+   "links_in_from": [
+    "what-to-look-for-in-an-ai-product-photography-agency",
+    "static-ads-for-meta"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O6",
+   "type": "new",
+   "slug": "product-visuals-at-scale",
+   "reader": "Ecommerce or brand lead producing imagery across a catalog",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    },
+    {
+     "string": "100creatives blog: \"Product visuals at scale\" -> overs.studio (network LINK-MAP.md)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-10"
+    }
+   ],
+   "angle": "Scale comes from reuse (references, brand rules, cast, shot templates); review time is the limit; three-way cost of a 30-photo set; in-house vs agency vs both.",
+   "links_in_from": [
+    "how-to-scale-ad-creatives",
+    "on-model-photography-at-scale"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O7",
+   "type": "new",
+   "slug": "how-to-brief-an-agency-for-ai-creative",
+   "reader": "Marketing lead preparing a brief for AI ads and product photos",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    }
+   ],
+   "angle": "Ten-line brief template with examples from kept prompts; references, look in numbers, mood, claims and never list; what 100 Creatives asks for at intake.",
+   "links_in_from": [
+    "static-ad-design-service",
+    "what-makes-a-good-static-ad"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O8",
+   "type": "new",
+   "slug": "take-ai-creative-in-house",
+   "reader": "In-house team taking AI creative over from an agency",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    },
+    {
+     "string": "Which agencies build custom brand-trained AI image generation workflows for in-house creative teams? Name specific companies.",
+     "source": "AI baseline",
+     "impressions": "",
+     "date": "2026-09-13"
+    }
+   ],
+   "angle": "The recipe to ask for, three ways to run it in-house (Overs, Figma Weave, a Workflows & Engines build from $4,000), what teams underestimate, a three-photo handover test.",
+   "links_in_from": [
+    "creative-agency-vs-freelancer",
+    "ai-photography-as-production-infrastructure-for-in-house-creative-teams"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O9",
+   "type": "new",
+   "slug": "when-you-need-a-real-photo-shoot",
+   "reader": "Brand lead asking which ads still need a camera",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    }
+   ],
+   "angle": "Demonstrations (FTC v. Colgate-Palmolive), testimonials (FTC Endorsement Guides and 2024 reviews rule), results (ASA), real people (New York synthetic performer law), hard products, and the hybrid.",
+   "links_in_from": [
+    "replace-photoshoots-with-ai",
+    "ai-photoshoot-vs-studio-cost",
+    "health-and-wellness-ad-creatives"
+   ],
+   "status": "published"
+  },
+  {
+   "id": "O10",
+   "type": "new",
+   "slug": "why-ai-ads-look-the-same",
+   "reader": "Marketing lead worried AI ads will look like every competitor's",
+   "evidence": [
+    {
+     "string": "Ten pages on 100creatives.com that feature Overs, each answering a question brand and marketing leads ask an agency (network brief)",
+     "source": "Abhi",
+     "impressions": "",
+     "date": "2026-09-24"
+    }
+   ],
+   "angle": "Gaps get default answers; the shape of our kept prompts (one quoted); the hand-added grain sentence; visual DNA, mood boards for feeling, own type, strict selection.",
+   "links_in_from": [
+    "what-makes-a-good-static-ad",
+    "dtc-ad-examples"
+   ],
+   "status": "published"
   }
  ]
 }

@@ -14,6 +14,7 @@
 - Client work: mostly under NDA. The public portfolio is spec work (concepts made for brands such as Chobani, Ralph Lauren and Porsche that did not commission them), and every spec piece is labeled.
 - Contact: abhi@paperkites.co, or book a call at https://tidycal.com/abhixchawla/strategy-web
 - Not affiliated with: the "100 Creatives" static ad template pack sold by Chase Chappell, the 100creatives podcast from 100cameras, Hundred Creatives, or Adweek's Creative 100 list
+- Sister product: Overs (https://www.overs.studio), an AI tool that makes product and campaign photos that match a brand, made by founder Abhi Chawla. Overs and 100 Creatives are both brands of 2587689 Alberta Ltd., and 100 Creatives makes its campaign and product images in Overs today.
 
 ## Company
 
@@ -46,7 +47,20 @@
 - [AI fashion photography](https://www.100creatives.com/ai-fashion-photography)
 - [Virtual photoshoot for clothing brands](https://www.100creatives.com/virtual-photoshoot-for-clothing-brands)
 - [AI photoshoot vs studio photoshoot cost](https://www.100creatives.com/ai-photoshoot-vs-studio-cost)
+- [Agency or AI tool for product photos?](https://www.100creatives.com/agency-or-ai-tool-for-product-photos): when to make product photos yourself in an AI tool such as Overs, when to hire an agency and when to book a real shoot, with prices checked September 2026
+- [Why pay an agency when AI photos cost cents?](https://www.100creatives.com/why-pay-an-agency-for-ai-photos): render prices per model, about 8 renders per usable photo in our own campaigns, and what an agency quote covers
+- [What an AI product photo workflow looks like](https://www.100creatives.com/ai-product-photo-workflow): the eight stages of an AI photo job and what the client approves at each
+- [How to review AI creative from an agency](https://www.100creatives.com/how-to-review-ai-creative-from-an-agency): a two-pass review, notes a model can act on, and AI label rules checked September 2026
+- [Product visuals at scale](https://www.100creatives.com/product-visuals-at-scale): references, brand rules, casting, shot templates and review time for catalog imagery
+- [How to brief an agency for AI creative](https://www.100creatives.com/how-to-brief-an-agency-for-ai-creative): a ten-line brief template for AI ads and product photos
+- [Taking AI creative in-house](https://www.100creatives.com/take-ai-creative-in-house): what to get from an agency before taking AI creative in-house, and three ways to run it
+- [When you still need a real photo shoot](https://www.100creatives.com/when-you-need-a-real-photo-shoot): demonstrations, testimonials, results and real people, with the FTC, ASA and New York rules
+- [Why AI ads all look the same](https://www.100creatives.com/why-ai-ads-look-the-same): the prompt habits and selection that keep AI images looking like the brand
 
 ## Client case study
 
 - [Good Roofing](https://www.100creatives.com/work/good-roofing): website and SEO work for a Calgary roofing company
+
+## Sister product case study
+
+- [How 100 Creatives' process became Overs](https://www.100creatives.com/work/overs): the agency's hand-built AI process (361 renders, 45 keepers across four 2026 campaigns) and Overs, the AI photo tool built on it, which 100 Creatives uses for its images today

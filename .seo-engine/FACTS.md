@@ -48,6 +48,15 @@ Prices come from the live /pricing and /contact pages. Never type a price that i
 - 48-hour turnaround on creative batches, and revisions returned within 48 hours.
 - Brand intake before production: visual language, model preferences, colorways, export specs.
 
+## Overs, the sister product (confirmed by Abhi, 2026-09-24)
+
+Added 2026-09-24 from Abhi's answer, relayed by the network coordinator for the Overs pages job. Anything else about Overs (plans, prices, features) comes from www.overs.studio on the day you check it, with the month checked.
+
+- Overs (https://www.overs.studio) is an AI tool that makes product and campaign photos that match a brand, without a photo shoot. It makes stills only. It does not make video (it can write a text motion prompt for a video model) and it does not write ad copy.
+- Overs is made by Abhi Chawla, founder of 100 Creatives. Overs and 100 Creatives are both brands of 2587689 Alberta Ltd. Say so plainly wherever a page recommends Overs.
+- 100 Creatives makes its campaign and product images with Overs today, and Abhi credits Overs for the growth of 100 Creatives and his other brands. Present tense only. Never attach a number to that growth (no percentages, counts or multiples). Never name a client, and never say a client's campaign was made in Overs.
+- Before Overs existed, 100 Creatives built four campaigns in 2026 by hand in Figma Weave with AI image models. Across them, 361 renders produced 45 keepers, about 8 renders per usable photo: gummy supplement ads 38 renders / 12 keepers, men's trousers on a model 40 / 11, brownie food ads with motion 120 / 10, surf apparel on one model 163 / 12. Never name those brands. (Source: first-hand campaign records, approved for use in Abhi's 2026-09-24 brief.)
+
 ## Claims that are not allowed
 
 - "Leading", "best", "#1" about ourselves, unless scoped to a named reader and backed on the page.
