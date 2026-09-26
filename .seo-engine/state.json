@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 10,
-  "last_run": "2026-09-25",
-  "last_job": "fix: cpg-creative-agency (full rewrite to STYLE v3; removed flat monthly retainer, named senior team, OOH/retail/full-stack scope; FAQ now matches JSON-LD)",
+  "run_count": 11,
+  "last_run": "2026-09-26",
+  "last_job": "fix: food-and-beverage-ad-creatives (full rewrite to STYLE v3; removed flat monthly retainer, named senior team, OOH/retail/brand-campaign/creator-casting scope; FAQ now matches JSON-LD) + link in from cpg-creative-agency",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -10,7 +10,8 @@
     "performance-creative-agency": "2026-09-18",
     "what-to-look-for-in-an-ai-product-photography-agency": "2026-09-19",
     "supplement-ad-creatives": "2026-09-24",
-    "cpg-creative-agency": "2026-09-25"
+    "cpg-creative-agency": "2026-09-25",
+    "food-and-beverage-ad-creatives": "2026-09-26"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-09-14",
