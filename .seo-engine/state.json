@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 12,
-  "last_run": "2026-09-27",
-  "last_job": "fix: beauty-ad-creatives (full rewrite to STYLE v3; removed flat monthly retainer, named senior team, brand campaign/OOH/retail POS/creator casting scope, studio photography claim; FAQ now matches JSON-LD)",
+  "run_count": 13,
+  "last_run": "2026-09-28",
+  "last_job": "fix: skincare-ad-creatives (full rewrite to STYLE v3; removed flat monthly retainer, named senior team, brand campaign/OOH/retail/UGC-program scope; FAQ now matches JSON-LD)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -12,7 +12,8 @@
     "supplement-ad-creatives": "2026-09-24",
     "cpg-creative-agency": "2026-09-25",
     "food-and-beverage-ad-creatives": "2026-09-26",
-    "beauty-ad-creatives": "2026-09-27"
+    "beauty-ad-creatives": "2026-09-27",
+    "skincare-ad-creatives": "2026-09-28"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-09-14",
