@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 17,
-  "last_run": "2026-10-02",
-  "last_job": "fix: ai-fashion-models-vs-real-models (full rewrite to STYLE v3; removed unsourced replaceability/blind-test/model-fee claims and implied client roster; added NY Fashion Workers Act consent and EU AI Act Art. 50 disclosure; FAQ matches JSON-LD) + links in to orphan subscription-box page",
+  "run_count": 18,
+  "last_run": "2026-10-03",
+  "last_job": "fix: ai-fashion-photography-vs-traditional (full rewrite to STYLE v3, channel-by-channel angle: Amazon, Google Shopping, own store, NY/EU ad disclosure; removed unsourced per-image costs, throughput, 80-95% and savings claims; FAQ matches JSON-LD) + link in from ai-fashion-models-vs-real-models",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -18,7 +18,8 @@
     "dtc-creative-agency": "2026-09-30",
     "dtc-clothing-brand-photography-playbook": "2026-10-01",
     "subscription-box-product-photography-on-a-monthly-cadence": "2026-10-01",
-    "ai-fashion-models-vs-real-models": "2026-10-02"
+    "ai-fashion-models-vs-real-models": "2026-10-02",
+    "ai-fashion-photography-vs-traditional": "2026-10-03"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-09-14",
