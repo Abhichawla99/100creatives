@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 18,
-  "last_run": "2026-10-03",
-  "last_job": "fix: ai-fashion-photography-vs-traditional (full rewrite to STYLE v3, channel-by-channel angle: Amazon, Google Shopping, own store, NY/EU ad disclosure; removed unsourced per-image costs, throughput, 80-95% and savings claims; FAQ matches JSON-LD) + link in from ai-fashion-models-vs-real-models",
+  "run_count": 19,
+  "last_run": "2026-10-04",
+  "last_job": "fix: best-ai-fashion-photography-services (full rewrite to STYLE v3 as a three-kinds buyer guide: self-serve tools, studios with AI add-ons, managed agencies, with vendor prices checked Oct 2026 and a one-week garment test; removed retainer, accuracy guarantee, 1,000 SKUs/month, implied clients, unsourced $40-$100/image; FAQ matches JSON-LD)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -19,7 +19,8 @@
     "dtc-clothing-brand-photography-playbook": "2026-10-01",
     "subscription-box-product-photography-on-a-monthly-cadence": "2026-10-01",
     "ai-fashion-models-vs-real-models": "2026-10-02",
-    "ai-fashion-photography-vs-traditional": "2026-10-03"
+    "ai-fashion-photography-vs-traditional": "2026-10-03",
+    "best-ai-fashion-photography-services": "2026-10-04"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-09-14",
