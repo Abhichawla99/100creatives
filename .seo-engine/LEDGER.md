@@ -579,3 +579,8 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 - **Validation:** `validate.py best-ai-fashion-photography-services.html` -> ok, 0 failures, 0 warnings. Banned-word scan clean ("best" only in the FAQ question quoting the GSC query and "each vendor's best garment"; "retainer" only in the correction paragraph). IntersectionObserver present. sitemap parses.
 - **Sync note:** local mount still behind origin with stale unstaged edits and a stuck `.git/index.lock`; left untouched. Worked and pushed from a fresh clone outside the mount.
 
+- **Publish:** commit ef309eb, pushed from a fresh clone outside the mount with the credential line from GITHUB-TOKEN.txt (publish.sh not used: its fallback would copy the mount's stale LEDGER/state over origin).
+- **Live check (~75s after push, from the cloud):** HTTP 200, `<h1>` "AI fashion photography services: three kinds, and how to test one", canonical correct, Last updated 2026-10-04.
+- **IndexNow:** HTTP 200 for best-ai-fashion-photography-services and sitemap.xml.
+- **GSC:** inspect bar (two clicks to focus). best-ai-fashion-photography-services: "URL is on Google", indexed (old version) → Request Indexing → **Indexing requested** (priority crawl queue). Indexing debt unchanged: the 10-item list.
+- **Next run should start with:** `unlimited-ad-creatives` strengthen (189 impr across .html and extensionless, pos 8.5-13.8, last strengthened 2026-09-14). Then grep remaining v2 apparel pages for "retainer" / "% lift" / "guarantee" (`grep -lci retainer *.html`); the ~30 v2 apparel pages linking to best-ai-fashion-photography-services are unreviewed.
