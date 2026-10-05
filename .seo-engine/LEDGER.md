@@ -602,3 +602,8 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
   - "infinite creatives" query: no vendor by that name found; not addressed.
 - **Links added (out):** unlimited-ad-creatives -> /how-many-ad-creatives-do-i-need, /creative-agency-vs-freelancer, /ad-creative-testing-framework (existing: /ad-creative-agency-pricing, /static-ads, /pricing, spec pages).
 - **Validation:** validate.py ok, 0 failures. 0 em dashes. IntersectionObserver present. sitemap lastmod 2026-10-05, parses. llms.txt line still accurate.
+- **Publish:** commit ed87883, pushed from a fresh clone in /tmp on the device (mount still behind origin 35+ commits with stale unstaged edits and stuck `.git/index.lock`; $HOME scratch disk full, so cloned to /tmp). publish.sh not used (fallback would copy stale mount LEDGER/state).
+- **Live check (~70s after push):** HTTP 200, `<h1>` present, canonical correct, Last updated 2026-10-05, new #trials section served.
+- **IndexNow:** HTTP 200 for unlimited-ad-creatives and sitemap.xml.
+- **GSC:** inspect bar (two clicks to focus). unlimited-ad-creatives: "URL is on Google", indexed (old version) → Request Indexing → **Indexing requested**. Indexing debt unchanged.
+- **Next run should start with:** `dtc-fashion-brand-content` (67 impr, pos 18.7; query "how to scale a dtc fashion brand?" 27 impr pos 11.7) check against FACTS.md (v2 apparel page, likely fix), or `creative-agency-vs-freelancer` strengthen (61 impr pos 22.7 on the non-www .html URL; query "compare creative agencies vs freelancers for brand campaigns" 13 impr pos 3.8; last strengthened 2026-09-14). Run 21 has run_count 20 at start (20 % 3 == 2): fix or strengthen only.
