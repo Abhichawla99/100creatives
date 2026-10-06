@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 20,
-  "last_run": "2026-10-05",
-  "last_job": "strengthen: unlimited-ad-creatives (prices re-checked Oct 2026, 9 vendors incl. Konstant Kreative and Creative Kaiju; new ads-only and trials/refunds sections; trial FAQ)",
+  "run_count": 21,
+  "last_run": "2026-10-06",
+  "last_job": "fix: dtc-fashion-brand-content (v3 rewrite answering \"how to scale a dtc fashion brand?\": three limits, Meta Andromeda/Marketing Brew/fatigue sources, concept table, supply-source table, 30-day plan; removed per-frame prices, shoot costs, unsourced 15-40/week, calculator, named-brand fit list)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -20,7 +20,8 @@
     "subscription-box-product-photography-on-a-monthly-cadence": "2026-10-01",
     "ai-fashion-models-vs-real-models": "2026-10-02",
     "ai-fashion-photography-vs-traditional": "2026-10-03",
-    "best-ai-fashion-photography-services": "2026-10-04"
+    "best-ai-fashion-photography-services": "2026-10-04",
+    "dtc-fashion-brand-content": "2026-10-06"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-10-05",
