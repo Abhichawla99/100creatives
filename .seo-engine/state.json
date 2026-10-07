@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 21,
-  "last_run": "2026-10-06",
-  "last_job": "fix: dtc-fashion-brand-content (v3 rewrite answering \"how to scale a dtc fashion brand?\": three limits, Meta Andromeda/Marketing Brew/fatigue sources, concept table, supply-source table, 30-day plan; removed per-frame prices, shoot costs, unsourced 15-40/week, calculator, named-brand fit list)",
+  "run_count": 22,
+  "last_run": "2026-10-07",
+  "last_job": "fix: western-and-ranch-apparel-brand-campaign-imagery (v3 rewrite for \"rodeo apparel photography\": PRCA/CPRA/Calgary Stampede commercial-use rules, four-source clearance table, western construction checklist, AI limits with animals, channel specs; removed unsourced $95k-$175k shoot prices tied to named photographers, per-frame prices, $32k-$62k contract, unlabeled spec images)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -21,7 +21,8 @@
     "ai-fashion-models-vs-real-models": "2026-10-02",
     "ai-fashion-photography-vs-traditional": "2026-10-03",
     "best-ai-fashion-photography-services": "2026-10-04",
-    "dtc-fashion-brand-content": "2026-10-06"
+    "dtc-fashion-brand-content": "2026-10-06",
+    "western-and-ranch-apparel-brand-campaign-imagery": "2026-10-07"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-10-05",
