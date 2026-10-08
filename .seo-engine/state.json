@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 22,
-  "last_run": "2026-10-07",
-  "last_job": "fix: western-and-ranch-apparel-brand-campaign-imagery (v3 rewrite for \"rodeo apparel photography\": PRCA/CPRA/Calgary Stampede commercial-use rules, four-source clearance table, western construction checklist, AI limits with animals, channel specs; removed unsourced $95k-$175k shoot prices tied to named photographers, per-frame prices, $32k-$62k contract, unlabeled spec images)",
+  "run_count": 23,
+  "last_run": "2026-10-08",
+  "last_job": "fix: collab-and-capsule-campaign-imagery-for-apparel-brands (v3 rewrite: collab agreement approval/licensing terms (Morgan Lewis, Knobbe), AI image ownership (Copyright Office Part 2), Meta partnership ads, shoot-vs-generate table, disclosure, drop-date plan; removed $180k-$520k named-photographer prices, $28k-$72k \"dual-spine\" engagement, $120-$480 per-frame prices, unlabeled spec images)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -22,7 +22,8 @@
     "ai-fashion-photography-vs-traditional": "2026-10-03",
     "best-ai-fashion-photography-services": "2026-10-04",
     "dtc-fashion-brand-content": "2026-10-06",
-    "western-and-ranch-apparel-brand-campaign-imagery": "2026-10-07"
+    "western-and-ranch-apparel-brand-campaign-imagery": "2026-10-07",
+    "collab-and-capsule-campaign-imagery-for-apparel-brands": "2026-10-08"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-10-05",
