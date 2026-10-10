@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 24,
-  "last_run": "2026-10-09",
-  "last_job": "fix: sleepwear-and-pajama-brand-campaign-imagery (v3 rewrite: CPSC kids' sleepwear tight-fitting hangtag and promotion rules, FTC bamboo/rayon advertising, Meta adult-content 18+ rules for bedroom frames, shoot-vs-generate table, family-set consistency; removed $55k-$110k shoot, $18k-$38k contract, per-frame prices, invented $7M brand story, named-brand revenue bands, unlabeled spec images)",
+  "run_count": 25,
+  "last_run": "2026-10-10",
+  "last_job": "fix: golf-and-country-club-apparel-brand-campaign-imagery (v3 rewrite: club crest permissions, Pebble Beach v. Tour 18 famous-course marks, UPF claims per AATCC 183/ASTM D6603, PGA Show 2027 plan, shoot-vs-generate table; removed $48k-$95k shoot, $16k-$34k package, per-frame and $5,800-per-frame prices, invented $12M brand story, unlabeled spec images)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -24,7 +24,8 @@
     "dtc-fashion-brand-content": "2026-10-06",
     "western-and-ranch-apparel-brand-campaign-imagery": "2026-10-07",
     "collab-and-capsule-campaign-imagery-for-apparel-brands": "2026-10-08",
-    "sleepwear-and-pajama-brand-campaign-imagery": "2026-10-09"
+    "sleepwear-and-pajama-brand-campaign-imagery": "2026-10-09",
+    "golf-and-country-club-apparel-brand-campaign-imagery": "2026-10-10"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-10-05",
