@@ -738,3 +738,8 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 - **Links added (out):** creative-agency-vs-freelancer -> /how-to-review-ai-creative-from-an-agency, /when-you-need-a-real-photo-shoot, /how-to-brief-an-agency-for-ai-creative, /dtc-creative-agency (second link). No inbound links added.
 - **Validation:** validate.py ok, 0 failures. Banned-word scan clean. IntersectionObserver present. sitemap parses.
 - **Publish:** edited in a fresh clone in /tmp on the device (mount still behind origin with stale unstaged edits); publish.sh not used (fallback would copy the mount's stale LEDGER/state over origin).
+- **Commit:** fede64c.
+- **Live check (~70s after push, from the cloud):** HTTP 200, new `<h1>`, canonical correct, Last updated 2026-10-11.
+- **IndexNow:** HTTP 200 for creative-agency-vs-freelancer and sitemap.xml.
+- **GSC:** inspect bar (two clicks to focus). creative-agency-vs-freelancer -> Request indexing -> **Indexing requested** (priority crawl queue). Indexing debt unchanged. GSC Overview flags /dtc-creative-agency impressions up sharply (93 impr, pos 16.0 in 28 days).
+- **Next run should start with:** `dtc-creative-agency` strengthen (93 impr pos 16.0, rising; check against FACTS.md first). Then fix unreviewed v2 apparel pages earning impressions: modest-fashion (25 impr, pos 6.8), uniform-and-team (11, pos 7.3). Still pending: sentence-level links into dtc-fashion-brand-content from how-many-ad-creatives-do-i-need and apparel-ad-creatives; refresh September competitor prices on creative-agency-vs-freelancer. Run 27 has run_count 26 at start (26 % 3 == 2): fix or strengthen only.
