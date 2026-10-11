@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 25,
-  "last_run": "2026-10-10",
-  "last_job": "fix: golf-and-country-club-apparel-brand-campaign-imagery (v3 rewrite: club crest permissions, Pebble Beach v. Tour 18 famous-course marks, UPF claims per AATCC 183/ASTM D6603, PGA Show 2027 plan, shoot-vs-generate table; removed $48k-$95k shoot, $16k-$34k package, per-frame and $5,800-per-frame prices, invented $12M brand story, unlabeled spec images)",
+  "run_count": 26,
+  "last_run": "2026-10-11",
+  "last_job": "strengthen: creative-agency-vs-freelancer (title/H1/hero aimed at \"compare creative agencies vs freelancers for brand campaigns\"; new brand-campaign section with job-by-route table, Copyright Office Circular 30 rights note, AI render-selection note from FACTS 361/45, when-to-shoot, Google Ads agency vs freelancer; FAQ 6 replaced; publisher @id)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -29,7 +29,7 @@
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-10-05",
-    "creative-agency-vs-freelancer": "2026-09-14",
+    "creative-agency-vs-freelancer": "2026-10-11",
     "static-ad-design-service": "2026-09-14",
     "dtc-ad-examples": "2026-09-14",
     "what-makes-a-good-static-ad": "2026-09-14",
