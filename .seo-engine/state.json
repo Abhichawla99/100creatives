@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 26,
-  "last_run": "2026-10-11",
-  "last_job": "strengthen: creative-agency-vs-freelancer (title/H1/hero aimed at \"compare creative agencies vs freelancers for brand campaigns\"; new brand-campaign section with job-by-route table, Copyright Office Circular 30 rights note, AI render-selection note from FACTS 361/45, when-to-shoot, Google Ads agency vs freelancer; FAQ 6 replaced; publisher @id)",
+  "run_count": 27,
+  "last_run": "2026-10-12",
+  "last_job": "fix: modest-fashion-brand-campaign-and-editorial-imagery (v3 rewrite: coverage frames for length/sleeve/opacity, Meta personal-attributes rule on religion in ad copy + Jan 2022 religious-targeting removal, AI render coverage checks, shoot-vs-generate table, Ramadan 2027 plan; remove invented shoot/roster/per-style prices, named-brand reader list, invented story, unlabeled non-modest spec images; FAQ matches JSON-LD)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -25,7 +25,8 @@
     "western-and-ranch-apparel-brand-campaign-imagery": "2026-10-07",
     "collab-and-capsule-campaign-imagery-for-apparel-brands": "2026-10-08",
     "sleepwear-and-pajama-brand-campaign-imagery": "2026-10-09",
-    "golf-and-country-club-apparel-brand-campaign-imagery": "2026-10-10"
+    "golf-and-country-club-apparel-brand-campaign-imagery": "2026-10-10",
+    "modest-fashion-brand-campaign-and-editorial-imagery": "2026-10-12"
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-10-05",
