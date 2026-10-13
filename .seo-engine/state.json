@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 27,
-  "last_run": "2026-10-12",
-  "last_job": "fix: modest-fashion-brand-campaign-and-editorial-imagery (v3 rewrite: coverage frames for length/sleeve/opacity, Meta personal-attributes rule on religion in ad copy + Jan 2022 religious-targeting removal, AI render coverage checks, shoot-vs-generate table, Ramadan 2027 plan; remove invented shoot/roster/per-style prices, named-brand reader list, invented story, unlabeled non-modest spec images; FAQ matches JSON-LD)",
+  "run_count": 28,
+  "last_run": "2026-10-13",
+  "last_job": "strengthen: why-ai-ads-look-the-same (H2 + FAQ on exact query; NIQ Dec 2024 + Meta Engineering Dec 2024 sourced; five-check generic test; default-vs-decided table; agency ask section; Overs per-photo cost refreshed from overs.studio Oct 2026)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -41,7 +41,8 @@
     "faq": "2026-09-14",
     "how-to-scale-ad-creatives": "2026-09-20",
     "health-and-wellness-ad-creatives": "2026-09-23",
-    "dtc-creative-agency": "2026-09-30"
+    "dtc-creative-agency": "2026-09-30",
+    "why-ai-ads-look-the-same": "2026-10-13"
   },
   "published_v3": {
     "about": "2026-09-14",

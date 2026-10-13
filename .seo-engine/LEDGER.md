@@ -767,3 +767,19 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 - **IndexNow:** HTTP 200 for modest-fashion-brand-campaign-and-editorial-imagery and sitemap.xml.
 - **GSC:** inspect bar (narrow window: click the search icon first). modest-fashion: "URL is on Google", "Page is indexed" (old version) -> Request Indexing -> **Indexing requested** (priority crawl queue). Indexing debt unchanged.
 - **Next run should start with:** the indexing drop (80 -> 75, not-indexed 195 -> 200; redirect +3, crawled-not-indexed +2): open Page indexing and list which URLs left the index. Then `why-ai-ads-look-the-same` strengthen (103 impr pos 8.5; queries "why do ai ads all look the same" 13 and "why do all ai ads look the same" 12; published 2026-09-24, never strengthened). `dtc-creative-agency` (104 impr pos 16.9) becomes eligible for strengthen on 2026-10-14. Remaining unreviewed v2 apparel pages earning impressions: uniform-and-team (10, pos 6.8), heritage-apparel (19, 6.8), headwear-and-cap (14, 6.9), outerwear (14, 7.3). Still pending: sentence-level links into dtc-fashion-brand-content; refresh September competitor prices on creative-agency-vs-freelancer. Run 28 has run_count 27 at start (27 % 3 == 0): any job, but no new page while indexed count is below 80.
+
+## 2026-10-13, run 28: strengthen
+- **Job chosen (before copy):** strengthen `why-ai-ads-look-the-same` (published 2026-09-24, never strengthened). run_count 27 at start (27 % 3 == 0, any job); no new page while indexed < 80.
+- **Evidence:** "why do ai ads all look the same" 13 impr and "why do all ai ads look the same" 12 impr; page 0/103 at avg pos 8.5. Source: GSC 28 days pulled 2026-10-12 (run 27 Signal). Today's GSC pull failed (see Signal).
+- **Signal:** GSC not available: Chrome showed Google "Verify it's you" re-sign-in for abhi@paperkites.co on Search Console. No credentials entered. Indexing-drop investigation deferred.
+- **URL:** https://www.100creatives.com/why-ai-ads-look-the-same
+- **Changed:**
+  - New H2 "Why do all AI ads look the same?" and FAQ on the exact query; hero first sentence restated; meta description rewritten (139 chars); dateModified/Last updated 2026-10-13.
+  - New sourced section "Does it matter if your AI ads look generic?": NIQ Dec 2024 (2,000+ viewers, ~150 EEG; AI ads rated more annoying/boring/confusing, weaker memory activation; attitudes not CTR). Meta Engineering Dec 2024 (1M+ advertisers, 15M+ ads in a month with Meta GenAI tools; Andromeda). Both checked October 2026.
+  - New "How to tell if your AI ads look generic" five-check list; new default-vs-decided table built only from kept-prompt facts already on the page; new "If an agency makes your AI ads, ask for three things" (FACTS: brand intake, 48h).
+  - Overs facts re-checked on overs.studio/pricing (Oct 2026): per-photo $0.03-$0.21, so 8 tries = ~$0.24-$1.68 (was $0.27-$1.69); free 40/mo, Pro $29/mo, Brand Watch cadence unchanged.
+  - FAQ swapped "mood board" and "visual DNA" for "How can I tell if my AI ads look generic?" and "Do generic-looking AI ads perform worse?". Body ~2,630 words (was ~1,676), 0 em dashes.
+  - sitemap.xml lastmod 2026-10-13. llms.txt line already present, unchanged.
+- **Links added (out):** why-ai-ads-look-the-same -> /how-many-ad-creatives-do-i-need, /ad-creative-testing-framework, /static-ads-for-meta, /how-to-review-ai-creative-from-an-agency, /pricing. No inbound links added (strengthen job).
+- **Validation:** validate.py 0 failures; banned-word scan clean; IntersectionObserver present; sitemap parses. Cut three unsourced lines before publish (binary contrast on type, "short prompts" speculation, "usually has the right look" generalization).
+- **Publish:** pushed from a fresh shallow clone in /tmp on the device (mount still behind origin with stale unstaged edits; mount disk at 100% so clone went to /tmp). publish.sh not used, same reason as run 27.
