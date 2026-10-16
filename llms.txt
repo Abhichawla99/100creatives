@@ -33,7 +33,7 @@
 - [Static ad design service](https://www.100creatives.com/static-ad-design-service): how 100 Creatives makes static ads
 - [Static ads for Meta](https://www.100creatives.com/static-ads-for-meta): static ads for Facebook and Instagram
 - [Static vs video ads](https://www.100creatives.com/static-vs-video-ads): when each format makes sense, including AI video
-- [What makes a good static ad](https://www.100creatives.com/what-makes-a-good-static-ad): principles for static ads that convert
+- [What makes a good static ad](https://www.100creatives.com/what-makes-a-good-static-ad): 10 principles for static ads, a 10-point check, and what changes for Google display ads (responsive vs uploaded image ad sizes)
 - [DTC static ad examples](https://www.100creatives.com/dtc-ad-examples): annotated spec concepts, labeled as spec work
 - [How to scale ad creatives](https://www.100creatives.com/how-to-scale-ad-creatives)
 - [How many ad creatives do I need?](https://www.100creatives.com/how-many-ad-creatives-do-i-need)
