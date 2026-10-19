@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 33,
-  "last_run": "2026-10-18",
-  "last_job": "strengthen: dtc-fashion-brand-content (new H2 \"How do I run Meta ads for a DTC apparel brand?\" with Advantage+ sales campaign table and core-size catalog product set section, sources checked Oct 2026; FAQ swapped to the query)",
+  "run_count": 34,
+  "last_run": "2026-10-19",
+  "last_job": "strengthen: unlimited-ad-creatives (new \"Deals on bulk ad creative design subscriptions\" section with billing-discount table and price per active request, new \"50 or more ad variations a week\" capacity section, Design Pickle quote-only row, prices re-checked Oct 2026; FAQ swapped to the deals query)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -29,7 +29,7 @@
     "modest-fashion-brand-campaign-and-editorial-imagery": "2026-10-12"
   },
   "strengthened": {
-    "unlimited-ad-creatives": "2026-10-05",
+    "unlimited-ad-creatives": "2026-10-19",
     "creative-agency-vs-freelancer": "2026-10-11",
     "static-ad-design-service": "2026-09-14",
     "dtc-ad-examples": "2026-10-15",
