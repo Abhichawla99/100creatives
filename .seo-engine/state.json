@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 35,
-  "last_run": "2026-10-20",
-  "last_job": "strengthen: supplement-ad-creatives (new \"What makes creative supplement ads stand out?\" section with angle-to-static/video/proof/risk table and render-planning numbers from FACTS.md, new \"Supplement Facebook ads\" section with Meta Feed specs and 27-character headline checked Oct 2026 plus Ad Library step, branding-agency H2 reworded to \"Supplement branding agency, or a supplement ad creative agency?\" with deliverables table; title now leads with \"Creative Supplement Ads\"; 2 FAQs swapped)",
+  "run_count": 36,
+  "last_run": "2026-10-21",
+  "last_job": "strengthen: food-and-beverage-ad-creatives (new \"Food brand marketing campaign launch\" section with reveal/launch/refresh table and a hypothetical tomato sauce worked example plus UK category 13 note, new \"Beverage ad creation service\" section with deliverables table and supplier paragraph, ASA example corrected, GOV.UK re-checked Oct 2026, 1 FAQ swapped)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -44,7 +44,8 @@
     "dtc-creative-agency": "2026-10-14",
     "why-ai-ads-look-the-same": "2026-10-13",
     "dtc-fashion-brand-content": "2026-10-18",
-    "supplement-ad-creatives": "2026-10-20"
+    "supplement-ad-creatives": "2026-10-20",
+    "food-and-beverage-ad-creatives": "2026-10-21"
   },
   "published_v3": {
     "about": "2026-09-14",
