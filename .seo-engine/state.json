@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 36,
-  "last_run": "2026-10-21",
-  "last_job": "strengthen: food-and-beverage-ad-creatives (new \"Food brand marketing campaign launch\" section with reveal/launch/refresh table and a hypothetical tomato sauce worked example plus UK category 13 note, new \"Beverage ad creation service\" section with deliverables table and supplier paragraph, ASA example corrected, GOV.UK re-checked Oct 2026, 1 FAQ swapped)",
+  "run_count": 37,
+  "last_run": "2026-10-22",
+  "last_job": "strengthen: ai-fashion-photography-vs-traditional (new \"How do you scale fashion photography production?\" section with 30-style frame split, review sizing from FACTS.md render records, files-per-frame table, ecommerce-beyond-clothing H3; Google Merchant Center re-checked Oct 2026; 1 FAQ swapped)",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -45,7 +45,8 @@
     "why-ai-ads-look-the-same": "2026-10-13",
     "dtc-fashion-brand-content": "2026-10-18",
     "supplement-ad-creatives": "2026-10-20",
-    "food-and-beverage-ad-creatives": "2026-10-21"
+    "food-and-beverage-ad-creatives": "2026-10-21",
+    "ai-fashion-photography-vs-traditional": "2026-10-22"
   },
   "published_v3": {
     "about": "2026-09-14",
