@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 39,
-  "last_run": "2026-10-24",
-  "last_job": "patrol: 8 pages checked against FACTS.md, no drift; cpg-creative-agency Meta alcohol policy citation re-checked and month updated to October 2026",
+  "run_count": 40,
+  "last_run": "2026-10-25",
+  "last_job": "strengthen creative-agency-vs-freelancer: competitor prices re-checked October 2026 (Flocksy range to ~$7,299, Kimp price removed as unpublished), freelance advertising creative section with one-brief comparison table, 1 FAQ swapped",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -30,7 +30,7 @@
   },
   "strengthened": {
     "unlimited-ad-creatives": "2026-10-19",
-    "creative-agency-vs-freelancer": "2026-10-11",
+    "creative-agency-vs-freelancer": "2026-10-25",
     "static-ad-design-service": "2026-09-14",
     "dtc-ad-examples": "2026-10-15",
     "what-makes-a-good-static-ad": "2026-10-16",
