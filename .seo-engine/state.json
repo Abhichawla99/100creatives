@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 41,
-  "last_run": "2026-10-26",
-  "last_job": "fix ad-creative-agency-pricing: all 21 vendor rows re-checked October 2026 (Flocksy to ~$7,299, Kimp/Marmalaide/No Limit Creatives no longer publish prices, Konstant/AdCreative/Superside details); same price drift fixed on unlimited-ad-creatives, how-to-scale-ad-creatives, static-ad-design-service",
+  "run_count": 42,
+  "last_run": "2026-10-27",
+  "last_job": "strengthen why-ai-ads-look-the-same: new sourced TikTok/AI video section (Symphony Creative Studio, AI-generated labels, how to make an AI video ad stand out), FAQ swapped to the TikTok query, meta description updated",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -46,7 +46,7 @@
     "how-to-scale-ad-creatives": "2026-09-20",
     "health-and-wellness-ad-creatives": "2026-10-17",
     "dtc-creative-agency": "2026-10-14",
-    "why-ai-ads-look-the-same": "2026-10-13",
+    "why-ai-ads-look-the-same": "2026-10-27",
     "dtc-fashion-brand-content": "2026-10-18",
     "supplement-ad-creatives": "2026-10-20",
     "food-and-beverage-ad-creatives": "2026-10-21",
