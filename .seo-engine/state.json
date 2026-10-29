@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 43,
-  "last_run": "2026-10-28",
-  "last_job": "strengthen dtc-creative-agency: new H2 \"What is DTC media?\" (#dtc-media) for \"dtc media\"/\"dtcmedia\" (40 impr), sourced Meta Andromeda + Marketing Brew facts, media-vs-creative setup table, FAQ swapped to \"What is DTC media?\"",
+  "run_count": 44,
+  "last_run": "2026-10-29",
+  "last_job": "strengthen dtc-ad-examples: new H2 \"DTC video ads and DTC commercials\" (#dtc-video-ads) for \"dtc commercial\"/\"dtc video ads\" (9 impr, pos 19-25): Reels/TikTok video spec table, DSC 2012 benchmark, where to find video/TV examples, FAQ swapped to \"What is a DTC commercial?\"",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -36,7 +36,7 @@
     "unlimited-ad-creatives": "2026-10-19",
     "creative-agency-vs-freelancer": "2026-10-25",
     "static-ad-design-service": "2026-09-14",
-    "dtc-ad-examples": "2026-10-15",
+    "dtc-ad-examples": "2026-10-29",
     "what-makes-a-good-static-ad": "2026-10-16",
     "static-vs-video-ads": "2026-09-14",
     "static-ads-for-meta": "2026-09-14",
