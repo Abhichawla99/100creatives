@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "run_count": 44,
-  "last_run": "2026-10-29",
-  "last_job": "strengthen dtc-ad-examples: new H2 \"DTC video ads and DTC commercials\" (#dtc-video-ads) for \"dtc commercial\"/\"dtc video ads\" (9 impr, pos 19-25): Reels/TikTok video spec table, DSC 2012 benchmark, where to find video/TV examples, FAQ swapped to \"What is a DTC commercial?\"",
+  "run_count": 45,
+  "last_run": "2026-10-30",
+  "last_job": "strengthen what-makes-a-good-static-ad: new H3 \"What is a static display advertisement?\" (#what-is-display) for \"what is a static display advertisement\" (19 impr, pos 24.5): definition, 4-row Google display ad type table (uploaded image / responsive / HTML5-AMPHTML / dynamic remarketing), DTC order of operations; FAQ swapped to \"What is a static display advertisement?\"",
   "fixed": {
     "how-many-ad-creatives-do-i-need": "2026-09-24",
     "ad-creative-testing-framework": "2026-09-16",
@@ -37,7 +37,7 @@
     "creative-agency-vs-freelancer": "2026-10-25",
     "static-ad-design-service": "2026-09-14",
     "dtc-ad-examples": "2026-10-29",
-    "what-makes-a-good-static-ad": "2026-10-16",
+    "what-makes-a-good-static-ad": "2026-10-30",
     "static-vs-video-ads": "2026-09-14",
     "static-ads-for-meta": "2026-09-14",
     "index": "2026-09-14",
