@@ -1134,3 +1134,8 @@ Short log of every v3 run. Read all of it at the start of each run (RUN.md Step 
 - **Links added (out):** health-and-wellness-ad-creatives -> /skincare-ad-creatives (new), /ugc-ad-creatives (new); external 3 TikTok policy pages (HTTP 200). supplement-ad-creatives -> /health-and-wellness-ad-creatives#tiktok (anchor updated).
 - **Validation:** validate.py 0 failures on both; sitemap parses; banned-word scan clean.
 - **Not used:** "ny wellness advertising" queries (no NY presence); "maca" query (no primary source on maca ad rules).
+- **Publish:** fresh shallow clone in /tmp on the device (local mount still stale: unstaged edits, .git/index.lock; /sessions disk at 100%). publish.sh not used (fallback would copy stale local MEMORY.md/topics.json over origin). Commit 4be96f4.
+- **Live check (~75s after push):** both pages HTTP 200, canonical correct, Last updated 2026-10-31, #tiktok present on health-and-wellness.
+- **IndexNow:** HTTP 200 for both URLs + sitemap.xml.
+- **GSC:** inspect bar. health-and-wellness-ad-creatives: "URL is on Google" -> **Indexing requested**. supplement-ad-creatives: "URL is on Google" -> **Indexing requested**. Indexing debt: empty.
+- **Next run should start with:** run 47 has run_count 46 at start (46 % 3 == 1): any job, but indexed is 76 (< 80), so no new page. Other pages may carry pre-September TikTok health rules: grep for "TikTok" + "prohibit" across beauty/skincare/food pages and fix any drift. Strengthen candidates: why-ai-ads-look-the-same (420 impr, strengthened 10-27, eligible 11-10), dtc-creative-agency (210 / 16.9, eligible 11-11). Local mount still stale; Abhi should reset it (`git stash && git pull` in /Users/home/100creatives after clearing .git/index.lock).
