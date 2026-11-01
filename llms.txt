@@ -36,7 +36,7 @@
 - [What makes a good static ad](https://www.100creatives.com/what-makes-a-good-static-ad): 10 principles for static ads, a 10-point check, what a static display ad is, and what changes for Google display ads (responsive vs uploaded image ad sizes)
 - [DTC static ad examples](https://www.100creatives.com/dtc-ad-examples): annotated spec concepts, labeled as spec work
 - [How to scale ad creatives](https://www.100creatives.com/how-to-scale-ad-creatives)
-- [How many ad creatives do I need?](https://www.100creatives.com/how-many-ad-creatives-do-i-need)
+- [How many ad creatives do I need each week?](https://www.100creatives.com/how-many-ad-creatives-do-i-need): concepts per week from weekly Meta budget and CPA, Meta page ad limits, and catalog ads for 2,000+ SKU stores
 - [Ad creative testing framework](https://www.100creatives.com/ad-creative-testing-framework)
 - [UGC ad creatives](https://www.100creatives.com/ugc-ad-creatives)
 - [Ecommerce ad creatives](https://www.100creatives.com/ecommerce-ad-creatives)
