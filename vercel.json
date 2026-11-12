@@ -2,14 +2,46 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "100creatives.vercel.app"
+        }
+      ],
+      "destination": "https://www.100creatives.com/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "100creatives.com"
+        }
+      ],
+      "destination": "https://www.100creatives.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "100creatives.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "100creatives.vercel.app"
+        }
+      ],
       "destination": "https://www.100creatives.com/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "100creatives.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "100creatives.com"
+        }
+      ],
       "destination": "https://www.100creatives.com/:path*",
       "permanent": true
     }
