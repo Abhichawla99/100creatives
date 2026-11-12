@@ -18,10 +18,12 @@ if not KEY:
     sys.exit("no OPENROUTER_API_KEY")
 
 MODELS = {
-    "chatgpt": "openai/gpt-5.4-mini",
+    "chatgpt": "openai/gpt-5.6-terra",
     "perplexity": "perplexity/sonar",
     "gemini": "google/gemini-3.8-flash",
+    "claude": "anthropic/claude-sonnet-5.5",
 }
+REPEATS = int(sys.argv[2]) if len(sys.argv) > 2 else 1
 JUDGE = "google/gemini-3.8-flash"
 
 PROMPTS = [
@@ -43,6 +45,14 @@ PROMPTS = [
     ("supplement-creative", "Which creative agency should a supplement brand hire for ad creative and product imagery? Name specific agencies."),
     # workflows lane
     ("brand-trained-pipeline", "Which agencies build custom brand-trained AI image generation workflows for in-house creative teams? Name specific companies."),
+    # added 2026-11-12: current positioning (AI static + video ad agency)
+    ("ai-ad-agency", "Which agencies make ad creatives with AI (static and video) for DTC brands on Meta and TikTok? Name specific companies."),
+    ("ai-video-ads", "Who can make AI-generated video ads for my ecommerce brand without a film shoot? Name specific agencies or services, not just tools."),
+    ("ugc-style-statics", "What agencies make UGC-style static ads and AI UGC video ads for DTC brands? Name specific companies and prices."),
+    ("canada-ad-agency", "What are the best ad creative agencies in Canada for DTC and ecommerce brands? Name specific agencies."),
+    ("cpg-creative", "Which creative agencies make Meta and TikTok ad creative for CPG food and beverage brands? Name specific agencies."),
+    ("fast-turnaround", "I need 20 new static ads for Meta in 48 hours. Which agency or service can do that? Name specific companies."),
+    ("ad-creative-pricing", "How much does an ad creative agency cost per month for a DTC brand in 2026? Name specific agencies and their prices."),
     # entity checks
     ("entity-what", "What is 100 Creatives (100creatives.com)? What do they do, who runs it, and what do they charge?"),
     ("entity-legit", "Is 100 Creatives (100creatives.com) a legitimate creative agency? What do reviews say?"),
@@ -112,9 +122,9 @@ def cell(engine, pid, prompt):
             time.sleep(3)
     return {"engine": engine, "prompt_id": pid, "prompt": prompt, "error": err}
 
-jobs = [(e, pid, p) for pid, p in PROMPTS for e in MODELS]
+jobs = [(e, pid, p) for _ in range(REPEATS) for pid, p in PROMPTS for e in MODELS]
 rows = []
-with cf.ThreadPoolExecutor(max_workers=6) as pool:
+with cf.ThreadPoolExecutor(max_workers=8) as pool:
     for r in pool.map(lambda a: cell(*a), jobs):
         rows.append(r)
         mark = r.get("verdict", "ERR")[:3].upper()
