@@ -28,14 +28,18 @@ The engine consults this file to pick relevant images for each new article. **On
   - **Use for:** contemporary American women's apparel, Dickey jacket / signature-tailoring imagery, work-edit and weekend-edit, contemporary lifestyle apparel, Net-a-Porter / ShopBop / Saks wholesale-deck register, occasion-wear contemporary
 
 ### Beauty / Skincare (premium serums, color cosmetics)
-- **Golden Rule** — premium beauty/skincare brand
+- No beauty or skincare spec images exist yet. Don't put a non-beauty image on a beauty page.
+
+### Spirits / RTD cocktails
+- **Golden Rule Spirits**: canned Classic Negroni, spec work (see /goldenrule). Corrected 2026-11-13: this set was filed under beauty serums by mistake and ended up captioned as serums on a beauty page.
   - `/images/goldenrule/goldenrule-1.png` through `/images/goldenrule/goldenrule-8.png`
-  - **Use for:** beauty product photography, skincare PDP, color cosmetics, premium beauty visuals, serum/bottle shots
+  - **Use for:** canned cocktails, RTD and spirits, beverage lifestyle. Caption: "Spec concept for Golden Rule Spirits, not commissioned by Golden Rule Spirits".
 
 ### Supplements / Wellness
 - **Armra** — colostrum supplement brand
   - `/images/armra/armra-1.png` through `/images/armra/armra-9.png`
   - **Use for:** supplements photography, wellness brand visuals, powder/jar product shots, functional health, premium supplement PDP
+  - **Don't use `armra-7.png`**: its spec headline says "30% More Bioactives Than Any Other Brand", an unsourced comparative claim. Several ARMRA images carry claim-style headlines, so caption them as spec copy that the brand would need to substantiate.
 
 ### Food CPG (snacks, packaged goods)
 - **Chobani** — yogurt/dairy CPG flagship work
